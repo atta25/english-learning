@@ -138,6 +138,17 @@ document.documentElement.setAttribute("data-theme",t);})();
   html[data-theme="dark"] .seg button { color:#cbd5e1; }
   html[data-theme="dark"] .seg button.on { background:#3b82f6; color:#fff; }
   html[data-theme="dark"] #bar { background-color:transparent; }
+  @media (max-width:1000px){
+    .box .hd { cursor:pointer; padding-right:36px; -webkit-tap-highlight-color:transparent; }
+    .box .hd::after { content:"▸"; position:absolute; right:14px; top:50%; transform:translateY(-50%); font-size:16px; transition:transform .15s; }
+    .box.open .hd::after { transform:translateY(-50%) rotate(90deg); }
+    .box:not(.open) .hd { border-radius:13px; }
+    .box:not(.open) .bd, .box:not(.open) .speak { display:none; }
+    .grid { gap:14px; }
+    .col, .mid { display:contents; }
+    .cloudwrap { order:-1; }
+    .exercise { order:1; }
+  }
   @media (max-width:700px){
     body { padding:0 12px 20px; }
     header { padding-top:12px; }
@@ -249,7 +260,7 @@ function mapHTML(m){
   const art = ART[m.t] || {};
   const mascot = art.mascot || MASCOTS[m.id % MASCOTS.length];
   const scene = art.scene || [m.icon];
-  const box = (b,j)=>`<div class="box" id="b${m.id}_${j}" style="--c:${C[j%6]}">
+  const box = (b,j)=>`<div class="box${j===0?" open":""}" id="b${m.id}_${j}" style="--c:${C[j%6]}">
     <div class="hd"><div class="num">${j+1}</div><div><h3>${esc(b.h)}<small>${esc(b.es)}</small></h3></div></div>
     <div class="bd">${pic((art.boxes && art.boxes[j]) || [b.e])}
       <ul>${b.i.map(([a,c])=>`<li><b>${esc(a)}</b><i>${esc(c)}</i></li>`).join("")}</ul></div>
@@ -343,6 +354,10 @@ function draw(){
 
 document.getElementById("q").addEventListener("input",e=>{query=e.target.value.trim(); render();});
 window.addEventListener("resize",draw);
+document.getElementById("maps").addEventListener("click",e=>{
+  const hd = e.target.closest(".box .hd");
+  if (hd && window.matchMedia("(max-width:1000px)").matches) hd.parentElement.classList.toggle("open");
+});
 document.addEventListener("toggle",draw,true);
 render();
 </script>
