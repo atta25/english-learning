@@ -124,6 +124,39 @@ document.documentElement.setAttribute("data-theme",t);})();
   html[data-theme="dark"] .exercise summary { color:#93c5fd; }
   html[data-theme="dark"] .exercise .ans { background:#14532d; color:#dcfce7; }
   @media (max-width:1000px){ .grid{grid-template-columns:1fr;} svg.arrows{display:none;} .tape{display:none} }
+
+  /* ---------- filter bar ---------- */
+  header { margin-bottom:0; }
+  #bar { max-width:1240px; margin:0 auto; display:flex; flex-direction:column; text-align:center; }
+  #bar #q { align-self:center; }
+  .hdr2 { max-width:1240px; margin:0 auto 18px; text-align:center; }
+  .seg { display:flex; align-self:center; width:min(420px,100%); margin-bottom:10px; background:#fff; border-radius:10px; padding:3px; box-shadow:0 1px 2px #0002; }
+  .count { margin-bottom:8px; }
+  .seg button { flex:1; border:none; background:none; padding:7px 0; font-size:13px; font-family:inherit; border-radius:8px; color:#475569; cursor:pointer; }
+  .seg button.on { background:var(--navy); color:#fff; font-weight:600; }
+  html[data-theme="dark"] .seg { background:#1e293b; }
+  html[data-theme="dark"] .seg button { color:#cbd5e1; }
+  html[data-theme="dark"] .seg button.on { background:#3b82f6; color:#fff; }
+  html[data-theme="dark"] #bar { background-color:transparent; }
+  @media (max-width:700px){
+    body { padding:0 12px 20px; }
+    header { padding-top:12px; }
+    header h1 { font-size:19px; margin:0 44px 8px 0; text-align:left; }
+    header p { display:none; }
+    #theme { top:8px; width:34px; height:34px; font-size:16px; }
+    #bar { position:sticky; top:0; z-index:30; margin:0 -12px; padding:6px 12px 8px; background:#e4ecf8f2; backdrop-filter:blur(6px); box-shadow:0 2px 6px #0002; }
+    html[data-theme="dark"] #bar { background:#0f172af2; box-shadow:0 2px 6px #0008; }
+    #bar #q { order:1; align-self:stretch; width:100%; margin-bottom:8px; padding:10px 14px; }
+    #bar .tabs { order:2; flex-wrap:nowrap; overflow-x:auto; justify-content:flex-start; margin:0 -12px 8px; padding:0 12px 2px; scrollbar-width:none; }
+    #bar .tabs::-webkit-scrollbar { display:none; }
+    #bar .tabs button { flex:none; padding:7px 13px; font-size:13px; white-space:nowrap; }
+    #bar .tabs button small { display:none; }
+    .seg { order:3; width:100%; margin-bottom:0; }
+    .count { padding:2px 4px; }
+    .hdr2 { margin-bottom:12px; }
+    .idx summary { text-align:left; padding-left:4px; }
+    .page { scroll-margin-top:130px; }
+  }
   @media print { #theme{display:none} html[data-theme="dark"] body{background:#fff} body{background:#fff;padding:0} header{display:none} .page{break-after:page;box-shadow:none;margin:0 auto} }
 </style>
 </head>
@@ -132,15 +165,16 @@ document.documentElement.setAttribute("data-theme",t);})();
   <button id="theme" type="button" aria-label="Cambiar modo claro/oscuro" title="Modo claro / oscuro"></button>
   <h1>🇬🇧 British English · Visual Maps (A1–C2)</h1>
   <p>Mapas visuales de inglés británico. Elige una categoría o busca un tema.</p>
+</header>
+<div id="bar">
   <div class="tabs" id="tabs"></div>
-  <div class="filters">
-    <label>Tipo <select id="ftype"><option value="">Todos</option><option>Vocabulary</option><option>Grammar</option><option>Expressions</option><option>Structures</option></select></label>
-    <label>Nivel <select id="flvl"><option value="">A1 – C2</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option><option>C1</option><option>C2</option></select></label>
-  </div>
+  <div class="seg" id="seg"></div>
   <input id="q" type="search" placeholder="🔍 Buscar tema (ej: conditionals, phrasal, pub...)">
+</div>
+<div class="hdr2">
   <div class="count" id="count"></div>
   <details class="idx"><summary>📑 Índice de temas</summary><div class="chips" id="chips"></div></details>
-</header>
+</div>
 <div id="maps"></div>
 
 <script src="data/part1.js"></script>
@@ -184,13 +218,20 @@ const ALL = (window.MAPS || []).map((m,i)=>({...m, o:i}))
   .sort((a,b)=> LVL_ORDER.indexOf(a.lvl)-LVL_ORDER.indexOf(b.lvl) || CAT_ORDER.indexOf(a.cat)-CAT_ORDER.indexOf(b.cat) || a.o-b.o)
   .map((m,i)=>({...m, id:i}));
 const cats = [...new Set(ALL.map(m=>m.cat))];
-let curCat = "All", query = "";
+let curCat = "All", query = "", curLvl = "";
+const SHORT = {"Grammar: Tenses & Verbs":"Tenses","Grammar: Structures":"Structures","Phrasal Verbs, Idioms & Collocations":"Phrasal & Idioms","Vocabulary: Everyday Life":"Everyday","Vocabulary: Work, Study & Society":"Work & Study","Communication & British Culture":"Culture"};
 const esc = s => String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;");
 
 function renderTabs(){
   const t = document.getElementById("tabs");
-  t.innerHTML = ["All",...cats].map(c=>`<button class="${c===curCat?"on":""}" data-c="${esc(c)}">${c==="All"?"📚 All":esc(c)} (${c==="All"?ALL.length:ALL.filter(m=>m.cat===c).length})</button>`).join("");
+  t.innerHTML = ["All",...cats].map(c=>`<button class="${c===curCat?"on":""}" data-c="${esc(c)}">${c==="All"?"📚 All":esc(SHORT[c]||c)} <small>(${c==="All"?ALL.length:ALL.filter(m=>m.cat===c).length})</small></button>`).join("");
   t.querySelectorAll("button").forEach(b=>b.onclick=()=>{curCat=b.dataset.c; render();});
+}
+
+function renderSeg(){
+  const s = document.getElementById("seg");
+  s.innerHTML = ["","A1","A2","B1","B2","C1","C2"].map(l=>`<button data-l="${l}" class="${curLvl===l?"on":""}">${l||"Todos"}</button>`).join("");
+  s.querySelectorAll("button").forEach(b=>b.onclick=()=>{curLvl=b.dataset.l; render();});
 }
 
 // positions for 2 or 3 stickers inside the picture blob: [left, top, size, rotation]
@@ -246,10 +287,11 @@ function paint(){
 }
 function render(){
   const q = query.toLowerCase();
-  const ft = document.getElementById("ftype").value, fl = document.getElementById("flvl").value;
-  const list = ALL.filter(m => (curCat==="All"||m.cat===curCat) && (!ft||m.type===ft) && (!fl||m.lvl===fl) &&
+  const fl = curLvl;
+  const list = ALL.filter(m => (curCat==="All"||m.cat===curCat) && (!fl||m.lvl===fl) &&
     (!q || (m.t+" "+m.es+" "+m.cat).toLowerCase().includes(q)));
   renderTabs();
+  renderSeg();
   document.getElementById("count").textContent = `${list.length} mapas`;
   const ch = document.getElementById("chips");
   ch.innerHTML = list.map((m,k)=>`<a href="#m${m.id}" data-k="${k}">${m.icon} ${m.id+1}. ${esc(m.t)}</a>`).join("");
@@ -300,7 +342,6 @@ function draw(){
 }
 
 document.getElementById("q").addEventListener("input",e=>{query=e.target.value.trim(); render();});
-["ftype","flvl"].forEach(id=>document.getElementById(id).addEventListener("change",render));
 window.addEventListener("resize",draw);
 document.addEventListener("toggle",draw,true);
 render();
