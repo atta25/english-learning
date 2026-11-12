@@ -37,6 +37,7 @@ document.documentElement.setAttribute("data-theme",t);})();
   .tape.l { left:-18px; top:8px; transform:rotate(-45deg); background:#93c5fd99; }
   .tape.r { right:-18px; top:8px; transform:rotate(45deg); background:#fda4af99; }
   .star { position:absolute; font-size:22px; opacity:.55; z-index:1; pointer-events:none; }
+  .topbar { display:contents; }
   .level { position:absolute; top:50px; right:34px; border:3px solid #2563eb; color:#2563eb; border-radius:50%; width:52px; height:52px; display:grid; place-items:center; font-weight:800; font-size:16px; font-family:var(--hand); background:#fff; z-index:5; box-shadow:0 0 0 3px #fff,0 0 0 5px #93c5fd; }
   .tag { position:absolute; top:52px; left:30px; font-size:12px; color:#64748b; z-index:5; background:#fff9; padding:2px 8px; border-radius:999px; }
 
@@ -166,7 +167,11 @@ document.documentElement.setAttribute("data-theme",t);})();
     .count { padding:2px 4px; }
     .hdr2 { margin-bottom:12px; }
     .idx summary { text-align:left; padding-left:4px; }
-    .page { scroll-margin-top:130px; }
+    .page { scroll-margin-top:130px; padding:44px 20px 24px; }
+    .topbar { display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:28px; position:relative; z-index:5; }
+    .topbar .tag, .topbar .level { position:static; }
+    .topbar .tag { flex:0 1 auto; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+    .topbar .level { flex:none; width:2.75rem; height:2.75rem; font-size:.95rem; margin-right:5px; }
   }
   @media print { #theme{display:none} html[data-theme="dark"] body{background:#fff} body{background:#fff;padding:0} header{display:none} .page{break-after:page;box-shadow:none;margin:0 auto} }
 </style>
@@ -269,7 +274,7 @@ function mapHTML(m){
   return `<section class="page" id="m${m.id}" data-id="${m.id}">
     <div class="rings"></div><div class="tape l"></div><div class="tape r"></div>
     ${star("2%","46%","✨")}${star("97%","52%","⭐")}${star("48%","98%","✨")}
-    <div class="tag">#${m.id+1} · ${esc(m.cat)} · ${esc(m.type)}</div><div class="level lv-${m.lvl}">${m.lvl}</div>
+    <div class="topbar"><div class="tag">#${m.id+1} · ${esc(m.cat)} · ${esc(m.type)}</div><div class="level lv-${m.lvl}">${m.lvl}</div></div>
     <svg class="arrows"></svg>
     <div class="grid">
       <div class="col">${m.boxes.slice(0,3).map((b,j)=>box(b,j)).join("")}</div>
