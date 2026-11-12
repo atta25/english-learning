@@ -30,15 +30,15 @@ document.documentElement.setAttribute("data-theme",t);})();
   .page { position:relative; max-width:1240px; margin:0 auto 34px; background:#fffef9; border-radius:16px; padding:92px 30px 28px; scroll-margin-top:10px;
           box-shadow:0 10px 28px #0004, 0 0 0 1px #0001;
           background-image:linear-gradient(#bcd4ee55 1px,transparent 1px),linear-gradient(90deg,#bcd4ee55 1px,transparent 1px); background-size:26px 26px; }
-  .rings { position:absolute; top:8px; left:24px; right:24px; height:26px; background:
+  .rings { position:absolute; top:8px; left:56px; right:56px; height:26px; background:
           radial-gradient(ellipse 5px 9px at 50% 50%,#334155 0 55%,transparent 60%) 0 0/22px 26px repeat-x; filter:drop-shadow(0 2px 1px #0004); z-index:4; }
   .rings::after { content:""; position:absolute; inset:0; background:radial-gradient(circle at 50% 50%,#fff 0 3px,transparent 4px) 0 0/22px 26px repeat-x; opacity:.0; }
-  .tape { position:absolute; width:96px; height:26px; background:#fcd34d99; z-index:4; box-shadow:0 1px 2px #0002; }
-  .tape.l { left:-26px; bottom:34px; transform:rotate(-38deg); background:#93c5fd99; }
-  .tape.r { right:-26px; bottom:34px; transform:rotate(38deg); background:#fda4af99; }
+  .tape { position:absolute; width:76px; height:26px; background:#fcd34d99; z-index:4; box-shadow:0 1px 2px #0002; }
+  .tape.l { left:-18px; top:8px; transform:rotate(-45deg); background:#93c5fd99; }
+  .tape.r { right:-18px; top:8px; transform:rotate(45deg); background:#fda4af99; }
   .star { position:absolute; font-size:22px; opacity:.55; z-index:1; pointer-events:none; }
-  .level { position:absolute; top:40px; right:30px; border:3px solid #2563eb; color:#2563eb; border-radius:50%; width:52px; height:52px; display:grid; place-items:center; font-weight:800; font-size:16px; font-family:var(--hand); background:#fff; z-index:5; box-shadow:0 0 0 3px #fff,0 0 0 5px #93c5fd; }
-  .tag { position:absolute; top:42px; left:30px; font-size:12px; color:#64748b; z-index:5; background:#fff9; padding:2px 8px; border-radius:999px; }
+  .level { position:absolute; top:50px; right:34px; border:3px solid #2563eb; color:#2563eb; border-radius:50%; width:52px; height:52px; display:grid; place-items:center; font-weight:800; font-size:16px; font-family:var(--hand); background:#fff; z-index:5; box-shadow:0 0 0 3px #fff,0 0 0 5px #93c5fd; }
+  .tag { position:absolute; top:52px; left:30px; font-size:12px; color:#64748b; z-index:5; background:#fff9; padding:2px 8px; border-radius:999px; }
 
   .grid { display:grid; grid-template-columns:1fr 370px 1fr; gap:22px 76px; align-items:stretch; position:relative; z-index:2; }
   .col { display:flex; flex-direction:column; gap:20px; }
