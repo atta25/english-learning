@@ -272,7 +272,7 @@ function mapHTML(m){
   const mascot = art.mascot || MASCOTS[m.id % MASCOTS.length];
   const scene = art.scene || [m.icon];
   const box = (b,j)=>`<div class="box${j===0?" open":""}" id="b${m.id}_${j}" style="--c:${C[j%6]}">
-    <div class="hd"><div class="num">${j+1}</div><div><h3>${esc(b.h)}<small>${esc(b.es)}</small></h3></div></div>
+    <div class="hd"><div class="num">${j+1}</div><div><h3>${esc(b.h)}</h3></div></div>
     <div class="bd">${pic((art.boxes && art.boxes[j]) || [b.e])}
       <ul>${b.i.map(([a,c])=>`<li><b>${esc(a)}</b><i>${esc(c)}</i></li>`).join("")}</ul></div>
     <div class="speak"><div class="bubble"><b>${esc(b.ex[0])}</b><span>${esc(b.ex[1])}</span></div><span class="stk mascot">${mascot}</span></div></div>`;
