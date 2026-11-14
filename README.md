@@ -1,4 +1,4 @@
-# 🇬🇧 British English Visual Maps
+# 🇬🇧 English Visual Maps
 
 303 illustrated visual maps to learn British English from A1 to C2 (vocabulary, grammar, expressions and structures), with Spanish translations and 3 exercises per map.
 
