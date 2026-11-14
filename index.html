@@ -173,10 +173,14 @@ document.documentElement.setAttribute("data-theme",t);})();
     .topbar .tag { flex:0 1 auto; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
     .topbar .level { flex:none; width:2.75rem; height:2.75rem; font-size:.95rem; margin-right:5px; }
   }
-  @media print { #theme{display:none} html[data-theme="dark"] body{background:#fff} body{background:#fff;padding:0} header{display:none} .page{break-after:page;box-shadow:none;margin:0 auto} }
+  #up { position:fixed; right:16px; bottom:max(18px,env(safe-area-inset-bottom)); width:46px; height:46px; border:none; border-radius:50%; background:var(--navy); color:#fff; font-size:20px; cursor:pointer; display:grid; place-items:center; box-shadow:0 4px 10px #0005; z-index:40; opacity:0; visibility:hidden; transform:translateY(10px); transition:opacity .2s,transform .2s,visibility .2s; -webkit-tap-highlight-color:transparent; }
+  #up.show { opacity:1; visibility:visible; transform:none; }
+  html[data-theme="dark"] #up { background:#3b82f6; }
+  @media print { #up{display:none} #theme{display:none} html[data-theme="dark"] body{background:#fff} body{background:#fff;padding:0} header{display:none} .page{break-after:page;box-shadow:none;margin:0 auto} }
 </style>
 </head>
 <body>
+<button id="up" type="button" aria-label="Volver arriba" title="Volver arriba">⬆️</button>
 <header>
   <button id="theme" type="button" aria-label="Cambiar modo claro/oscuro" title="Modo claro / oscuro"></button>
   <h1>🇬🇧 British English · Visual Maps</h1>
@@ -359,6 +363,9 @@ function draw(){
 
 document.getElementById("q").addEventListener("input",e=>{query=e.target.value.trim(); render();});
 window.addEventListener("resize",draw);
+const upBtn = document.getElementById("up");
+window.addEventListener("scroll",()=>upBtn.classList.toggle("show", window.scrollY > 400),{passive:true});
+upBtn.addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
 document.getElementById("maps").addEventListener("click",e=>{
   const hd = e.target.closest(".box .hd");
   if (hd && window.matchMedia("(max-width:1000px)").matches) hd.parentElement.classList.toggle("open");
