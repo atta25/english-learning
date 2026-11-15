@@ -20,7 +20,8 @@ const ALL = (window.MAPS || []).map((m,i)=>({...m, o:i}))
 const cats = [...new Set(ALL.map(m=>m.cat))];
 let curCat = "All", query = "", curLvl = "";
 const SHORT = {"Grammar: Tenses & Verbs":"Tenses","Grammar: Structures":"Structures","Phrasal Verbs, Idioms & Collocations":"Phrasal & Idioms","Vocabulary: Everyday Life":"Everyday","Vocabulary: Work, Study & Society":"Work & Study","Communication & British Culture":"Culture"};
-const esc = s => String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;");
+const ESC = {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"};
+const esc = s => String(s).replace(/[&<>"']/g, c => ESC[c]);
 
 function renderTabs(){
   const t = document.getElementById("tabs");
@@ -58,7 +59,7 @@ function mapHTML(m){
   return `<section class="page" id="m${m.id}" data-id="${m.id}">
     <div class="rings"></div><div class="tape l"></div><div class="tape r"></div>
     ${star("2%","46%","✨")}${star("97%","52%","⭐")}${star("48%","98%","✨")}
-    <div class="topbar"><div class="tag">#${m.id+1} · ${esc(m.cat)} · ${esc(m.type)}</div><div class="level lv-${m.lvl}">${m.lvl}</div></div>
+    <div class="topbar"><div class="tag">#${m.id+1} · ${esc(m.cat)} · ${esc(m.type)}</div><div class="level lv-${esc(m.lvl)}">${esc(m.lvl)}</div></div>
     <svg class="arrows"></svg>
     <div class="grid">
       <div class="col">${m.boxes.slice(0,3).map((b,j)=>box(b,j)).join("")}</div>
@@ -94,7 +95,7 @@ function render(){
   renderSeg();
   document.getElementById("count").textContent = `${list.length} mapas`;
   const ch = document.getElementById("chips");
-  ch.innerHTML = list.map((m,k)=>`<a href="#m${m.id}" data-k="${k}">${m.icon} ${m.id+1}. ${esc(m.t)}</a>`).join("");
+  ch.innerHTML = list.map((m,k)=>`<a href="#m${m.id}" data-k="${k}">${esc(m.icon)} ${m.id+1}. ${esc(m.t)}</a>`).join("");
   ch.querySelectorAll("a").forEach(a=>a.onclick=e=>{
     e.preventDefault(); const k=+a.dataset.k;
     if (k >= shown) { shown = Math.min(cur.length, k+1); paint(); }
