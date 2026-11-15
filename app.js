@@ -84,7 +84,7 @@ function paint(){
     (shown < cur.length ? `<div style="text-align:center;margin:10px"><button id="more" class="tabs-btn">⬇️ Cargar más (${shown}/${cur.length})</button></div>` : "");
   const more = document.getElementById("more");
   if (more) more.onclick = () => { shown = Math.min(cur.length, shown+STEP); paint(); };
-  requestAnimationFrame(draw);
+  requestAnimationFrame(()=>draw());
 }
 function render(){
   const q = query.toLowerCase();
@@ -119,18 +119,29 @@ function cloudPath(w,h){
   return d+"Z";
 }
 
-function draw(){
+// Redraws cloud outlines and arrows. Pass one .page to redraw only that map.
+function draw(only){
   const NS="http://www.w3.org/2000/svg";
-  document.querySelectorAll(".page").forEach(page=>{
-    const id=+page.dataset.id, svg=page.querySelector("svg.arrows");
-    const cw=document.getElementById("c"+id), cs=cw.querySelector("svg.cl");
-    const cr=cw.getBoundingClientRect();
+  const mobile = matchMedia("(max-width:1000px)").matches; // arrows are hidden by CSS here
+  const pages = only ? [only] : [...document.querySelectorAll(".page")];
+  // read phase: measure everything first to avoid forced layouts between writes
+  const data = pages.map(page=>{
+    const id=+page.dataset.id, cr=document.getElementById("c"+id).getBoundingClientRect();
+    if (mobile) return {page,id,cr};
+    const P=page.getBoundingClientRect();
+    const boxes=[0,1,2,3,4,5].map(j=>document.getElementById(`b${id}_${j}`).getBoundingClientRect());
+    return {page,id,cr,P,boxes};
+  });
+  // write phase
+  data.forEach(({page,id,cr,P,boxes})=>{
+    const cs=page.querySelector("svg.cl");
     cs.setAttribute("viewBox",`0 0 ${cr.width} ${cr.height}`);
     cs.innerHTML=`<path d="${cloudPath(cr.width,cr.height)}" fill="#fff" stroke="#1e3a8a" stroke-width="3.5"/><path d="${cloudPath(cr.width-14,cr.height-14)}" transform="translate(7,7)" fill="none" stroke="#93c5fd" stroke-width="2" stroke-dasharray="2 7" stroke-linecap="round"/>`;
+    if (mobile) return;
+    const svg=page.querySelector("svg.arrows");
     svg.innerHTML=`<defs>${C.map((c,j)=>`<marker id="ar${id}_${j}" markerWidth="10" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L10,4.5 L0,9 z" fill="${c}"/></marker>`).join("")}</defs>`;
-    const P=page.getBoundingClientRect();
     for(let j=0;j<6;j++){
-      const r=document.getElementById(`b${id}_${j}`).getBoundingClientRect(), left=j<3, k=j%3-1;
+      const r=boxes[j], left=j<3, k=j%3-1;
       const x1=(left?cr.left+8:cr.right-8)-P.left, y1=cr.top+cr.height/2+k*cr.height*0.28-P.top;
       const x2=(left?r.right:r.left)-P.left+(left?4:-4), y2=r.top+r.height*0.28-P.top, mx=(x1+x2)/2;
       const p=document.createElementNS(NS,"path");
@@ -143,7 +154,8 @@ function draw(){
 }
 
 document.getElementById("q").addEventListener("input",e=>{query=e.target.value.trim(); render();});
-window.addEventListener("resize",draw);
+let resizeRaf=0;
+window.addEventListener("resize",()=>{ cancelAnimationFrame(resizeRaf); resizeRaf=requestAnimationFrame(()=>draw()); });
 const upBtn = document.getElementById("up");
 window.addEventListener("scroll",()=>upBtn.classList.toggle("show", window.scrollY > 400),{passive:true});
 upBtn.addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
@@ -151,5 +163,5 @@ document.getElementById("maps").addEventListener("click",e=>{
   const hd = e.target.closest(".box .hd");
   if (hd && window.matchMedia("(max-width:1000px)").matches) hd.parentElement.classList.toggle("open");
 });
-document.addEventListener("toggle",draw,true);
+document.addEventListener("toggle",e=>{ const m=e.target.closest(".page"); if (m) draw(m); },true);
 render();
