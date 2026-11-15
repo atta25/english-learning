@@ -23,6 +23,27 @@ const SHORT = {"Grammar: Tenses & Verbs":"Tenses","Grammar: Structures":"Structu
 const ESC = {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"};
 const esc = s => String(s).replace(/[&<>"']/g, c => ESC[c]);
 
+// Search: accent-insensitive, every word must match at the start of a word, results ranked by where it matches.
+const norm = s => " " + String(s).normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]+/g," ").trim() + " ";
+const SEARCH = ALL.map(m => ({
+  title: norm(m.t+" "+m.es),
+  head: norm(m.boxes.map(b=>b.h+" "+b.es).join(" ")),
+  cat: norm(m.cat),
+  body: norm([m.d, ...m.boxes.flatMap(b=>[...b.i.flat(), ...b.ex]), ...m.qs.flatMap(x=>[x.q,x.a])].join(" "))
+}));
+const WEIGHTS = [["title",10],["cat",6],["head",5],["body",1]];
+// Returns the relevance score of map m for the given words, or 0 if any word is missing.
+function score(m, words){
+  const f = SEARCH[m.id];
+  let total = 0;
+  for (const w of words) {
+    const hit = WEIGHTS.find(([k]) => f[k].includes(" "+w));
+    if (!hit) return 0;
+    total += hit[1];
+  }
+  return total;
+}
+
 function renderTabs(){
   const t = document.getElementById("tabs");
   t.innerHTML = ["All",...cats].map(c=>`<button class="${c===curCat?"on":""}" data-c="${esc(c)}">${c==="All"?"📚 All":esc(SHORT[c]||c)} <small>(${c==="All"?ALL.length:ALL.filter(m=>m.cat===c).length})</small></button>`).join("");
@@ -87,10 +108,13 @@ function paint(){
   requestAnimationFrame(()=>draw());
 }
 function render(){
-  const q = query.toLowerCase();
+  const words = norm(query).trim().split(" ").filter(Boolean);
   const fl = curLvl;
-  const list = ALL.filter(m => (curCat==="All"||m.cat===curCat) && (!fl||m.lvl===fl) &&
-    (!q || (m.t+" "+m.es+" "+m.cat).toLowerCase().includes(q)));
+  let list = ALL.filter(m => (curCat==="All"||m.cat===curCat) && (!fl||m.lvl===fl));
+  if (words.length) {
+    const scores = new Map(list.map(m => [m.id, score(m, words)]));
+    list = list.filter(m => scores.get(m.id) > 0).sort((a,b) => scores.get(b.id)-scores.get(a.id) || a.id-b.id);
+  }
   renderTabs();
   renderSeg();
   document.getElementById("count").textContent = `${list.length} mapas`;
@@ -155,7 +179,12 @@ function draw(only){
   });
 }
 
-document.getElementById("q").addEventListener("input",e=>{query=e.target.value.trim(); render();});
+let searchTimer=0;
+document.getElementById("q").addEventListener("input",e=>{
+  const v=e.target.value.trim();
+  clearTimeout(searchTimer);
+  searchTimer=setTimeout(()=>{ query=v; render(); },150);
+});
 let resizeRaf=0;
 window.addEventListener("resize",()=>{ cancelAnimationFrame(resizeRaf); resizeRaf=requestAnimationFrame(()=>draw()); });
 const upBtn = document.getElementById("up");
