@@ -143,9 +143,11 @@ function draw(only){
     for(let j=0;j<6;j++){
       const r=boxes[j], left=j<3, k=j%3-1;
       const x1=(left?cr.left+8:cr.right-8)-P.left, y1=cr.top+cr.height/2+k*cr.height*0.28-P.top;
-      const x2=(left?r.right:r.left)-P.left+(left?4:-4), y2=r.top+r.height*0.28-P.top, mx=(x1+x2)/2;
+      const x2=(left?r.right:r.left)-P.left+(left?4:-4), y2=r.top+r.height*0.28-P.top;
+      // end with a straight horizontal stub so the dotted line meets the middle of the arrowhead base
+      const stub=Math.min(30,Math.abs(x1-x2)/2), xe=left?x2+stub:x2-stub, mx=(x1+xe)/2;
       const p=document.createElementNS(NS,"path");
-      p.setAttribute("d",`M${x1},${y1} C${mx},${y1} ${mx},${y2} ${x2},${y2}`);
+      p.setAttribute("d",`M${x1},${y1} C${mx},${y1} ${mx},${y2} ${xe},${y2} L${x2},${y2}`);
       p.setAttribute("fill","none"); p.setAttribute("stroke",C[j]); p.setAttribute("stroke-width","3");
       p.setAttribute("stroke-linecap","round"); p.setAttribute("stroke-dasharray","1 7"); p.setAttribute("marker-end",`url(#ar${id}_${j})`);
       svg.appendChild(p);
