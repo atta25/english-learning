@@ -70,7 +70,7 @@ function pic(emojis){
 }
 
 function mapHTML(m){
-  const art = ART[m.t] || {};
+  const art = ART[m.slug] || {};
   const mascot = art.mascot || MASCOTS[m.id % MASCOTS.length];
   const scene = art.scene || [m.icon];
   const box = (b,j)=>`<div class="box${j===0?" open":""}" id="b${m.id}_${j}" style="--c:${C[j%6]}">

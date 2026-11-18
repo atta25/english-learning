@@ -1,5 +1,5 @@
 window.MAPS = (window.MAPS||[]).concat([
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"A2", icon:"👋", t:"Greetings & Small Talk", es:"Saludos y charla informal", d:"Cómo saludar y conversar de forma ligera, al estilo británico.",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"A2", icon:"👋", slug:"greetings-and-small-talk", t:"Greetings & Small Talk", es:"Saludos y charla informal", d:"Cómo saludar y conversar de forma ligera, al estilo británico.",
  boxes:[
   {e:"🙋", h:"Saying hello", es:"Saludos habituales", i:[["Hello / Hi","Hola"],["Morning!","¡Buenos días! (informal)"],["Good afternoon","Buenas tardes (más formal)"]], ex:["Morning! Lovely day, isn't it?","¡Buenos días! Qué día tan agradable, ¿verdad?"]},
   {e:"🤝", h:"You alright?", es:"El saludo británico típico", i:[["You alright?","¿Qué tal? (no es una pregunta real)"],["Alright, mate?","¿Qué pasa, amigo?"],["How do you do?","Mucho gusto (muy formal)"]], ex:["Hiya! You alright?","¡Hola! ¿Qué tal?"]},
@@ -12,7 +12,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Fill the gap: '____ weather, isn't it?' (Nice / Good morning)", a:"Nice — 'Nice weather, isn't it?' abre una charla típica británica."},
   {q:"Rewrite more naturally: 'I must leave now.' (Right, I'd ...)", a:"Right, I'd better get going. — más natural y suave para despedirse."}
  ]},
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"A2", icon:"🧑‍🤝‍🧑", t:"Introducing Yourself & Others", es:"Presentarse y presentar a otros", d:"Frases para presentarte y presentar a alguien con naturalidad.",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"A2", icon:"🧑‍🤝‍🧑", slug:"introducing-yourself-and-others", t:"Introducing Yourself & Others", es:"Presentarse y presentar a otros", d:"Frases para presentarte y presentar a alguien con naturalidad.",
  boxes:[
   {e:"🙂", h:"Introducing yourself", es:"Presentarte", i:[["I'm Ana, nice to meet you.","Soy Ana, encantada."],["My name's Carlos.","Me llamo Carlos."],["I'm from Madrid, in Spain.","Soy de Madrid, en España."]], ex:["Hi, I'm Ana. I'm here for the course.","Hola, soy Ana. Vengo por el curso."]},
   {e:"🤝", h:"Introducing someone", es:"Presentar a alguien", i:[["This is my friend, Tom.","Este es mi amigo Tom."],["Let me introduce you to Sarah.","Deja que te presente a Sarah."],["Have you met Jo?","¿Conoces a Jo?"]], ex:["Have you two met? This is Tom.","¿Ya se conocen? Este es Tom."]},
@@ -25,7 +25,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose the best reply to 'How do you do?' – (a) 'Fine, thanks.' (b) 'How do you do?'", a:"(b) — es una fórmula muy formal; se responde con la misma frase."},
   {q:"Rewrite more formally: 'This is my boss, Mr Hill.' (May I ...)", a:"May I introduce my boss, Mr Hill? — presentación formal."}
  ]},
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"A2", icon:"🙏", t:"Polite Requests", es:"Pedir cosas con educación", d:"Cómo pedir favores de forma amable, como lo hacen los británicos.",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"A2", icon:"🙏", slug:"polite-requests", t:"Polite Requests", es:"Pedir cosas con educación", d:"Cómo pedir favores de forma amable, como lo hacen los británicos.",
  boxes:[
   {e:"🙋", h:"Could you...?", es:"¿Podrías...?", i:[["Could you pass the salt, please?","¿Me pasas la sal, por favor?"],["Would you mind + -ing?","¿Te importaría...?"]], ex:["Would you mind opening the window?","¿Te importaría abrir la ventana?"]},
   {e:"🧸", h:"Softening phrases", es:"Suavizar la petición", i:[["I was wondering if you could...","Me preguntaba si podrías..."],["Sorry to bother you, but...","Perdona la molestia, pero..."],["Excuse me, could I just...","Disculpa, ¿podría...?"]], ex:["Sorry to bother you, but could you help me?","Perdona la molestia, pero ¿podrías ayudarme?"]},
@@ -38,7 +38,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose the best reply to 'Could you close the door?' – (a) 'Of course.' (b) 'Yes, I could.'", a:"(a) — 'Of course' acepta la petición; 'Yes, I could' suena raro."},
   {q:"Rewrite more politely: 'Give me a pen.'", a:"Could you give me a pen, please? / Would you mind passing me a pen?"}
  ]},
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"B1", icon:"🎁", t:"Offering & Inviting", es:"Ofrecer e invitar", d:"Cómo ofrecer ayuda o comida e invitar a alguien a un plan.",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"B1", icon:"🎁", slug:"offering-and-inviting", t:"Offering & Inviting", es:"Ofrecer e invitar", d:"Cómo ofrecer ayuda o comida e invitar a alguien a un plan.",
  boxes:[
   {e:"🍵", h:"Offering food & drink", es:"Ofrecer algo", i:[["Would you like a cup of tea?","¿Quieres una taza de té?"],["Can I get you a drink?","¿Te traigo algo de beber?"],["Help yourself to biscuits.","Sírvete galletas."]], ex:["Would you like a cuppa?","¿Te apetece un té?"]},
   {e:"🛠️", h:"Offering help", es:"Ofrecer ayuda", i:[["Can I give you a hand?","¿Te echo una mano?"],["Shall I carry that for you?","¿Te lo llevo?"],["Let me get that.","Deja, yo me encargo."]], ex:["Shall I open the door for you?","¿Te abro la puerta?"]},
@@ -51,7 +51,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose the best reply to 'Would you like a biscuit?' – (a) 'Yes, please.' (b) 'Yes, I like.'", a:"(a) — 'Yes, please' es la respuesta natural al ofrecimiento."},
   {q:"Rewrite as an invitation: 'Come to the pub with us.' (Do you fancy ...)", a:"Do you fancy coming to the pub with us? — 'fancy + -ing'."}
  ]},
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"B1", icon:"✅", t:"Accepting & Refusing", es:"Aceptar y rechazar con tacto", d:"Cómo decir sí o no sin sonar maleducado.",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"B1", icon:"✅", slug:"accepting-and-refusing", t:"Accepting & Refusing", es:"Aceptar y rechazar con tacto", d:"Cómo decir sí o no sin sonar maleducado.",
  boxes:[
   {e:"😊", h:"Enthusiastic yes", es:"Aceptar con ganas", i:[["I'd love to!","¡Me encantaría!"],["That sounds great.","Suena genial."],["Brilliant, thanks!","¡Genial, gracias!"]], ex:["That sounds great. What time?","Suena genial. ¿A qué hora?"]},
   {e:"🙂", h:"Simple yes", es:"Aceptar sin más", i:[["Yes, please.","Sí, por favor."],["Go on, then.","Bueno, venga."],["Why not?","¿Por qué no?"]], ex:["Go on, then, just a small slice.","Venga, solo un trozo pequeño."]},
@@ -64,7 +64,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose the best reply to 'Fancy a drink tonight?' (you're busy) – (a) 'No.' (b) 'I'd love to, but I've got plans.'", a:"(b) — da las gracias y una razón; (a) suena brusco."},
   {q:"Rewrite more politely: 'I can't come.' (I'm afraid ...)", a:"I'm afraid I can't come. — 'I'm afraid' suaviza el rechazo."}
  ]},
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"B1", icon:"😔", t:"Apologising & Forgiving", es:"Pedir perdón y perdonar", d:"El 'sorry' británico: cuándo y cómo disculparse y responder.",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"B1", icon:"😔", slug:"apologising-and-forgiving", t:"Apologising & Forgiving", es:"Pedir perdón y perdonar", d:"El 'sorry' británico: cuándo y cómo disculparse y responder.",
  boxes:[
   {e:"🙇", h:"Everyday sorry", es:"Disculpas cotidianas", i:[["Sorry!","¡Perdón!"],["Sorry about that.","Perdona por eso."],["Excuse me.","Disculpa / Con permiso."]], ex:["Sorry, I didn't see you there.","Perdón, no te vi."]},
   {e:"😟", h:"Stronger apologies", es:"Disculpas más fuertes", i:[["I'm so sorry.","Lo siento muchísimo."],["I'm terribly sorry.","Lo lamento mucho."],["I do apologise.","Le pido disculpas (formal)."]], ex:["I'm terribly sorry I'm late.","Lamento muchísimo llegar tarde."]},
@@ -77,7 +77,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose the best reply to 'Sorry, I spilt your tea!' – (a) 'Don't worry, no harm done.' (b) 'It is your fault.'", a:"(a) — perdonar con naturalidad y sin dramatizar."},
   {q:"Rewrite more formally: 'Sorry I'm late.' (I ...)", a:"I do apologise for being late. — 'I do apologise' es formal."}
  ]},
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"B1", icon:"🙌", t:"Thanking & Responding", es:"Dar las gracias y responder", d:"Formas de agradecer, de informal a formal, y cómo contestar.",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"B1", icon:"🙌", slug:"thanking-and-responding", t:"Thanking & Responding", es:"Dar las gracias y responder", d:"Formas de agradecer, de informal a formal, y cómo contestar.",
  boxes:[
   {e:"🍺", h:"Informal thanks", es:"Gracias informal", i:[["Cheers!","¡Gracias!"],["Ta","Gracias (coloquial)"],["Thanks a lot.","Muchas gracias."]], ex:["Cheers, mate, that's great.","Gracias, colega, genial."]},
   {e:"🙏", h:"Standard thanks", es:"Gracias estándar", i:[["Thank you very much.","Muchas gracias."],["Thanks for your help.","Gracias por tu ayuda."],["That's very kind of you.","Qué amable de tu parte."]], ex:["Thanks for inviting me.","Gracias por invitarme."]},
@@ -90,7 +90,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose the best formal thanks: (a) 'Ta!' (b) 'I'm most grateful for your assistance.'", a:"(b) — (a) es muy coloquial."},
   {q:"Rewrite more formally: 'Cheers for the help.'", a:"Thank you very much for your help. / I really appreciate your help."}
  ]},
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"B2", icon:"😤", t:"Making a Complaint", es:"Hacer una queja", d:"Cómo quejarte con firmeza pero con educación en situaciones reales.",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"B2", icon:"😤", slug:"making-a-complaint", t:"Making a Complaint", es:"Hacer una queja", d:"Cómo quejarte con firmeza pero con educación en situaciones reales.",
  boxes:[
   {e:"🗣️", h:"Starting politely", es:"Empezar con educación", i:[["Excuse me, I'm afraid there's a problem.","Disculpe, me temo que hay un problema."],["I'm sorry to make a fuss, but...","Perdone que me queje, pero..."]], ex:["I'm sorry to make a fuss, but this is cold.","Perdone que me queje, pero esto está frío."]},
   {e:"📉", h:"Stating the problem", es:"Exponer el problema", i:[["The soup isn't hot enough.","La sopa no está lo bastante caliente."],["It doesn't work properly.","No funciona bien."],["I've been waiting for an hour.","Llevo una hora esperando."]], ex:["I've been waiting over forty minutes.","Llevo más de cuarenta minutos esperando."]},
@@ -103,7 +103,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose the best complaint: (a) 'Your service is terrible!' (b) 'I'm sorry to make a fuss, but I've been waiting a long time.'", a:"(b) — más educado y más eficaz en el Reino Unido."},
   {q:"Rewrite more formally: 'I want my money back.' (Could I ...)", a:"Could I have a refund, please? — petición formal y cortés."}
  ]},
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"B1", icon:"🧭", t:"Asking for & Giving Directions", es:"Pedir y dar indicaciones", d:"Frases para orientarte y orientar a otros por una ciudad británica.",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"B1", icon:"🧭", slug:"asking-for-and-giving-directions", t:"Asking for & Giving Directions", es:"Pedir y dar indicaciones", d:"Frases para orientarte y orientar a otros por una ciudad británica.",
  boxes:[
   {e:"❓", h:"Asking the way", es:"Preguntar", i:[["Excuse me, how do I get to the station?","Disculpe, ¿cómo llego a la estación?"],["Is there a chemist near here?","¿Hay una farmacia cerca?"],["Where's the nearest cash machine?","¿Dónde está el cajero más cercano?"]], ex:["Excuse me, where's the nearest Tube station?","Disculpe, ¿dónde está la estación de metro más cercana?"]},
   {e:"➡️", h:"Basic directions", es:"Indicaciones básicas", i:[["Turn left / right","Gira a la izquierda / derecha"],["Go straight on","Sigue derecho"],["Take the second turning on the left","Toma la segunda a la izquierda"]], ex:["Go straight on, then turn left.","Sigue derecho y luego gira a la izquierda."]},
@@ -116,7 +116,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose the best reply to 'Sorry, I'm not from round here.' – (a) 'No problem, thanks anyway.' (b) 'Why not?'", a:"(a) — respuesta educada a quien no puede ayudar."},
   {q:"Rewrite more politely: 'Where is the station?' (Excuse me, could you tell me ...)", a:"Excuse me, could you tell me where the station is? — pregunta indirecta, orden normal."}
  ]},
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"B1", icon:"📞", t:"Talking on the Phone", es:"Hablar por teléfono", d:"Frases útiles para llamar, contestar y dejar mensajes.",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"B1", icon:"📞", slug:"talking-on-the-phone", t:"Talking on the Phone", es:"Hablar por teléfono", d:"Frases útiles para llamar, contestar y dejar mensajes.",
  boxes:[
   {e:"☎️", h:"Answering", es:"Contestar", i:[["Hello, Smith's Garage.","Taller Smith, dígame."],["Good morning, Jane speaking.","Buenos días, le habla Jane."],["Hello?","¿Hola? (al contestar)"]], ex:["Good morning, Hudson Bank, Ella speaking.","Buenos días, Banco Hudson, le atiende Ella."]},
   {e:"📲", h:"Making a call", es:"Llamar", i:[["Hello, it's Maria here.","Hola, soy María."],["Could I speak to Mr Jones, please?","¿Podría hablar con el Sr. Jones?"],["I'm calling about...","Llamo por..."]], ex:["I'm calling about your advert.","Llamo por su anuncio."]},
@@ -129,7 +129,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose the best reply to 'Can I take a message?' – (a) 'Yes, could you ask him to ring me back?' (b) 'No message is me.'", a:"(a) — petición clara y educada."},
   {q:"Rewrite more politely: 'Who is speaking?' (May I ...)", a:"May I ask who's calling? — fórmula educada para identificar al llamante."}
  ]},
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"B1", icon:"📅", t:"Booking & Making Appointments", es:"Reservar y pedir cita", d:"Cómo reservar mesa, hotel o cita médica en el Reino Unido.",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"B1", icon:"📅", slug:"booking-and-making-appointments", t:"Booking & Making Appointments", es:"Reservar y pedir cita", d:"Cómo reservar mesa, hotel o cita médica en el Reino Unido.",
  boxes:[
   {e:"🍽️", h:"Booking a table", es:"Reservar mesa", i:[["I'd like to book a table for four.","Quiero reservar mesa para cuatro."],["Do you have a table for tonight?","¿Tienen mesa para esta noche?"],["Is there a table for 8 pm?","¿Hay mesa a las 8?"]], ex:["I'd like to book a table for two at eight.","Quiero reservar mesa para dos a las ocho."]},
   {e:"🏨", h:"Booking a room", es:"Reservar habitación", i:[["I'd like a double room for two nights.","Quiero una habitación doble dos noches."],["Is breakfast included?","¿Está incluido el desayuno?"],["Do you have any vacancies?","¿Tienen habitaciones libres?"]], ex:["Do you have any vacancies this weekend?","¿Tienen habitaciones libres este fin de semana?"]},
@@ -142,7 +142,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose the best reply to 'Would Friday suit you?' – (a) 'Friday would be perfect, thank you.' (b) 'Friday I am.'", a:"(a) — acepta la hora con naturalidad."},
   {q:"Rewrite more politely: 'Change my booking to Monday.' (Could I ...)", a:"Could I change my booking to Monday, please? — petición cortés."}
  ]},
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"B1", icon:"☕", t:"Ordering at a Café or Pub", es:"Pedir en una cafetería o pub", d:"Cómo pedir bebidas y comida en un pub o café británico.",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"B1", icon:"☕", slug:"ordering-at-a-cafe-or-pub", t:"Ordering at a Café or Pub", es:"Pedir en una cafetería o pub", d:"Cómo pedir bebidas y comida en un pub o café británico.",
  boxes:[
   {e:"🛎️", h:"Ordering", es:"Hacer el pedido", i:[["Could I have a latte, please?","¿Me pone un café con leche?"],["Can I get a pint of bitter?","¿Me pone una pinta de cerveza bitter (tipo ale)?"],["I'll have the fish and chips.","Tomaré el fish and chips."]], ex:["Could I have a flat white, please?","¿Me pone un flat white, por favor?"]},
   {e:"🍺", h:"At the pub", es:"En el pub", i:[["You order at the bar.","Se pide en la barra."],["A pint of lager, please.","Una pinta de cerveza lager, por favor."],["Is food served all day?","¿Sirven comida todo el día?"]], ex:["Two pints of lager and a packet of crisps, please.","Dos pintas de lager y una bolsa de papitas fritas, por favor."]},
@@ -155,7 +155,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose the best reply to 'Eat in or take away?' – (a) 'Take away, please.' (b) 'I eat the food.'", a:"(a) — respuesta directa y educada."},
   {q:"Rewrite more politely: 'Give me a coffee.' (Could I ...)", a:"Could I have a coffee, please? — nunca pidas en imperativo."}
  ]},
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"B2", icon:"⚖️", t:"Agreeing & Disagreeing", es:"Estar de acuerdo y discrepar", d:"Cómo mostrar acuerdo o desacuerdo con distintos grados de fuerza.",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"B2", icon:"⚖️", slug:"agreeing-and-disagreeing", t:"Agreeing & Disagreeing", es:"Estar de acuerdo y discrepar", d:"Cómo mostrar acuerdo o desacuerdo con distintos grados de fuerza.",
  boxes:[
   {e:"💯", h:"Strong agreement", es:"Acuerdo total", i:[["Absolutely.","Totalmente."],["Exactly!","¡Exacto!"],["I couldn't agree more.","No podría estar más de acuerdo."]], ex:["I couldn't agree more with you.","No podría estar más de acuerdo contigo."]},
   {e:"👍", h:"Mild agreement", es:"Acuerdo moderado", i:[["I suppose so.","Supongo que sí."],["That's true.","Es verdad."],["You've got a point.","Tienes razón en eso."]], ex:["You've got a point there.","En eso tienes razón."]},
@@ -168,7 +168,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose the most polite disagreement: (a) 'You're wrong.' (b) 'I'm afraid I see it differently.'", a:"(b) — discrepar sin atacar es lo habitual en el Reino Unido."},
   {q:"Rewrite more politely: 'I don't agree with you.' (I'm not ...)", a:"I'm not sure I agree (with you). — suaviza el desacuerdo."}
  ]},
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"B2", icon:"💭", t:"Giving Opinions", es:"Dar opiniones", d:"Expresiones para opinar con matices y de forma educada.",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"B2", icon:"💭", slug:"giving-opinions", t:"Giving Opinions", es:"Dar opiniones", d:"Expresiones para opinar con matices y de forma educada.",
  boxes:[
   {e:"🗨️", h:"Stating your view", es:"Expresar tu punto de vista", i:[["In my opinion...","En mi opinión..."],["I think / I reckon...","Creo..."],["As far as I'm concerned...","Por lo que a mí respecta..."]], ex:["I reckon it's a good idea.","Creo que es buena idea."]},
   {e:"🧸", h:"Softening", es:"Suavizar", i:[["I tend to think...","Tiendo a pensar..."],["It seems to me that...","Me parece que..."],["If you ask me...","Si me preguntas..."]], ex:["It seems to me that prices are too high.","Me parece que los precios son demasiado altos."]},
@@ -181,7 +181,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose the best reply to 'What do you think of the film?' – (a) 'To be honest, I found it a bit slow.' (b) 'I am thinking the film.'", a:"(a) — opinión suavizada y natural."},
   {q:"Rewrite more tactfully: 'This idea is bad.' (It seems to me ...)", a:"It seems to me that this idea isn't ideal. — suaviza la crítica."}
  ]},
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"B1", icon:"💡", t:"Giving Advice & Making Suggestions", es:"Aconsejar y sugerir", d:"Estructuras para dar consejos y proponer ideas.",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"B1", icon:"💡", slug:"giving-advice-and-making-suggestions", t:"Giving Advice & Making Suggestions", es:"Aconsejar y sugerir", d:"Estructuras para dar consejos y proponer ideas.",
  boxes:[
   {e:"👉", h:"Should", es:"Deberías", i:[["You should see a doctor.","Deberías ver a un médico."],["You shouldn't worry.","No deberías preocuparte."],["You ought to rest.","Deberías descansar."]], ex:["You should get some sleep.","Deberías dormir un poco."]},
   {e:"🗣️", h:"If I were you", es:"Yo en tu lugar", i:[["If I were you, I'd...","Yo en tu lugar..."],["I'd advise you to...","Te aconsejaría..."],["Why don't you...?","¿Por qué no...?"]], ex:["If I were you, I'd take the train.","Yo en tu lugar iría en tren."]},
@@ -194,7 +194,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose the best reply to 'Why don't you take a day off?' – (a) 'Good idea, I might.' (b) 'Because I don't.'", a:"(a) — respuesta natural a un consejo."},
   {q:"Rewrite as softer advice: 'You must see a doctor.' (If I were you, ...)", a:"If I were you, I'd see a doctor. — consejo más suave que 'must'."}
  ]},
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"B1", icon:"🗓️", t:"Making Plans & Arrangements", es:"Hacer planes y quedar", d:"Frases para proponer, fijar y cambiar planes con amigos.",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"B1", icon:"🗓️", slug:"making-plans-and-arrangements", t:"Making Plans & Arrangements", es:"Hacer planes y quedar", d:"Frases para proponer, fijar y cambiar planes con amigos.",
  boxes:[
   {e:"❓", h:"Asking about plans", es:"Preguntar por planes", i:[["What are you up to this weekend?","¿Qué haces este fin de semana?"],["Are you doing anything on Saturday?","¿Haces algo el sábado?"],["Are you free tonight?","¿Estás libre esta noche?"]], ex:["What are you up to tonight?","¿Qué haces esta noche?"]},
   {e:"💡", h:"Proposing", es:"Proponer", i:[["Fancy a pint after work?","¿Te apetece una pinta tras el trabajo?"],["Shall we meet at six?","¿Quedamos a las seis?"],["Let's meet outside the Tube.","Quedemos fuera del metro."]], ex:["Shall we meet outside the cinema at seven?","¿Quedamos a las siete fuera del cine?"]},
@@ -207,7 +207,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose the best reply to 'Shall we say seven?' – (a) 'Sounds good.' (b) 'Yes, we shall say.'", a:"(a) — respuesta natural para confirmar."},
   {q:"Rewrite politely: 'I can't come, I have something.' (I'm afraid ...)", a:"I'm afraid I can't make it; something's come up. — excusa educada."}
  ]},
-{ cat:"Communication & British Culture", type:"Vocabulary", lvl:"B2", icon:"🧑", t:"Describing People & Places", es:"Describir personas y lugares", d:"Vocabulario y estructuras para describir con detalle.",
+{ cat:"Communication & British Culture", type:"Vocabulary", lvl:"B2", icon:"🧑", slug:"describing-people-and-places", t:"Describing People & Places", es:"Describir personas y lugares", d:"Vocabulario y estructuras para describir con detalle.",
  boxes:[
   {e:"🧍", h:"Appearance", es:"Aspecto físico", i:[["She's tall, with curly fair hair.","Es alta, con pelo rizado rubio."],["He's in his thirties.","Tiene unos treinta años."],["He's quite well-built.","Es bastante fornido."]], ex:["She's slim, with long dark hair.","Es delgada, con pelo largo y oscuro."]},
   {e:"😄", h:"Personality", es:"Personalidad", i:[["easy-going","tranquilo, de trato fácil"],["bubbly","alegre, vivaz"],["reserved","reservado"],["bossy","mandón"]], ex:["He's easy-going and very funny.","Es tranquilo y muy gracioso."]},
@@ -220,7 +220,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose the best description of someone who is calm and relaxed: (a) bossy (b) easy-going", a:"(b) easy-going — tranquilo; 'bossy' es mandón."},
   {q:"Rewrite using 'with': 'She has long dark hair and she is tall.'", a:"She's tall, with long dark hair. — 'with' para rasgos físicos."}
  ]},
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"B2", icon:"📖", t:"Telling a Story", es:"Contar una historia", d:"Expresiones narrativas para organizar y animar tu relato.",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"B2", icon:"📖", slug:"telling-a-story", t:"Telling a Story", es:"Contar una historia", d:"Expresiones narrativas para organizar y animar tu relato.",
  boxes:[
   {e:"🎬", h:"Starting", es:"Empezar", i:[["Guess what happened!","¡Adivina qué pasó!"],["It all started when...","Todo empezó cuando..."],["You'll never believe this...","No te vas a creer esto..."]], ex:["You'll never believe what happened on the bus.","No te vas a creer lo que pasó en el autobús."]},
   {e:"⏱️", h:"Sequencing", es:"Ordenar", i:[["First / then / after that","Primero / luego / después"],["Meanwhile...","Mientras tanto..."],["By the time we arrived...","Para cuando llegamos..."]], ex:["By the time I got there, it was shut.","Para cuando llegué, estaba cerrado."]},
@@ -233,7 +233,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose the best reaction to 'I met the King yesterday!' – (a) 'No way! Seriously?' (b) 'I am meeting.'", a:"(a) — reacción natural al oír una historia."},
   {q:"Rewrite to shorten the story: 'To make a long story short, we left.' (Long ...)", a:"Long story short, we left. — resumen coloquial."}
  ]},
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"B2", icon:"🎩", t:"Formal vs Informal English", es:"Inglés formal e informal", d:"Cómo adaptar el registro según la situación.",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"B2", icon:"🎩", slug:"formal-vs-informal-english", t:"Formal vs Informal English", es:"Inglés formal e informal", d:"Cómo adaptar el registro según la situación.",
  boxes:[
   {e:"👋", h:"Greetings", es:"Saludos", i:[["Hi / Hiya","Hola (informal)"],["Good morning","Buenos días (formal)"],["How do you do?","Mucho gusto (muy formal)"]], ex:["Good morning, Mr Hall.","Buenos días, Sr. Hall."]},
   {e:"🙏", h:"Requests", es:"Peticiones", i:[["Can you help me?","¿Puedes ayudarme? (informal)"],["Could you possibly help me?","¿Podría ayudarme? (formal)"],["I would be grateful if you could...","Le agradecería que..."]], ex:["I would be grateful if you could reply soon.","Le agradecería que respondiera pronto."]},
@@ -246,7 +246,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose the formal word: (a) buy (b) purchase", a:"(b) purchase — 'buy' es neutro/informal."},
   {q:"Choose the best reply in an interview to 'How are you?' – (a) 'Knackered, mate.' (b) 'Very well, thank you.'", a:"(b) — en situaciones formales evita el argot."}
  ]},
-{ cat:"Communication & British Culture", type:"Structures", lvl:"B2", icon:"✉️", t:"Writing a Formal Email or Letter", es:"Escribir un email o carta formal", d:"Estructura y frases típicas de la correspondencia formal británica.",
+{ cat:"Communication & British Culture", type:"Structures", lvl:"B2", icon:"✉️", slug:"writing-a-formal-email-or-letter", t:"Writing a Formal Email or Letter", es:"Escribir un email o carta formal", d:"Estructura y frases típicas de la correspondencia formal británica.",
  boxes:[
   {e:"🎯", h:"Opening", es:"Saludo", i:[["Dear Mr / Ms Brown,","Estimado/a Sr./Sra. Brown:"],["Dear Sir or Madam,","Estimados señores:"],["Dear Dr Evans,","Estimado Dr. Evans:"]], ex:["Dear Ms Taylor,","Estimada Sra. Taylor:"]},
   {e:"📝", h:"Purpose", es:"Motivo", i:[["I am writing to enquire about...","Le escribo para preguntar por..."],["I am writing with regard to...","Le escribo en relación con..."],["I am writing to complain about...","Le escribo para quejarme de..."]], ex:["I am writing to enquire about your course.","Le escribo para informarme sobre su curso."]},
@@ -259,7 +259,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose the best opening line: (a) 'Hi, I want info.' (b) 'I am writing to enquire about your course.'", a:"(b) — registro formal y claro."},
   {q:"Rewrite formally: 'Tell me the price.' (Could you ...)", a:"Could you let me know the price? / I would be grateful if you could confirm the price."}
  ]},
-{ cat:"Communication & British Culture", type:"Vocabulary", lvl:"B1", icon:"📱", t:"Informal Messages & Texting Abbreviations", es:"Mensajes informales y abreviaturas", d:"Abreviaturas y estilo de los mensajes entre amigos.",
+{ cat:"Communication & British Culture", type:"Vocabulary", lvl:"B1", icon:"📱", slug:"informal-messages-and-texting-abbreviations", t:"Informal Messages & Texting Abbreviations", es:"Mensajes informales y abreviaturas", d:"Abreviaturas y estilo de los mensajes entre amigos.",
  boxes:[
   {e:"💬", h:"Common abbreviations", es:"Abreviaturas comunes", i:[["BTW = by the way","por cierto"],["LOL = laughing out loud","jajaja"],["IDK = I don't know","ni idea"],["BRB = be right back","vuelvo enseguida"]], ex:["BTW, are you free tonight?","Por cierto, ¿estás libre esta noche?"]},
   {e:"🔢", h:"Numbers & letters", es:"Números y letras", i:[["2 = to / too","a / también"],["u = you","tú / usted"],["gr8 = great","genial"],["l8r = later","luego"]], ex:["See u l8r!","¡Hasta luego!"]},
@@ -272,7 +272,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose the best text reply to 'Meet at 7?' – (a) 'Sounds good, see u l8r!' (b) 'I hereby confirm my attendance.'", a:"(a) — entre amigos, informal y breve."},
   {q:"Rewrite formally: 'Thx, BTW can u send it 2day?'", a:"Thank you. By the way, could you send it today? — sin abreviaturas."}
  ]},
-{ cat:"Communication & British Culture", type:"Vocabulary", lvl:"B1", icon:"🔄", t:"British vs American Vocabulary", es:"Vocabulario británico vs americano", d:"Palabras distintas en Reino Unido y EE. UU. para el mismo objeto.",
+{ cat:"Communication & British Culture", type:"Vocabulary", lvl:"B1", icon:"🔄", slug:"british-vs-american-vocabulary", t:"British vs American Vocabulary", es:"Vocabulario británico vs americano", d:"Palabras distintas en Reino Unido y EE. UU. para el mismo objeto.",
  boxes:[
   {e:"🏠", h:"Home", es:"Hogar", i:[["flat (UK) / apartment (US)","departamento"],["lift (UK) / elevator (US)","ascensor"],["ground floor (UK) / first floor (US)","planta baja"]], ex:["I live in a flat on the ground floor.","Vivo en un departamento en la planta baja."]},
   {e:"🚗", h:"Transport", es:"Transporte", i:[["lorry / truck","camión"],["petrol / gas","gasolina"],["boot / trunk","baúl del auto (maletero)"],["motorway / freeway","autopista"]], ex:["Put the bags in the boot.","Pon las bolsas en el maletero."]},
@@ -285,7 +285,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose the British word: (a) fries (b) chips (thin, fried potato strips in a UK takeaway)", a:"(b) chips — en EE. UU. son 'fries'; ojo: 'crisps' son las de bolsa."},
   {q:"Rewrite in British English: 'I live in an apartment near the subway.'", a:"I live in a flat near the Tube/underground. — flat, Tube."}
  ]},
-{ cat:"Communication & British Culture", type:"Vocabulary", lvl:"B1", icon:"🔤", t:"British vs American Spelling", es:"Ortografía británica vs americana", d:"Patrones habituales que diferencian la ortografía de ambas variedades.",
+{ cat:"Communication & British Culture", type:"Vocabulary", lvl:"B1", icon:"🔤", slug:"british-vs-american-spelling", t:"British vs American Spelling", es:"Ortografía británica vs americana", d:"Patrones habituales que diferencian la ortografía de ambas variedades.",
  boxes:[
   {e:"🎨", h:"-our / -or", es:"-our / -or", i:[["colour / color","color"],["favourite / favorite","favorito"],["neighbour / neighbor","vecino"]], ex:["My favourite colour is blue.","Mi color favorito es el azul."]},
   {e:"🏢", h:"-re / -er", es:"-re / -er", i:[["centre / center","centro"],["theatre / theater","teatro"],["metre / meter","metro"]], ex:["The theatre is in the city centre.","El teatro está en el centro de la ciudad."]},
@@ -298,7 +298,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose the British spelling: (a) theater (b) theatre", a:"(b) theatre — británico: -re."},
   {q:"Rewrite in British spelling: 'My neighbor organized a trip to the center.'", a:"My neighbour organised a trip to the centre. — -our, -ise, -re."}
  ]},
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"B2", icon:"🎭", t:"British Humour, Understatement & Sarcasm", es:"Humor británico, ironía y sarcasmo", d:"Cómo interpretar lo que los británicos dicen (y lo que quieren decir).",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"B2", icon:"🎭", slug:"british-humour-understatement-and-sarcasm", t:"British Humour, Understatement & Sarcasm", es:"Humor británico, ironía y sarcasmo", d:"Cómo interpretar lo que los británicos dicen (y lo que quieren decir).",
  boxes:[
   {e:"🙊", h:"Understatement", es:"Quitar importancia", i:[["Not bad.","Bastante bien (elogio moderado)"],["A bit of a problem","Un problema serio"],["Not ideal","Fatal (muy malo)"]], ex:["It's a bit damp. (It's pouring.)","Está algo húmedo. (En realidad diluvia.)"]},
   {e:"🔄", h:"What they mean", es:"Lo que quieren decir", i:[["'With respect...'","No estoy de acuerdo"],["'Quite good'","Bastante bueno (a veces, solo aceptable)"],["'I'll bear it in mind'","Probablemente no lo haré"]], ex:["That's an interesting idea. (= I don't like it.)","Es una idea interesante. (= No me gusta.)"]},
@@ -311,7 +311,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose the best reply to a friend's joke 'You're a genius!' (sarcastic) – (a) 'Cheers, mate.' (b) 'Yes, I am a genius.'", a:"(a) — respuesta humilde y con humor."},
   {q:"Rewrite as British understatement: 'This is a disaster!'", a:"This isn't ideal. / It's a bit of a problem. — quitar importancia."}
  ]},
-{ cat:"Communication & British Culture", type:"Vocabulary", lvl:"B2", icon:"⚠️", t:"False Friends (Spanish–English)", es:"Falsos amigos español–inglés", d:"Palabras parecidas al español pero con significado distinto.",
+{ cat:"Communication & British Culture", type:"Vocabulary", lvl:"B2", icon:"⚠️", slug:"false-friends-spanish-english", t:"False Friends (Spanish–English)", es:"Falsos amigos español–inglés", d:"Palabras parecidas al español pero con significado distinto.",
  boxes:[
   {e:"📚", h:"Education", es:"Educación", i:[["library","biblioteca (no 'librería'; librería = bookshop)"],["college","centro de estudios (no 'colegio')"],["lecture","conferencia o clase magistral (no 'lectura')"]], ex:["I'm going to the library.","Voy a la biblioteca."]},
   {e:"😊", h:"Feelings", es:"Sentimientos", i:[["embarrassed","avergonzado (no 'embarazada')"],["sensible","sensato (no 'sensible')"],["sensitive","sensible"]], ex:["I'm embarrassed, not pregnant!","¡Estoy avergonzada, no embarazada!"]},
@@ -324,7 +324,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose the right word: 'I'm ____ about my English.' (embarrassed / pregnant)", a:"embarrassed — avergonzado; 'embarazada' = pregnant."},
   {q:"Rewrite correcting the false friend: 'I bought a book in the library.'", a:"I bought a book in the bookshop. — librería = bookshop."}
  ]},
-{ cat:"Communication & British Culture", type:"Grammar", lvl:"B1", icon:"🚧", t:"Common Mistakes of Spanish Speakers", es:"Errores comunes de hispanohablantes", d:"Errores frecuentes de gramática y vocabulario y cómo evitarlos.",
+{ cat:"Communication & British Culture", type:"Grammar", lvl:"B1", icon:"🚧", slug:"common-mistakes-of-spanish-speakers", t:"Common Mistakes of Spanish Speakers", es:"Errores comunes de hispanohablantes", d:"Errores frecuentes de gramática y vocabulario y cómo evitarlos.",
  boxes:[
   {e:"🔢", h:"Common mistakes: age & states", es:"Edad y estados", i:[["I am 20 (not 'I have 20')","Tengo 20 años"],["I am hungry","Tengo hambre"],["I am cold","Tengo frío"]], ex:["I'm hungry and I'm 20.","Tengo hambre y tengo 20 años."]},
   {e:"🧱", h:"Subject & there is", es:"Sujeto y 'there is'", i:[["It is raining (needs 'it')","Llueve (hace falta sujeto)"],["There is a problem","Hay un problema"],["He likes dogs (needs 'he')","Le gustan los perros"]], ex:["It's cold. There are people outside.","Hace frío. Hay gente fuera."]},
@@ -337,7 +337,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose the correct sentence: (a) 'I live here since 2020.' (b) 'I've lived here since 2020.'", a:"(b) — presente perfecto con 'since'."},
   {q:"Rewrite correctly: 'Is raining and have much informations.'", a:"It's raining and I have a lot of information. — sujeto 'it', 'a lot of' e 'information' incontable (sin 's')."}
  ]},
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"B2", icon:"🔀", t:"Linking Words: Contrast, Cause & Result", es:"Conectores: contraste, causa y consecuencia", d:"however, although, therefore, as a result y más para conectar ideas con claridad.",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"B2", icon:"🔀", slug:"linking-words-contrast-cause-and-result", t:"Linking Words: Contrast, Cause & Result", es:"Conectores: contraste, causa y consecuencia", d:"however, although, therefore, as a result y más para conectar ideas con claridad.",
  boxes:[
   {e:"⚔️", h:"Contrast (sentence start)", es:"Contraste", i:[["However, ...","Sin embargo, ..."],["Nevertheless, ...","No obstante, ..."],["On the other hand, ...","Por otro lado, ..."]], ex:["The hotel is cheap. However, it is noisy.","El hotel es barato. Sin embargo, es ruidoso."]},
   {e:"🔁", h:"Contrast (within a sentence)", es:"Contraste en la frase", i:[["although / even though + clause","aunque + oración"],["despite / in spite of + noun or -ing","a pesar de + sustantivo o -ing"],["whereas / while","mientras que"]], ex:["Although it rained, we enjoyed the match.","Aunque llovió, disfrutamos del partido."]},
@@ -350,7 +350,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose the best word: 'The flight was delayed ____ fog.' (because / because of)", a:"because of — antes de un sustantivo (fog)."},
   {q:"Rewrite with 'however': 'The food was lovely but the service was slow.'", a:"The food was lovely. However, the service was slow. — 'However,' con coma."}
  ]},
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"B2", icon:"➕", t:"Linking Words: Addition, Sequence & Purpose", es:"Conectores: adición, secuencia y finalidad", d:"moreover, in addition, afterwards, in order to y otros conectores útiles.",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"B2", icon:"➕", slug:"linking-words-addition-sequence-and-purpose", t:"Linking Words: Addition, Sequence & Purpose", es:"Conectores: adición, secuencia y finalidad", d:"moreover, in addition, afterwards, in order to y otros conectores útiles.",
  boxes:[
   {e:"➕", h:"Addition", es:"Añadir ideas", i:[["and / also / as well","y / también"],["in addition / moreover / furthermore","además (más formal)"],["besides","además (informal)"]], ex:["Moreover, the flat is close to the Tube.","Además, el departamento está cerca del metro."]},
   {e:"1️⃣", h:"Sequence: start", es:"Empezar la secuencia", i:[["First of all / To begin with","En primer lugar"],["Firstly, secondly, thirdly","Primero, segundo, tercero"]], ex:["First of all, let's check the map.","En primer lugar, miremos el mapa."]},
@@ -363,7 +363,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose the most formal: (a) besides (b) furthermore", a:"(b) furthermore — más formal; 'besides' es informal."},
   {q:"Rewrite with 'so that': 'I left early to catch the train.' (so that I ...)", a:"I left early so that I could catch the train. — 'so that' + oración."}
  ]},
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"B2", icon:"🗯️", t:"Discourse Markers in Speech", es:"Marcadores del discurso oral", d:"anyway, actually, to be honest, as a matter of fact, by the way: el hilo de la conversación.",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"B2", icon:"🗯️", slug:"discourse-markers-in-speech", t:"Discourse Markers in Speech", es:"Marcadores del discurso oral", d:"anyway, actually, to be honest, as a matter of fact, by the way: el hilo de la conversación.",
  boxes:[
   {e:"↪️", h:"Changing the subject", es:"Cambiar de tema", i:[["By the way, ...","Por cierto, ..."],["Speaking of which, ...","Hablando de eso, ..."],["Incidentally, ...","A propósito, ..."]], ex:["By the way, did you get my message?","Por cierto, ¿recibiste mi mensaje?"]},
   {e:"🔙", h:"Returning to a topic", es:"Retomar el tema", i:[["Anyway, as I was saying...","En fin, como decía..."],["Right, so...","Bien, entonces..."],["Back to the point...","Volviendo al tema..."]], ex:["Anyway, as I was saying, I'm moving house.","En fin, como decía, me mudo de casa."]},
@@ -376,7 +376,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose the best reply to 'Did you enjoy the match?' – (a) 'To be honest, it was a bit dull.' (b) 'Honest to be it was dull.'", a:"(a) — 'To be honest' introduce una opinión sincera."},
   {q:"Rewrite to return to the topic: 'I'm continuing what I said.' (Anyway, ...)", a:"Anyway, as I was saying... — retoma el hilo."}
  ]},
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"B2", icon:"🪶", t:"Hedging & Softening", es:"Suavizar lo que decimos", d:"I tend to think, sort of, it seems that, a bit: decir las cosas sin sonar brusco.",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"B2", icon:"🪶", slug:"hedging-and-softening", t:"Hedging & Softening", es:"Suavizar lo que decimos", d:"I tend to think, sort of, it seems that, a bit: decir las cosas sin sonar brusco.",
  boxes:[
   {e:"🧸", h:"Softening opinions", es:"Suavizar opiniones", i:[["I tend to think...","Tiendo a pensar..."],["I'd say...","Yo diría que..."],["I'm inclined to think...","Me inclino a pensar..."]], ex:["I tend to think it's too expensive.","Tiendo a pensar que es demasiado caro."]},
   {e:"🌫️", h:"Vague language", es:"Lenguaje impreciso", i:[["sort of / kind of","algo así / como que"],["a bit / a little","un poco"],["or so / or something","o así / o algo"]], ex:["It's sort of a café and sort of a bookshop.","Es como una cafetería y como una librería."]},

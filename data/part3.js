@@ -1,5 +1,5 @@
 window.MAPS = (window.MAPS||[]).concat([
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"🚀", t:"Phrasal Verbs with GET", es:"Verbos frasales con GET", d:"Uno de los verbos base más usados en el inglés cotidiano.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"🚀", slug:"phrasal-verbs-with-get", t:"Phrasal Verbs with GET", es:"Verbos frasales con GET", d:"Uno de los verbos base más usados en el inglés cotidiano.",
  boxes:[
   {e:"🚗", h:"Movement", es:"Movimiento", i:[["get on / get off","subir / bajar (bus, tren)"],["get in / get out of","subir / bajar (coche, taxi)"],["get back","volver"]], ex:["Get off at the next stop.","Bájate en la próxima parada."]},
   {e:"🤝", h:"Relationships", es:"Relaciones", i:[["get on with sb","llevarse bien con alguien"],["get together","juntarse, reunirse"],["get over sb","superar a alguien"]], ex:["I get on really well with my flatmate.","Me llevo muy bien con mi compañero de casa."]},
@@ -13,7 +13,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: I'll get back you tomorrow.", a:"I'll get back to you tomorrow — falta 'to'."}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"🎒", t:"Phrasal Verbs with TAKE", es:"Verbos frasales con TAKE", d:"Take sirve para empezar, quitar, aceptar y mucho más.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"🎒", slug:"phrasal-verbs-with-take", t:"Phrasal Verbs with TAKE", es:"Verbos frasales con TAKE", d:"Take sirve para empezar, quitar, aceptar y mucho más.",
  boxes:[
   {e:"🧥", h:"Clothes", es:"Ropa", i:[["take off sth / take sth off","quitarse (ropa), separable"],["put on ↔ take off","ponerse ↔ quitarse"]], ex:["Take your coat off and stay a while.","Quítate el abrigo y quédate un rato."]},
   {e:"✈️", h:"Planes", es:"Aviones", i:[["take off","despegar"],["land","aterrizar"]], ex:["The plane took off ten minutes late.","El avión despegó diez minutos tarde."]},
@@ -27,7 +27,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Rewrite with a phrasal verb: She started playing tennis last year.", a:"She took up tennis last year — take up: empezar una afición."}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"📦", t:"Phrasal Verbs with PUT", es:"Verbos frasales con PUT", d:"Poner, apagar, soportar y posponer: los usos clave de put.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"📦", slug:"phrasal-verbs-with-put", t:"Phrasal Verbs with PUT", es:"Verbos frasales con PUT", d:"Poner, apagar, soportar y posponer: los usos clave de put.",
  boxes:[
   {e:"👕", h:"Clothes", es:"Ropa", i:[["put on sth / put it on","ponerse (separable)"],["put sth away","guardar (separable)"]], ex:["Put your jacket on; it's freezing.","Ponte la chaqueta; hace un frío glacial."]},
   {e:"⏱️", h:"Postponing", es:"Aplazar", i:[["put off sth / put sth off","aplazar (separable)"],["put sth back","retrasar (una fecha)"]], ex:["Don't put it off any longer.","No lo aplaces más."]},
@@ -41,7 +41,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: I can't put up it.", a:"I can't put up with it — put up with es inseparable y lleva 'with'."}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"🚶", t:"Phrasal Verbs with GO", es:"Verbos frasales con GO", d:"Go cambia de significado con cada partícula.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"🚶", slug:"phrasal-verbs-with-go", t:"Phrasal Verbs with GO", es:"Verbos frasales con GO", d:"Go cambia de significado con cada partícula.",
  boxes:[
   {e:"🧭", h:"Moving", es:"Movimiento", i:[["go away","irse"],["go back","volver"],["go out","salir"]], ex:["Go away! I'm busy.","¡Vete! Estoy ocupado."]},
   {e:"🎉", h:"Social life", es:"Vida social", i:[["go out with sb","salir con alguien"],["go out for a meal","salir a cenar"]], ex:["We're going out for a curry tonight.","Esta noche salimos a cenar un curry."]},
@@ -55,7 +55,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: What is going out here?", a:"What is going on here? — go on: pasar, ocurrir."}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"🚪", t:"Phrasal Verbs with COME", es:"Verbos frasales con COME", d:"Llegar, aparecer, recuperarse y ocurrírsele a uno.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"🚪", slug:"phrasal-verbs-with-come", t:"Phrasal Verbs with COME", es:"Verbos frasales con COME", d:"Llegar, aparecer, recuperarse y ocurrírsele a uno.",
  boxes:[
   {e:"📍", h:"Arriving", es:"Llegar", i:[["come in","entrar"],["come over","venir a casa"],["come back","volver"]], ex:["Come over for tea on Sunday.","Ven a casa a tomar el té el domingo."]},
   {e:"💡", h:"Ideas", es:"Ideas", i:[["come up with","idear"],["come to mind","venir a la mente"]], ex:["She came up with a brilliant idea.","Se le ocurrió una idea genial."]},
@@ -69,7 +69,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: I'm coming up with a cold.", a:"I'm coming down with a cold — come down with: contraer una enfermedad."}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"🔄", t:"Phrasal Verbs with TURN", es:"Verbos frasales con TURN", d:"Encender, apagar, rechazar y resultar: todo con turn.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"🔄", slug:"phrasal-verbs-with-turn", t:"Phrasal Verbs with TURN", es:"Verbos frasales con TURN", d:"Encender, apagar, rechazar y resultar: todo con turn.",
  boxes:[
   {e:"💡", h:"Devices", es:"Aparatos", i:[["turn on / turn it on","encender (separable)"],["turn off / turn it off","apagar (separable)"]], ex:["Turn the telly off, please.","Apaga la tele, por favor."]},
   {e:"🔊", h:"Volume", es:"Volumen", i:[["turn up","subir el volumen"],["turn down","bajar el volumen / rechazar"]], ex:["Turn the music down a bit.","Baja un poco la música."]},
@@ -83,7 +83,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: Turn off it, please.", a:"Turn it off, please — el pronombre va en medio."}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"👀", t:"Phrasal Verbs with LOOK", es:"Verbos frasales con LOOK", d:"Mirar, buscar, cuidar y respetar según la partícula.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"👀", slug:"phrasal-verbs-with-look", t:"Phrasal Verbs with LOOK", es:"Verbos frasales con LOOK", d:"Mirar, buscar, cuidar y respetar según la partícula.",
  boxes:[
   {e:"🔍", h:"Searching", es:"Buscar", i:[["look for","buscar"],["look up (a word)","buscar en el diccionario"]], ex:["Look the word up in the dictionary.","Busca la palabra en el diccionario."]},
   {e:"🍼", h:"Caring", es:"Cuidar", i:[["look after","cuidar"],["look out for","estar atento a"]], ex:["She looks after her gran.","Cuida de su abuela."]},
@@ -97,7 +97,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: The police are looking in the robbery.", a:"The police are looking into the robbery — look into: investigar."}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"🎁", t:"Phrasal Verbs with GIVE", es:"Verbos frasales con GIVE", d:"Rendirse, repartir, devolver y dejar de hacer algo.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"🎁", slug:"phrasal-verbs-with-give", t:"Phrasal Verbs with GIVE", es:"Verbos frasales con GIVE", d:"Rendirse, repartir, devolver y dejar de hacer algo.",
  boxes:[
   {e:"🏳️", h:"Surrender", es:"Rendirse", i:[["give up","rendirse / dejar"],["give in","ceder"]], ex:["Don't give up! You're nearly there.","¡No te rindas! Casi lo has logrado."]},
   {e:"🚭", h:"Quitting habits", es:"Dejar hábitos", i:[["give up smoking","dejar de fumar"],["give sth up","renunciar a algo (separable)"]], ex:["He gave up smoking last year.","Dejó de fumar el año pasado."]},
@@ -111,7 +111,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: He gave up to smoke last year.", a:"He gave up smoking last year — give up + -ing."}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B2", icon:"🧩", t:"Phrasal Verbs with SET", es:"Verbos frasales con SET", d:"Empezar viajes, montar negocios y preparar cosas con set.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B2", icon:"🧩", slug:"phrasal-verbs-with-set", t:"Phrasal Verbs with SET", es:"Verbos frasales con SET", d:"Empezar viajes, montar negocios y preparar cosas con set.",
  boxes:[
   {e:"🧳", h:"Journeys", es:"Viajes", i:[["set off / set out","ponerse en camino"],["set off for","salir hacia"]], ex:["We set off at dawn.","Salimos al amanecer."]},
   {e:"🏢", h:"Starting up", es:"Fundar", i:[["set up a business","montar un negocio"],["set up a meeting","organizar una reunión"]], ex:["She set up her own company.","Montó su propia empresa."]},
@@ -125,7 +125,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: The delay set back us two hours.", a:"The delay set us back two hours — con pronombre, se separa."}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B2", icon:"🧺", t:"Phrasal Verbs with BRING", es:"Verbos frasales con BRING", d:"Traer, criar, provocar y sacar temas con bring.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B2", icon:"🧺", slug:"phrasal-verbs-with-bring", t:"Phrasal Verbs with BRING", es:"Verbos frasales con BRING", d:"Traer, criar, provocar y sacar temas con bring.",
  boxes:[
   {e:"🎒", h:"Carrying", es:"Traer", i:[["bring along","traer consigo"],["bring back","devolver / recordar"]], ex:["Bring a friend along on Friday.","Trae a un amigo el viernes."]},
   {e:"👶", h:"Raising", es:"Criar", i:[["bring up","criar"],["be brought up","ser criado"]], ex:["She was brought up in Manchester.","Se crio en Mánchester."]},
@@ -139,7 +139,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Rewrite with a phrasal verb: They moved the exam to an earlier date.", a:"They brought the exam forward — bring forward: adelantar."}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"🏃", t:"Phrasal Verbs with RUN", es:"Verbos frasales con RUN", d:"Quedarse sin algo, atropellar, dirigir y encontrarse con alguien.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"🏃", slug:"phrasal-verbs-with-run", t:"Phrasal Verbs with RUN", es:"Verbos frasales con RUN", d:"Quedarse sin algo, atropellar, dirigir y encontrarse con alguien.",
  boxes:[
   {e:"⛽", h:"Running out", es:"Agotarse", i:[["run out of sth","quedarse sin algo"],["run out","acabarse"]], ex:["We've run out of petrol.","Nos hemos quedado sin gasolina."]},
   {e:"🚗", h:"Accidents", es:"Accidentes", i:[["run over sb","atropellar"],["run into","chocar con"]], ex:["A van nearly ran me over.","Una furgoneta casi me atropella."]},
@@ -153,7 +153,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: We have run out petrol.", a:"We have run out of petrol — falta 'of'."}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"💥", t:"Phrasal Verbs with BREAK", es:"Verbos frasales con BREAK", d:"Romper, averiarse, interrumpir y empezar con break.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"💥", slug:"phrasal-verbs-with-break", t:"Phrasal Verbs with BREAK", es:"Verbos frasales con BREAK", d:"Romper, averiarse, interrumpir y empezar con break.",
  boxes:[
   {e:"🚙", h:"Machines", es:"Máquinas", i:[["break down","averiarse"],["a breakdown","una avería"]], ex:["Our car broke down on the M25.","Nuestro coche se averió en la M25."]},
   {e:"💔", h:"Relationships", es:"Relaciones", i:[["break up (with sb)","romper con alguien"],["split up","separarse"]], ex:["They broke up last month.","Rompieron el mes pasado."]},
@@ -167,7 +167,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: They broke down last month (their relationship ended).", a:"They broke up last month — break up: romper una relación."}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"🖐️", t:"Phrasal Verbs with PICK", es:"Verbos frasales con PICK", d:"Recoger, elegir, aprender y mejorar con pick.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"🖐️", slug:"phrasal-verbs-with-pick", t:"Phrasal Verbs with PICK", es:"Verbos frasales con PICK", d:"Recoger, elegir, aprender y mejorar con pick.",
  boxes:[
   {e:"🚕", h:"Collecting", es:"Recoger", i:[["pick sb up","recoger a alguien (separable)"],["drop sb off","dejar a alguien (en coche)"]], ex:["I'll pick you up at the station.","Te recogeré en la estación."]},
   {e:"🧸", h:"Lifting", es:"Levantar", i:[["pick up sth","levantar / recoger del suelo"],["pick it up","recógelo (pronombre en medio)"]], ex:["Pick your toys up, please.","Recoge tus juguetes, por favor."]},
@@ -181,7 +181,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: I'll pick up you at eight.", a:"I'll pick you up at eight — con pronombre, se separa."}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"☎️", t:"Phrasal Verbs with CALL", es:"Verbos frasales con CALL", d:"Llamar, cancelar, visitar y exigir con call.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"☎️", slug:"phrasal-verbs-with-call", t:"Phrasal Verbs with CALL", es:"Verbos frasales con CALL", d:"Llamar, cancelar, visitar y exigir con call.",
  boxes:[
   {e:"📱", h:"Phoning", es:"Llamar", i:[["call back","devolver la llamada"],["ring sb up","llamar por teléfono (UK)"]], ex:["I'll call you back in ten minutes.","Te devuelvo la llamada en diez minutos."]},
   {e:"❌", h:"Cancelling", es:"Cancelar", i:[["call off sth","cancelar"],["call it off","cancelarlo (pronombre en medio)"]], ex:["They called off the match.","Cancelaron el partido."]},
@@ -195,7 +195,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Rewrite with an idiom using 'day': Let's stop working for today.", a:"Let's call it a day — dejarlo por hoy."}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B2", icon:"🧷", t:"Separable vs Inseparable Phrasal Verbs", es:"Verbos frasales separables e inseparables", d:"Dónde colocar el pronombre; incluye keep, carry, cut y get.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B2", icon:"🧷", slug:"separable-vs-inseparable-phrasal-verbs", t:"Separable vs Inseparable Phrasal Verbs", es:"Verbos frasales separables e inseparables", d:"Dónde colocar el pronombre; incluye keep, carry, cut y get.",
  boxes:[
   {e:"↔️", h:"Separable", es:"Separables", i:[["turn the light off","apagar la luz"],["turn it off","con pronombre: en medio"]], ex:["Pick it up, please.","Recógelo, por favor."]},
   {e:"🔒", h:"Inseparable", es:"Inseparables", i:[["look after the kids","cuidar a los niños"],["look after them","con pronombre: después"]], ex:["She takes after her mum.","Se parece a su madre."]},
@@ -209,7 +209,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: She looks it after.", a:"She looks after it — look after es inseparable."}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"🧳", t:"Phrasal Verbs for Travel", es:"Verbos frasales para viajar", d:"Check in, set off, pick up: todo lo que necesitas en un viaje.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"🧳", slug:"phrasal-verbs-for-travel", t:"Phrasal Verbs for Travel", es:"Verbos frasales para viajar", d:"Check in, set off, pick up: todo lo que necesitas en un viaje.",
  boxes:[
   {e:"🛫", h:"Airport", es:"Aeropuerto", i:[["check in","facturar / registrarse"],["take off","despegar"],["touch down","aterrizar"]], ex:["We checked in two hours early.","Facturamos dos horas antes."]},
   {e:"🚆", h:"Public transport", es:"Transporte público", i:[["get on / get off","subir / bajar"],["change at","hacer transbordo en"]], ex:["Change at King's Cross.","Haz transbordo en King's Cross."]},
@@ -223,7 +223,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: We checked out the airport two hours early.", a:"We checked in at the airport — check in: facturar."}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B2", icon:"💼", t:"Phrasal Verbs for Work & Study", es:"Verbos frasales para trabajo y estudio", d:"Verbos esenciales en la oficina, la universidad y las entrevistas.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B2", icon:"💼", slug:"phrasal-verbs-for-work-and-study", t:"Phrasal Verbs for Work & Study", es:"Verbos frasales para trabajo y estudio", d:"Verbos esenciales en la oficina, la universidad y las entrevistas.",
  boxes:[
   {e:"📄", h:"Applying", es:"Solicitar", i:[["apply for","solicitar"],["fill in a form","rellenar un formulario"],["send off","enviar por correo"]], ex:["I've applied for a job in Bristol.","He solicitado un trabajo en Bristol."]},
   {e:"🤝", h:"Employment", es:"Empleo", i:[["take on","contratar"],["lay off","despedir por reducción"],["step down","renunciar a un cargo"]], ex:["The firm is taking on ten staff.","La empresa contratará a diez personas."]},
@@ -237,7 +237,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: I'm revising to my exams.", a:"I'm revising for my exams — revise for."}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B2", icon:"❤️", t:"Phrasal Verbs for Relationships & Feelings", es:"Verbos frasales para relaciones y sentimientos", d:"Hablar de amistad, discusiones y estados de ánimo.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B2", icon:"❤️", slug:"phrasal-verbs-for-relationships-and-feelings", t:"Phrasal Verbs for Relationships & Feelings", es:"Verbos frasales para relaciones y sentimientos", d:"Hablar de amistad, discusiones y estados de ánimo.",
  boxes:[
   {e:"😊", h:"Getting on", es:"Llevarse bien", i:[["get on with","llevarse bien con"],["hit it off","congeniar"]], ex:["We hit it off straight away.","Congeniamos al instante."]},
   {e:"💔", h:"Splitting", es:"Romper", i:[["break up","romper"],["split up","separarse"],["fall out","reñir, pelearse"]], ex:["They fell out last year.","Se pelearon el año pasado."]},
@@ -251,7 +251,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: He asked out her on Friday.", a:"He asked her out on Friday — con pronombre, se separa."}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"⚖️", t:"Make vs Do Collocations", es:"Colocaciones con make y do", d:"Make para crear o producir; do para tareas y actividades.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"⚖️", slug:"make-vs-do-collocations", t:"Make vs Do Collocations", es:"Colocaciones con make y do", d:"Make para crear o producir; do para tareas y actividades.",
  boxes:[
   {e:"🍰", h:"Make: creating", es:"Make: crear", i:[["make a cake / tea","preparar un pastel / té"],["make a mess","hacer un desastre"],["make money","ganar dinero"]], ex:["I'll make a cuppa.","Prepararé una taza de té."]},
   {e:"🗣️", h:"Make: speaking", es:"Make: hablar", i:[["make a phone call","hacer una llamada"],["make a suggestion","sugerir"],["make an excuse","inventar una excusa"]], ex:["Can I make a quick call?","¿Puedo hacer una llamada rápida?"]},
@@ -265,7 +265,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: Can you make me a favour?", a:"Can you do me a favour? — do a favour."}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"🧩", t:"Have, Take & Give Collocations", es:"Colocaciones con have, take y give", d:"Combinaciones muy naturales que suenan británicas.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"🧩", slug:"have-take-and-give-collocations", t:"Have, Take & Give Collocations", es:"Colocaciones con have, take y give", d:"Combinaciones muy naturales que suenan británicas.",
  boxes:[
   {e:"☕", h:"Have: everyday", es:"Have: cotidiano", i:[["have a shower","ducharse"],["have a cuppa","tomar un té"],["have a look","echar un vistazo"]], ex:["Let's have a cup of tea.","Tomemos una taza de té."]},
   {e:"🎉", h:"Have: fun", es:"Have: diversión", i:[["have a laugh","reírse un rato"],["have a good time","pasarlo bien"],["have a go","probar, intentarlo"]], ex:["Have a go at the quiz.","Prueba el cuestionario."]},
@@ -279,7 +279,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: She made a shower before work.", a:"She had a shower before work — have a shower."}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"🌧️", t:"British Idioms: Weather", es:"Modismos británicos: el tiempo", d:"Expresiones del tiempo que los británicos usan a diario.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"🌧️", slug:"british-idioms-weather", t:"British Idioms: Weather", es:"Modismos británicos: el tiempo", d:"Expresiones del tiempo que los británicos usan a diario.",
  boxes:[
   {e:"☔", h:"Rain", es:"Lluvia", i:[["it's raining cats and dogs","llueve a cántaros"],["it's pouring","llueve mucho"]], ex:["It's raining cats and dogs!","¡Llueve a cántaros!"]},
   {e:"🤒", h:"Feeling ill", es:"Malestar", i:[["under the weather","decaído, algo enfermo"],["a bit off colour","con mala cara"]], ex:["I'm feeling under the weather.","Me siento algo decaído."]},
@@ -293,7 +293,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Rewrite with an idiom using 'weather': I feel slightly ill today.", a:"I'm feeling under the weather today — decaído."}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"💷", t:"British Idioms: Money", es:"Modismos británicos: dinero", d:"Skint, quid y otras formas de hablar de dinero.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"💷", slug:"british-idioms-money", t:"British Idioms: Money", es:"Modismos británicos: dinero", d:"Skint, quid y otras formas de hablar de dinero.",
  boxes:[
   {e:"🪙", h:"Having none", es:"Sin dinero", i:[["skint","sin un peso (informal)"],["broke","pelado"],["hard up","apurado de dinero"]], ex:["I can't go out; I'm skint.","No puedo salir; estoy sin un peso."]},
   {e:"🛍️", h:"Expensive", es:"Caro", i:[["cost an arm and a leg","costar un ojo de la cara"],["a rip-off","un timo, un abuso"]], ex:["That bag cost an arm and a leg.","Ese bolso costó un ojo de la cara."]},
@@ -307,7 +307,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Rewrite with an idiom using 'belts': We must spend less money.", a:"We must tighten our belts — apretarnos el cinturón."}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B2", icon:"🐶", t:"British Idioms: Animals & Food", es:"Modismos británicos: animales y comida", d:"Modismos con animales y comida que no se traducen literalmente.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B2", icon:"🐶", slug:"british-idioms-animals-and-food", t:"British Idioms: Animals & Food", es:"Modismos británicos: animales y comida", d:"Modismos con animales y comida que no se traducen literalmente.",
  boxes:[
   {e:"🍰", h:"Easy", es:"Fácil", i:[["a piece of cake","pan comido"],["easy-peasy","facilísimo (informal)"]], ex:["The test was a piece of cake.","El examen fue pan comido."]},
   {e:"🐱", h:"Secrets", es:"Secretos", i:[["let the cat out of the bag","irse de la lengua"],["keep it under your hat","guardar un secreto"]], ex:["Who let the cat out of the bag?","¿Quién se fue de la lengua?"]},
@@ -321,7 +321,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Rewrite with an idiom using 'cake': The exam was very easy.", a:"The exam was a piece of cake — pan comido."}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B2", icon:"🩺", t:"British Idioms: Body & Health", es:"Modismos británicos: cuerpo y salud", d:"Expresiones con partes del cuerpo y estados de salud.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B2", icon:"🩺", slug:"british-idioms-body-and-health", t:"British Idioms: Body & Health", es:"Modismos británicos: cuerpo y salud", d:"Expresiones con partes del cuerpo y estados de salud.",
  boxes:[
   {e:"🤒", h:"Ill", es:"Enfermo", i:[["under the weather","decaído, algo enfermo"],["run down","sin energía, con las defensas bajas"]], ex:["I'm a bit under the weather.","Estoy un poco decaído."]},
   {e:"🦵", h:"Teasing", es:"Tomar el pelo", i:[["pull my leg","tomarme el pelo"],["take the mickey","burlarse (informal)"]], ex:["You're pulling my leg!","¡Me estás tomando el pelo!"]},
@@ -335,7 +335,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Rewrite with an idiom using 'feet': He got nervous just before the wedding.", a:"He got cold feet before the wedding — le entraron dudas."}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B2", icon:"⏳", t:"British Idioms: Time & Work", es:"Modismos británicos: tiempo y trabajo", d:"Frases hechas sobre tiempo, plazos y vida laboral.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B2", icon:"⏳", slug:"british-idioms-time-and-work", t:"British Idioms: Time & Work", es:"Modismos británicos: tiempo y trabajo", d:"Frases hechas sobre tiempo, plazos y vida laboral.",
  boxes:[
   {e:"⏰", h:"Time", es:"Tiempo", i:[["once in a blue moon","muy de vez en cuando"],["in the nick of time","justo a tiempo"]], ex:["We see them once in a blue moon.","Los vemos muy de tarde en tarde."]},
   {e:"🌙", h:"Long hours", es:"Largas jornadas", i:[["burn the midnight oil","trasnochar trabajando"],["work round the clock","trabajar sin parar"]], ex:["She burned the midnight oil.","Trabajó hasta altas horas de la noche."]},
@@ -349,7 +349,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Rewrite with an idiom using 'socks': You need to start working harder.", a:"You need to pull your socks up — ponerte las pilas."}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B2", icon:"🗯️", t:"British Slang & Informal Expressions", es:"Jerga británica y expresiones informales", d:"Palabras coloquiales muy británicas (solo para contextos informales).",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B2", icon:"🗯️", slug:"british-slang-and-informal-expressions", t:"British Slang & Informal Expressions", es:"Jerga británica y expresiones informales", d:"Palabras coloquiales muy británicas (solo para contextos informales).",
  boxes:[
   {e:"😊", h:"Happy / sad", es:"Alegre / triste", i:[["chuffed","encantado, orgulloso"],["gutted","hundido, decepcionado"],["made up","contentísimo"]], ex:["I'm chuffed to bits!","¡Estoy encantadísimo!"]},
   {e:"😴", h:"Tired", es:"Cansado", i:[["knackered","hecho polvo"],["shattered","agotado"],["cream-crackered","reventado (rima con knackered)"]], ex:["I'm absolutely knackered.","Estoy absolutamente hecho polvo."]},
@@ -363,7 +363,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Rewrite with a slang word starting with 'k': I'm very tired.", a:"I'm knackered — hecho polvo (informal)."}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"🔗", t:"Prepositional Verbs", es:"Verbos preposicionales", d:"Verbos que siempre llevan una preposición fija.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"🔗", slug:"prepositional-verbs", t:"Prepositional Verbs", es:"Verbos preposicionales", d:"Verbos que siempre llevan una preposición fija.",
  boxes:[
   {e:"👀", h:"Look at / listen to", es:"Mirar y escuchar", i:[["look at","mirar"],["look for","buscar"],["listen to","escuchar"]], ex:["Listen to the teacher.","Escucha al profesor."]},
   {e:"⏳", h:"Wait for", es:"Esperar", i:[["wait for","esperar"],["ask for","pedir"],["pay for","pagar"]], ex:["I'm waiting for the bus.","Estoy esperando el autobús."]},
@@ -377,7 +377,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: I'm waiting the bus.", a:"I'm waiting for the bus — falta 'for': wait for."}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"🧲", t:"Collocations: Verb + Noun (make a decision, catch a cold, take a risk)", es:"Colocaciones: verbo + sustantivo", d:"Combinaciones de verbo y nombre que los nativos usan sin pensar.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"🧲", slug:"collocations-verb-noun-make-a-decision-catch-a-cold-take-a-risk", t:"Collocations: Verb + Noun (make a decision, catch a cold, take a risk)", es:"Colocaciones: verbo + sustantivo", d:"Combinaciones de verbo y nombre que los nativos usan sin pensar.",
  boxes:[
   {e:"🤧", h:"Catch / have + illness", es:"Enfermedades", i:[["catch a cold","resfriarse"],["have a temperature","tener fiebre"],["get the flu","contraer la gripe"]], ex:["I caught a cold on the Tube.","Me resfrié en el metro."]},
   {e:"🎲", h:"Take + noun", es:"Take + nombre", i:[["take a risk","correr un riesgo"],["take a chance","arriesgarse"],["take responsibility","asumir la responsabilidad"]], ex:["Don't be afraid to take a risk.","No tengas miedo de arriesgarte."]},
@@ -391,7 +391,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: I did a big mistake yesterday.", a:"I made a big mistake yesterday — make a mistake."}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"🍵", t:"Collocations: Adjective + Noun (heavy rain, strong tea, fast food)", es:"Colocaciones: adjetivo + sustantivo", d:"Qué adjetivo va con qué nombre: heavy rain, strong tea...",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B1", icon:"🍵", slug:"collocations-adjective-noun-heavy-rain-strong-tea-fast-food", t:"Collocations: Adjective + Noun (heavy rain, strong tea, fast food)", es:"Colocaciones: adjetivo + sustantivo", d:"Qué adjetivo va con qué nombre: heavy rain, strong tea...",
  boxes:[
   {e:"🌧️", h:"Weather", es:"El tiempo", i:[["heavy rain","lluvia fuerte"],["thick fog","niebla espesa"],["strong wind","viento fuerte"]], ex:["There was heavy rain all weekend.","Hubo lluvia fuerte todo el fin de semana."]},
   {e:"🍵", h:"Food & drink", es:"Comida y bebida", i:[["strong tea / coffee","té / café fuerte"],["fast food","comida rápida"],["rich food","comida contundente"]], ex:["I like my tea strong, with a splash of milk.","Me gusta el té fuerte, con un chorrito de leche."]},
@@ -405,7 +405,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: We had big rain yesterday.", a:"We had heavy rain yesterday — heavy rain."}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B2", icon:"✨", t:"Better Words: Alternatives to good, bad, very, nice, big, say", es:"Mejores palabras: alternativas a good, bad, very, nice, big, say", d:"Enriquece tu vocabulario evitando las palabras demasiado repetidas.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"B2", icon:"✨", slug:"better-words-alternatives-to-good-bad-very-nice-big-say", t:"Better Words: Alternatives to good, bad, very, nice, big, say", es:"Mejores palabras: alternativas a good, bad, very, nice, big, say", d:"Enriquece tu vocabulario evitando las palabras demasiado repetidas.",
  boxes:[
   {e:"👍", h:"Instead of good", es:"En vez de good", i:[["excellent / brilliant","excelente / genial"],["fantastic","fantástico"],["decent","decente, bastante bueno"]], ex:["The film was absolutely brilliant.","La película fue absolutamente genial."]},
   {e:"👎", h:"Instead of bad", es:"En vez de bad", i:[["awful / terrible","horrible / terrible"],["poor","pobre, deficiente"],["rubbish","fatal (informal)"]], ex:["The service was awful.","El servicio fue horrible."]},

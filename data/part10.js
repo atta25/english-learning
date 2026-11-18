@@ -1,5 +1,5 @@
 window.MAPS = (window.MAPS||[]).concat([
-{ cat:"Grammar: Structures", type:"Grammar", lvl:"C2", icon:"📜", t:"The Subjunctive and Mandative Structures", es:"El subjuntivo y las estructuras mandativas", d:"El subjuntivo formal británico: were, should y la forma base tras verbos de exigencia.",
+{ cat:"Grammar: Structures", type:"Grammar", lvl:"C2", icon:"📜", slug:"the-subjunctive-and-mandative-structures", t:"The Subjunctive and Mandative Structures", es:"El subjuntivo y las estructuras mandativas", d:"El subjuntivo formal británico: were, should y la forma base tras verbos de exigencia.",
  boxes:[
   {e:"📋", h:"Negative and passive mandatives", es:"Mandativos negativos y pasivos", i:[["The committee ruled that the motion not be put to a vote.","El comité dictaminó que la moción no se sometiera a votación."],["It is desirable that the post be advertised.","Es deseable que el puesto se anuncie."],["It was agreed that he be reimbursed.","Se acordó que se le reembolsara."]], ex:["The court ordered that the documents be disclosed.","El tribunal ordenó que se divulgaran los documentos."]},
   {e:"🇬🇧", h:"Triggers beyond verbs", es:"Desencadenantes que no son verbos", i:[["It is a requirement that applicants be over 18.","Es un requisito que los solicitantes sean mayores de 18 años."],["Her insistence that the matter be dropped surprised us.","Su insistencia en que se dejara el asunto nos sorprendió."],["It is only right that she be compensated.","Es justo que se la indemnice."]], ex:["It is of the utmost importance that nobody leave early.","Es de suma importancia que nadie se vaya antes."]},
@@ -13,7 +13,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct: It's high time we go home.", a:"It's high time we went home."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"C2", icon:"🔃", t:"Inversion for Rhetorical Effect", es:"Inversión para efecto retórico", d:"Inversión tras negativos, 'so', 'such' y fórmulas literarias y oratorias.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"C2", icon:"🔃", slug:"inversion-for-rhetorical-effect", t:"Inversion for Rhetorical Effect", es:"Inversión para efecto retórico", d:"Inversión tras negativos, 'so', 'such' y fórmulas literarias y oratorias.",
  boxes:[
   {e:"🚫", h:"Negative adverbials", es:"Adverbiales negativos", i:[["Never have I seen such courage.","Nunca he visto tanto valor."],["Rarely does one encounter such candour.","Rara vez se encuentra tanta franqueza."],["Not once did he look back.","Ni una sola vez miró atrás."]], ex:["Seldom has a speech moved me so deeply.","Pocas veces un discurso me ha conmovido tanto."]},
   {e:"⏳", h:"Only and no sooner", es:"Only y no sooner", i:[["Only then did I realise my error.","Solo entonces me di cuenta de mi error."],["No sooner had we sat down than the lights failed.","Apenas nos sentamos, se fue la luz."],["Only by working together can we succeed.","Solo trabajando juntos podemos lograrlo."]], ex:["Hardly had she spoken when the door opened.","Apenas había hablado cuando se abrió la puerta."]},
@@ -27,7 +27,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct: Under no circumstances you should resign.", a:"Under no circumstances should you resign."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"C2", icon:"✂️", t:"Ellipsis and Substitution", es:"Elipsis y sustitución", d:"Cómo omitir o sustituir palabras sin perder claridad, en habla y escritura.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"C2", icon:"✂️", slug:"ellipsis-and-substitution", t:"Ellipsis and Substitution", es:"Elipsis y sustitución", d:"Cómo omitir o sustituir palabras sin perder claridad, en habla y escritura.",
  boxes:[
   {e:"✂️", h:"Ellipsis after conjunctions", es:"Elipsis tras conjunciones", i:[["While waiting, she read.","Mientras esperaba, leyó."],["If necessary, call me.","Si es necesario, llámame."],["Once opened, the tin must be refrigerated.","Una vez abierta, la lata debe refrigerarse."]], ex:["Though tired, he carried on.","Aunque cansado, siguió."]},
   {e:"🔁", h:"One, the former, the latter, such", es:"One, the former, the latter, such", i:[["I prefer the red one to the blue ones.","Prefiero el rojo a los azules."],["Of the two proposals, the former is cheaper.","De las dos propuestas, la primera es más barata."],["Such is the case with most start-ups.","Ese es el caso de la mayoría de las empresas emergentes."]], ex:["Of the two, the latter is more realistic.","De las dos, la segunda es más realista."]},
@@ -41,7 +41,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct: Walking home, the rain began.", a:"Por ejemplo: Walking home, I got caught in the rain. — el sujeto elíptico debe ser quien camina."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Grammar", lvl:"C2", icon:"🏰", t:"Archaic and Literary Verb Forms", es:"Formas verbales arcaicas y literarias", d:"Thou, hath, whence y otras formas que aparecen en la Biblia, Shakespeare y la poesía.",
+{ cat:"Grammar: Structures", type:"Grammar", lvl:"C2", icon:"🏰", slug:"archaic-and-literary-verb-forms", t:"Archaic and Literary Verb Forms", es:"Formas verbales arcaicas y literarias", d:"Thou, hath, whence y otras formas que aparecen en la Biblia, Shakespeare y la poesía.",
  boxes:[
   {e:"🕯️", h:"Thou, thee, thy", es:"Pronombres arcaicos", i:[["Thou art wise.","Tú eres sabio."],["I love thee.","Te amo."],["Thy kingdom come.","Venga tu reino."]], ex:["Wherefore art thou Romeo?","¿Por qué eres tú Romeo?"]},
   {e:"✒️", h:"-eth and -est endings", es:"Terminaciones -eth y -est", i:[["He giveth and he taketh away.","Él da y él quita."],["Thou knowest the truth.","Tú conoces la verdad."],["Thou hast spoken well.","Has hablado bien."]], ex:["God loveth a cheerful giver.","Dios ama al que da con alegría."]},
@@ -55,7 +55,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct: Thou are welcome.", a:"Thou art welcome."}
  ] },
 
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"C2", icon:"🎚️", t:"Subtle Modality: Dare, Need, Ought, Shall", es:"Modalidad sutil: dare, need, ought, shall", d:"Los modales marginales y sus matices en registro formal y británico.",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"C2", icon:"🎚️", slug:"subtle-modality-dare-need-ought-shall", t:"Subtle Modality: Dare, Need, Ought, Shall", es:"Modalidad sutil: dare, need, ought, shall", d:"Los modales marginales y sus matices en registro formal y británico.",
  boxes:[
   {e:"😨", h:"Dare as modal", es:"Dare como modal", i:[["How dare you!","¡Cómo te atreves!"],["I daren't ask him.","No me atrevo a preguntarle."],["Dare we hope for better news?","¿Nos atrevemos a esperar mejores noticias?"]], ex:["I dare say you're right.","Me atrevería a decir que tienes razón."]},
   {e:"🙅", h:"Need as a modal verb", es:"Need como modal", i:[["Need I say more?","¿Hace falta que diga más?"],["There needn't be any trouble.","No tiene por qué haber problemas."],["I need hardly say how grateful we are.","Apenas hace falta decir lo agradecidos que estamos."]], ex:["You need only ask.","Basta con que preguntes."]},
@@ -69,7 +69,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct: How dare you to speak to me like that!", a:"How dare you speak to me like that!"}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"C2", icon:"🏗️", t:"Complex Noun Phrases and Nominalisation", es:"Sintagmas nominales complejos y nominalización", d:"Condensar ideas en sustantivos, típico de la prosa académica y periodística.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"C2", icon:"🏗️", slug:"complex-noun-phrases-and-nominalisation", t:"Complex Noun Phrases and Nominalisation", es:"Sintagmas nominales complejos y nominalización", d:"Condensar ideas en sustantivos, típico de la prosa académica y periodística.",
  boxes:[
   {e:"🧱", h:"Pre- and post-modification", es:"Premodificación y posmodificación", i:[["a long-awaited report on rural poverty","un esperado informe sobre la pobreza rural"],["the man standing by the door","el hombre que está junto a la puerta"],["a deeply flawed, politically motivated inquiry","una investigación muy defectuosa y de motivación política"]], ex:["The recently published study on sleep disorders has been criticised.","El estudio recién publicado sobre trastornos del sueño ha sido criticado."]},
   {e:"🔄", h:"Apposition and noun-phrase chains", es:"Aposición y cadenas nominales", i:[["Mr Ellis, a retired judge, spoke.","El Sr. Ellis, juez jubilado, habló."],["the city of Bath","la ciudad de Bath"],["the fact, so often ignored, that wages lag behind prices","el hecho, tantas veces ignorado, de que los salarios van a la zaga de los precios"]], ex:["Her book, a study of grief, won a prize.","Su libro, un estudio sobre el duelo, ganó un premio."]},
@@ -83,7 +83,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Complete: a colleague ____ my sister's (double genitive).", a:"of — a colleague of my sister's."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Grammar", lvl:"C2", icon:"🔖", t:"Articles and Determiners: Edge Cases", es:"Artículos y determinantes: casos límite", d:"Cuándo el artículo cambia el significado o se omite en usos institucionales y abstractos.",
+{ cat:"Grammar: Structures", type:"Grammar", lvl:"C2", icon:"🔖", slug:"articles-and-determiners-edge-cases", t:"Articles and Determiners: Edge Cases", es:"Artículos y determinantes: casos límite", d:"Cuándo el artículo cambia el significado o se omite en usos institucionales y abstractos.",
  boxes:[
   {e:"🏛️", h:"Institutions without the", es:"Instituciones sin the", i:[["in hospital / in the hospital (as a visitor)","hospitalizado / en el edificio (de visita)"],["at university; at the university","en la universidad (estudiar); en el edificio"],["go to prison / go to the prison","ir a prisión (como preso) / ir a la cárcel (de visita)"]], ex:["She was sent to prison for fraud.","La enviaron a prisión por fraude."]},
   {e:"🌍", h:"Generic reference", es:"Referencia genérica", i:[["The tiger is endangered.","El tigre está en peligro."],["Tigers are endangered.","Los tigres están en peligro."],["The rich get richer.","Los ricos se hacen más ricos."]], ex:["The elderly deserve respect.","Los ancianos merecen respeto."]},
@@ -97,7 +97,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct: The nature is beautiful in Wales.", a:"Nature is beautiful in Wales."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"C2", icon:"📍", t:"Fixed Prepositional Phrases and Subtle Prepositions", es:"Locuciones preposicionales y preposiciones sutiles", d:"Preposiciones que cambian de sentido o forman bloques fijos en inglés formal.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"C2", icon:"📍", slug:"fixed-prepositional-phrases-and-subtle-prepositions", t:"Fixed Prepositional Phrases and Subtle Prepositions", es:"Locuciones preposicionales y preposiciones sutiles", d:"Preposiciones que cambian de sentido o forman bloques fijos en inglés formal.",
  boxes:[
   {e:"📌", h:"Prepositional blocks", es:"Bloques fijos", i:[["in accordance with, in compliance with","de conformidad con, en cumplimiento de"],["with regard to, in respect of","con respecto a, en lo que respecta a"],["by virtue of, on behalf of","en virtud de, en nombre de"]], ex:["We acted in accordance with the rules.","Actuamos conforme a las normas."]},
   {e:"🔀", h:"Prepositions that change meaning", es:"Preposiciones que cambian el sentido", i:[["at the end vs in the end","al final (punto físico) vs finalmente"],["in the way vs on the way","estorbando vs de camino"],["beside vs besides","junto a vs además de"]], ex:["In the end, they settled out of court.","Al final, llegaron a un acuerdo extrajudicial."]},
@@ -111,7 +111,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct: in regard of your letter (formal).", a:"with regard to your letter"}
  ] },
 
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"C2", icon:"👁️", t:"Look, Glance, Gaze, Glimpse: Verbs of Seeing", es:"Look, glance, gaze, glimpse: verbos de ver", d:"Matices precisos entre verbos de mirada: duración, intención y emoción.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"C2", icon:"👁️", slug:"look-glance-gaze-glimpse-verbs-of-seeing", t:"Look, Glance, Gaze, Glimpse: Verbs of Seeing", es:"Look, glance, gaze, glimpse: verbos de ver", d:"Matices precisos entre verbos de mirada: duración, intención y emoción.",
  boxes:[
   {e:"⚡", h:"Brief looks", es:"Miradas breves", i:[["steal a glance: look quickly and secretly","steal a glance: mirar de reojo, a escondidas"],["glimpse: a partial or fleeting sight","glimpse: ver fugazmente o a medias"],["peek / peep: a furtive look","peek / peep: mirada furtiva"]], ex:["I caught a glimpse of the King's car.","Vislumbré el coche del Rey."]},
   {e:"🔭", h:"Wide-eyed and absorbed looks", es:"Miradas asombradas o absortas", i:[["goggle: stare wide-eyed in amazement","goggle: mirar con ojos como platos"],["gawp / gawk: stare stupidly (informal)","gawp / gawk: mirar con la boca abierta (informal)"],["pore over: study intently","pore over: estudiar con atención minuciosa"]], ex:["The children goggled at the fireworks.","Los niños miraron boquiabiertos los fuegos artificiales."]},
@@ -125,7 +125,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Complete: She spent hours poring ____ the old maps.", a:"over"}
  ] },
 
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"C2", icon:"🗯️", t:"Verbs of Speaking: From Murmur to Bellow", es:"Verbos de habla: de murmurar a bramar", d:"Verbos que expresan volumen, actitud y manera de hablar, muy usados en literatura.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"C2", icon:"🗯️", slug:"verbs-of-speaking-from-murmur-to-bellow", t:"Verbs of Speaking: From Murmur to Bellow", es:"Verbos de habla: de murmurar a bramar", d:"Verbos que expresan volumen, actitud y manera de hablar, muy usados en literatura.",
  boxes:[
   {e:"🤫", h:"Quiet speech", es:"Habla baja", i:[["hiss: speak in a sharp, angry whisper","hiss: decir con un siseo furioso"],["intone: speak in a solemn, level voice","intone: entonar con voz solemne y monótona"],["mumble: speak unclearly","mumble: farfullar"]], ex:["She hissed a warning in his ear.","Le siseó una advertencia al oído."]},
   {e:"📣", h:"Loud speech", es:"Habla fuerte", i:[["bellow: shout deeply and angrily","bellow: bramar"],["bawl: shout loudly and coarsely","bawl: gritar con vulgaridad"],["holler: shout (informal)","holler: gritar (informal)"]], ex:["The sergeant bellowed an order.","El sargento bramó una orden."]},
@@ -139,7 +139,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: talk at length about nothing, BrE informal.", a:"witter on"}
  ] },
 
-{ cat:"Communication & British Culture", type:"Vocabulary", lvl:"C2", icon:"🔔", t:"Cockney Rhyming Slang", es:"Jerga rimada cockney", d:"El argot rimado del este de Londres, con ejemplos que siguen vivos en el habla diaria.",
+{ cat:"Communication & British Culture", type:"Vocabulary", lvl:"C2", icon:"🔔", slug:"cockney-rhyming-slang", t:"Cockney Rhyming Slang", es:"Jerga rimada cockney", d:"El argot rimado del este de Londres, con ejemplos que siguen vivos en el habla diaria.",
  boxes:[
   {e:"🍎", h:"Everyday classics", es:"Clásicos cotidianos", i:[["apples and pears (= stairs)","escaleras"],["dog and bone (= phone)","teléfono"],["plates of meat (= feet)","pies"],["trouble and strife (= wife)","esposa"]], ex:["Pick up the dog and bone, will you?","Contesta el teléfono, ¿quieres?"]},
   {e:"🍺", h:"Pubs and drink", es:"Pubs y bebida", i:[["pig's ear (= beer)","cerveza"],["Rosie Lee (= tea)","té"],["Brahms and Liszt (= pissed, i.e. drunk)","borracho (muy coloquial)"]], ex:["Fancy a cup of Rosie?","¿Quieres un té?"]},
@@ -153,7 +153,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"What does 'use your loaf' mean?", a:"Use your head (usa la cabeza)."}
  ] },
 
-{ cat:"Communication & British Culture", type:"Vocabulary", lvl:"C2", icon:"🗺️", t:"Regional Britishisms: Scots, Geordie and Scouse", es:"Regionalismos británicos: escocés, geordie y scouse", d:"Palabras de Escocia, Newcastle y Liverpool que aparecen en la prensa y la televisión.",
+{ cat:"Communication & British Culture", type:"Vocabulary", lvl:"C2", icon:"🗺️", slug:"regional-britishisms-scots-geordie-and-scouse", t:"Regional Britishisms: Scots, Geordie and Scouse", es:"Regionalismos británicos: escocés, geordie y scouse", d:"Palabras de Escocia, Newcastle y Liverpool que aparecen en la prensa y la televisión.",
  boxes:[
   {e:"🏴󠁧󠁢󠁳󠁣󠁴󠁿", h:"Scots words", es:"Palabras escocesas", i:[["wee (= small)","pequeño"],["bairn (= child)","niño"],["dreich (= dull, wet and grey)","gris, húmedo y triste (clima)"],["braw (= fine, splendid)","estupendo"]], ex:["It's a dreich day in Glasgow.","Es un día gris y lluvioso en Glasgow."]},
   {e:"🏘️", h:"More Scots", es:"Más palabras escocesas", i:[["ken (= know)","saber"],["outwith (= outside of)","fuera de"],["glaikit (= silly, vacant)","bobo, distraído"]], ex:["Dinnae fash yersel'.","No te preocupes."]},
@@ -167,7 +167,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"What does 'nowt' mean?", a:"Nothing (Northern English)."}
  ] },
 
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"C2", icon:"🏛️", t:"Latin and Greek Roots in Learned English", es:"Raíces latinas y griegas en el inglés culto", d:"Raíces que ayudan a deducir el significado de palabras abstractas y técnicas.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"C2", icon:"🏛️", slug:"latin-and-greek-roots-in-learned-english", t:"Latin and Greek Roots in Learned English", es:"Raíces latinas y griegas en el inglés culto", d:"Raíces que ayudan a deducir el significado de palabras abstractas y técnicas.",
  boxes:[
   {e:"👁️", h:"spec / vid: to see", es:"spec / vid: ver", i:[["spectator, retrospective, perspective","espectador, retrospectivo, perspectiva"],["evidence, provide, revise","evidencia, proveer, revisar"],["introspection: looking inward","introspección: mirar hacia dentro"]], ex:["A retrospective of his work opens today.","Hoy se inaugura una retrospectiva de su obra."]},
   {e:"✍️", h:"scrib / graph: to write", es:"scrib / graph: escribir", i:[["prescribe, subscribe, transcribe","prescribir, suscribirse, transcribir"],["calligraphy, biography, graphology","caligrafía, biografía, grafología"],["inscription, manuscript","inscripción, manuscrito"]], ex:["The doctor prescribed antibiotics.","El médico recetó antibióticos."]},
@@ -181,7 +181,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"What does 'eventually' mean?", a:"Finalmente / con el tiempo (not 'eventualmente')."}
  ] },
 
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"C2", icon:"⚔️", t:"Germanic vs Latinate Doublets", es:"Dobletes germánicos y latinos", d:"Pares como ask/enquire: la palabra anglosajona es cercana y la latina más formal.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"C2", icon:"⚔️", slug:"germanic-vs-latinate-doublets", t:"Germanic vs Latinate Doublets", es:"Dobletes germánicos y latinos", d:"Pares como ask/enquire: la palabra anglosajona es cercana y la latina más formal.",
  boxes:[
   {e:"🛡️", h:"Everyday vs formal verbs", es:"Verbos cotidianos y formales", i:[["ask → enquire / inquire","preguntar → indagar / consultar"],["start → commence","empezar → comenzar"],["help → assist / aid","ayudar → asistir / auxiliar"],["buy → purchase","comprar → adquirir"]], ex:["Applicants should enquire at reception.","Los solicitantes deben preguntar en recepción."]},
   {e:"🍖", h:"The animal/meat divide", es:"Animal y carne", i:[["cow → beef, pig → pork","vaca → carne de res, cerdo → carne de cerdo"],["sheep → mutton, deer → venison","oveja → carne de oveja, ciervo → venado"],["Saxon farmers, Norman diners","Los campesinos sajones, los comensales normandos"]], ex:["We had venison at the banquet.","Comimos venado en el banquete."]},
@@ -195,7 +195,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Formal equivalent of 'find out'?", a:"ascertain"}
  ] },
 
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"C2", icon:"🔀", t:"Easily Confused Words at the Highest Level", es:"Palabras que se confunden incluso a nivel avanzado", d:"Pares como principle/principal, imply/infer o discreet/discrete que ponen a prueba a los nativos.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"C2", icon:"🔀", slug:"easily-confused-words-at-the-highest-level", t:"Easily Confused Words at the Highest Level", es:"Palabras que se confunden incluso a nivel avanzado", d:"Pares como principle/principal, imply/infer o discreet/discrete que ponen a prueba a los nativos.",
  boxes:[
   {e:"🧭", h:"principle / principal", es:"principle / principal", i:[["principle: a rule or belief","principle: principio"],["principal: main; head of a school","principal: principal; director"],["on principle; in principle","por principio; en principio"]], ex:["She refused on principle.","Se negó por principio."]},
   {e:"💬", h:"imply / infer", es:"imply / infer", i:[["The speaker implies.","El que habla insinúa."],["The listener infers.","El que escucha deduce."],["What are you implying?","¿Qué insinúas?"]], ex:["I inferred from his silence that he was angry.","Deduje de su silencio que estaba enojado."]},
@@ -209,7 +209,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Which means 'separate': discreet or discrete?", a:"discrete"}
  ] },
 
-{ cat:"Communication & British Culture", type:"Vocabulary", lvl:"C2", icon:"🎭", t:"Euphemism, Spin and Doublespeak", es:"Eufemismo, spin y lenguaje evasivo", d:"Cómo el lenguaje suaviza o disfraza realidades en política, empresa y vida social.",
+{ cat:"Communication & British Culture", type:"Vocabulary", lvl:"C2", icon:"🎭", slug:"euphemism-spin-and-doublespeak", t:"Euphemism, Spin and Doublespeak", es:"Eufemismo, spin y lenguaje evasivo", d:"Cómo el lenguaje suaviza o disfraza realidades en política, empresa y vida social.",
  boxes:[
   {e:"⚰️", h:"Military and official euphemism", es:"Eufemismo militar y oficial", i:[["friendly fire = killing your own side","fuego amigo = matar a los propios"],["enhanced interrogation = torture","interrogatorio mejorado = tortura"],["a surgical strike = a bombing raid","ataque quirúrgico = bombardeo"]], ex:["The report blamed friendly fire for the deaths.","El informe atribuyó las muertes al fuego amigo."]},
   {e:"💼", h:"Corporate spin", es:"Eufemismos corporativos", i:[["negative growth = decline","crecimiento negativo = caída"],["a career-limiting move = a blunder","un movimiento limitante de carrera = una metedura de pata"],["a sub-optimal outcome = a failure","un resultado subóptimo = un fracaso"]], ex:["Sales showed negative growth last quarter.","Las ventas mostraron un crecimiento negativo el último trimestre."]},
@@ -223,7 +223,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"What does an estate agent mean by 'cosy'?", a:"Very small (diminuto)."}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"C2", icon:"📖", t:"Proverbs and Sayings in Use", es:"Refranes y dichos en uso", d:"Refranes ingleses, a menudo abreviados, y cómo usarlos con ironía o sutileza.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"C2", icon:"📖", slug:"proverbs-and-sayings-in-use", t:"Proverbs and Sayings in Use", es:"Refranes y dichos en uso", d:"Refranes ingleses, a menudo abreviados, y cómo usarlos con ironía o sutileza.",
  boxes:[
   {e:"⏰", h:"Proverbs of caution", es:"Refranes de cautela", i:[["Don't count your chickens before they hatch.","No vendas la piel del oso antes de cazarlo."],["Once bitten, twice shy.","Gato escaldado del agua fría huye."],["Let sleeping dogs lie.","Mejor no menear el asunto."]], ex:["I'd let sleeping dogs lie.","Yo no removería el asunto."]},
   {e:"🤝", h:"Human nature", es:"Naturaleza humana", i:[["A leopard cannot change its spots.","Genio y figura hasta la sepultura."],["Familiarity breeds contempt.","La confianza da asco."],["Pride comes before a fall.","La soberbia precede a la caída."]], ex:["Familiarity breeds contempt, as they say.","La confianza da asco, como dicen."]},
@@ -237,7 +237,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Complete: A leopard cannot change its ____.", a:"spots"}
  ] },
 
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"C2", icon:"🫖", t:"Understatement and British Irony", es:"Atenuación e ironía británica", d:"Decir menos de lo que se piensa: lítotes, sarcasmo seco y cómo interpretarlo.",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"C2", icon:"🫖", slug:"understatement-and-british-irony", t:"Understatement and British Irony", es:"Atenuación e ironía británica", d:"Decir menos de lo que se piensa: lítotes, sarcasmo seco y cómo interpretarlo.",
  boxes:[
   {e:"😐", h:"Classic understatement", es:"Atenuaciones clásicas", i:[["Not bad = very good","Not bad = muy bueno"],["A bit of a problem = a disaster","Un pequeño problema = un desastre"],["Quite good = fairly good (BrE)","Quite good = bastante bueno"]], ex:["It's a bit damp out there.","Está un poco húmedo ahí fuera."]},
   {e:"🌪️", h:"Said when the opposite is true", es:"Decir lo contrario", i:[["Lovely weather! (in a downpour)","¡Qué clima precioso! (bajo la lluvia)"],["Well, that went well. (it didn't)","Pues salió bien. (no fue así)"],["Thanks a bunch!","¡Muchas gracias! (irónico)"]], ex:["Oh, brilliant. Another delay.","Oh, genial. Otro retraso."]},
@@ -251,7 +251,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"What does 'a bit of a problem' often mean?", a:"A serious problem (understatement)."}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"C2", icon:"🧵", t:"Rare Multi-word Verbs", es:"Verbos compuestos poco frecuentes", d:"Phrasal y prepositional verbs de registro alto que usan los hablantes cultos.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"C2", icon:"🧵", slug:"rare-multi-word-verbs", t:"Rare Multi-word Verbs", es:"Verbos compuestos poco frecuentes", d:"Phrasal y prepositional verbs de registro alto que usan los hablantes cultos.",
  boxes:[
   {e:"🌫️", h:"Disappear and fade", es:"Desaparecer y desvanecerse", i:[["peter out: gradually end","peter out: ir extinguiéndose"],["fizzle out: end weakly","fizzle out: quedar en nada"],["tail off: decline gradually","tail off: decaer gradualmente"]], ex:["The protest petered out by midnight.","La protesta se fue apagando hacia medianoche."]},
   {e:"🤐", h:"Concealing and revealing", es:"Ocultar y revelar", i:[["gloss over: treat superficially","gloss over: tratar de pasada"],["let on: reveal a secret","let on: dejar entrever"],["smoke out: force into the open","smoke out: sacar a la luz"]], ex:["He never let on that he knew.","Nunca dejó ver que lo sabía."]},
@@ -265,7 +265,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Which verb: resolve small problems?", a:"iron out"}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"C2", icon:"✍️", t:"Collocations for Formal and Academic Prose", es:"Colocaciones para prosa formal y académica", d:"Combinaciones de palabras que dan precisión y naturalidad a un texto formal.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"C2", icon:"✍️", slug:"collocations-for-formal-and-academic-prose", t:"Collocations for Formal and Academic Prose", es:"Colocaciones para prosa formal y académica", d:"Combinaciones de palabras que dan precisión y naturalidad a un texto formal.",
  boxes:[
   {e:"🧪", h:"Evidence and argument", es:"Pruebas y argumentos", i:[["compelling evidence","pruebas convincentes"],["a cogent argument","un argumento sólido"],["draw a conclusion","sacar una conclusión"],["substantiate a claim","fundamentar una afirmación"]], ex:["The data lend weight to the theory.","Los datos refuerzan la teoría."]},
   {e:"📈", h:"Change and trends", es:"Cambio y tendencias", i:[["a marked improvement","una mejora notable"],["a precipitous decline","un descenso abrupto"],["gain momentum","ganar impulso"]], ex:["Support for the policy has gained momentum.","El apoyo a la política ha ganado impulso."]},
@@ -279,7 +279,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Complete: The project has gained ____.", a:"momentum"}
  ] },
 
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"C2", icon:"📰", t:"Register Shift: Legalese, Academese and Journalese", es:"Cambio de registro: lenguaje legal, académico y periodístico", d:"El mismo mensaje en tres registros y cómo reconocerlos y traducirlos.",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"C2", icon:"📰", slug:"register-shift-legalese-academese-and-journalese", t:"Register Shift: Legalese, Academese and Journalese", es:"Cambio de registro: lenguaje legal, académico y periodístico", d:"El mismo mensaje en tres registros y cómo reconocerlos y traducirlos.",
  boxes:[
   {e:"⚖️", h:"Legalese", es:"Lenguaje jurídico", i:[["hereinafter, aforesaid, notwithstanding","en lo sucesivo, antedicho, no obstante"],["the party of the first part","la parte de la primera parte"],["null and void; cease and desist","nulo y sin efecto; cesar y desistir"]], ex:["The aforesaid agreement is hereby terminated.","El citado acuerdo queda por la presente rescindido."]},
   {e:"🎓", h:"Academic register", es:"Registro académico", i:[["It could be argued that...","Podría argumentarse que..."],["This paper examines...","Este artículo examina..."],["Findings suggest that...","Los resultados sugieren que..."]], ex:["The evidence would seem to indicate a trend.","Las pruebas parecen indicar una tendencia."]},
@@ -293,7 +293,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Which register: 'The tenant shall vacate the premises'?", a:"Legal (jurídico)."}
  ] },
 
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"C2", icon:"🤹", t:"Puns, Wordplay and Verbal Humour", es:"Juegos de palabras y humor verbal", d:"Dobles sentidos, zeugma, spoonerismos y juegos de palabras en titulares y chistes.",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"C2", icon:"🤹", slug:"puns-wordplay-and-verbal-humour", t:"Puns, Wordplay and Verbal Humour", es:"Juegos de palabras y humor verbal", d:"Dobles sentidos, zeugma, spoonerismos y juegos de palabras en titulares y chistes.",
  boxes:[
   {e:"🔀", h:"Puns and ambiguity", es:"Juegos de palabras y ambigüedad", i:[["I used to be a banker, but I lost interest.","Fui banquero, pero perdí el interés."],["Time flies like an arrow; fruit flies like a banana.","El tiempo vuela como una flecha; a las moscas de la fruta les gusta el plátano."],["A bicycle can't stand on its own: it's two-tyred.","La bici no se sostiene sola: está 'two-tyred' (suena como 'too tired', demasiado cansada)."]], ex:["I'm reading a book on anti-gravity: I can't put it down.","Leo un libro sobre antigravedad: no puedo soltarlo."]},
   {e:"🧷", h:"Zeugma", es:"Zeugma", i:[["She lost her keys and her temper.","Perdió las llaves y la paciencia."],["He took his hat and his leave.","Tomó su sombrero y su despedida."],["Dickens uses zeugma to comic effect.","Dickens lo usa con efecto cómico."]], ex:["He caught a bus and a cold.","Tomó un autobús y pilló un resfriado."]},
@@ -307,7 +307,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Joke: 'I used to be a banker but I lost ____.'", a:"interest"}
  ] },
 
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"C2", icon:"🌊", t:"Metaphor and Figurative Language", es:"Metáfora y lenguaje figurado", d:"Sinécdoque, metonimia, personificación, símil y metáforas muertas o vivas en el inglés cotidiano y literario.",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"C2", icon:"🌊", slug:"metaphor-and-figurative-language", t:"Metaphor and Figurative Language", es:"Metáfora y lenguaje figurado", d:"Sinécdoque, metonimia, personificación, símil y metáforas muertas o vivas en el inglés cotidiano y literario.",
  boxes:[
   {e:"🛞", h:"Synecdoche", es:"Sinécdoque", i:[["All hands on deck! (hands = sailors)","¡Todos a cubierta! (manos = marineros)"],["a new set of wheels (wheels = car)","un coche nuevo (ruedas = coche)"],["the suits (suits = senior managers)","los trajes (= los altos ejecutivos)"]], ex:["Boots on the ground are needed.","Se necesitan soldados sobre el terreno."]},
   {e:"🧭", h:"Oxymoron, paradox and hyperbole", es:"Oxímoron, paradoja e hipérbole", i:[["a deafening silence (oxymoron)","un silencio ensordecedor (oxímoron)"],["Less is more. (paradox)","Menos es más. (paradoja)"],["I've told you a million times. (hyperbole)","Te lo he dicho un millón de veces. (hipérbole)"]], ex:["It was an open secret.","Era un secreto a voces."]},
@@ -321,7 +321,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Is 'the leg of a table' a dead or fresh metaphor?", a:"Dead (muerta)."}
  ] },
 
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"C2", icon:"🪶", t:"Quotations from Great British Writers", es:"Citas de grandes escritores británicos", d:"Citas breves de dominio público de Shakespeare, Austen, Dickens y Wilde, y cómo se usan.",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"C2", icon:"🪶", slug:"quotations-from-great-british-writers", t:"Quotations from Great British Writers", es:"Citas de grandes escritores británicos", d:"Citas breves de dominio público de Shakespeare, Austen, Dickens y Wilde, y cómo se usan.",
  boxes:[
   {e:"🎭", h:"Shakespeare", es:"Shakespeare", i:[["To be, or not to be, that is the question.","Ser o no ser, esa es la cuestión."],["All that glisters is not gold. (modern: glitters)","No todo lo que brilla es oro. (hoy: glitters)"],["The course of true love never did run smooth.","El curso del amor verdadero nunca fue tranquilo."]], ex:["Brevity is the soul of wit.","La brevedad es el alma del ingenio."]},
   {e:"💍", h:"Jane Austen", es:"Jane Austen", i:[["It is a truth universally acknowledged...","Es una verdad universalmente reconocida..."],["...that a single man in possession of a good fortune must be in want of a wife.","...que un hombre soltero con fortuna necesita esposa."],["Pride and Prejudice (1813)","Orgullo y prejuicio (1813)"]], ex:["It is a truth universally acknowledged that the bus is late.","Es una verdad universal que el autobús llega tarde."]},
@@ -335,7 +335,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Who wrote 'No man is an island'?", a:"John Donne"}
  ] },
 
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"C2", icon:"🪞", t:"Hedging and Tentative Formal Speech", es:"Atenuación y habla formal tentativa", d:"Cómo suavizar afirmaciones, críticas y peticiones con precisión y cortesía.",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"C2", icon:"🪞", slug:"hedging-and-tentative-formal-speech", t:"Hedging and Tentative Formal Speech", es:"Atenuación y habla formal tentativa", d:"Cómo suavizar afirmaciones, críticas y peticiones con precisión y cortesía.",
  boxes:[
   {e:"🌫️", h:"Hedging verbs and adverbs", es:"Verbos y adverbios atenuadores", i:[["seem, appear, tend to","parecer, tender a"],["arguably, presumably, conceivably","posiblemente, presumiblemente, concebiblemente"],["to some extent, in a sense","hasta cierto punto, en cierto sentido"]], ex:["This is, arguably, his finest work.","Esta es, posiblemente, su mejor obra."]},
   {e:"🙏", h:"Tentative requests", es:"Peticiones tentativas", i:[["I wonder if you could possibly...","Me pregunto si podría usted..."],["I was wondering whether you might...","Me preguntaba si usted podría..."],["Would you mind awfully if...?","¿Le importaría muchísimo si...?"]], ex:["I wonder if you might lend me a hand.","Me pregunto si podría echarme una mano."]},

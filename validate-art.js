@@ -1,4 +1,4 @@
-// Usage: node validate-art.js  (checks data/art*.js against data/part*.js)
+// Usage: node validate-art.js  (checks data/art*.js against data/part*.js; art is keyed by map slug)
 const fs = require("fs");
 global.window = {};
 for (let p = 1; p <= 10; p++) if (fs.existsSync(`data/part${p}.js`)) new Function("window", fs.readFileSync(`data/part${p}.js`, "utf8"))(global.window);
@@ -15,13 +15,15 @@ const seg = typeof Intl.Segmenter === "function" ? new Intl.Segmenter("en", { gr
 const count = s => seg ? [...seg.segment(s)].length : [...s].length;
 const isEmoji = s => typeof s === "string" && /\p{Extended_Pictographic}|\p{Regional_Indicator}/u.test(s) && count(s) === 1;
 const errs = [];
+const seenSlugs = new Set();
 maps.forEach(m => {
-  const a = ART[m.t];
-  if (!a) { errs.push(`missing art for "${m.t}"`); return; }
+  if (seenSlugs.has(m.slug)) errs.push(`duplicate slug across files: "${m.slug}"`); seenSlugs.add(m.slug);
+  const a = ART[m.slug];
+  if (!a) { errs.push(`missing art for "${m.t}" (slug "${m.slug}")`); return; }
   if (!Array.isArray(a.scene) || a.scene.length < 4 || a.scene.length > 5 || !a.scene.every(isEmoji)) errs.push(`"${m.t}": scene must be 4-5 single emojis`);
   if (!isEmoji(a.mascot)) errs.push(`"${m.t}": mascot must be 1 emoji`);
   if (!Array.isArray(a.boxes) || a.boxes.length !== 6 || !a.boxes.every(b => Array.isArray(b) && b.length >= 2 && b.length <= 3 && b.every(isEmoji))) errs.push(`"${m.t}": boxes must be 6 arrays of 2-3 single emojis`);
 });
-Object.keys(ART).forEach(k => { if (!maps.some(m => m.t === k)) errs.push(`art key not matching any map: "${k}"`); });
+Object.keys(ART).forEach(k => { if (!maps.some(m => m.slug === k)) errs.push(`art key not matching any map slug: "${k}"`); });
 console.log(errs.length ? errs.slice(0, 60).join("\n") : `OK: art for ${maps.length} maps`);
 process.exit(errs.length ? 1 : 0);

@@ -1,5 +1,5 @@
 window.MAPS = (window.MAPS||[]).concat([
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"A1", icon:"🙋", t:"Verb To Be: am, is, are", es:"El verbo to be: am, is, are", d:"El verbo más importante del inglés: afirmativa, negativa, preguntas y respuestas cortas.",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"A1", icon:"🙋", slug:"verb-to-be-am-is-are", t:"Verb To Be: am, is, are", es:"El verbo to be: am, is, are", d:"El verbo más importante del inglés: afirmativa, negativa, preguntas y respuestas cortas.",
  boxes:[
   {e:"✅", h:"Affirmative", es:"Afirmativa", i:[["I am / I'm: I'm Sam.","Yo soy / estoy: Soy Sam."],["he/she/it is: She's a nurse.","él/ella es / está: Ella es enfermera."],["you/we/they are: We're friends.","tú/nosotros/ellos son: Somos amigos."]], ex:["He's from Manchester.","Él es de Mánchester."]},
   {e:"❌", h:"Negative", es:"Negativa", i:[["I'm not tired.","No estoy cansado."],["He isn't at home.","Él no está en casa."],["They aren't here.","Ellos no están aquí."]], ex:["It isn't expensive.","No es caro."]},
@@ -13,7 +13,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct: I have 12 years.", a:"I am 12."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"A1", icon:"🅰️", t:"A, An & The for Beginners", es:"A, an y the para principiantes", d:"Cuándo usar a, an, the o ningún artículo en frases sencillas.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"A1", icon:"🅰️", slug:"a-an-and-the-for-beginners", t:"A, An & The for Beginners", es:"A, an y the para principiantes", d:"Cuándo usar a, an, the o ningún artículo en frases sencillas.",
  boxes:[
   {e:"1️⃣", h:"A + consonant sound", es:"A + sonido consonante", i:[["a book, a car, a dog","un libro, un auto, un perro"],["a university (suena /y/)","una universidad"]], ex:["I've got a cat.","Tengo un gato."]},
   {e:"🍎", h:"An + vowel sound", es:"An + sonido vocal", i:[["an apple, an egg, an orange","una manzana, un huevo, una naranja"],["an hour (la h no suena)","una hora"]], ex:["She eats an apple every day.","Ella come una manzana cada día."]},
@@ -27,7 +27,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct: He is doctor.", a:"He is a doctor."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Grammar", lvl:"A1", icon:"📚", t:"Plural Nouns: Regular & Irregular", es:"Plurales: regulares e irregulares", d:"Cómo formar el plural de los sustantivos más comunes.",
+{ cat:"Grammar: Structures", type:"Grammar", lvl:"A1", icon:"📚", slug:"plural-nouns-regular-and-irregular", t:"Plural Nouns: Regular & Irregular", es:"Plurales: regulares e irregulares", d:"Cómo formar el plural de los sustantivos más comunes.",
  boxes:[
   {e:"➕", h:"Add -s", es:"Añade -s", i:[["book → books, car → cars","libro → libros, auto → autos"],["day → days (vocal + y)","día → días"]], ex:["I have two brothers.","Tengo dos hermanos."]},
   {e:"✨", h:"Add -es", es:"Añade -es", i:[["bus → buses, box → boxes","autobús → autobuses, caja → cajas"],["watch → watches, dish → dishes","reloj → relojes, plato → platos"]], ex:["There are three buses.","Hay tres autobuses."]},
@@ -41,7 +41,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct: There are three childs.", a:"There are three children."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Grammar", lvl:"A1", icon:"👉", t:"This, That, These & Those", es:"This, that, these y those", d:"Señalar cosas cercanas y lejanas, en singular y plural.",
+{ cat:"Grammar: Structures", type:"Grammar", lvl:"A1", icon:"👉", slug:"this-that-these-and-those", t:"This, That, These & Those", es:"This, that, these y those", d:"Señalar cosas cercanas y lejanas, en singular y plural.",
  boxes:[
   {e:"👇", h:"This (near, one)", es:"This (cerca, uno)", i:[["This is my bag.","Esta es mi bolsa."],["Is this your pen?","¿Es este tu bolígrafo?"]], ex:["This tea is hot.","Este té está caliente."]},
   {e:"👆", h:"That (far, one)", es:"That (lejos, uno)", i:[["That is my house.","Esa es mi casa."],["What's that?","¿Qué es eso?"]], ex:["That bus is full.","Ese autobús está lleno."]},
@@ -55,7 +55,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct: This apples are red.", a:"These apples are red."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Grammar", lvl:"A1", icon:"👤", t:"Subject Pronouns & Possessive Adjectives", es:"Pronombres sujeto y adjetivos posesivos", d:"I/my, you/your, he/his... para hablar de personas y de lo que tienen.",
+{ cat:"Grammar: Structures", type:"Grammar", lvl:"A1", icon:"👤", slug:"subject-pronouns-and-possessive-adjectives", t:"Subject Pronouns & Possessive Adjectives", es:"Pronombres sujeto y adjetivos posesivos", d:"I/my, you/your, he/his... para hablar de personas y de lo que tienen.",
  boxes:[
   {e:"🙋", h:"Subject pronouns", es:"Pronombres sujeto", i:[["I, you, he, she, it","yo, tú, él, ella, ello/eso"],["we, you, they","nosotros, ustedes, ellos"]], ex:["She is my sister. She is kind.","Ella es mi hermana. Es amable."]},
   {e:"🎒", h:"Possessive adjectives", es:"Adjetivos posesivos", i:[["my, your, his, her, its","mi, tu, su (de él), su (de ella), su (de eso)"],["our, your, their","nuestro, su (de ustedes), su (de ellos)"]], ex:["Their house is big.","Su casa es grande."]},
@@ -69,7 +69,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct: Is cold today.", a:"It is cold today."}
  ] },
 
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"A1", icon:"🏡", t:"Have Got: Possession", es:"Have got: posesión", d:"Decir lo que tenemos: cosas, familia y características.",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"A1", icon:"🏡", slug:"have-got-possession", t:"Have Got: Possession", es:"Have got: posesión", d:"Decir lo que tenemos: cosas, familia y características.",
  boxes:[
   {e:"✅", h:"Affirmative", es:"Afirmativa", i:[["I/you/we/they have got: I've got a bike.","Tengo una bicicleta."],["he/she/it has got: She's got a dog.","Ella tiene un perro."]], ex:["We've got two cars.","Tenemos dos autos."]},
   {e:"❌", h:"Negative", es:"Negativa", i:[["I haven't got a car.","No tengo auto."],["He hasn't got a phone.","Él no tiene teléfono."]], ex:["They haven't got any children.","No tienen hijos."]},
@@ -83,7 +83,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Short answer: Has he got a car? (No)", a:"No, he hasn't."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"A1", icon:"📍", t:"There Is & There Are", es:"There is y there are (hay)", d:"Decir qué hay en un lugar, en singular y plural.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"A1", icon:"📍", slug:"there-is-there-are-a1", t:"There Is & There Are", es:"There is y there are (hay)", d:"Decir qué hay en un lugar, en singular y plural.",
  boxes:[
   {e:"1️⃣", h:"There is (one)", es:"There is (uno)", i:[["There is a bank near here.","Hay un banco cerca de aquí."],["There's a cat on the sofa.","Hay un gato en el sofá."]], ex:["There's a park in my town.","Hay un parque en mi ciudad."]},
   {e:"👥", h:"There are (many)", es:"There are (varios)", i:[["There are two beds.","Hay dos camas."],["There are some books.","Hay unos libros."]], ex:["There are five people in my family.","Hay cinco personas en mi familia."]},
@@ -97,7 +97,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct: Is a shop near here.", a:"There is a shop near here."}
  ] },
 
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"A1", icon:"🔄", t:"Present Simple: Basics", es:"Presente simple: lo básico", d:"Hablar de rutinas y hechos: afirmativa, negativa y preguntas.",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"A1", icon:"🔄", slug:"present-simple-basics", t:"Present Simple: Basics", es:"Presente simple: lo básico", d:"Hablar de rutinas y hechos: afirmativa, negativa y preguntas.",
  boxes:[
   {e:"✅", h:"Affirmative", es:"Afirmativa", i:[["I/you/we/they + verb: I work.","Yo/tú/nosotros/ellos + verbo: Trabajo."],["he/she/it + verb-s: He works.","él/ella + verbo-s: Él trabaja."]], ex:["She lives in London.","Ella vive en Londres."]},
   {e:"✍️", h:"Spelling of -s", es:"Ortografía de -s", i:[["go → goes, watch → watches","ir → va, ver → ve"],["study → studies, have → has","estudiar → estudia, tener → tiene"]], ex:["He studies English.","Él estudia inglés."]},
@@ -111,7 +111,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct: Does she lives here?", a:"Does she live here?"}
  ] },
 
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"A1", icon:"💪", t:"Can & Can't: Basic Ability", es:"Can y can't: habilidad básica", d:"Decir lo que podemos o sabemos hacer y pedir cosas sencillas.",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"A1", icon:"💪", slug:"can-and-can-t-basic-ability", t:"Can & Can't: Basic Ability", es:"Can y can't: habilidad básica", d:"Decir lo que podemos o sabemos hacer y pedir cosas sencillas.",
  boxes:[
   {e:"✅", h:"Affirmative", es:"Afirmativa", i:[["I can swim.","Sé nadar."],["She can speak French.","Ella habla francés."]], ex:["He can cook very well.","Él cocina muy bien."]},
   {e:"❌", h:"Negative", es:"Negativa", i:[["I can't drive.","No sé conducir."],["They can't come today.","Ellos no pueden venir hoy."]], ex:["We can't see the sea.","No podemos ver el mar."]},
@@ -125,7 +125,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct: She cans speak Italian.", a:"She can speak Italian."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"A1", icon:"❔", t:"Basic Question Words", es:"Palabras interrogativas básicas", d:"What, where, who, when, why, how... para hacer preguntas sencillas.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"A1", icon:"❔", slug:"basic-question-words", t:"Basic Question Words", es:"Palabras interrogativas básicas", d:"What, where, who, when, why, how... para hacer preguntas sencillas.",
  boxes:[
   {e:"🔎", h:"What", es:"What", i:[["What is your name?","¿Cómo te llamas?"],["What time is it?","¿Qué hora es?"]], ex:["What do you do?","¿A qué te dedicas?"]},
   {e:"🗺️", h:"Where / Who", es:"Where / Who", i:[["Where are you from?","¿De dónde eres?"],["Who is that man?","¿Quién es ese hombre?"]], ex:["Where is the station?","¿Dónde está la estación?"]},
@@ -139,7 +139,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct: Where you live?", a:"Where do you live?"}
  ] },
 
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"A1", icon:"🔢", t:"Numbers & Prices in Pounds", es:"Números y precios en libras", d:"Contar del 0 al 100 y decir cuánto cuestan las cosas en £.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"A1", icon:"🔢", slug:"numbers-and-prices-in-pounds", t:"Numbers & Prices in Pounds", es:"Números y precios en libras", d:"Contar del 0 al 100 y decir cuánto cuestan las cosas en £.",
  boxes:[
   {e:"1️⃣", h:"0 to 10", es:"0 a 10", i:[["zero, one, two, three, four, five","cero, uno, dos, tres, cuatro, cinco"],["six, seven, eight, nine, ten","seis, siete, ocho, nueve, diez"]], ex:["I've got two brothers.","Tengo dos hermanos."]},
   {e:"🔟", h:"11 to 20", es:"11 a 20", i:[["eleven, twelve, thirteen, fourteen","once, doce, trece, catorce"],["fifteen, sixteen, seventeen, eighteen","quince, dieciséis, diecisiete, dieciocho"],["nineteen, twenty","diecinueve, veinte"]], ex:["There are twelve eggs.","Hay doce huevos."]},
@@ -153,7 +153,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Complete: How ____ is the bus ticket?", a:"much"}
  ] },
 
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"A1", icon:"📅", t:"Days, Months & Dates", es:"Días, meses y fechas", d:"Los días de la semana, los meses y cómo decir la fecha.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"A1", icon:"📅", slug:"days-months-and-dates", t:"Days, Months & Dates", es:"Días, meses y fechas", d:"Los días de la semana, los meses y cómo decir la fecha.",
  boxes:[
   {e:"📆", h:"Days of the week", es:"Días de la semana", i:[["Monday, Tuesday, Wednesday","lunes, martes, miércoles"],["Thursday, Friday","jueves, viernes"],["Saturday, Sunday (weekend)","sábado, domingo (fin de semana)"]], ex:["I work on Mondays.","Trabajo los lunes."]},
   {e:"🗓️", h:"Months (1)", es:"Meses (1)", i:[["January, February, March","enero, febrero, marzo"],["April, May, June","abril, mayo, junio"]], ex:["My birthday is in March.","Mi cumpleaños es en marzo."]},
@@ -167,7 +167,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Complete: My birthday is ____ April. (in/on/at)", a:"in"}
  ] },
 
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"A1", icon:"🕒", t:"Telling the Time", es:"Decir la hora", d:"Preguntar y decir la hora en inglés: en punto, y media, y cuarto, menos cuarto.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"A1", icon:"🕒", slug:"telling-the-time", t:"Telling the Time", es:"Decir la hora", d:"Preguntar y decir la hora en inglés: en punto, y media, y cuarto, menos cuarto.",
  boxes:[
   {e:"❓", h:"Asking", es:"Preguntar", i:[["What time is it?","¿Qué hora es?"],["Have you got the time?","¿Tienes la hora?"],["What time does the film start?","¿A qué hora empieza la película?"]], ex:["What time is it, please?","¿Qué hora es, por favor?"]},
   {e:"🕐", h:"On the hour", es:"En punto", i:[["It's three o'clock.","Son las tres en punto."],["It's one o'clock.","Es la una en punto."]], ex:["It's eight o'clock.","Son las ocho en punto."]},
@@ -181,7 +181,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Complete: I get up ____ seven. (in/on/at)", a:"at"}
  ] },
 
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"A1", icon:"🎨", t:"Colours & Basic Adjectives", es:"Colores y adjetivos básicos", d:"Los colores y adjetivos muy comunes para describir cosas.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"A1", icon:"🎨", slug:"colours-and-basic-adjectives", t:"Colours & Basic Adjectives", es:"Colores y adjetivos básicos", d:"Los colores y adjetivos muy comunes para describir cosas.",
  boxes:[
   {e:"🌈", h:"Main colours", es:"Colores principales", i:[["red, blue, yellow, green","rojo, azul, amarillo, verde"],["orange, pink, purple, brown","naranja, rosa, morado, marrón"],["black, white, grey","negro, blanco, gris"]], ex:["The bus is red.","El autobús es rojo."]},
   {e:"📏", h:"Size", es:"Tamaño", i:[["big / small","grande / pequeño"],["long / short","largo / corto"],["tall / short (people)","alto / bajo (personas)"]], ex:["It's a small flat.","Es un departamento pequeño."]},
@@ -195,7 +195,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Opposite of 'expensive':", a:"cheap"}
  ] },
 
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"A1", icon:"👨‍👩‍👧", t:"My Family: Basic Words", es:"Mi familia: palabras básicas", d:"Los miembros de la familia y cómo hablar de ellos.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"A1", icon:"👨‍👩‍👧", slug:"my-family-basic-words", t:"My Family: Basic Words", es:"Mi familia: palabras básicas", d:"Los miembros de la familia y cómo hablar de ellos.",
  boxes:[
   {e:"👪", h:"Parents & children", es:"Padres e hijos", i:[["mum / dad (mother / father)","mamá / papá"],["son / daughter","hijo / hija"],["parents / children","padres / hijos"]], ex:["My mum is a nurse.","Mi mamá es enfermera."]},
   {e:"👫", h:"Brothers & sisters", es:"Hermanos", i:[["brother / sister","hermano / hermana"],["twin","gemelo/a"]], ex:["I've got one sister.","Tengo una hermana."]},
@@ -209,7 +209,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Your mum's mum is your ...", a:"grandma (grandmother)"}
  ] },
 
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"A1", icon:"🍽️", t:"Food & Drink Basics", es:"Comida y bebida básicas", d:"Los alimentos y bebidas más comunes y cómo decir lo que te gusta.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"A1", icon:"🍽️", slug:"food-and-drink-basics", t:"Food & Drink Basics", es:"Comida y bebida básicas", d:"Los alimentos y bebidas más comunes y cómo decir lo que te gusta.",
  boxes:[
   {e:"🍎", h:"Fruit", es:"Fruta", i:[["apple, banana, orange","manzana, plátano, naranja"],["grapes, strawberries","uvas, fresas"]], ex:["I eat an apple every day.","Como una manzana cada día."]},
   {e:"🥕", h:"Vegetables", es:"Verduras", i:[["potato, carrot, onion","papa, zanahoria, cebolla"],["tomato, salad, peas","tomate, ensalada, arvejas"]], ex:["I like carrots.","Me gustan las zanahorias."]},
@@ -223,7 +223,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Make it negative: I like fish.", a:"I don't like fish."}
  ] },
 
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"A1", icon:"🐶", t:"Animals: Pets & Farm", es:"Animales: mascotas y granja", d:"Animales domésticos, de granja y salvajes más comunes.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"A1", icon:"🐶", slug:"animals-pets-and-farm", t:"Animals: Pets & Farm", es:"Animales: mascotas y granja", d:"Animales domésticos, de granja y salvajes más comunes.",
  boxes:[
   {e:"🐱", h:"Pets", es:"Mascotas", i:[["dog, cat, rabbit","perro, gato, conejo"],["fish, bird, hamster","pez, pájaro, hámster"]], ex:["I've got a dog.","Tengo un perro."]},
   {e:"🐄", h:"Farm animals", es:"Animales de granja", i:[["cow, sheep, pig","vaca, oveja, cerdo"],["horse, chicken, duck","caballo, gallina, pato"]], ex:["The cows are in the field.","Las vacas están en el campo."]},
@@ -237,7 +237,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Plural of 'sheep':", a:"sheep"}
  ] },
 
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"A1", icon:"🧍", t:"Body Parts for Beginners", es:"Partes del cuerpo para principiantes", d:"Las partes principales del cuerpo y frases simples para sentirse mal.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"A1", icon:"🧍", slug:"body-parts-for-beginners", t:"Body Parts for Beginners", es:"Partes del cuerpo para principiantes", d:"Las partes principales del cuerpo y frases simples para sentirse mal.",
  boxes:[
   {e:"🙂", h:"Head & face", es:"Cabeza y cara", i:[["head, face, hair","cabeza, cara, pelo"],["eye, ear, nose, mouth","ojo, oreja, nariz, boca"],["tooth (teeth)","diente (dientes)"]], ex:["She's got big brown eyes.","Tiene ojos grandes y marrones."]},
   {e:"💪", h:"Arms & hands", es:"Brazos y manos", i:[["arm, hand, finger","brazo, mano, dedo"],["shoulder, elbow","hombro, codo"]], ex:["Wash your hands.","Lávate las manos."]},
@@ -251,7 +251,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Plural of 'foot':", a:"feet"}
  ] },
 
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"A1", icon:"🛋️", t:"Rooms & Furniture", es:"Habitaciones y muebles", d:"Las partes de la casa y los muebles más comunes.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"A1", icon:"🛋️", slug:"rooms-and-furniture", t:"Rooms & Furniture", es:"Habitaciones y muebles", d:"Las partes de la casa y los muebles más comunes.",
  boxes:[
   {e:"🏠", h:"Rooms", es:"Habitaciones", i:[["kitchen, living room, bedroom","cocina, sala, dormitorio"],["bathroom, hall","baño, entrada"],["garden, garage","jardín, garaje"]], ex:["The kitchen is small.","La cocina es pequeña."]},
   {e:"🛏️", h:"Bedroom", es:"Dormitorio", i:[["bed, wardrobe","cama, armario"],["lamp, pillow","lámpara, almohada"]], ex:["There's a lamp next to the bed.","Hay una lámpara junto a la cama."]},
@@ -265,7 +265,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Where do you sleep?", a:"bedroom (in bed)"}
  ] },
 
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"A1", icon:"👕", t:"Clothes: Basic Words", es:"Ropa: palabras básicas", d:"Las prendas de vestir más comunes y cómo decir qué llevas puesto.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"A1", icon:"👕", slug:"clothes-basic-words", t:"Clothes: Basic Words", es:"Ropa: palabras básicas", d:"Las prendas de vestir más comunes y cómo decir qué llevas puesto.",
  boxes:[
   {e:"👕", h:"Everyday clothes", es:"Ropa diaria", i:[["T-shirt, shirt, jumper","camiseta, camisa, suéter"],["jeans, trousers, skirt, dress","jeans, pantalones, falda, vestido"]], ex:["I'm wearing a blue jumper.","Llevo un suéter azul."]},
   {e:"🧥", h:"Coats & cold weather", es:"Abrigos y frío", i:[["coat, jacket","abrigo, chaqueta"],["scarf, hat, gloves","bufanda, gorro, guantes"]], ex:["Take your coat. It's cold.","Lleva tu abrigo. Hace frío."]},
@@ -279,7 +279,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"British word for 'sweater':", a:"jumper"}
  ] },
 
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"A1", icon:"👩‍⚕️", t:"Jobs: Basic Words", es:"Trabajos: palabras básicas", d:"Nombres de trabajos comunes y cómo preguntar y decir a qué te dedicas.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"A1", icon:"👩‍⚕️", slug:"jobs-basic-words", t:"Jobs: Basic Words", es:"Trabajos: palabras básicas", d:"Nombres de trabajos comunes y cómo preguntar y decir a qué te dedicas.",
  boxes:[
   {e:"🏥", h:"Health & care", es:"Salud y cuidado", i:[["doctor, nurse","médico, enfermera"],["dentist, vet","dentista, veterinario"]], ex:["My mum is a nurse.","Mi mamá es enfermera."]},
   {e:"🏫", h:"School & office", es:"Escuela y oficina", i:[["teacher, student","profesor, estudiante"],["secretary, manager","secretaria, gerente"],["engineer, lawyer","ingeniero, abogado"]], ex:["She's a teacher at a big school.","Ella es profesora en una escuela grande."]},
@@ -293,7 +293,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Ask: ¿Dónde trabajas?", a:"Where do you work?"}
  ] },
 
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"A1", icon:"🏙️", t:"Places in Town", es:"Lugares de la ciudad", d:"Los lugares más comunes de una ciudad y para qué sirven.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"A1", icon:"🏙️", slug:"places-in-town", t:"Places in Town", es:"Lugares de la ciudad", d:"Los lugares más comunes de una ciudad y para qué sirven.",
  boxes:[
   {e:"🛒", h:"Shops", es:"Tiendas", i:[["supermarket, bakery","supermercado, panadería"],["chemist, bookshop","farmacia, librería"],["shopping centre, market","centro comercial, mercado"]], ex:["The bakery is on the corner.","La panadería está en la esquina."]},
   {e:"🏦", h:"Services", es:"Servicios", i:[["bank, post office","banco, oficina de correos"],["police station, hospital","comisaría, hospital"]], ex:["The bank is open today.","El banco está abierto hoy."]},
@@ -307,7 +307,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Where do you take a bus?", a:"bus stop"}
  ] },
 
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"A1", icon:"🪪", t:"My Name Is...: Personal Information", es:"Me llamo...: datos personales", d:"Decir tu nombre, edad, ciudad y otros datos básicos.",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"A1", icon:"🪪", slug:"my-name-is-personal-information", t:"My Name Is...: Personal Information", es:"Me llamo...: datos personales", d:"Decir tu nombre, edad, ciudad y otros datos básicos.",
  boxes:[
   {e:"🏷️", h:"Name", es:"Nombre", i:[["What's your name? — My name's Ana.","¿Cómo te llamas? — Me llamo Ana."],["I'm Ana. / Call me Ana.","Soy Ana. / Llámame Ana."],["first name, surname","nombre, apellido"]], ex:["My surname is Perez.","Mi apellido es Pérez."]},
   {e:"🎂", h:"Age", es:"Edad", i:[["How old are you? — I'm 25.","¿Cuántos años tienes? — Tengo 25."],["He's 30 years old.","Tiene 30 años."]], ex:["I'm twenty-two.","Tengo veintidós años."]},
@@ -321,7 +321,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Is 'surname' your first name or family name?", a:"family name"}
  ] },
 
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"A1", icon:"🔤", t:"Spelling & the Alphabet", es:"Deletrear y el alfabeto", d:"Las letras del alfabeto inglés y cómo pedir que deletreen algo.",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"A1", icon:"🔤", slug:"spelling-and-the-alphabet", t:"Spelling & the Alphabet", es:"Deletrear y el alfabeto", d:"Las letras del alfabeto inglés y cómo pedir que deletreen algo.",
  boxes:[
   {e:"🅰️", h:"Letters A–H", es:"Letras A–H", i:[["A, B, C, D","ei, bi, si, di"],["E, F, G, H","i, ef, yi, eich"]], ex:["My name is Bea: B-E-A.","Me llamo Bea: B-E-A."]},
   {e:"🔡", h:"Letters I–Q", es:"Letras I–Q", i:[["I, J, K, L, M","ai, yei, kei, el, em"],["N, O, P, Q","en, ou, pi, kiu"]], ex:["Jack: J-A-C-K.","Jack: J-A-C-K."]},
@@ -335,7 +335,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"How do you say 'LL' in a name?", a:"double L"}
  ] },
 
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"A1", icon:"☕", t:"Ordering a Drink or Snack", es:"Pedir una bebida o un snack", d:"Frases básicas para pedir, preguntar el precio y pagar en una cafetería.",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"A1", icon:"☕", slug:"ordering-a-drink-or-snack", t:"Ordering a Drink or Snack", es:"Pedir una bebida o un snack", d:"Frases básicas para pedir, preguntar el precio y pagar en una cafetería.",
  boxes:[
   {e:"🙋", h:"Ordering", es:"Pedir", i:[["Can I have a tea, please?","¿Me da un té, por favor?"],["I'd like a coffee, please.","Quisiera un café, por favor."]], ex:["Can I have a sandwich, please?","¿Me da un sándwich, por favor?"]},
   {e:"🫖", h:"Drinks", es:"Bebidas", i:[["tea with milk / without sugar","té con leche / sin azúcar"],["a latte, a hot chocolate","un café con leche, un chocolate caliente"],["still / sparkling water","agua sin gas / con gas"]], ex:["A tea with milk, please.","Un té con leche, por favor."]},
@@ -349,7 +349,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Complete: Can I pay ____ card?", a:"by"}
  ] },
 
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"A1", icon:"🧭", t:"Where Is...? Simple Directions", es:"¿Dónde está...? Direcciones sencillas", d:"Preguntar dónde está un lugar y entender indicaciones muy básicas.",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"A1", icon:"🧭", slug:"where-is-simple-directions", t:"Where Is...? Simple Directions", es:"¿Dónde está...? Direcciones sencillas", d:"Preguntar dónde está un lugar y entender indicaciones muy básicas.",
  boxes:[
   {e:"❓", h:"Asking", es:"Preguntar", i:[["Excuse me, where is the station?","Disculpe, ¿dónde está la estación?"],["Is there a bank near here?","¿Hay un banco cerca de aquí?"]], ex:["Where is the post office, please?","¿Dónde está el correo, por favor?"]},
   {e:"⬅️", h:"Turn", es:"Girar", i:[["Turn left. / Turn right.","Gira a la izquierda. / Gira a la derecha."],["Go straight on.","Sigue derecho."]], ex:["Turn left at the bank.","Gira a la izquierda en el banco."]},
@@ -363,7 +363,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Say: 'Sigue derecho.'", a:"Go straight on."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"A1", icon:"📌", t:"Prepositions of Place: in, on, under, next to", es:"Preposiciones de lugar: in, on, under, next to", d:"Decir dónde están las cosas con las preposiciones más básicas.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"A1", icon:"📌", slug:"prepositions-of-place-in-on-under-next-to", t:"Prepositions of Place: in, on, under, next to", es:"Preposiciones de lugar: in, on, under, next to", d:"Decir dónde están las cosas con las preposiciones más básicas.",
  boxes:[
   {e:"📦", h:"In", es:"In (dentro)", i:[["The milk is in the fridge.","La leche está en el refrigerador."],["She lives in London.","Vive en Londres."]], ex:["The keys are in my bag.","Las llaves están en mi bolsa."]},
   {e:"🔝", h:"On", es:"On (encima, sobre)", i:[["The book is on the table.","El libro está sobre la mesa."],["The picture is on the wall.","El cuadro está en la pared."]], ex:["The cat is on the sofa.","El gato está en el sofá."]},
@@ -377,7 +377,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct: The pen is in the table.", a:"The pen is on the table."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"A1", icon:"❤️", t:"Like, Love & Hate + -ing", es:"Like, love y hate + -ing", d:"Hablar de lo que te gusta y no te gusta hacer.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"A1", icon:"❤️", slug:"like-love-and-hate-ing", t:"Like, Love & Hate + -ing", es:"Like, love y hate + -ing", d:"Hablar de lo que te gusta y no te gusta hacer.",
  boxes:[
   {e:"👍", h:"Like", es:"Like", i:[["I like swimming.","Me gusta nadar."],["She likes cooking.","Le gusta cocinar."]], ex:["We like walking in the park.","Nos gusta caminar por el parque."]},
   {e:"😍", h:"Love", es:"Love", i:[["I love dancing.","Me encanta bailar."],["He loves playing football.","Le encanta jugar al fútbol."]], ex:["I love reading in bed.","Me encanta leer en la cama."]},
@@ -391,7 +391,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct: I love dance.", a:"I love dancing."}
  ] },
 
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"A1", icon:"📣", t:"Giving Simple Instructions", es:"Dar instrucciones sencillas", d:"El imperativo para dar órdenes, pedir cosas y poner reglas en clase o en casa.",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"A1", icon:"📣", slug:"giving-simple-instructions", t:"Giving Simple Instructions", es:"Dar instrucciones sencillas", d:"El imperativo para dar órdenes, pedir cosas y poner reglas en clase o en casa.",
  boxes:[
   {e:"✅", h:"Positive orders", es:"Órdenes afirmativas", i:[["Sit down. / Stand up.","Siéntate. / Levántate."],["Open the door.","Abre la puerta."],["Listen and repeat.","Escucha y repite."]], ex:["Come here, please.","Ven aquí, por favor."]},
   {e:"🚫", h:"Negative orders", es:"Órdenes negativas", i:[["Don't run!","¡No corras!"],["Don't touch that.","No toques eso."],["Don't be late.","No llegues tarde."]], ex:["Don't worry!","¡No te preocupes!"]},
@@ -405,7 +405,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct: You sit down.", a:"Sit down."}
  ] },
 
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"A1", icon:"🌎", t:"Countries & Nationalities", es:"Países y nacionalidades", d:"Nombres de países, nacionalidades e idiomas más comunes.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"A1", icon:"🌎", slug:"countries-and-nationalities", t:"Countries & Nationalities", es:"Países y nacionalidades", d:"Nombres de países, nacionalidades e idiomas más comunes.",
  boxes:[
   {e:"🇬🇧", h:"The UK", es:"El Reino Unido", i:[["England → English","Inglaterra → inglés"],["Scotland → Scottish, Wales → Welsh","Escocia → escocés, Gales → galés"],["Britain → British","Gran Bretaña → británico"]], ex:["I'm British, from Wales.","Soy británico, de Gales."]},
   {e:"🇪🇺", h:"Europe", es:"Europa", i:[["Spain → Spanish, France → French","España → español, Francia → francés"],["Italy → Italian, Germany → German","Italia → italiano, Alemania → alemán"],["Portugal → Portuguese, Ireland → Irish","Portugal → portugués, Irlanda → irlandés"]], ex:["She's Italian.","Ella es italiana."]},

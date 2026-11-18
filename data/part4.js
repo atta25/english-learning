@@ -1,5 +1,5 @@
 window.MAPS = (window.MAPS||[]).concat([
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"A2", icon:"👨‍👩‍👧", t:"Family & Relatives", es:"Familia y parientes", d:"Vocabulario para hablar de tu familia y de tus parientes.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"A2", icon:"👨‍👩‍👧", slug:"family-and-relatives", t:"Family & Relatives", es:"Familia y parientes", d:"Vocabulario para hablar de tu familia y de tus parientes.",
  boxes:[
   {e:"👪", h:"Close family", es:"Familia cercana", i:[["parents","padres"],["siblings","hermanos"],["only child","hijo único"]], ex:["I've got two siblings: a brother and a sister.","Tengo dos hermanos: un hermano y una hermana."]},
   {e:"👵", h:"Grandparents & grandchildren", es:"Abuelos y nietos", i:[["grandma / granddad","abuela / abuelo"],["grandchildren","nietos"],["great-grandmother","bisabuela"]], ex:["We visit Granny every Sunday.","Visitamos a la abuela todos los domingos."]},
@@ -12,7 +12,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: 'We don't argue; we get ____ with each other.' (on / in)", a:"on — get on with = llevarse bien con."},
   {q:"Match: niece / nephew / cousin → sobrina / sobrino / primo.", a:"niece = sobrina, nephew = sobrino, cousin = primo/a."}
  ]},
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B1", icon:"🤝", t:"Friends & Relationships", es:"Amigos y relaciones", d:"Palabras y expresiones para amistades, parejas y relaciones.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B1", icon:"🤝", slug:"friends-and-relationships", t:"Friends & Relationships", es:"Amigos y relaciones", d:"Palabras y expresiones para amistades, parejas y relaciones.",
  boxes:[
   {e:"😊", h:"Types of friends", es:"Tipos de amigos", i:[["close friend","amigo íntimo"],["mate (UK)","colega, amigo"],["acquaintance","conocido"]], ex:["He's not a friend, just an acquaintance.","No es un amigo, solo un conocido."]},
   {e:"🍻", h:"Meeting people", es:"Conocer gente", i:[["get to know","llegar a conocer"],["bump into","encontrarse por casualidad"],["catch up","ponerse al día"]], ex:["Let's catch up over a pint.","Pongámonos al día tomando una pinta."]},
@@ -25,7 +25,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: 'I ____ into Sam at Tesco yesterday.' (bumped / hit)", a:"bumped — bump into = encontrarse por casualidad."},
   {q:"Odd one out: split up / break up / catch up / fall out.", a:"catch up — los demás son sobre terminar una relación o pelearse."}
  ]},
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B1", icon:"🙂", t:"Personality Adjectives", es:"Adjetivos de personalidad", d:"Adjetivos para describir cómo es una persona.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B1", icon:"🙂", slug:"personality-adjectives", t:"Personality Adjectives", es:"Adjetivos de personalidad", d:"Adjetivos para describir cómo es una persona.",
  boxes:[
   {e:"😄", h:"Positive", es:"Positivos", i:[["kind-hearted","de buen corazón"],["cheerful","alegre"],["generous","generoso"]], ex:["She's really kind to everyone.","Es muy amable con todos."]},
   {e:"😠", h:"Negative", es:"Negativos", i:[["bad-tempered","de mal genio"],["selfish","egoísta"],["rude","maleducado"]], ex:["He can be rather rude.","Puede ser bastante maleducado."]},
@@ -38,7 +38,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: 'She never tells lies; she's very ____.' (honest / generous)", a:"honest — honrada (generous = generosa)."},
   {q:"Translate: 'Siempre da órdenes a todos.' (easy-going / bossy)", a:"He's very bossy — mandón."}
  ]},
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B1", icon:"🧑‍🦰", t:"Appearance & Describing People", es:"Aspecto y descripción de personas", d:"Cómo describir el físico, el pelo y la edad de alguien.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B1", icon:"🧑‍🦰", slug:"appearance-and-describing-people", t:"Appearance & Describing People", es:"Aspecto y descripción de personas", d:"Cómo describir el físico, el pelo y la edad de alguien.",
  boxes:[
   {e:"📏", h:"Height & build", es:"Altura y complexión", i:[["tall / short","alto / bajo"],["slim","delgado"],["well-built","fornido"]], ex:["He's tall and quite slim.","Es alto y bastante delgado."]},
   {e:"💇", h:"Hair", es:"Pelo", i:[["shoulder-length hair","pelo a la altura de los hombros"],["fair / dark","rubio / moreno"],["bald","calvo"]], ex:["She has long, curly, fair hair.","Tiene el pelo largo, rizado y rubio."]},
@@ -51,7 +51,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: 'She's ____ her thirties.' (in / on)", a:"in — in her thirties = tiene entre 30 y 39."},
   {q:"Odd one out: bald / curly / wavy / straight.", a:"bald — es 'calvo'; los demás describen el tipo de pelo."}
  ]},
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"A2", icon:"👕", t:"Clothes & Fashion", es:"Ropa y moda", d:"Prendas británicas y expresiones para hablar de moda.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"A2", icon:"👕", slug:"clothes-and-fashion", t:"Clothes & Fashion", es:"Ropa y moda", d:"Prendas británicas y expresiones para hablar de moda.",
  boxes:[
   {e:"👖", h:"Everyday clothes", es:"Ropa diaria", i:[["trousers (US: pants)","pantalones"],["jumper (US: sweater)","suéter"],["trainers (US: sneakers)","zapatillas deportivas"]], ex:["I wear trainers and jeans at weekends.","Los fines de semana uso zapatillas y jeans."]},
   {e:"🧥", h:"Outerwear", es:"Abrigos", i:[["anorak / waterproof jacket","impermeable"],["scarf","bufanda"],["gloves","guantes"]], ex:["Take a waterproof jacket; it'll rain.","Lleva un impermeable; va a llover."]},
@@ -64,7 +64,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: 'These shoes don't ____ me; they're too small.' (fit / suit)", a:"fit — fit = talla; suit = te favorece."},
   {q:"Translate: 'Voy a probarme estos pantalones.' (try on)", a:"I'm going to try these trousers on."}
  ]},
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B1", icon:"🍳", t:"Food & Cooking Verbs", es:"Comida y verbos de cocina", d:"Verbos y utensilios para cocinar y hablar de recetas.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B1", icon:"🍳", slug:"food-and-cooking-verbs", t:"Food & Cooking Verbs", es:"Comida y verbos de cocina", d:"Verbos y utensilios para cocinar y hablar de recetas.",
  boxes:[
   {e:"🔪", h:"Preparing", es:"Preparar", i:[["chop","picar, cortar"],["peel","pelar"],["grate","rallar"]], ex:["Peel and chop the onions.","Pela y pica las cebollas."]},
   {e:"🔥", h:"Cooking methods", es:"Métodos de cocción", i:[["boil / simmer","hervir / cocer a fuego lento"],["fry / roast","freír / asar al horno"],["grill (US: broil)","gratinar, hacer a la parrilla"]], ex:["Simmer the sauce for ten minutes.","Cuece la salsa a fuego lento diez minutos."]},
@@ -77,7 +77,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: '____ the carrots before you chop them.' (Peel / Pour)", a:"Peel — pelar; pour = verter."},
   {q:"Odd one out: boil / fry / roast / grate.", a:"grate — rallar no es un método de cocción."}
  ]},
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B1", icon:"🥧", t:"Traditional British Food & Meals", es:"Comida y comidas tradicionales británicas", d:"Platos típicos británicos y nombres de las comidas del día.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B1", icon:"🥧", slug:"traditional-british-food-and-meals", t:"Traditional British Food & Meals", es:"Comida y comidas tradicionales británicas", d:"Platos típicos británicos y nombres de las comidas del día.",
  boxes:[
   {e:"🍳", h:"Full English breakfast", es:"Desayuno inglés completo", i:[["bacon and eggs","tocino y huevos"],["baked beans on toast","frijoles en salsa de tomate sobre pan tostado"],["black pudding","morcilla"]], ex:["I had a full English at a greasy spoon.","Tomé un desayuno inglés completo en un cafetín."]},
   {e:"🐟", h:"Fish and chips", es:"Pescado con papas fritas", i:[["chips (US: fries)","papas fritas gruesas"],["mushy peas","puré de arvejas"],["a chippy","tienda de fish and chips"]], ex:["Let's get fish and chips from the chippy.","Vamos a comprar fish and chips en la tienda."]},
@@ -90,7 +90,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: 'Sunday roast usually comes with Yorkshire pudding and ____.' (gravy / jam)", a:"gravy — salsa de carne."},
   {q:"Match: breakfast / lunch / tea → desayuno / almuerzo / cena (en el norte).", a:"En muchas zonas del norte, 'tea' = cena."}
  ]},
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B1", icon:"🍺", t:"Restaurants, Cafés & Pubs", es:"Restaurantes, cafés y pubs", d:"Frases para pedir, pagar y pasar el rato en locales británicos.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B1", icon:"🍺", slug:"restaurants-cafes-and-pubs", t:"Restaurants, Cafés & Pubs", es:"Restaurantes, cafés y pubs", d:"Frases para pedir, pagar y pasar el rato en locales británicos.",
  boxes:[
   {e:"📅", h:"Booking a table", es:"Reservar mesa", i:[["book a table for two","reservar mesa para dos"],["Have you got a reservation?","¿Tiene reserva?"],["a table by the window","una mesa junto a la ventana"]], ex:["I'd like to book a table for four at eight.","Quisiera reservar una mesa para cuatro a las ocho."]},
   {e:"📜", h:"Ordering", es:"Pedir", i:[["starter / main course","entrante / plato principal"],["pudding / dessert","postre"],["I'll have...","tomaré..."]], ex:["I'll have the soup to start.","De entrante tomaré la sopa."]},
@@ -103,7 +103,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: 'Shall we ____ the bill?' (split / share out)", a:"split — split the bill = dividir la cuenta."},
   {q:"Translate: 'Me toca pagar esta ronda.'", a:"It's my round."}
  ]},
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B1", icon:"🛒", t:"Shopping & the High Street", es:"Compras y la calle principal", d:"Vocabulario para tiendas, supermercados y compras en el Reino Unido.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B1", icon:"🛒", slug:"shopping-and-the-high-street", t:"Shopping & the High Street", es:"Compras y la calle principal", d:"Vocabulario para tiendas, supermercados y compras en el Reino Unido.",
  boxes:[
   {e:"🏬", h:"Shops", es:"Tiendas", i:[["high street","calle comercial principal"],["chemist / newsagent","farmacia / quiosco de prensa"],["off-licence","tienda de bebidas alcohólicas"]], ex:["There's a newsagent on the high street.","Hay un quiosco en la calle principal."]},
   {e:"🛒", h:"At the supermarket", es:"En el supermercado", i:[["trolley (US: cart)","carrito"],["carrier bag","bolsa de plástico"],["self-checkout","caja de autoservicio"]], ex:["I need a trolley; the basket's full.","Necesito un carrito; la cesta está llena."]},
@@ -116,7 +116,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: 'The sales start on Boxing Day: everything is ____ price.' (half / middle)", a:"half — half price = mitad de precio."},
   {q:"Odd one out: refund / exchange / receipt / trolley.", a:"trolley — es un carrito; los demás son sobre devoluciones."}
  ]},
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B2", icon:"💷", t:"Money & Banking", es:"Dinero y banca", d:"Vocabulario sobre dinero, cuentas bancarias y pagos en el Reino Unido.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B2", icon:"💷", slug:"money-and-banking", t:"Money & Banking", es:"Dinero y banca", d:"Vocabulario sobre dinero, cuentas bancarias y pagos en el Reino Unido.",
  boxes:[
   {e:"💰", h:"Coins and notes", es:"Monedas y billetes", i:[["a fiver / a tenner","un billete de 5 / 10 libras"],["quid (informal)","libra(s)"],["pence / p","peniques"]], ex:["It costs twenty quid.","Cuesta veinte libras."]},
   {e:"🏦", h:"Bank accounts", es:"Cuentas bancarias", i:[["current account","cuenta corriente"],["savings account","cuenta de ahorro"],["sort code","código de sucursal"]], ex:["I'm opening a current account.","Voy a abrir una cuenta corriente."]},
@@ -129,7 +129,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: 'I'm ____ the red; I can't afford a holiday.' (in / at)", a:"in — in the red = en números rojos."},
   {q:"Match: fiver / tenner / quid → 5 libras / 10 libras / una libra.", a:"fiver = £5, tenner = £10, quid = £1."}
  ]},
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B1", icon:"🛋️", t:"Home & Furniture", es:"Hogar y muebles", d:"Habitaciones, muebles y objetos de casa con términos británicos.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B1", icon:"🛋️", slug:"home-and-furniture", t:"Home & Furniture", es:"Hogar y muebles", d:"Habitaciones, muebles y objetos de casa con términos británicos.",
  boxes:[
   {e:"🏠", h:"Types of home", es:"Tipos de vivienda", i:[["flat (US: apartment)","departamento"],["semi-detached house","casa pareada"],["terraced house","casa en hilera"]], ex:["We live in a flat in Leeds.","Vivimos en un departamento en Leeds."]},
   {e:"🚪", h:"Rooms", es:"Habitaciones", i:[["lounge / living room","sala"],["loo / toilet","baño, inodoro"],["hall","vestíbulo"]], ex:["The loo is upstairs.","El baño está arriba."]},
@@ -142,7 +142,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: 'We took the ____ to the fifth floor.' (lift / elevator)", a:"lift — es la palabra británica."},
   {q:"Odd one out: wardrobe / duvet / sofa / chest of drawers.", a:"sofa — los demás son del dormitorio."}
  ]},
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B2", icon:"🔑", t:"Renting & Housing in the UK", es:"Alquiler y vivienda en el Reino Unido", d:"Términos para alquilar, comprar y vivir en una casa en el Reino Unido.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B2", icon:"🔑", slug:"renting-and-housing-in-the-uk", t:"Renting & Housing in the UK", es:"Alquiler y vivienda en el Reino Unido", d:"Términos para alquilar, comprar y vivir en una casa en el Reino Unido.",
  boxes:[
   {e:"🔍", h:"Finding a place", es:"Buscar vivienda", i:[["estate agent","agente inmobiliario"],["to let / for sale","se alquila / se vende"],["viewing","visita a una vivienda"]], ex:["We've got a viewing at six.","Tenemos una visita a las seis."]},
   {e:"📝", h:"Tenancy", es:"Contrato de alquiler", i:[["tenancy agreement","contrato de alquiler"],["landlord / landlady","casero / casera"],["tenant","inquilino"]], ex:["Read the tenancy agreement carefully.","Lee el contrato con atención."]},
@@ -155,7 +155,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: 'The flat is ____ let from September.' (to / for)", a:"to — 'to let' = se alquila."},
   {q:"Translate: 'Vivo en una casa compartida.' (house share)", a:"I live in a house share."}
  ]},
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"A2", icon:"⏰", t:"Daily Routine", es:"Rutina diaria", d:"Verbos y frases para contar tu día a día.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"A2", icon:"⏰", slug:"daily-routine", t:"Daily Routine", es:"Rutina diaria", d:"Verbos y frases para contar tu día a día.",
  boxes:[
   {e:"🌅", h:"Waking up", es:"Despertarse", i:[["wake up","despertarse"],["get up","levantarse"],["have a lie-in","quedarse en la cama"]], ex:["I have a lie-in on Sundays.","Me quedo en la cama los domingos."]},
   {e:"🚿", h:"Getting ready", es:"Arreglarse", i:[["have a shower","ducharse"],["get dressed","vestirse"],["brush my teeth","cepillarme los dientes"]], ex:["I get dressed and have breakfast.","Me visto y desayuno."]},
@@ -168,7 +168,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: 'I ____ the bus to work every day.' (catch / take away)", a:"catch — catch the bus = tomar el autobús."},
   {q:"Put in order: get dressed / leave for work / get up / have a shower.", a:"get up → have a shower → get dressed → leave for work."}
  ]},
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B1", icon:"🫀", t:"The Body & Health", es:"El cuerpo y la salud", d:"Partes del cuerpo y hábitos para mantenerse sano.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B1", icon:"🫀", slug:"the-body-and-health", t:"The Body & Health", es:"El cuerpo y la salud", d:"Partes del cuerpo y hábitos para mantenerse sano.",
  boxes:[
   {e:"🧍", h:"Head and face", es:"Cabeza y cara", i:[["forehead","frente"],["chin","barbilla"],["eyebrow","ceja"]], ex:["He hit his forehead on the door.","Se golpeó la frente con la puerta."]},
   {e:"💪", h:"Arms and hands", es:"Brazos y manos", i:[["elbow / wrist","codo / muñeca"],["fingers / thumb","dedos / pulgar"],["shoulder","hombro"]], ex:["I've hurt my wrist.","Me lastimé la muñeca."]},
@@ -181,7 +181,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: 'You should give ____ smoking.' (up / off)", a:"up — give up = dejar (un hábito)."},
   {q:"Odd one out: wrist / elbow / knee / shoulder.", a:"knee — es de la pierna; los demás son del brazo."}
  ]},
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B1", icon:"🤒", t:"Illnesses & Symptoms", es:"Enfermedades y síntomas", d:"Cómo decir qué te duele y qué enfermedad tienes.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B1", icon:"🤒", slug:"illnesses-and-symptoms", t:"Illnesses & Symptoms", es:"Enfermedades y síntomas", d:"Cómo decir qué te duele y qué enfermedad tienes.",
  boxes:[
   {e:"🤧", h:"Common illnesses", es:"Enfermedades comunes", i:[["a cold","un resfriado"],["flu","gripe"],["a stomach bug","gastroenteritis, malestar de estómago"]], ex:["I've got a stinking cold.","Tengo un resfriado horrible."]},
   {e:"🌡️", h:"Symptoms", es:"Síntomas", i:[["a temperature / fever","fiebre"],["a sore throat","dolor de garganta"],["a runny nose","goteo nasal"]], ex:["I've got a sore throat and a temperature.","Tengo dolor de garganta y fiebre."]},
@@ -194,7 +194,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: 'I've got a sore ____ and can't swallow.' (throat / nose)", a:"throat — dolor de garganta."},
   {q:"Translate: 'Me duele la cabeza y tengo fiebre.'", a:"I've got a headache and a temperature."}
  ]},
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B2", icon:"🏥", t:"At the Doctor's, the Chemist & the NHS", es:"En el médico, la farmacia y el NHS", d:"El sistema sanitario británico y frases para ir al médico.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B2", icon:"🏥", slug:"at-the-doctor-s-the-chemist-and-the-nhs", t:"At the Doctor's, the Chemist & the NHS", es:"En el médico, la farmacia y el NHS", d:"El sistema sanitario británico y frases para ir al médico.",
  boxes:[
   {e:"🇬🇧", h:"The NHS", es:"El sistema sanitario", i:[["NHS (National Health Service)","servicio nacional de salud"],["GP (general practitioner)","médico de cabecera"],["register with a GP","inscribirse en un centro de salud"]], ex:["You need to register with a GP.","Tienes que inscribirte en un centro de salud."]},
   {e:"📞", h:"Appointments", es:"Citas", i:[["make an appointment","pedir una cita"],["waiting room","sala de espera"],["surgery (GP's)","consulta"]], ex:["I'd like to make an appointment, please.","Quisiera pedir una cita, por favor."]},
@@ -207,7 +207,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: 'You can buy this ____ the counter, no prescription needed.' (over / on)", a:"over — over the counter = sin receta."},
   {q:"Match: GP / prescription / painkillers → médico de cabecera / receta / analgésicos.", a:"GP = médico de cabecera; prescription = receta; painkillers = analgésicos."}
  ]},
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B1", icon:"⚽", t:"Sports", es:"Deportes", d:"Deportes populares en el Reino Unido y vocabulario deportivo.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B1", icon:"⚽", slug:"sports", t:"Sports", es:"Deportes", d:"Deportes populares en el Reino Unido y vocabulario deportivo.",
  boxes:[
   {e:"⚽", h:"Football", es:"Fútbol", i:[["football (US: soccer)","fútbol"],["pitch","campo de juego"],["score a goal","marcar un gol"]], ex:["Arsenal scored two goals.","El Arsenal marcó dos goles."]},
   {e:"🏏", h:"Cricket & rugby", es:"Críquet y rugby", i:[["bat / bowl","batear / lanzar"],["rugby union","rugby a 15"],["tackle","placaje"]], ex:["Cricket matches can last five days.","Los partidos de críquet pueden durar cinco días."]},
@@ -220,7 +220,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: 'She ____ judo twice a week.' (does / plays)", a:"does — do + artes marciales / yoga."},
   {q:"Odd one out: pitch / court / racket / track.", a:"racket — es un objeto; los demás son lugares de juego."}
  ]},
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B1", icon:"🎨", t:"Hobbies & Free Time", es:"Aficiones y tiempo libre", d:"Cómo hablar de lo que haces en tu tiempo libre.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B1", icon:"🎨", slug:"hobbies-and-free-time", t:"Hobbies & Free Time", es:"Aficiones y tiempo libre", d:"Cómo hablar de lo que haces en tu tiempo libre.",
  boxes:[
   {e:"🎨", h:"Creative hobbies", es:"Aficiones creativas", i:[["painting / drawing","pintura / dibujo"],["knitting","tejer"],["photography","fotografía"]], ex:["I've taken up photography.","Empecé a hacer fotografía."]},
   {e:"🎮", h:"Indoor hobbies", es:"En casa", i:[["board games","juegos de mesa"],["video games","videojuegos"],["baking","repostería"]], ex:["We play board games on rainy days.","Jugamos a juegos de mesa los días de lluvia."]},
@@ -233,7 +233,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: 'I'm really ____ on hiking.' (keen / fond at)", a:"keen — be keen on = ser aficionado a."},
   {q:"Translate: 'No soporto los videojuegos.' (can't stand)", a:"I can't stand video games."}
  ]},
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B1", icon:"🎬", t:"Films, TV & Streaming", es:"Cine, televisión y streaming", d:"Vocabulario para hablar de películas, series y plataformas.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B1", icon:"🎬", slug:"films-tv-and-streaming", t:"Films, TV & Streaming", es:"Cine, televisión y streaming", d:"Vocabulario para hablar de películas, series y plataformas.",
  boxes:[
   {e:"🎞️", h:"Film genres", es:"Géneros", i:[["comedy / thriller","comedia / suspense"],["horror / romance","terror / romántica"],["documentary","documental"]], ex:["I love a good thriller.","Me encanta una buena película de suspense."]},
   {e:"🍿", h:"At the cinema", es:"En el cine", i:[["cinema (US: movie theatre)","cine"],["film (US: movie)","película"],["trailer","tráiler, avance"]], ex:["Shall we go to the cinema tonight?","¿Vamos al cine esta noche?"]},
@@ -246,7 +246,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: 'We watched the whole series in one weekend: we ____.' (binge-watched / streamed out)", a:"binge-watched — verla de golpe."},
   {q:"Match: plot / cast / trailer → argumento / reparto / avance.", a:"plot = argumento; cast = reparto; trailer = avance."}
  ]},
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B1", icon:"📚", t:"Books & Reading", es:"Libros y lectura", d:"Vocabulario sobre libros, géneros y hábitos de lectura.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B1", icon:"📚", slug:"books-and-reading", t:"Books & Reading", es:"Libros y lectura", d:"Vocabulario sobre libros, géneros y hábitos de lectura.",
  boxes:[
   {e:"📖", h:"Types of book", es:"Tipos de libro", i:[["novel","novela"],["biography","biografía"],["crime / science fiction","novela negra / ciencia ficción"]], ex:["I'm reading a crime novel.","Estoy leyendo una novela negra."]},
   {e:"✍️", h:"People", es:"Personas", i:[["author / writer","autor / escritor"],["publisher","editorial"],["reader","lector"]], ex:["Who's your favourite author?","¿Quién es tu autor favorito?"]},
@@ -259,7 +259,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: 'I'd like to ____ this book from the library.' (borrow / lend)", a:"borrow — tomar prestado; lend = prestar."},
   {q:"Odd one out: chapter / spine / blurb / audiobook.", a:"audiobook — los demás son partes de un libro impreso."}
  ]},
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"A2", icon:"🌦️", t:"Weather & Seasons in Britain", es:"El tiempo y las estaciones en Gran Bretaña", d:"Vocabulario del tiempo, las estaciones y las charlas típicas sobre el clima británico.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"A2", icon:"🌦️", slug:"weather-and-seasons-in-britain", t:"Weather & Seasons in Britain", es:"El tiempo y las estaciones en Gran Bretaña", d:"Vocabulario del tiempo, las estaciones y las charlas típicas sobre el clima británico.",
  boxes:[
   {e:"☀️", h:"Sunny weather", es:"Tiempo soleado", i:[["sunny spells","ratos de sol"],["boiling hot","achicharrante"],["heatwave","ola de calor"]], ex:["It's boiling today!","¡Hoy hace un calor abrasador!"]},
   {e:"🌧️", h:"Rain", es:"Lluvia", i:[["drizzle","llovizna"],["a heavy shower","un chubasco fuerte"],["It's pouring with rain.","Llueve a cántaros."]], ex:["Take a brolly; it's pouring.","Lleva un paraguas; llueve a cántaros."]},
@@ -272,7 +272,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: British English for 'fall' is ____. (autumn / spring)", a:"autumn — otoño."},
   {q:"Translate: 'Está lloviendo a cántaros.'", a:"It's pouring with rain."}
  ]},
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"A2", icon:"📅", t:"Time, Dates & Calendar", es:"Hora, fechas y calendario", d:"Hora, fechas, reloj de 24 horas y festivos en el Reino Unido.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"A2", icon:"📅", slug:"time-dates-and-calendar", t:"Time, Dates & Calendar", es:"Hora, fechas y calendario", d:"Hora, fechas, reloj de 24 horas y festivos en el Reino Unido.",
  boxes:[
   {e:"🕐", h:"Telling the time", es:"Decir la hora", i:[["half past six","las seis y media"],["quarter to / past","menos cuarto / y cuarto"],["It's ten to eight.","Son las ocho menos diez."]], ex:["The train leaves at quarter past nine.","El tren sale a las nueve y cuarto."]},
   {e:"🕛", h:"24-hour clock", es:"Reloj de 24 horas", i:[["18:30 = half past six in the evening","las 18:30 (seis y media de la tarde)"],["timetable","horario"],["a.m. / p.m.","de la mañana / de la tarde"]], ex:["The train departs at 17:45.","El tren sale a las 17:45."]},
@@ -285,7 +285,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: 'I'll see you ____ the weekend.' (at / on) (UK)", a:"at — UK: at the weekend; US: on the weekend."},
   {q:"Translate 17:15 aloud: 'Son las cinco y cuarto de la tarde.'", a:"It's quarter past five (in the afternoon / seventeen fifteen)."}
  ]},
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B2", icon:"📏", t:"Numbers, Measurements & Prices", es:"Números, medidas y precios", d:"Libras, peniques, millas, stones y pintas en el Reino Unido.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B2", icon:"📏", slug:"numbers-measurements-and-prices", t:"Numbers, Measurements & Prices", es:"Números, medidas y precios", d:"Libras, peniques, millas, stones y pintas en el Reino Unido.",
  boxes:[
   {e:"💷", h:"Pounds and pence", es:"Libras y peniques", i:[["£2.50 = two pounds fifty","2,50 libras"],["50p = fifty pence","50 peniques"],["quid / fiver / tenner","libra / 5 / 10 libras"]], ex:["It's three pounds ninety-nine.","Cuesta tres libras con noventa y nueve."]},
   {e:"🛣️", h:"Distance", es:"Distancia", i:[["mile","milla (1,6 km)"],["yard / foot / inch","yarda / pie / pulgada"],["miles per hour (mph)","millas por hora"]], ex:["The speed limit is 30 mph.","El límite de velocidad es 30 mph."]},
@@ -298,7 +298,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: 'The speed limit is 70 ____.' (mph / kph)", a:"mph — en el Reino Unido se usan millas."},
   {q:"Say aloud: £4.20 / 65p.", a:"four pounds twenty / sixty-five pence (o sixty-five p)."}
  ]},
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B2", icon:"🌲", t:"Nature & the Countryside", es:"Naturaleza y campo", d:"Paisajes, plantas y vocabulario del campo británico.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B2", icon:"🌲", slug:"nature-and-the-countryside", t:"Nature & the Countryside", es:"Naturaleza y campo", d:"Paisajes, plantas y vocabulario del campo británico.",
  boxes:[
   {e:"⛰️", h:"Landscape", es:"Paisaje", i:[["hill / mountain","colina / montaña"],["valley","valle"],["moor / heath","páramo / brezal"]], ex:["The Yorkshire moors are beautiful.","Los páramos de Yorkshire son preciosos."]},
   {e:"🌊", h:"Water", es:"Agua", i:[["river / stream","río / arroyo"],["lake","lago"],["coast / cliff","costa / acantilado"]], ex:["The Lake District has many lakes.","El Lake District tiene muchos lagos."]},
@@ -311,7 +311,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: 'We went for a long ____ in the hills.' (ramble / race)", a:"ramble — paseo largo por el campo."},
   {q:"Odd one out: moor / valley / cliff / stile.", a:"stile — es una estructura de valla; los demás son accidentes geográficos."}
  ]},
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B2", icon:"🏙️", t:"City Life & Neighbourhoods", es:"Vida urbana y barrios", d:"Vocabulario sobre la ciudad, el transporte y los barrios.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B2", icon:"🏙️", slug:"city-life-and-neighbourhoods", t:"City Life & Neighbourhoods", es:"Vida urbana y barrios", d:"Vocabulario sobre la ciudad, el transporte y los barrios.",
  boxes:[
   {e:"🏘️", h:"Areas", es:"Zonas", i:[["city centre","centro urbano"],["suburbs","afueras residenciales"],["borough","distrito"]], ex:["We live in the suburbs of Birmingham.","Vivimos en las afueras de Birmingham."]},
   {e:"🛣️", h:"Streets & roads", es:"Calles y carreteras", i:[["pavement (US: sidewalk)","acera"],["zebra crossing","paso de cebra"],["roundabout","rotonda"]], ex:["Cross at the zebra crossing.","Cruza por el paso de cebra."]},
@@ -324,7 +324,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: 'Slow down at the ____; there's a lot of traffic.' (roundabout / pavement)", a:"roundabout — rotonda."},
   {q:"Match: suburbs / city centre / borough → afueras / centro / distrito.", a:"suburbs = afueras; city centre = centro; borough = distrito."}
  ]},
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B2", icon:"🎆", t:"British Festivals & Traditions", es:"Fiestas y tradiciones británicas", d:"Fiestas típicas británicas y vocabulario para celebrarlas.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B2", icon:"🎆", slug:"british-festivals-and-traditions", t:"British Festivals & Traditions", es:"Fiestas y tradiciones británicas", d:"Fiestas típicas británicas y vocabulario para celebrarlas.",
  boxes:[
   {e:"🎆", h:"Bonfire Night", es:"Noche de las hogueras", i:[["Bonfire Night (5 November)","noche de Guy Fawkes, 5 de noviembre"],["fireworks","fuegos artificiales"],["bonfire / sparkler","hoguera / bengala"]], ex:["We watched fireworks on Bonfire Night.","Vimos fuegos artificiales en la Bonfire Night."]},
   {e:"🎄", h:"Christmas", es:"Navidad", i:[["Christmas Eve / Day","Nochebuena / Navidad"],["Christmas pudding","pudín navideño"],["Christmas cracker","petardo con sorpresa"]], ex:["We pull crackers and wear paper hats.","Tiramos de los petardos navideños y nos ponemos coronas de papel."]},
@@ -337,7 +337,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: 'On 5 November we watch ____ and light a bonfire.' (fireworks / crackers)", a:"fireworks — fuegos artificiales (crackers = Navidad)."},
   {q:"Match: Shrove Tuesday / Hogmanay / Easter egg → martes de carnaval / Nochevieja escocesa / huevo de Pascua.", a:"Shrove Tuesday = Pancake Day; Hogmanay = Nochevieja en Escocia."}
  ]},
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B2", icon:"🧱", t:"Word Formation: Prefixes & Suffixes", es:"Formación de palabras: prefijos y sufijos", d:"Cómo crear palabras nuevas con un-, re-, -ness, -ment y -able.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B2", icon:"🧱", slug:"word-formation-prefixes-and-suffixes", t:"Word Formation: Prefixes & Suffixes", es:"Formación de palabras: prefijos y sufijos", d:"Cómo crear palabras nuevas con un-, re-, -ness, -ment y -able.",
  boxes:[
   {e:"🚫", h:"Negative prefixes", es:"Prefijos negativos", i:[["un- (unhappy, unfair)","un- (infeliz, injusto)"],["in- / im- / il- (incorrect, impossible, illegal)","in- / im- / il- (incorrecto, imposible, ilegal)"],["dis- (dislike, disagree)","dis- (no gustar, discrepar)"]], ex:["It's impossible to park here; it's illegal.","Es imposible estacionar aquí; es ilegal."]},
   {e:"🔁", h:"re-, mis-, over-, under-", es:"Otros prefijos", i:[["re- (rewrite, reuse)","re- (volver a escribir, reutilizar)"],["mis- (misunderstand)","mis- (entender mal)"],["over- / under- (overworked, underpaid)","sobre- / sub- (sobrecargado, mal pagado)"]], ex:["I misunderstood the instructions.","Entendí mal las instrucciones."]},
@@ -350,7 +350,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: Noun from 'agree' is ____. (agreement / agreeness)", a:"agreement — verbo + -ment."},
   {q:"Form an adjective from 'help' meaning 'que ayuda': ____ (helpful / helpable)", a:"helpful — -ful; 'helpless' = indefenso."}
  ]},
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B1", icon:"❓", t:"Confusing Words", es:"Palabras que se confunden", d:"Pares de palabras que suelen confundirse: affect/effect, borrow/lend, lose/loose.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B1", icon:"❓", slug:"confusing-words", t:"Confusing Words", es:"Palabras que se confunden", d:"Pares de palabras que suelen confundirse: affect/effect, borrow/lend, lose/loose.",
  boxes:[
   {e:"⚖️", h:"affect / effect", es:"Afectar / efecto", i:[["affect (verb)","afectar"],["effect (noun)","efecto"],["have an effect on","tener un efecto sobre"]], ex:["The rain affected our plans.","La lluvia afectó a nuestros planes."]},
   {e:"🔄", h:"borrow / lend", es:"Pedir prestado / prestar", i:[["borrow from","pedir prestado a"],["lend to","prestar a"],["Can I borrow your pen?","¿Me prestas tu bolígrafo?"]], ex:["Could you lend me a tenner?","¿Me puedes prestar diez libras?"]},
@@ -363,7 +363,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Fill the gap: 'Can you ____ me your charger? I'll give it back tomorrow.' (lend / borrow)", a:"lend — prestar (tú me lo das a mí)."},
   {q:"Choose: 'This is good ____.' / 'I ____ you to go.' (advice / advise)", a:"advice (sustantivo) / advise (verbo)."}
  ]},
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B2", icon:"😮", t:"Feelings & Emotions", es:"Sentimientos y emociones", d:"Adjetivos en -ed y -ing, emociones intensas y expresiones británicas.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B2", icon:"😮", slug:"feelings-and-emotions", t:"Feelings & Emotions", es:"Sentimientos y emociones", d:"Adjetivos en -ed y -ing, emociones intensas y expresiones británicas.",
  boxes:[
   {e:"🤔", h:"-ed vs -ing", es:"-ed frente a -ing", i:[["bored (I feel) / boring (it is)","aburrido (me siento) / aburrido (es)"],["interested / interesting","interesado / interesante"],["tired / tiring","cansado / agotador"]], ex:["The film was boring, so I was bored.","La película era aburrida, así que me aburrí."]},
   {e:"😃", h:"Positive feelings", es:"Sentimientos positivos", i:[["delighted","encantado"],["thrilled","emocionadísimo"],["over the moon","en el séptimo cielo"]], ex:["She was over the moon about the news.","Estaba en el séptimo cielo con la noticia."]},
@@ -376,7 +376,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Fill the gap: 'I'm ____ up with the weather.' (fed / full)", a:"fed — fed up with = harto de."},
   {q:"Match: furious / terrified / exhausted → furioso / aterrorizado / agotado.", a:"Son versiones fuertes de angry, scared y tired."}
  ]},
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B2", icon:"🚶", t:"Verbs of Movement & Everyday Actions", es:"Verbos de movimiento y acciones cotidianas", d:"Verbos precisos como stroll, stumble, grab o glance para describir acciones.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"B2", icon:"🚶", slug:"verbs-of-movement-and-everyday-actions", t:"Verbs of Movement & Everyday Actions", es:"Verbos de movimiento y acciones cotidianas", d:"Verbos precisos como stroll, stumble, grab o glance para describir acciones.",
  boxes:[
   {e:"🚶", h:"Ways of walking", es:"Formas de andar", i:[["stroll","pasear con calma"],["wander","deambular"],["march","marchar"]], ex:["We strolled along the river.","Paseamos junto al río."]},
   {e:"🤕", h:"Losing balance", es:"Perder el equilibrio", i:[["stumble","tropezar"],["trip over","tropezar con"],["slip on the ice","resbalar en el hielo"]], ex:["She tripped over the kerb.","Tropezó con el bordillo."]},

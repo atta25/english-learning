@@ -1,5 +1,5 @@
 window.MAPS = (window.MAPS||[]).concat([
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"A2", icon:"🔄", t:"Present Simple vs Present Continuous", es:"Presente simple vs presente continuo", d:"Rutinas y hechos frente a acciones que ocurren ahora o temporalmente.",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"A2", icon:"🔄", slug:"present-simple-vs-present-continuous", t:"Present Simple vs Present Continuous", es:"Presente simple vs presente continuo", d:"Rutinas y hechos frente a acciones que ocurren ahora o temporalmente.",
  boxes:[
   {e:"📅", h:"Present Simple: form", es:"Forma", i:[["I/you/we/they + verb: I work in Leeds.","Yo/tú/nosotros/ellos + verbo: Trabajo en Leeds."],["he/she/it + verb + -s: She works in Leeds.","Él/ella + verbo + -s: Ella trabaja en Leeds."],["Questions: do/does + subject + verb: Does he live here?","Preguntas con do/does: ¿Vive él aquí?"]], ex:["My brother lives in Bristol.","Mi hermano vive en Bristol."]},
   {e:"🔁", h:"Present Simple: use", es:"Uso", i:[["Habits and routines: I catch the 7.45 train.","Hábitos y rutinas: Tomo el tren de las 7.45."],["Facts and general truths: Water boils at 100 degrees.","Hechos y verdades generales: El agua hierve a 100 grados."],["Timetables: The film starts at 20:30.","Horarios: La película empieza a las 20:30."]], ex:["The shops open at nine.","Las tiendas abren a las nueve."]},
@@ -13,7 +13,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: She is liking her new flat.", a:"She likes her new flat. — 'like' es verbo de estado."}
  ] },
 
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B1", icon:"🧠", t:"Stative Verbs", es:"Verbos de estado", d:"Verbos que normalmente no se usan en forma continua y sus excepciones.",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B1", icon:"🧠", slug:"stative-verbs", t:"Stative Verbs", es:"Verbos de estado", d:"Verbos que normalmente no se usan en forma continua y sus excepciones.",
  boxes:[
   {e:"💭", h:"Thinking verbs", es:"Verbos de pensamiento", i:[["know, understand, believe, remember: I don't understand this.","saber, entender, creer, recordar: No entiendo esto."],["think (opinion), doubt, forget: I think it's too expensive.","pensar (opinión), dudar, olvidar: Creo que es demasiado caro."]], ex:["I don't remember her name.","No recuerdo su nombre."]},
   {e:"❤️", h:"Feeling verbs", es:"Verbos de sentimiento", i:[["like, love, hate, prefer, want: I prefer tea to coffee.","gustar, amar, odiar, preferir, querer: Prefiero el té al café."],["need, wish, mind: Do you mind waiting?","necesitar, desear, importar: ¿Te importa esperar?"]], ex:["She loves living in Edinburgh.","Le encanta vivir en Edimburgo."]},
@@ -27,7 +27,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: I'm not understanding this exercise.", a:"I don't understand this exercise. — 'understand' es estativo."}
  ] },
 
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"A2", icon:"⌛", t:"Past Simple (Regular & Irregular)", es:"Pasado simple (regulares e irregulares)", d:"Cómo formar y usar el pasado simple para acciones terminadas.",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"A2", icon:"⌛", slug:"past-simple-regular-and-irregular", t:"Past Simple (Regular & Irregular)", es:"Pasado simple (regulares e irregulares)", d:"Cómo formar y usar el pasado simple para acciones terminadas.",
  boxes:[
   {e:"✍️", h:"Regular verbs", es:"Verbos regulares", i:[["verb + -ed: I walked to school.","verbo + -ed: Fui caminando al colegio."],["Spelling: study → studied, stop → stopped: She studied hard.","Ortografía: study → studied, stop → stopped: Estudió mucho."]], ex:["We visited Bath last summer.","Visitamos Bath el verano pasado."]},
   {e:"🔤", h:"Irregular verbs", es:"Verbos irregulares", i:[["go → went, see → saw, buy → bought: He bought a flat.","ir, ver, comprar: Compró un apartamento."],["get → got, take → took, come → came: They came by coach.","conseguir, tomar, venir: Vinieron en autobús."]], ex:["I saw her at the station.","La vi en la estación."]},
@@ -41,7 +41,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: We goed to Brighton last weekend.", a:"We went to Brighton last weekend. — 'go' es irregular: went."}
  ] },
 
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B1", icon:"🎬", t:"Past Continuous", es:"Pasado continuo", d:"Acciones en progreso en un momento del pasado y escenas de fondo.",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B1", icon:"🎬", slug:"past-continuous", t:"Past Continuous", es:"Pasado continuo", d:"Acciones en progreso en un momento del pasado y escenas de fondo.",
  boxes:[
   {e:"🧩", h:"Form", es:"Forma", i:[["was/were + verb-ing: I was reading.","was/were + verbo-ing: Estaba leyendo."],["Negative: They weren't listening.","Negativa: No estaban escuchando."]], ex:["He was cooking dinner.","Estaba preparando la cena."]},
   {e:"❓", h:"Questions", es:"Preguntas", i:[["Was/Were + subject + -ing? Were you sleeping?","Was/Were + sujeto + -ing: ¿Estabas durmiendo?"],["Wh- question: What were you doing?","Pregunta con wh-: ¿Qué estabas haciendo?"]], ex:["Where were they going?","¿Adónde iban?"]},
@@ -55,7 +55,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: They was playing in the garden.", a:"They were playing in the garden. — 'they' lleva were."}
  ] },
 
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B1", icon:"⚡", t:"Past Simple vs Past Continuous", es:"Pasado simple vs pasado continuo", d:"Acción interrumpida frente a acción interrumpidora en el pasado.",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B1", icon:"⚡", slug:"past-simple-vs-past-continuous", t:"Past Simple vs Past Continuous", es:"Pasado simple vs pasado continuo", d:"Acción interrumpida frente a acción interrumpidora en el pasado.",
  boxes:[
   {e:"✅", h:"Past Simple", es:"Acción terminada", i:[["Completed, short action: He phoned me.","Acción corta y terminada: Me llamó."],["Sequence of events: I woke up, got dressed and left.","Secuencia de hechos: Me desperté, me vestí y salí."]], ex:["She opened the door and smiled.","Abrió la puerta y sonrió."]},
   {e:"⏳", h:"Past Continuous", es:"Acción en progreso", i:[["Longer background action: I was walking home.","Acción larga de fondo: Iba caminando a casa."],["Unfinished at that time: It was snowing.","Sin terminar en ese momento: Estaba nevando."]], ex:["We were waiting for the bus.","Estábamos esperando el autobús."]},
@@ -69,7 +69,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: While we had dinner, the doorbell was ringing.", a:"While we were having dinner, the doorbell rang. — fondo en continuo, interrupción en simple."}
  ] },
 
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B1", icon:"✔️", t:"Present Perfect Simple", es:"Pretérito perfecto simple", d:"Experiencias, resultados presentes y acciones sin tiempo concreto.",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B1", icon:"✔️", slug:"present-perfect-simple", t:"Present Perfect Simple", es:"Pretérito perfecto simple", d:"Experiencias, resultados presentes y acciones sin tiempo concreto.",
  boxes:[
   {e:"🧱", h:"Form", es:"Forma", i:[["have/has + past participle: I've finished.","have/has + participio: He terminado."],["Negative: She hasn't called.","Negativa: No ha llamado."],["Question: Have you eaten?","Pregunta: ¿Has comido?"]], ex:["They have moved to Manchester.","Se han mudado a Mánchester."]},
   {e:"🌍", h:"Life experience", es:"Experiencias", i:[["ever / never: Have you ever been to Wales?","ever / never: ¿Has estado alguna vez en Gales?"],["It's the first time...: It's the first time I've seen snow.","Es la primera vez...: Es la primera vez que veo nieve."]], ex:["I've never tried haggis.","Nunca he probado el haggis."]},
@@ -83,7 +83,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: I am here since nine o'clock.", a:"I've been here since nine o'clock. — acción que empezó antes y continúa."}
  ] },
 
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B2", icon:"🏃", t:"Present Perfect Continuous", es:"Pretérito perfecto continuo", d:"Acciones que empezaron en el pasado y continúan o acaban de terminar.",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B2", icon:"🏃", slug:"present-perfect-continuous", t:"Present Perfect Continuous", es:"Pretérito perfecto continuo", d:"Acciones que empezaron en el pasado y continúan o acaban de terminar.",
  boxes:[
   {e:"🧱", h:"Form", es:"Forma", i:[["have/has + been + verb-ing: I've been waiting.","have/has + been + verbo-ing: He estado esperando."],["Negative: She hasn't been sleeping well.","Negativa: No ha estado durmiendo bien."]], ex:["They've been working all day.","Han estado trabajando todo el día."]},
   {e:"⏳", h:"Ongoing action", es:"Acción en curso", i:[["Started in the past, still going: I've been learning English for two years.","Empezó en el pasado y continúa: Llevo dos años aprendiendo inglés."],["Often with for/since: I've been waiting since nine.","Suele ir con for/since: Llevo esperando desde las nueve."]], ex:["It's been raining since breakfast.","Lleva lloviendo desde el desayuno."]},
@@ -97,7 +97,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: She is working here since 2015.", a:"She has been working here since 2015. — 'since' pide perfecto."}
  ] },
 
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B2", icon:"⚖️", t:"Present Perfect Simple vs Continuous", es:"Perfecto simple vs continuo", d:"Resultado y cantidad frente a duración y actividad en curso.",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B2", icon:"⚖️", slug:"present-perfect-simple-vs-continuous", t:"Present Perfect Simple vs Continuous", es:"Perfecto simple vs continuo", d:"Resultado y cantidad frente a duración y actividad en curso.",
  boxes:[
   {e:"🎯", h:"Simple: result", es:"Simple: resultado", i:[["Focus on the completed result: I've painted the kitchen.","Importa el resultado terminado: He pintado la cocina."],["Quantity: I've drunk four cups of tea.","Cantidad: Me he tomado cuatro tés."]], ex:["She's written three emails.","Ha escrito tres correos."]},
   {e:"🔄", h:"Continuous: activity", es:"Continuo: actividad", i:[["Focus on the activity: I've been painting the kitchen.","Importa la actividad: He estado pintando la cocina."],["Duration: We've been walking for two hours.","Duración: Llevamos dos horas caminando."]], ex:["He's been writing all morning.","Ha estado escribiendo toda la mañana."]},
@@ -111,7 +111,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: I've been writing three emails this morning.", a:"I've written three emails this morning. — cantidad = perfecto simple."}
  ] },
 
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B1", icon:"🆚", t:"Present Perfect vs Past Simple", es:"Pretérito perfecto vs pasado simple", d:"¿Cuándo usar have/has + participio y cuándo el pasado simple?",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B1", icon:"🆚", slug:"present-perfect-vs-past-simple", t:"Present Perfect vs Past Simple", es:"Pretérito perfecto vs pasado simple", d:"¿Cuándo usar have/has + participio y cuándo el pasado simple?",
  boxes:[
   {e:"✅", h:"Present Perfect", es:"have/has + participio", i:[["Life experience: I have been to Peru.","Experiencia de vida: He estado en Perú."],["Result now: I've lost my keys.","Resultado ahora: He perdido las llaves."]], ex:["She has just left.","Acaba de irse."]},
   {e:"🕰️", h:"Past Simple", es:"Pasado terminado", i:[["Finished time stated: I went to Peru in 2019.","Tiempo terminado y dicho: Fui a Perú en 2019."],["Specific moment: I lost my keys yesterday.","Momento concreto: Perdí las llaves ayer."]], ex:["He left at six.","Se fue a las seis."]},
@@ -125,7 +125,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: I have bought this jacket two weeks ago.", a:"I bought this jacket two weeks ago. — 'ago' = pasado simple."}
  ] },
 
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B2", icon:"⏪", t:"Past Perfect", es:"Pasado perfecto", d:"Una acción pasada anterior a otra acción también pasada.",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B2", icon:"⏪", slug:"past-perfect", t:"Past Perfect", es:"Pasado perfecto", d:"Una acción pasada anterior a otra acción también pasada.",
  boxes:[
   {e:"🧱", h:"Form", es:"Forma", i:[["had + past participle: I had finished.","had + participio: Había terminado."],["Negative: She hadn't eaten.","Negativa: No había comido."],["Question: Had they left?","Pregunta: ¿Se habían ido?"]], ex:["He had already gone.","Él ya se había ido."]},
   {e:"1️⃣", h:"Earlier past", es:"Pasado anterior", i:[["First event: past perfect: The film had started","Primer hecho: pasado perfecto: La película había empezado"],["Second event: past simple: ...when we arrived.","Segundo hecho: pasado simple: ...cuando llegamos."]], ex:["When we arrived, the film had started.","Cuando llegamos, la película había empezado."]},
@@ -139,7 +139,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: By the time we arrived, the film already started.", a:"...the film had already started. — hecho anterior: pasado perfecto."}
  ] },
 
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B2", icon:"🕰️", t:"Past Perfect Continuous", es:"Pasado perfecto continuo", d:"Duración de una acción que ocurría antes de otro momento del pasado.",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B2", icon:"🕰️", slug:"past-perfect-continuous", t:"Past Perfect Continuous", es:"Pasado perfecto continuo", d:"Duración de una acción que ocurría antes de otro momento del pasado.",
  boxes:[
   {e:"🧱", h:"Form", es:"Forma", i:[["had + been + verb-ing: I had been waiting.","had + been + verbo-ing: Había estado esperando."],["Negative: She hadn't been sleeping.","Negativa: No había estado durmiendo."]], ex:["They had been walking for hours.","Habían estado caminando durante horas."]},
   {e:"⏳", h:"Duration before a past moment", es:"Duración previa", i:[["for / since + past moment: He'd been working there for ten years when he retired.","for / since + momento pasado: Llevaba diez años trabajando allí cuando se jubiló."],["She'd been working there since 2010.","Trabajaba allí desde 2010."]], ex:["I had been waiting for an hour when she arrived.","Llevaba una hora esperando cuando ella llegó."]},
@@ -153,7 +153,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: They had been knowing each other since school.", a:"They had known each other since school. — 'know' es estativo."}
  ] },
 
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B1", icon:"🔮", t:"Talking about the Future: will, going to, Present Continuous", es:"Hablar del futuro: will, going to, presente continuo", d:"Decisiones, planes, citas y predicciones: qué forma usar para cada una.",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B1", icon:"🔮", slug:"talking-about-the-future-will-going-to-present-continuous", t:"Talking about the Future: will, going to, Present Continuous", es:"Hablar del futuro: will, going to, presente continuo", d:"Decisiones, planes, citas y predicciones: qué forma usar para cada una.",
  boxes:[
   {e:"💡", h:"Will: decisions, promises, offers", es:"Will: decisiones, promesas, ofrecimientos", i:[["Instant decision: The phone's ringing. I'll get it.","Decisión espontánea: Suena el teléfono. Contesto yo."],["Promise: I'll call you tonight.","Promesa: Te llamaré esta noche."],["Offer (British): Shall I open the window?","Ofrecimiento (británico): ¿Abro la ventana?"]], ex:["I'll have the fish, please.","Tomaré el pescado, por favor."]},
   {e:"📝", h:"Going to: plans & evidence", es:"Going to: planes y evidencia", i:[["Plan decided before: I'm going to study law.","Plan decidido antes: Voy a estudiar Derecho."],["Evidence now: Look at those clouds! It's going to rain.","Evidencia ahora: ¡Mira esas nubes! Va a llover."]], ex:["We're going to visit Scotland in August.","Vamos a visitar Escocia en agosto."]},
@@ -167,7 +167,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: I think I go to the cinema tonight. (just decided)", a:"I think I'll go to the cinema tonight. — decisión en el momento: will."}
  ] },
 
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B2", icon:"🌅", t:"Future Continuous", es:"Futuro continuo", d:"Acciones en progreso en un momento futuro y preguntas educadas.",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B2", icon:"🌅", slug:"future-continuous", t:"Future Continuous", es:"Futuro continuo", d:"Acciones en progreso en un momento futuro y preguntas educadas.",
  boxes:[
   {e:"🧱", h:"Form", es:"Forma", i:[["will + be + verb-ing: I'll be working.","will + be + verbo-ing: Estaré trabajando."],["Negative: She won't be sleeping.","Negativa: No estará durmiendo."],["Question: Will you be using the car?","Pregunta: ¿Vas a usar el auto?"]], ex:["This time next week, I'll be lying on a beach.","A esta hora la semana que viene estaré acostado en la playa."]},
   {e:"⏱️", h:"In progress at a future time", es:"En progreso", i:[["At 8 tomorrow, I'll be travelling.","Mañana a las ocho estaré viajando."],["At 6 p.m. I'll be cooking dinner.","A las seis estaré preparando la cena."]], ex:["At noon they'll be sitting an exam.","Al mediodía estarán haciendo un examen."]},
@@ -181,7 +181,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: Will you using the car tonight?", a:"Will you be using the car tonight? — falta 'be'."}
  ] },
 
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B2", icon:"🏁", t:"Future Perfect", es:"Futuro perfecto", d:"Acciones que estarán terminadas antes de un momento del futuro.",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B2", icon:"🏁", slug:"future-perfect", t:"Future Perfect", es:"Futuro perfecto", d:"Acciones que estarán terminadas antes de un momento del futuro.",
  boxes:[
   {e:"🧱", h:"Form", es:"Forma", i:[["will + have + past participle: I'll have finished.","will + have + participio: Habré terminado."],["Negative: She won't have arrived.","Negativa: No habrá llegado."],["Question: Will you have left?","Pregunta: ¿Te habrás ido?"]], ex:["By Friday, they'll have moved in.","Para el viernes se habrán mudado."]},
   {e:"⏰", h:"Completed by a time", es:"Terminado antes de", i:[["by + time: I'll have finished by six.","by + hora: Habré terminado a las seis."],["by the time + present simple: By the time you arrive, we'll have eaten.","by the time + presente simple: Para cuando llegues, habremos comido."]], ex:["By 2030 I'll have paid off my mortgage.","Para 2030 habré pagado mi hipoteca."]},
@@ -195,7 +195,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: I will have wrote the report by Friday.", a:"I will have written the report by Friday. — participio de write: written."}
  ] },
 
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B1", icon:"⏲️", t:"Future Time Clauses (when, as soon as, until)", es:"Oraciones temporales de futuro", d:"Después de when, as soon as o until se usa el presente, no will.",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B1", icon:"⏲️", slug:"future-time-clauses-when-as-soon-as-until", t:"Future Time Clauses (when, as soon as, until)", es:"Oraciones temporales de futuro", d:"Después de when, as soon as o until se usa el presente, no will.",
  boxes:[
   {e:"📏", h:"The rule", es:"La regla", i:[["time word + present simple, will + verb: When I arrive, I'll ring you.","palabra temporal + presente simple, will + verbo: Cuando llegue, te llamaré."],["No will after the time word: I'll wait until you come.","Sin will tras la palabra temporal: Esperaré hasta que vengas."]], ex:["I'll call you as soon as I get home.","Te llamaré en cuanto llegue a casa."]},
   {e:"🔗", h:"Time words", es:"Conectores", i:[["when, as soon as, until, before, after: I'll wait until you finish.","when, as soon as, until, before, after: Esperaré hasta que termines."],["by the time, once, while: Once I've eaten, I'll go out.","by the time, once, while: Una vez que haya comido, saldré."]], ex:["Let's go after we've had a cup of tea.","Vámonos después de tomar un té."]},
@@ -209,7 +209,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: We'll go out after it will stop raining.", a:"...after it stops raining. — sin will tras after."}
  ] },
 
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B1", icon:"👴", t:"Used to & Would (Past Habits)", es:"Used to y would (hábitos pasados)", d:"Hábitos y estados del pasado que ya no se dan.",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B1", icon:"👴", slug:"used-to-and-would-past-habits", t:"Used to & Would (Past Habits)", es:"Used to y would (hábitos pasados)", d:"Hábitos y estados del pasado que ya no se dan.",
  boxes:[
   {e:"🧱", h:"Used to: form", es:"Forma", i:[["used to + base verb: I used to smoke.","used to + verbo base: Yo solía fumar."],["Negative: She didn't use to like tea.","Negativa: Antes no le gustaba el té."],["Question: Did you use to live here?","Pregunta: ¿Vivías aquí antes?"]], ex:["We used to go to Brighton every summer.","Solíamos ir a Brighton cada verano."]},
   {e:"🏡", h:"Past states", es:"Estados pasados", i:[["Used to also works for states: He used to have long hair.","Used to también sirve para estados: Antes tenía el pelo largo."],["Used to + be/have/know/live: We used to live in Hull.","Used to + be/have/know/live: Antes vivíamos en Hull."]], ex:["This pub used to be a bank.","Este pub solía ser un banco."]},
@@ -223,7 +223,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: She didn't used to like coffee.", a:"She didn't use to like coffee. — tras didn't, 'use to'."}
  ] },
 
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B2", icon:"🌱", t:"Be Used To vs Get Used To", es:"Estar acostumbrado vs acostumbrarse", d:"Diferencia entre un estado de costumbre y el proceso de adaptación.",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B2", icon:"🌱", slug:"be-used-to-vs-get-used-to", t:"Be Used To vs Get Used To", es:"Estar acostumbrado vs acostumbrarse", d:"Diferencia entre un estado de costumbre y el proceso de adaptación.",
  boxes:[
   {e:"✅", h:"Be used to", es:"Estar acostumbrado", i:[["be used to + noun/-ing: I'm used to the weather.","be used to + nombre/-ing: Estoy acostumbrado al clima."],["= familiar, not strange: She's used to driving on the left.","= familiar, no extraño: Está acostumbrada a conducir por la izquierda."]], ex:["I'm used to getting up early.","Estoy acostumbrado a madrugar."]},
   {e:"📈", h:"Get used to", es:"Acostumbrarse", i:[["Process of becoming used to: I'm getting used to the food.","Proceso de acostumbrarse: Me estoy acostumbrando a la comida."],["Get used to + noun / -ing: I can't get used to the cold.","Get used to + nombre / -ing: No me acostumbro al frío."]], ex:["You'll soon get used to the Tube.","Pronto te acostumbrarás al metro."]},
@@ -237,7 +237,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: When I was young, I was used to play in the street.", a:"I used to play in the street. — hábito pasado, 'used to' + base."}
  ] },
 
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B1", icon:"💪", t:"Modals of Ability", es:"Modales de habilidad", d:"Can, could y be able to para hablar de lo que se puede o se pudo hacer.",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B1", icon:"💪", slug:"modals-of-ability", t:"Modals of Ability", es:"Modales de habilidad", d:"Can, could y be able to para hablar de lo que se puede o se pudo hacer.",
  boxes:[
   {e:"🟢", h:"Can: present", es:"Habilidad presente", i:[["can + base verb: I can swim.","can + verbo base: Sé nadar."],["Negative: can't / cannot: She can't drive.","Negativa: can't / cannot: Ella no sabe conducir."]], ex:["Can you speak French?","¿Hablas francés?"]},
   {e:"⏪", h:"Could: general past", es:"Habilidad pasada general", i:[["could = general ability: I could read at four.","could = habilidad general: Sabía leer a los cuatro años."],["Negative: I couldn't swim until I was ten.","Negativa: No sabía nadar hasta los diez."]], ex:["He couldn't ride a bike as a child.","De niño no sabía andar en bicicleta."]},
@@ -251,7 +251,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: He can to speak three languages.", a:"He can speak three languages. — sin 'to' tras can."}
  ] },
 
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B1", icon:"🚦", t:"Modals of Obligation & Prohibition", es:"Modales de obligación y prohibición", d:"Must, have to, mustn't y don't have to: diferencias clave.",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B1", icon:"🚦", slug:"modals-of-obligation-and-prohibition", t:"Modals of Obligation & Prohibition", es:"Modales de obligación y prohibición", d:"Must, have to, mustn't y don't have to: diferencias clave.",
  boxes:[
   {e:"📌", h:"Must", es:"Obligación personal", i:[["Speaker's own feeling: I must call my mum.","Sentimiento del hablante: Tengo que llamar a mi madre."],["Written rules: Visitors must sign in.","Normas escritas: Los visitantes deben registrarse."]], ex:["You must wear a seatbelt.","Debes llevar el cinturón."]},
   {e:"📋", h:"Have to", es:"Obligación externa", i:[["Rules or external duty: I have to wear a uniform.","Normas u obligación externa: Tengo que llevar uniforme."],["Questions: Do we have to pay?","Preguntas: ¿Tenemos que pagar?"]], ex:["Young people in England have to stay in education or training until eighteen.","En Inglaterra, los jóvenes tienen que seguir estudiando o formándose hasta los dieciocho."]},
@@ -265,7 +265,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: Last week I must go to the dentist.", a:"Last week I had to go to the dentist. — pasado de must: had to."}
  ] },
 
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B1", icon:"👍", t:"Modals of Advice (should, ought to, had better)", es:"Modales de consejo", d:"Cómo dar consejos con distinta fuerza: should, ought to y had better.",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B1", icon:"👍", slug:"modals-of-advice-should-ought-to-had-better", t:"Modals of Advice (should, ought to, had better)", es:"Modales de consejo", d:"Cómo dar consejos con distinta fuerza: should, ought to y had better.",
  boxes:[
   {e:"💬", h:"Should", es:"Consejo general", i:[["should + base verb: You should see a doctor.","should + verbo base: Deberías ir al médico."],["Negative: You shouldn't eat so much.","Negativa: No deberías comer tanto."]], ex:["I think you should apologise.","Creo que deberías disculparte."]},
   {e:"👌", h:"Ought to", es:"Más formal", i:[["ought to + base verb: You ought to rest.","ought to + verbo base: Deberías descansar."],["Negative (formal): You ought not to be late.","Negativa (formal): No deberías llegar tarde."]], ex:["We ought to tell the council.","Deberíamos informar a la municipalidad."]},
@@ -279,7 +279,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: You shouldn't to eat so much sugar.", a:"You shouldn't eat so much sugar. — sin 'to'."}
  ] },
 
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B1", icon:"🕵️", t:"Modals of Deduction (Present)", es:"Modales de deducción (presente)", d:"Must, might, could y can't para deducir algo sobre el presente.",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B1", icon:"🕵️", slug:"modals-of-deduction-present", t:"Modals of Deduction (Present)", es:"Modales de deducción (presente)", d:"Must, might, could y can't para deducir algo sobre el presente.",
  boxes:[
   {e:"💯", h:"Must: sure it's true", es:"Casi seguro", i:[["must + base verb: He must be tired.","must + verbo base: Debe de estar cansado."],["Also must have + noun: He must have a lot of money.","También must have + nombre: Debe de tener mucho dinero."]], ex:["She's got a Rolex; she must be rich.","Tiene un Rolex; debe de ser rica."]},
   {e:"🚫", h:"Can't: sure it's false", es:"Imposible", i:[["can't + base verb: That can't be right.","can't + verbo base: Eso no puede estar bien."],["That can't be his car.","Ese no puede ser su auto."]], ex:["He can't be at work; it's Sunday.","No puede estar en el trabajo; es domingo."]},
@@ -293,7 +293,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: He isn't answering. He mustn't be at home.", a:"He can't be at home. — deducción negativa."}
  ] },
 
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B2", icon:"🔍", t:"Modals of Deduction (Past)", es:"Modales de deducción (pasado)", d:"Must have, can't have y might have para deducir sobre el pasado.",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B2", icon:"🔍", slug:"modals-of-deduction-past", t:"Modals of Deduction (Past)", es:"Modales de deducción (pasado)", d:"Must have, can't have y might have para deducir sobre el pasado.",
  boxes:[
   {e:"💯", h:"Must have + pp", es:"Seguro que pasó", i:[["must have + past participle: He must have forgotten.","must have + participio: Debe de haberse olvidado."],["Evidence in the present: He's not here; he must have left.","Con pruebas en el presente: No está aquí; debe de haberse ido."]], ex:["The ground is wet; it must have rained.","El suelo está mojado; debe de haber llovido."]},
   {e:"🚫", h:"Can't have + pp", es:"Imposible que pasara", i:[["can't have + pp: She can't have seen us.","can't have + pp: No puede habernos visto."],["couldn't have + pp: They couldn't have known.","couldn't have + pp: No pudieron haberlo sabido."]], ex:["He can't have left; his coat's here.","No puede haberse ido; su abrigo está aquí."]},
@@ -307,7 +307,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: The streets are wet. It must rained.", a:"It must have rained. — falta 'have' + participio."}
  ] },
 
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B1", icon:"🙋", t:"Requests, Offers & Suggestions", es:"Peticiones, ofrecimientos y sugerencias", d:"Shall, could y would para pedir, ofrecer y sugerir con cortesía.",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B1", icon:"🙋", slug:"requests-offers-and-suggestions", t:"Requests, Offers & Suggestions", es:"Peticiones, ofrecimientos y sugerencias", d:"Shall, could y would para pedir, ofrecer y sugerir con cortesía.",
  boxes:[
   {e:"🙏", h:"Polite requests", es:"Peticiones", i:[["Could you...? Could you open the window?","¿Podrías...? ¿Podrías abrir la ventana?"],["Would you mind + -ing? Would you mind waiting?","¿Te importaría + -ing? ¿Te importaría esperar?"]], ex:["Could I have a glass of water, please?","¿Podría darme un vaso de agua, por favor?"]},
   {e:"💬", h:"Informal requests", es:"Informales", i:[["Can you...? Can you pass the milk?","¿Puedes...? ¿Me pasas la leche?"],["Can I borrow...? Can I borrow your pen?","¿Me prestas...? ¿Me prestas tu bolígrafo?"]], ex:["Can you give me a hand?","¿Me echas una mano?"]},
@@ -321,7 +321,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: Why we don't go to the cinema tonight?", a:"Why don't we go to the cinema tonight? — orden: Why don't we...?"}
  ] },
 
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B1", icon:"🔧", t:"The Passive", es:"La voz pasiva", d:"Pasiva en presente, pasado, perfecto, continuo, futuro y con verbos modales.",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B1", icon:"🔧", slug:"the-passive", t:"The Passive", es:"La voz pasiva", d:"Pasiva en presente, pasado, perfecto, continuo, futuro y con verbos modales.",
  boxes:[
   {e:"🧱", h:"Present & past", es:"Presente y pasado", i:[["am/is/are + pp: English is spoken here.","am/is/are + participio: Aquí se habla inglés."],["was/were + pp: The bridge was built in 1890.","was/were + participio: El puente se construyó en 1890."]], ex:["The letters were delivered yesterday.","Las cartas se entregaron ayer."]},
   {e:"⏳", h:"Perfect & continuous", es:"Perfecto y continuo", i:[["has/have been + pp: Our flights have been cancelled.","has/have been + pp: Nuestros vuelos han sido cancelados."],["is/are being + pp: The new library is being built.","is/are being + pp: Se está construyendo la biblioteca nueva."],["had been + pp: The room had been cleaned.","had been + pp: La habitación había sido limpiada."]], ex:["The roof was being repaired when it rained.","Estaban reparando el tejado cuando llovió."]},
@@ -335,7 +335,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: The rooms are clean every day by the staff.", a:"The rooms are cleaned every day by the staff. — be + participio (cleaned)."}
  ] },
 
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B2", icon:"💇", t:"Causative: have/get something done", es:"Causativa: have/get something done", d:"Para hablar de servicios que otra persona hace por nosotros.",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B2", icon:"💇", slug:"causative-have-get-something-done", t:"Causative: have/get something done", es:"Causativa: have/get something done", d:"Para hablar de servicios que otra persona hace por nosotros.",
  boxes:[
   {e:"🧱", h:"Form", es:"Forma", i:[["have + object + past participle: I had my hair cut.","have + objeto + participio: Me corté el pelo (en la peluquería)."],["get + object + pp (informal): I got my car fixed.","get + objeto + pp (informal): Me arreglaron el auto."]], ex:["We're having the kitchen painted.","Nos están pintando la cocina."]},
   {e:"🛠️", h:"Services", es:"Servicios", i:[["have my eyes tested: I had my eyes tested.","hacerme una revisión de la vista: Me revisaron la vista."],["have the boiler serviced: We had the boiler serviced.","revisar la caldera: Nos revisaron la caldera."]], ex:["She has her nails done every month.","Se hace las uñas cada mes."]},
@@ -349,7 +349,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: I must get repaired my phone.", a:"I must get my phone repaired. — get + objeto + participio."}
  ] },
 
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B2", icon:"💬", t:"Reported Speech: Statements", es:"Estilo indirecto: afirmaciones", d:"Cómo contar lo que alguien dijo cambiando tiempos y expresiones.",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B2", icon:"💬", slug:"reported-speech-statements", t:"Reported Speech: Statements", es:"Estilo indirecto: afirmaciones", d:"Cómo contar lo que alguien dijo cambiando tiempos y expresiones.",
  boxes:[
   {e:"⬅️", h:"Backshift", es:"Retroceso de tiempos", i:[["Present simple → past simple: 'I work.' → She said she worked.","Presente simple → pasado simple: 'Trabajo.' → Dijo que trabajaba."],["Present continuous → past continuous: 'I'm busy.' → He said he was busy.","Presente continuo → pasado continuo: 'Estoy ocupado.' → Dijo que estaba ocupado."]], ex:["'I like London.' → She said she liked London.","'Me gusta Londres.' → Dijo que le gustaba Londres."]},
   {e:"⏪", h:"More backshifts", es:"Más cambios", i:[["Present perfect/past simple → past perfect: 'I've finished.' → He said he'd finished.","Perfecto/pasado simple → pasado perfecto: 'He terminado.' → Dijo que había terminado."],["will → would: 'I'll call.' → She said she'd call.","will → would: 'Llamaré.' → Dijo que llamaría."]], ex:["'I saw him.' → He said he had seen him.","'Lo vi.' → Dijo que lo había visto."]},
@@ -363,7 +363,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: 'I have finished,' he said. → He said he has finished.", a:"He said he had finished. — presente perfecto → pasado perfecto."}
  ] },
 
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B2", icon:"❓", t:"Reported Questions & Commands", es:"Preguntas y órdenes indirectas", d:"Cómo transmitir preguntas, órdenes y peticiones de otra persona.",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B2", icon:"❓", slug:"reported-questions-and-commands", t:"Reported Questions & Commands", es:"Preguntas y órdenes indirectas", d:"Cómo transmitir preguntas, órdenes y peticiones de otra persona.",
  boxes:[
   {e:"🔠", h:"Wh- questions", es:"Preguntas con wh-", i:[["Wh- word + statement order: 'Where do you live?' → He asked where I lived.","Palabra wh- + orden afirmativo: '¿Dónde vives?' → Preguntó dónde vivía."],["Where / who / why: He asked who I was.","Where / who / why: Preguntó quién era yo."]], ex:["She asked me what time the train left.","Me preguntó a qué hora salía el tren."]},
   {e:"✅", h:"Yes/No questions", es:"Preguntas sí/no", i:[["if / whether + statement order: 'Are you tired?' → She asked if I was tired.","if / whether + orden afirmativo: '¿Estás cansado?' → Preguntó si estaba cansado."],["Use if or whether: I asked whether it was open.","Usa if o whether: Pregunté si estaba abierto."]], ex:["He asked whether I had a car.","Preguntó si tenía auto."]},
@@ -377,7 +377,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: 'Don't be late,' she said. → She told me don't be late.", a:"She told me not to be late. — órdenes negativas: not to + verbo."}
  ] },
 
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B2", icon:"🗯️", t:"Reporting Verbs (suggest, admit, promise...)", es:"Verbos de comunicación indirecta", d:"Verbos como suggest, admit o promise y las estructuras que exigen.",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B2", icon:"🗯️", slug:"reporting-verbs-suggest-admit-promise", t:"Reporting Verbs (suggest, admit, promise...)", es:"Verbos de comunicación indirecta", d:"Verbos como suggest, admit o promise y las estructuras que exigen.",
  boxes:[
   {e:"🤝", h:"Verb + to-infinitive", es:"Verb + to + infinitivo", i:[["promise, offer, refuse, agree: He promised to ring.","promise, offer, refuse, agree: Prometió llamar."],["threaten, decide: She decided to stay.","threaten, decide: Decidió quedarse."]], ex:["They agreed to meet at six.","Acordaron encontrarse a las seis."]},
   {e:"👤", h:"Verb + object + to", es:"Verb + objeto + to", i:[["tell, ask, warn, advise, remind, invite: She advised me to rest.","tell, ask, warn, advise, remind, invite: Me aconsejó descansar."],["order, encourage, persuade: He persuaded me to join.","order, encourage, persuade: Me convenció de unirme."]], ex:["He reminded me to post the letter.","Me recordó que enviara la carta."]},
@@ -391,7 +391,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: She apologised me for being late.", a:"She apologised for being late. / She apologised to me for being late. — apologise (to) + for + -ing."}
  ] },
 
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B2", icon:"🗣️", t:"Say, Tell, Speak & Talk", es:"Say, tell, speak y talk", d:"Diferencias, colocaciones y estructuras de cuatro verbos que se confunden mucho.",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B2", icon:"🗣️", slug:"say-tell-speak-and-talk", t:"Say, Tell, Speak & Talk", es:"Say, tell, speak y talk", d:"Diferencias, colocaciones y estructuras de cuatro verbos que se confunden mucho.",
  boxes:[
   {e:"💬", h:"Say", es:"Say: decir", i:[["say + words / that-clause: She said (that) she was late.","say + palabras / oración: Dijo que llegaba tarde."],["say + to + person: He said sorry to her.","say + to + persona: Le pidió perdón."],["say hello / goodbye / thank you / a prayer","decir hola / adiós / gracias / rezar una oración"]], ex:["What did he say?","¿Qué dijo?"]},
   {e:"🗨️", h:"Tell", es:"Tell: contar, decir a alguien", i:[["tell + person + that/to: She told me to wait.","tell + persona + that/to: Me dijo que esperara."],["tell the truth / a lie / a story / a joke","decir la verdad / una mentira / contar una historia / un chiste"],["tell the time / the difference / tell someone off","decir la hora / distinguir / regañar a alguien"]], ex:["Can you tell me the way to the station?","¿Puedes decirme el camino a la estación?"]},
@@ -405,7 +405,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: She said me that she was leaving.", a:"She told me (that) she was leaving. / She said (that) she was leaving. — say no lleva 'me'."}
  ] },
 
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B2", icon:"📰", t:"Passive Reporting Structures (It is said that…, He is thought to…)", es:"Pasiva impersonal (Se dice que…, Se cree que…)", d:"Cómo dar información general o de prensa sin decir quién lo afirma.",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"B2", icon:"📰", slug:"passive-reporting-structures-it-is-said-that-he-is-thought-to", t:"Passive Reporting Structures (It is said that…, He is thought to…)", es:"Pasiva impersonal (Se dice que…, Se cree que…)", d:"Cómo dar información general o de prensa sin decir quién lo afirma.",
  boxes:[
   {e:"🧱", h:"It is said that…", es:"Estructura con It", i:[["It + passive verb + that + clause: It is said that he is rich.","It + verbo pasivo + that + oración: Se dice que es rico."],["It was reported that the road was closed.","Se informó de que la carretera estaba cerrada."]], ex:["It is believed that the thief escaped by car.","Se cree que el ladrón escapó en auto."]},
   {e:"👤", h:"He is said to…", es:"Sujeto + infinitivo", i:[["Subject + passive verb + to + infinitive: He is said to be rich.","Sujeto + verbo pasivo + to + infinitivo: Se dice que es rico."],["They are thought to live in Kent.","Se cree que viven en Kent."]], ex:["The cathedral is known to be 800 years old.","Se sabe que la catedral tiene 800 años."]},

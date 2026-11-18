@@ -1,5 +1,5 @@
 window.MAPS = (window.MAPS||[]).concat([
-{ cat:"Grammar: Structures", type:"Structures", lvl:"B1", icon:"🔀", t:"Zero & First Conditional", es:"Condicional cero y primero", d:"Hechos generales y posibilidades reales en el futuro.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"B1", icon:"🔀", slug:"zero-and-first-conditional", t:"Zero & First Conditional", es:"Condicional cero y primero", d:"Hechos generales y posibilidades reales en el futuro.",
  boxes:[
   {e:"🧊", h:"Zero conditional", es:"Verdades generales", i:[["If + present, present","Si + presente, presente"],["If you heat ice, it melts.","Si calientas hielo, se derrite."]], ex:["If it rains, the Tube gets very crowded.","Si llueve, el metro se llena mucho."]},
   {e:"🔮", h:"First conditional", es:"Futuro posible", i:[["If + present, will + verb","Si + presente, will + verbo"],["Real possibility","Posibilidad real"]], ex:["If it rains tomorrow, we'll stay in.","Si llueve mañana, nos quedaremos en casa."]},
@@ -13,7 +13,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: If it will snow tomorrow, we'll build a snowman.", a:"If it snows tomorrow... — no will tras if."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"B1", icon:"💭", t:"Second Conditional", es:"Segundo condicional", d:"Situaciones improbables o imaginarias en el presente o futuro.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"B1", icon:"💭", slug:"second-conditional", t:"Second Conditional", es:"Segundo condicional", d:"Situaciones improbables o imaginarias en el presente o futuro.",
  boxes:[
   {e:"🏗️", h:"Form", es:"Estructura", i:[["If + past simple, would + verb","Si + pasado, condicional"],["If I had..., I would...","Si tuviera..., haría..."]], ex:["If I won the lottery, I'd buy a house in Kent.","Si ganara la lotería, compraría una casa en Kent."]},
   {e:"🎯", h:"Use", es:"Cuándo se usa", i:[["Unlikely or impossible","Improbable o imposible"],["Imaginary situations","Situaciones imaginarias"]], ex:["If I lived in London, I'd go to the theatre often.","Si viviera en Londres, iría mucho al teatro."]},
@@ -27,7 +27,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: If I would win the lottery, I'd buy a flat.", a:"If I won... — no would en la cláusula if."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"B2", icon:"⏪", t:"Third Conditional", es:"Tercer condicional", d:"Situaciones imaginarias en el pasado y sus resultados.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"B2", icon:"⏪", slug:"third-conditional", t:"Third Conditional", es:"Tercer condicional", d:"Situaciones imaginarias en el pasado y sus resultados.",
  boxes:[
   {e:"🏗️", h:"Form", es:"Estructura", i:[["If + past perfect, would have + p.p.","Si + pluscuamperfecto, condicional compuesto"],["If I had known...","Si hubiera sabido..."]], ex:["If I had revised, I would have passed my GCSE.","Si hubiera estudiado, habría aprobado el GCSE."]},
   {e:"🕰️", h:"Use", es:"Pasado irreal", i:[["Imaginary past","Pasado imaginario"],["Can't change it now","Ya no se puede cambiar"]], ex:["If we had left earlier, we wouldn't have missed the train.","Si hubiéramos salido antes, no habríamos perdido el tren."]},
@@ -41,7 +41,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: If I would have seen him, I would have said hello.", a:"If I had seen him... — no would tras if."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"B2", icon:"🧩", t:"Mixed Conditionals", es:"Condicionales mixtos", d:"Combinan pasado y presente en una misma frase condicional.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"B2", icon:"🧩", slug:"mixed-conditionals", t:"Mixed Conditionals", es:"Condicionales mixtos", d:"Combinan pasado y presente en una misma frase condicional.",
  boxes:[
   {e:"🔗", h:"Past → present", es:"Causa pasada, efecto presente", i:[["If + past perfect, would + verb","Si + pluscuamperfecto, would + verbo"],["If I'd left, I'd be home now.","Si me hubiera ido, estaría en casa."]], ex:["If I had studied law, I'd be a solicitor now.","Si hubiera estudiado Derecho, ahora sería abogado."]},
   {e:"↩️", h:"Present → past", es:"Situación actual, efecto pasado", i:[["If + past simple, would have + p.p.","Si + pasado, would have + p.p."],["If I were fitter, I'd have run.","Si estuviera en forma, habría corrido."]], ex:["If I were braver, I'd have spoken to her.","Si fuera más valiente, le habría hablado."]},
@@ -55,7 +55,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: If I had listened, I would not be in trouble yesterday.", a:"...I would not have been in trouble yesterday — ayer = pasado."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"B2", icon:"🌠", t:"Wish & If only", es:"Wish e If only", d:"Expresar deseos y lamentos sobre presente, pasado y futuro.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"B2", icon:"🌠", slug:"wish-and-if-only", t:"Wish & If only", es:"Wish e If only", d:"Expresar deseos y lamentos sobre presente, pasado y futuro.",
  boxes:[
   {e:"🌍", h:"Present wishes", es:"Deseos del presente", i:[["wish + past simple","wish + pasado"],["I wish I had a car.","Ojalá tuviera auto."]], ex:["I wish I lived nearer the centre.","Ojalá viviera más cerca del centro."]},
   {e:"😞", h:"Past regrets", es:"Lamentos del pasado", i:[["wish + past perfect","wish + pluscuamperfecto"],["I wish I'd studied.","Ojalá hubiera estudiado."]], ex:["I wish I hadn't said that.","Ojalá no hubiera dicho eso."]},
@@ -69,7 +69,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: I wish I have a bigger flat.", a:"I wish I had... — wish + pasado simple."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"B1", icon:"🔒", t:"Unless, As long as, Provided that", es:"Unless, as long as, provided that", d:"Conectores que expresan condiciones especiales.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"B1", icon:"🔒", slug:"unless-as-long-as-provided-that", t:"Unless, As long as, Provided that", es:"Unless, as long as, provided that", d:"Conectores que expresan condiciones especiales.",
  boxes:[
   {e:"🚫", h:"Unless", es:"A menos que", i:[["unless = if ... not","unless = si no"],["Unless you hurry, you'll be late.","A menos que te apures, llegarás tarde."]], ex:["Unless it rains, we'll have a barbecue.","A menos que llueva, haremos una barbacoa."]},
   {e:"✅", h:"As long as", es:"Siempre que", i:[["as long as = on condition","as long as = con la condición de que"],["So long as (formal)","So long as (más formal)"]], ex:["You can borrow my car as long as you drive carefully.","Puedes usar mi auto siempre que manejes con cuidado."]},
@@ -83,7 +83,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: Unless you don't revise, you'll fail.", a:"Unless you revise... — no doble negación."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"B1", icon:"👤", t:"Defining Relative Clauses", es:"Oraciones de relativo especificativas", d:"Información esencial para identificar a quién o qué nos referimos.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"B1", icon:"👤", slug:"defining-relative-clauses", t:"Defining Relative Clauses", es:"Oraciones de relativo especificativas", d:"Información esencial para identificar a quién o qué nos referimos.",
  boxes:[
   {e:"🧑", h:"Who / that", es:"Personas", i:[["the man who lives next door","el hombre que vive al lado"],["the girl that works here","la chica que trabaja aquí"]], ex:["The woman who lives upstairs is a nurse.","La mujer que vive arriba es enfermera."]},
   {e:"📦", h:"Which / that", es:"Cosas", i:[["the book which I bought","el libro que compré"],["the bus that goes to Bath","el autobús que va a Bath"]], ex:["The pub that we visited was lovely.","El pub que visitamos era precioso."]},
@@ -97,7 +97,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: The girl who she works here is my cousin.", a:"The girl who works here... — sin pronombre repetido."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"B2", icon:"➕", t:"Non-defining Relative Clauses", es:"Oraciones de relativo explicativas", d:"Información extra entre comas que no es esencial.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"B2", icon:"➕", slug:"non-defining-relative-clauses", t:"Non-defining Relative Clauses", es:"Oraciones de relativo explicativas", d:"Información extra entre comas que no es esencial.",
  boxes:[
   {e:"✍️", h:"Commas", es:"Comas", i:[["Put commas before and after","Comas antes y después"],["Extra information","Información adicional"]], ex:["My brother, who lives in Leeds, is a chef.","Mi hermano, que vive en Leeds, es cocinero."]},
   {e:"🔗", h:"Who, which, where, whose", es:"Pronombres", i:[["who: people","who: personas"],["which: things","which: cosas"],["whose: possession","whose: posesión"]], ex:["Bath, where I studied, is beautiful.","Bath, donde estudié, es preciosa."]},
@@ -111,7 +111,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: My car, that I bought in May, has broken down.", a:"My car, which I bought... — that no con comas."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"B2", icon:"✂️", t:"Reduced Relative Clauses (-ing / -ed)", es:"Relativas reducidas (-ing / -ed)", d:"Acortar oraciones de relativo con participios.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"B2", icon:"✂️", slug:"reduced-relative-clauses-ing-ed", t:"Reduced Relative Clauses (-ing / -ed)", es:"Relativas reducidas (-ing / -ed)", d:"Acortar oraciones de relativo con participios.",
  boxes:[
   {e:"🏃", h:"-ing: active", es:"-ing: voz activa", i:[["who is standing → standing","que está de pie → standing"],["which runs → running","que corre → running"]], ex:["The man standing at the bus stop is my uncle.","El hombre que está en la parada es mi tío."]},
   {e:"📬", h:"-ed: passive", es:"-ed: voz pasiva", i:[["which was written → written","que fue escrito → written"],["that is made → made","que está hecho → made"]], ex:["The letter sent yesterday hasn't arrived.","La carta enviada ayer no ha llegado."]},
@@ -125,7 +125,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: The money stealing from the shop was never found.", a:"The money stolen from the shop... — pasiva = stolen."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"B2", icon:"⚖️", t:"Gerund vs Infinitive", es:"Gerundio frente a infinitivo", d:"Algunos verbos cambian de significado según la forma que les sigue.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"B2", icon:"⚖️", slug:"gerund-vs-infinitive", t:"Gerund vs Infinitive", es:"Gerundio frente a infinitivo", d:"Algunos verbos cambian de significado según la forma que les sigue.",
  boxes:[
   {e:"🧠", h:"Remember", es:"Recordar", i:[["remember + -ing: recall past","remember + -ing: recordar haber hecho"],["remember + to: not forget","remember + to: acordarse de hacer"]], ex:["I remember locking the door. / Remember to lock it.","Recuerdo haber cerrado. / Acuérdate de cerrar."]},
   {e:"🙈", h:"Forget", es:"Olvidar", i:[["forget + -ing: past memory","forget + -ing: olvidar haber hecho"],["forget + to: omit a task","forget + to: olvidarse de hacer"]], ex:["I'll never forget meeting the King.","Nunca olvidaré haber conocido al rey."]},
@@ -139,7 +139,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: He stopped to eat meat ten years ago.", a:"He stopped eating meat — dejó de comer carne."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"B1", icon:"📋", t:"Verb Patterns: -ing vs to + infinitive (lists)", es:"Patrones verbales: -ing y to + infinitivo", d:"Listas de verbos que van seguidos de gerundio o de infinitivo.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"B1", icon:"📋", slug:"verb-patterns-ing-vs-to-infinitive-lists", t:"Verb Patterns: -ing vs to + infinitive (lists)", es:"Patrones verbales: -ing y to + infinitivo", d:"Listas de verbos que van seguidos de gerundio o de infinitivo.",
  boxes:[
   {e:"❤️", h:"Verbs + -ing", es:"Verbos + -ing", i:[["enjoy, mind, finish, avoid","disfrutar, importar, terminar, evitar"],["give up, keep, suggest, consider","dejar, seguir, sugerir, considerar"]], ex:["I enjoy walking along the Thames.","Disfruto paseando junto al Támesis."]},
   {e:"🎯", h:"Verbs + to + inf", es:"Verbos + to + infinitivo", i:[["want, hope, plan, decide","querer, esperar, planear, decidir"],["agree, refuse, promise, offer","acordar, negarse, prometer, ofrecer"]], ex:["We've decided to rent a flat in Brighton.","Hemos decidido alquilar un apartamento en Brighton."]},
@@ -153,7 +153,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: I'm looking forward to see you.", a:"to seeing — to es preposición aquí, lleva -ing."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"B1", icon:"🗣️", t:"Verb + Object + Infinitive (want, ask, tell)", es:"Verbo + objeto + infinitivo", d:"Pedir, querer o mandar a alguien que haga algo.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"B1", icon:"🗣️", slug:"verb-object-infinitive-want-ask-tell", t:"Verb + Object + Infinitive (want, ask, tell)", es:"Verbo + objeto + infinitivo", d:"Pedir, querer o mandar a alguien que haga algo.",
  boxes:[
   {e:"🙋", h:"Want / would like", es:"Querer", i:[["want + someone + to + verb","querer que alguien haga algo"],["would like + object + to","me gustaría que + subjuntivo"]], ex:["I want you to meet my mum.","Quiero que conozcas a mi madre."]},
   {e:"🙏", h:"Ask", es:"Pedir", i:[["ask + object + to + verb","pedir a alguien que haga"],["ask for + noun","pedir algo"]], ex:["She asked me to open the window.","Me pidió que abriera la ventana."]},
@@ -167,7 +167,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: I want that you help me.", a:"I want you to help me. — want + objeto + to, sin that."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"A2", icon:"📏", t:"Comparatives & Superlatives", es:"Comparativos y superlativos", d:"Comparar dos cosas y expresar el grado máximo dentro de un grupo.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"A2", icon:"📏", slug:"comparatives-and-superlatives", t:"Comparatives & Superlatives", es:"Comparativos y superlativos", d:"Comparar dos cosas y expresar el grado máximo dentro de un grupo.",
  boxes:[
   {e:"1️⃣", h:"Short adjectives", es:"Adjetivos cortos", i:[["cheap → cheaper → the cheapest","barato → más barato → el más barato"],["big → bigger → the biggest","grande → más grande → el más grande"]], ex:["Trains are cheaper than taxis.","Los trenes son más baratos que los taxis."]},
   {e:"🔠", h:"Long adjectives", es:"Adjetivos largos", i:[["more + adj + than","más + adj + que"],["the most + adj","el más + adj"]], ex:["London is more expensive than Leeds.","Londres es más caro que Leeds."]},
@@ -181,7 +181,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: Today is more hot than yesterday.", a:"hotter than — adjetivo corto, duplica t."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"B1", icon:"🟰", t:"As...as & Comparisons (the same as, similar to, different from/to)", es:"As...as y comparaciones", d:"Expresar igualdad, parecido y diferencia.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"B1", icon:"🟰", slug:"as-as-and-comparisons-the-same-as-similar-to-different-from-to", t:"As...as & Comparisons (the same as, similar to, different from/to)", es:"As...as y comparaciones", d:"Expresar igualdad, parecido y diferencia.",
  boxes:[
   {e:"🟰", h:"as + adj + as", es:"Igualdad", i:[["as tall as","tan alto como"],["as quickly as possible","lo más rápido posible"]], ex:["My flat is as big as yours.","Mi apartamento es tan grande como el tuyo."]},
   {e:"➖", h:"not as ... as", es:"Menos que", i:[["not as cold as","no tan frío como"],["not so ... as","no tan ... como (más formal)"]], ex:["Bristol isn't as expensive as London.","Bristol no es tan caro como Londres."]},
@@ -195,7 +195,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: Her accent is different than mine.", a:"different from / to mine — en UK no 'than'."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"B1", icon:"🅰️", t:"Articles", es:"Artículos: a / an / the y sin artículo", d:"Cuándo usar a, an, the o ningún artículo.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"B1", icon:"🅰️", slug:"articles", t:"Articles", es:"Artículos: a / an / the y sin artículo", d:"Cuándo usar a, an, the o ningún artículo.",
  boxes:[
   {e:"1️⃣", h:"A / an", es:"Indefinido", i:[["a + consonant sound","a + sonido consonante"],["an + vowel sound","an + sonido vocal"],["an hour, a university","an hour, a university (cuenta el sonido)"]], ex:["She's an engineer with a degree from Oxford.","Es ingeniera con un título de Oxford."]},
   {e:"🆕", h:"A/an vs the", es:"Nueva información o conocida", i:[["a/an: first mention","a/an: primera mención"],["the: already known / unique","the: ya conocido o único"]], ex:["I bought a jacket. The jacket was cheap.","Compré una chaqueta. La chaqueta era barata."]},
@@ -209,7 +209,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: I go to work by the bus.", a:"by bus — transporte sin artículo."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"B1", icon:"🔢", t:"Quantifiers (some, any, much, many, a lot of, few, little)", es:"Cuantificadores", d:"Expresar cantidades con nombres contables e incontables.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"B1", icon:"🔢", slug:"quantifiers-some-any-much-many-a-lot-of-few-little", t:"Quantifiers (some, any, much, many, a lot of, few, little)", es:"Cuantificadores", d:"Expresar cantidades con nombres contables e incontables.",
  boxes:[
   {e:"✅", h:"Some", es:"Some: afirmativo", i:[["some + plural / uncountable","some + plural / incontable"],["Offers and requests","Ofrecimientos y peticiones"]], ex:["Would you like some tea?","¿Quieres un poco de té?"]},
   {e:"❓", h:"Any", es:"Any: negativo y pregunta", i:[["not any","no ... ningún"],["Have you got any...?","¿Tienes algún...?"]], ex:["We haven't got any milk.","No tenemos leche."]},
@@ -223,7 +223,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: I have many informations about the course.", a:"much information — information es incontable."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"B1", icon:"🥛", t:"Countable & Uncountable Nouns", es:"Nombres contables e incontables", d:"Distinguir sustantivos que se pueden contar de los que no.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"B1", icon:"🥛", slug:"countable-and-uncountable-nouns", t:"Countable & Uncountable Nouns", es:"Nombres contables e incontables", d:"Distinguir sustantivos que se pueden contar de los que no.",
  boxes:[
   {e:"🍎", h:"Countable", es:"Contables", i:[["a/an, plural -s","a/an, plural en -s"],["an apple, two apples","una manzana, dos manzanas"]], ex:["I bought three apples at the market.","Compré tres manzanas en el mercado."]},
   {e:"💧", h:"Uncountable", es:"Incontables", i:[["no plural, no a/an","sin plural ni a/an"],["water, rice, money","agua, arroz, dinero"]], ex:["The water in London is hard.","El agua de Londres es dura."]},
@@ -237,7 +237,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: The news are terrible today.", a:"The news is terrible — singular."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"B1", icon:"📐", t:"So / Such / Too / Enough", es:"So, such, too, enough", d:"Intensificar y expresar exceso o suficiencia.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"B1", icon:"📐", slug:"so-such-too-enough", t:"So / Such / Too / Enough", es:"So, such, too, enough", d:"Intensificar y expresar exceso o suficiencia.",
  boxes:[
   {e:"😮", h:"So + adjective", es:"So + adjetivo", i:[["so + adj / adverb","tan + adjetivo / adverbio"],["so + much / many","tanto / tantos"]], ex:["The film was so long that I fell asleep.","La película era tan larga que me dormí."]},
   {e:"🏙️", h:"Such + noun", es:"Such + nombre", i:[["such a + adj + noun","un + nombre + tan + adj"],["such + adj + plural","tan + adj + plural"]], ex:["It was such a lovely day.","Fue un día tan precioso."]},
@@ -251,7 +251,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: It's too much hot in here.", a:"too hot — sin much."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"B1", icon:"❓", t:"Question Forms (including subject & object questions)", es:"Formas de pregunta (sujeto y objeto)", d:"Cómo formar preguntas con auxiliares y cuándo no usar do.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"B1", icon:"❓", slug:"question-forms-including-subject-and-object-questions", t:"Question Forms (including subject & object questions)", es:"Formas de pregunta (sujeto y objeto)", d:"Cómo formar preguntas con auxiliares y cuándo no usar do.",
  boxes:[
   {e:"🔄", h:"Yes/No questions", es:"Preguntas de sí/no", i:[["Auxiliary + subject + verb","Auxiliar + sujeto + verbo"],["Do you live here?","¿Vives aquí?"]], ex:["Have you got a pen?","¿Tienes un bolígrafo?"]},
   {e:"🔎", h:"Wh- questions", es:"Preguntas con wh-", i:[["Wh- + auxiliary + subject","Wh- + auxiliar + sujeto"],["Where do you work?","¿Dónde trabajas?"]], ex:["What time does the shop open?","¿A qué hora abre la tienda?"]},
@@ -265,7 +265,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: Do you know where is the nearest chemist's?", a:"...where the nearest chemist's is? — orden de afirmativa."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"B1", icon:"🏷️", t:"Question Tags", es:"Question tags (¿verdad?, ¿no?)", d:"Preguntas cortas al final para confirmar o buscar acuerdo.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"B1", icon:"🏷️", slug:"question-tags", t:"Question Tags", es:"Question tags (¿verdad?, ¿no?)", d:"Preguntas cortas al final para confirmar o buscar acuerdo.",
  boxes:[
   {e:"➕", h:"Positive → negative", es:"Positivo → negativo", i:[["It's cold, isn't it?","Hace frío, ¿verdad?"],["You like tea, don't you?","Te gusta el té, ¿no?"]], ex:["It's a lovely day, isn't it?","Hace un día precioso, ¿verdad?"]},
   {e:"➖", h:"Negative → positive", es:"Negativo → positivo", i:[["You aren't tired, are you?","No estás cansado, ¿verdad?"],["He can't swim, can he?","No sabe nadar, ¿verdad?"]], ex:["You haven't seen my keys, have you?","No has visto mis llaves, ¿verdad?"]},
@@ -279,7 +279,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: Let's have a cuppa, will we?", a:"shall we? — con Let's."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"B1", icon:"🤝", t:"So do I / Neither do I / Short Answers", es:"So do I, neither do I y respuestas cortas", d:"Mostrar acuerdo y responder de forma breve.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"B1", icon:"🤝", slug:"so-do-i-neither-do-i-short-answers", t:"So do I / Neither do I / Short Answers", es:"So do I, neither do I y respuestas cortas", d:"Mostrar acuerdo y responder de forma breve.",
  boxes:[
   {e:"👍", h:"So + auxiliary + I", es:"Yo también (afirmativo)", i:[["I love tea. – So do I.","Me encanta el té. – A mí también."],["I'm tired. – So am I.","Estoy cansado. – Yo también."]], ex:["I've been to Bath. – So have I.","He estado en Bath. – Yo también."]},
   {e:"👎", h:"Neither + auxiliary + I", es:"Yo tampoco", i:[["I don't like rain. – Neither do I.","No me gusta la lluvia. – A mí tampoco."],["Nor do I","Nor do I (igual, más formal)"]], ex:["I can't cook. – Neither can I.","No sé cocinar. – Yo tampoco."]},
@@ -293,7 +293,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: Do you like jazz? – Yes, I like.", a:"Yes, I do. — respuesta corta con do."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"B1", icon:"📍", t:"Adverbs: Position, Frequency & Degree", es:"Adverbios: posición, frecuencia y grado", d:"Dónde colocar los adverbios y cómo expresar frecuencia y grado.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"B1", icon:"📍", slug:"adverbs-position-frequency-and-degree", t:"Adverbs: Position, Frequency & Degree", es:"Adverbios: posición, frecuencia y grado", d:"Dónde colocar los adverbios y cómo expresar frecuencia y grado.",
  boxes:[
   {e:"🏁", h:"End position", es:"Al final", i:[["Manner, place, time: at the end","Modo, lugar, tiempo: al final"],["manner → place → time","modo → lugar → tiempo"]], ex:["She drives carefully.","Maneja con cuidado."]},
   {e:"➡️", h:"Mid position", es:"Posición media", i:[["Before main verb","Antes del verbo principal"],["After be / auxiliary","Después de be / auxiliar"]], ex:["I've never been to Cornwall.","Nunca he estado en Cornualles."]},
@@ -307,7 +307,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: I don't never eat meat.", a:"I never eat meat. — doble negación."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"B2", icon:"🎨", t:"Order of Adjectives", es:"Orden de los adjetivos", d:"El orden natural cuando usamos varios adjetivos.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"B2", icon:"🎨", slug:"order-of-adjectives", t:"Order of Adjectives", es:"Orden de los adjetivos", d:"El orden natural cuando usamos varios adjetivos.",
  boxes:[
   {e:"📋", h:"The order", es:"El orden", i:[["Opinion → size → age","Opinión → tamaño → edad"],["shape → colour → origin","forma → color → origen"],["material → noun","material → nombre"]], ex:["a lovely old stone cottage","una preciosa casita antigua de piedra"]},
   {e:"💬", h:"Opinion first", es:"Opinión primero", i:[["lovely, awful, delicious","precioso, horrible, delicioso"],["a delicious Italian pizza","una deliciosa pizza italiana"]], ex:["She has a beautiful long dress.","Tiene un vestido largo precioso."]},
@@ -321,7 +321,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: She bought a leather black new jacket.", a:"a new black leather jacket — edad, color, material."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"B1", icon:"🕐", t:"Prepositions of Time & Place (in, on, at)", es:"Preposiciones de tiempo y lugar", d:"Usar in, on y at con fechas, horas y lugares.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"B1", icon:"🕐", slug:"prepositions-of-time-and-place-in-on-at", t:"Prepositions of Time & Place (in, on, at)", es:"Preposiciones de tiempo y lugar", d:"Usar in, on y at con fechas, horas y lugares.",
  boxes:[
   {e:"🕒", h:"At: time", es:"At: hora", i:[["at 9 o'clock, at noon","a las 9, al mediodía"],["at night, at the weekend (UK)","por la noche, el fin de semana"]], ex:["The train leaves at 17:45.","El tren sale a las 17:45."]},
   {e:"📅", h:"On: days & dates", es:"On: días y fechas", i:[["on Monday, on 5th May","el lunes, el 5 de mayo"],["on Friday evening","el viernes por la tarde"]], ex:["We're meeting on Saturday.","Nos vemos el sábado."]},
@@ -335,7 +335,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: She arrived in the station at 5 o'clock.", a:"at the station — punto de encuentro."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"B2", icon:"🔗", t:"Dependent Prepositions (interested in, good at, afraid of)", es:"Preposiciones dependientes", d:"Adjetivos, verbos y nombres que exigen una preposición concreta.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"B2", icon:"🔗", slug:"dependent-prepositions-interested-in-good-at-afraid-of", t:"Dependent Prepositions (interested in, good at, afraid of)", es:"Preposiciones dependientes", d:"Adjetivos, verbos y nombres que exigen una preposición concreta.",
  boxes:[
   {e:"😃", h:"Adjective + in/at", es:"Adjetivo + in/at", i:[["interested in","interesado en"],["good / bad at","bueno / malo en"]], ex:["I'm interested in history and good at maths.","Me interesa la historia y soy bueno para las matemáticas."]},
   {e:"😨", h:"Adjective + of", es:"Adjetivo + of", i:[["afraid of, scared of","miedo de"],["proud of, tired of","orgulloso de, harto de"]], ex:["She's afraid of spiders.","Tiene miedo de las arañas."]},
@@ -349,7 +349,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: She is married with a doctor.", a:"married to a doctor — married to."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"B2", icon:"🔃", t:"Inversion (Never have I…, Not only… but also…)", es:"Inversión (Never have I…, Not only… but also…)", d:"Invertir sujeto y auxiliar tras adverbios negativos para dar énfasis.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"B2", icon:"🔃", slug:"inversion-never-have-i-not-only-but-also", t:"Inversion (Never have I…, Not only… but also…)", es:"Inversión (Never have I…, Not only… but also…)", d:"Invertir sujeto y auxiliar tras adverbios negativos para dar énfasis.",
  boxes:[
   {e:"🚫", h:"Negative adverbs", es:"Adverbios negativos", i:[["Never / Rarely / Seldom + auxiliary + subject","Never / Rarely / Seldom + auxiliar + sujeto"],["Never have I seen...","Nunca he visto..."]], ex:["Never have I eaten such good fish and chips.","Nunca he comido unos fish and chips tan buenos."]},
   {e:"➕", h:"Not only … but also", es:"No solo … sino también", i:[["Not only + auxiliary + subject","Not only + auxiliar + sujeto"],["...but also + clause","...but also + oración"]], ex:["Not only did he arrive late, but he also forgot his ticket.","No solo llegó tarde, sino que olvidó su boleto."]},
@@ -363,7 +363,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: Hardly I had arrived when it started to rain.", a:"Hardly had I arrived... — inversión."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"B2", icon:"🎯", t:"Cleft Sentences (It was… that / What I need is…)", es:"Oraciones hendidas (It was… that / What I need is…)", d:"Poner énfasis en una parte de la frase con it o what.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"B2", icon:"🎯", slug:"cleft-sentences-it-was-that-what-i-need-is", t:"Cleft Sentences (It was… that / What I need is…)", es:"Oraciones hendidas (It was… that / What I need is…)", d:"Poner énfasis en una parte de la frase con it o what.",
  boxes:[
   {e:"👉", h:"It-cleft", es:"Con It", i:[["It was + focus + that / who + clause","It was + foco + that / who + oración"],["It was Tom who broke it.","Fue Tom quien lo rompió."]], ex:["It was in Brighton that we first met.","Fue en Brighton donde nos conocimos."]},
   {e:"❓", h:"What-cleft", es:"Con What", i:[["What + clause + is / was + focus","What + oración + is / was + foco"],["What I need is a cup of tea.","Lo que necesito es una taza de té."]], ex:["What annoys me is the noise.","Lo que me molesta es el ruido."]},
@@ -377,7 +377,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: What annoys me it is the queue.", a:"What annoys me is the queue. — sin it."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"B2", icon:"✅", t:"Participle Clauses (Having finished…, Seen from…)", es:"Cláusulas de participio (Having finished…, Seen from…)", d:"Acortar oraciones con participios para escribir de forma más fluida.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"B2", icon:"✅", slug:"participle-clauses-having-finished-seen-from", t:"Participle Clauses (Having finished…, Seen from…)", es:"Cláusulas de participio (Having finished…, Seen from…)", d:"Acortar oraciones con participios para escribir de forma más fluida.",
  boxes:[
   {e:"🏃", h:"Present participle", es:"Participio de presente", i:[["Walking home, I saw...","Mientras caminaba a casa, vi..."],["Feeling tired, she went to bed.","Sintiéndose cansada, se fue a la cama."]], ex:["Walking along the Thames, I met an old friend.","Paseando por el Támesis, me encontré con un viejo amigo."]},
   {e:"⏮️", h:"Perfect participle", es:"Participio perfecto", i:[["Having + p.p. = earlier action","Having + p.p. = acción anterior"],["Having finished, I left.","Habiendo terminado, me fui."]], ex:["Having missed the train, we took a taxi.","Al haber perdido el tren, tomamos un taxi."]},
@@ -391,7 +391,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: Opening the door, the cat ran out.", a:"Opening the door, I saw the cat run out. — mismo sujeto."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"B1", icon:"👥", t:"Determiners: each, every, all, both, either, neither", es:"Determinantes: each, every, all, both, either, neither", d:"Hablar de grupos y de dos elementos con determinantes distintos.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"B1", icon:"👥", slug:"determiners-each-every-all-both-either-neither", t:"Determiners: each, every, all, both, either, neither", es:"Determinantes: each, every, all, both, either, neither", d:"Hablar de grupos y de dos elementos con determinantes distintos.",
  boxes:[
   {e:"1️⃣", h:"Each", es:"Cada uno", i:[["each + singular noun","each + nombre singular"],["each of the + plural","cada uno de los + plural"]], ex:["Each student gets a certificate.","Cada alumno recibe un certificado."]},
   {e:"🔁", h:"Every", es:"Cada / todos", i:[["every + singular noun","every + nombre singular"],["every day, every other week","cada día, cada dos semanas"]], ex:["Every flat in this block has a balcony.","Todos los apartamentos de este edificio tienen balcón."]},
@@ -405,7 +405,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct the mistake: All the milk have gone off.", a:"All the milk has gone off. — milk es incontable."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"B2", icon:"🤔", t:"Would rather, It's time, Had better & Prefer", es:"Would rather, It's time, Had better y Prefer", d:"Preferencias, consejos fuertes y la idea de que ya es hora de algo.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"B2", icon:"🤔", slug:"would-rather-it-s-time-had-better-and-prefer", t:"Would rather, It's time, Had better & Prefer", es:"Would rather, It's time, Had better y Prefer", d:"Preferencias, consejos fuertes y la idea de que ya es hora de algo.",
  boxes:[
   {e:"💭", h:"Would rather + verb", es:"Preferiría + verbo", i:[["I'd rather + base verb","I'd rather + verbo base"],["I'd rather not go.","Preferiría no ir."]], ex:["I'd rather stay in tonight.","Preferiría quedarme en casa esta noche."]},
   {e:"👤", h:"Would rather + person", es:"Preferiría que alguien...", i:[["I'd rather you + past simple","I'd rather you + pasado simple"],["Present/future meaning","Significado de presente o futuro"]], ex:["I'd rather you didn't smoke in here.","Preferiría que no fumaras aquí."]},

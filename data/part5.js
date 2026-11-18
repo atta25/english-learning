@@ -1,5 +1,5 @@
 window.MAPS = (window.MAPS||[]).concat([
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"🎓", t:"The UK Education System", es:"El sistema educativo del Reino Unido", d:"Vocabulario y expresiones para hablar de colegios, exámenes y etapas escolares británicas.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"🎓", slug:"the-uk-education-system", t:"The UK Education System", es:"El sistema educativo del Reino Unido", d:"Vocabulario y expresiones para hablar de colegios, exámenes y etapas escolares británicas.",
  boxes:[
   {e:"🧒", h:"Primary school", es:"Educación primaria", i:[["primary school","escuela primaria"],["nursery","guardería / preescolar"],["start school at the age of five","empezar el colegio a los cinco años"]], ex:["My son starts primary school in September.","Mi hijo empieza la primaria en septiembre."]},
   {e:"🏫", h:"Secondary school", es:"Educación secundaria", i:[["secondary school","instituto / secundaria"],["comprehensive school","colegio público no selectivo"],["grammar school","colegio público selectivo"]], ex:["She goes to the local comprehensive.","Va al instituto público de su zona."]},
@@ -13,7 +13,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: Most pupils ____ their GCSEs at 16. (sit / seat)", a:"sit. Sit an exam = presentarse a un examen."},
   {q:"Odd one out: nursery, primary, sixth form, state", a:"state: describe el tipo de colegio, no una etapa."}
  ] },
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"🏫", t:"School Subjects & School Life", es:"Asignaturas y vida escolar", d:"Vocabulario de asignaturas, uniforme y rutina diaria en un colegio británico.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"🏫", slug:"school-subjects-and-school-life", t:"School Subjects & School Life", es:"Asignaturas y vida escolar", d:"Vocabulario de asignaturas, uniforme y rutina diaria en un colegio británico.",
  boxes:[
   {e:"🔬", h:"Science subjects", es:"Ciencias", i:[["maths (US: math)","matemáticas"],["biology, chemistry, physics","biología, química, física"],["IT / computing","informática"]], ex:["I'm better at maths than at physics.","Soy mejor en matemáticas que en física."]},
   {e:"🎭", h:"Arts & humanities", es:"Letras y artes", i:[["history / geography","historia / geografía"],["drama / art / music","teatro / arte / música"],["modern languages","lenguas modernas"]], ex:["She loves drama and music.","Le encantan el teatro y la música."]},
@@ -27,7 +27,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Which abbreviation means sport lessons at school? (PE / PS)", a:"PE = physical education (educación física)."},
   {q:"Match: PE kit = ? (ropa de deporte / uniforme de gala)", a:"ropa de deporte."}
  ] },
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"🏛️", t:"University Life", es:"La vida universitaria", d:"Palabras clave para hablar de la universidad, las clases y el alojamiento.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"🏛️", slug:"university-life", t:"University Life", es:"La vida universitaria", d:"Palabras clave para hablar de la universidad, las clases y el alojamiento.",
  boxes:[
   {e:"🎓", h:"Degrees", es:"Titulaciones", i:[["undergraduate / graduate","estudiante de grado / titulado"],["bachelor's degree, master's","grado, máster"],["PhD","doctorado"]], ex:["She is doing a master's in law.","Está haciendo un máster en derecho."]},
   {e:"👨‍🏫", h:"Teaching", es:"Enseñanza", i:[["lecture","clase magistral"],["seminar / tutorial","seminario / tutoría"],["lecturer / professor","profesor/a / catedrático/a"]], ex:["I have a lecture at nine.","Tengo clase magistral a las nueve."]},
@@ -41,7 +41,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Fill the gap: She ____ from uni last summer. (graduated / finished out)", a:"graduated = se graduó."},
   {q:"Odd one out: lecture, seminar, tuition fees, tutorial", a:"tuition fees: es dinero, no un tipo de clase."}
  ] },
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"✏️", t:"Studying & Exams", es:"Estudiar y exámenes", d:"Expresiones útiles para preparar exámenes, estudiar y hablar de resultados.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"✏️", slug:"studying-and-exams", t:"Studying & Exams", es:"Estudiar y exámenes", d:"Expresiones útiles para preparar exámenes, estudiar y hablar de resultados.",
  boxes:[
   {e:"📅", h:"Revising", es:"Repasar", i:[["revise for an exam (US: study)","repasar para un examen"],["revision timetable","calendario de repaso"],["learn by heart","aprender de memoria"]], ex:["I'm revising for my maths exam.","Estoy repasando para mi examen de matemáticas."]},
   {e:"📝", h:"Taking exams", es:"Hacer exámenes", i:[["sit an exam","presentarse a un examen"],["mock exam","simulacro de examen"],["invigilator","supervisor/a de examen"]], ex:["She sat her final exam yesterday.","Hizo ayer su examen final."]},
@@ -55,7 +55,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Fill the gap: He failed, so he has to ____ the exam. (resit / resist)", a:"resit = repetir el examen."},
   {q:"Translate: \"memorizar a última hora\" = ? (cram / revise)", a:"cram."}
  ] },
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"👷", t:"Jobs & Professions", es:"Trabajos y profesiones", d:"Profesiones comunes y vocabulario para hablar de tu trabajo.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"👷", slug:"jobs-and-professions", t:"Jobs & Professions", es:"Trabajos y profesiones", d:"Profesiones comunes y vocabulario para hablar de tu trabajo.",
  boxes:[
   {e:"🏥", h:"Health", es:"Sanidad", i:[["doctor / GP","médico / médico de cabecera"],["nurse","enfermero/a"],["dentist / chemist","dentista / farmacéutico/a"]], ex:["My sister is a nurse in the NHS.","Mi hermana es enfermera en el NHS (sanidad pública)."]},
   {e:"🔧", h:"Trades", es:"Oficios", i:[["plumber / electrician","fontanero (plomero) / electricista"],["builder","albañil / constructor"],["mechanic","mecánico"]], ex:["We called a plumber to fix the leak.","Llamamos a un plomero para arreglar la fuga."]},
@@ -69,7 +69,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: She works ____ a nurse. (as / like)", a:"as = de / en calidad de (profesión)."},
   {q:"Odd one out: plumber, electrician, builder, accountant", a:"accountant: no es un oficio manual."}
  ] },
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"💼", t:"Job Interview", es:"Entrevista de trabajo", d:"Frases y vocabulario para una entrevista de trabajo en el Reino Unido.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"💼", slug:"job-interview", t:"Job Interview", es:"Entrevista de trabajo", d:"Frases y vocabulario para una entrevista de trabajo en el Reino Unido.",
  boxes:[
   {e:"📄", h:"CV & application", es:"CV y solicitud", i:[["CV (US: résumé)","currículum"],["cover letter","carta de presentación"],["apply for a post","solicitar un puesto"]], ex:["I'd like to apply for the vacancy.","Quisiera solicitar la vacante."]},
   {e:"📞", h:"Before the interview", es:"Antes de la entrevista", i:[["be shortlisted","quedar preseleccionado/a"],["invite to interview","citar a entrevista"],["research the company","investigar la empresa"]], ex:["I've been shortlisted for an interview.","Me han preseleccionado para una entrevista."]},
@@ -83,7 +83,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: I'd like to ____ for the vacancy. (apply / ask)", a:"apply for = solicitar."},
   {q:"Match: \"notice period\" = ? (preaviso / periodo de prueba)", a:"preaviso."}
  ] },
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"🖥️", t:"In the Office", es:"En la oficina", d:"Vocabulario del día a día en una oficina británica.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"🖥️", slug:"in-the-office", t:"In the Office", es:"En la oficina", d:"Vocabulario del día a día en una oficina británica.",
  boxes:[
   {e:"🪑", h:"Equipment", es:"Equipamiento", i:[["desk / swivel chair","escritorio / silla giratoria"],["photocopier","fotocopiadora"],["stationery","material de oficina"]], ex:["The photocopier is out of paper.","A la fotocopiadora no le queda papel."]},
   {e:"👥", h:"Colleagues", es:"Compañeros", i:[["colleague","compañero/a de trabajo"],["line manager","jefe/a directo/a"],["intern / trainee","pasante (practicante) / aprendiz"]], ex:["My line manager is very supportive.","Mi jefe directo me apoya mucho."]},
@@ -97,7 +97,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Fill the gap: He ____ in sick this morning. (called / rang up)", a:"called in sick = avisó de que estaba enfermo."},
   {q:"Odd one out: payslip, bonus, stationery, salary", a:"stationery: no tiene que ver con el pago."}
  ] },
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B2", icon:"📊", t:"Business Meetings & Presentations", es:"Reuniones y presentaciones", d:"Lenguaje para dirigir reuniones, dar presentaciones y negociar.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B2", icon:"📊", slug:"business-meetings-and-presentations", t:"Business Meetings & Presentations", es:"Reuniones y presentaciones", d:"Lenguaje para dirigir reuniones, dar presentaciones y negociar.",
  boxes:[
   {e:"📅", h:"Arranging", es:"Organizar", i:[["schedule a meeting","programar una reunión"],["agenda","orden del día"],["reschedule","reprogramar"]], ex:["Could we reschedule for Thursday?","¿Podríamos reprogramarla para el jueves?"]},
   {e:"🗣️", h:"Chairing", es:"Dirigir", i:[["chair the meeting","presidir la reunión"],["minutes","acta"],["any other business (AOB)","asuntos varios"]], ex:["Let's move on to the next item.","Pasemos al siguiente punto."]},
@@ -111,7 +111,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose the polite disagreement: (You're wrong! / I'm afraid I disagree.)", a:"I'm afraid I disagree. = Me temo que no estoy de acuerdo."},
   {q:"Fill the gap: Sales ____ by ten per cent. (rose / raised)", a:"rose: rise es intransitivo (subir solo)."}
  ] },
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B2", icon:"📧", t:"Writing Work Emails", es:"Escribir correos de trabajo", d:"Fórmulas y vocabulario para escribir correos profesionales en inglés británico.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B2", icon:"📧", slug:"writing-work-emails", t:"Writing Work Emails", es:"Escribir correos de trabajo", d:"Fórmulas y vocabulario para escribir correos profesionales en inglés británico.",
  boxes:[
   {e:"👋", h:"Greetings", es:"Saludos", i:[["Dear Mr Smith,","Estimado Sr. Smith,"],["Dear Sir or Madam,","Estimados señores,"],["Hi Anna,","Hola, Anna,"]], ex:["Dear Ms Taylor, I hope you are well.","Estimada Sra. Taylor, espero que esté bien."]},
   {e:"🎯", h:"Purpose", es:"Motivo", i:[["I'm writing to enquire about...","Le escribo para preguntar por..."],["I'm writing regarding...","Le escribo con respecto a..."],["Further to our call,","Tras nuestra llamada,"]], ex:["I'm writing to enquire about the vacancy.","Le escribo para consultar sobre la vacante."]},
@@ -125,7 +125,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose the formal opening: (Hey guys, / Dear Sir or Madam,)", a:"Dear Sir or Madam, = Estimados señores."},
   {q:"Fill the gap: I'd be ____ if you could reply. (grateful / thankful to)", a:"grateful: I'd be grateful if... = Le agradecería que..."}
  ] },
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B2", icon:"📉", t:"Job Market & Unemployment", es:"Mercado laboral y desempleo", d:"Vocabulario sobre empleo, paro y condiciones laborales.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B2", icon:"📉", slug:"job-market-and-unemployment", t:"Job Market & Unemployment", es:"Mercado laboral y desempleo", d:"Vocabulario sobre empleo, paro y condiciones laborales.",
  boxes:[
   {e:"🔍", h:"Looking for work", es:"Buscar trabajo", i:[["job hunting","búsqueda de empleo"],["vacancy","vacante"],["recruitment agency","agencia de selección"]], ex:["She's been job hunting for months.","Lleva meses buscando trabajo."]},
   {e:"📉", h:"Unemployment", es:"Desempleo", i:[["unemployed / out of work","desempleado"],["unemployment benefit","subsidio de desempleo"],["claim benefits","cobrar prestaciones"]], ex:["Unemployment can rise quickly in a recession.","El desempleo puede subir rápido en una recesión."]},
@@ -139,7 +139,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: He ____ the sack last week. (got / made)", a:"got the sack = lo despidieron."},
   {q:"Match: \"zero-hours contract\" = ? (sin horas garantizadas / jornada cero)", a:"sin horas garantizadas."}
  ] },
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"📱", t:"Technology & Gadgets", es:"Tecnología y aparatos", d:"Vocabulario cotidiano sobre dispositivos y tecnología.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"📱", slug:"technology-and-gadgets", t:"Technology & Gadgets", es:"Tecnología y aparatos", d:"Vocabulario cotidiano sobre dispositivos y tecnología.",
  boxes:[
   {e:"💻", h:"Devices", es:"Dispositivos", i:[["laptop / tablet","computadora portátil / tableta"],["smartwatch","reloj inteligente"],["headphones","auriculares"]], ex:["I bought a new laptop yesterday.","Ayer compré una computadora portátil nueva."]},
   {e:"🔋", h:"Power", es:"Energía", i:[["charger","cargador"],["battery life","duración de la batería"],["plug socket (US: outlet)","enchufe"]], ex:["My battery is nearly flat.","Casi no me queda batería."]},
@@ -153,7 +153,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Fill the gap: My battery is nearly ____. (flat / empty down)", a:"flat = descargada (batería)."},
   {q:"Odd one out: laptop, tablet, charger, smartwatch", a:"charger: es un accesorio, no un dispositivo."}
  ] },
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"🌐", t:"The Internet & Social Media", es:"Internet y redes sociales", d:"Palabras y frases para hablar de internet y redes sociales.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"🌐", slug:"the-internet-and-social-media", t:"The Internet & Social Media", es:"Internet y redes sociales", d:"Palabras y frases para hablar de internet y redes sociales.",
  boxes:[
   {e:"📶", h:"Getting online", es:"Conectarse", i:[["Wi-Fi / broadband","conexión inalámbrica / banda ancha"],["log in / log out","iniciar / cerrar sesión"],["password","contraseña"]], ex:["What's the Wi-Fi password?","¿Cuál es la contraseña del wifi?"]},
   {e:"🔎", h:"Browsing", es:"Navegar", i:[["search engine","buscador"],["website / web page","sitio web / página"],["bookmark","marcador"]], ex:["I found it on a website.","Lo encontré en una página web."]},
@@ -167,7 +167,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: The video ____ viral overnight. (went / became to)", a:"went viral = se hizo viral."},
   {q:"Translate: \"cerrar sesión\" = ?", a:"log out."}
  ] },
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B2", icon:"🔒", t:"Phones, Apps & Online Safety", es:"Celulares, apps y seguridad en línea", d:"Vocabulario del celular y consejos de seguridad en internet.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B2", icon:"🔒", slug:"phones-apps-and-online-safety", t:"Phones, Apps & Online Safety", es:"Celulares, apps y seguridad en línea", d:"Vocabulario del celular y consejos de seguridad en internet.",
  boxes:[
   {e:"📞", h:"Phone basics", es:"Lo básico", i:[["mobile (phone) (US: cell)","celular"],["pay-as-you-go","plan de prepago"],["top up","recargar saldo"]], ex:["I need to top up my phone.","Tengo que recargar el celular."]},
   {e:"📲", h:"Apps", es:"Aplicaciones", i:[["download an app","descargar una app"],["notification","notificación"],["update","actualización"]], ex:["Turn off notifications at night.","Desactiva las notificaciones por la noche."]},
@@ -181,7 +181,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Fill the gap: I've got no ____ here. (signal / sign)", a:"signal = cobertura."},
   {q:"Odd one out: password, two-factor authentication, scam, privacy settings", a:"scam: es una amenaza; los demás protegen."}
  ] },
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"🌍", t:"The Environment & Pollution", es:"Medio ambiente y contaminación", d:"Vocabulario sobre contaminación y problemas medioambientales.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"🌍", slug:"the-environment-and-pollution", t:"The Environment & Pollution", es:"Medio ambiente y contaminación", d:"Vocabulario sobre contaminación y problemas medioambientales.",
  boxes:[
   {e:"🏭", h:"Types of pollution", es:"Tipos", i:[["air / water pollution","contaminación del aire / agua"],["noise pollution","contaminación acústica"],["smog / fumes","niebla contaminante / humos"]], ex:["Air pollution is bad in big cities.","La contaminación del aire es grave en las ciudades."]},
   {e:"🗑️", h:"Waste", es:"Residuos", i:[["rubbish (US: trash)","basura"],["litter","basura tirada en la calle"],["landfill","vertedero"]], ex:["Don't drop litter in the park.","No tires basura en el parque."]},
@@ -195,7 +195,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: Don't ____ litter in the park. (drop / put down it)", a:"drop litter = tirar basura al suelo."},
   {q:"Match: \"landfill\" = ? (vertedero / relleno de tierra fértil)", a:"vertedero."}
  ] },
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B2", icon:"🌡️", t:"Climate Change & Energy", es:"Cambio climático y energía", d:"Vocabulario sobre calentamiento global, energías y soluciones.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B2", icon:"🌡️", slug:"climate-change-and-energy", t:"Climate Change & Energy", es:"Cambio climático y energía", d:"Vocabulario sobre calentamiento global, energías y soluciones.",
  boxes:[
   {e:"🌡️", h:"The problem", es:"El problema", i:[["global warming","calentamiento global"],["greenhouse gases","gases de efecto invernadero"],["carbon emissions","emisiones de carbono"]], ex:["Carbon emissions must fall quickly.","Las emisiones de carbono deben bajar pronto."]},
   {e:"🌊", h:"Effects", es:"Efectos", i:[["rising sea levels","subida del nivel del mar"],["flooding","inundaciones"],["heatwave / drought","ola de calor / sequía"]], ex:["Flooding has become more common in Britain.","Las inundaciones son más habituales en Gran Bretaña."]},
@@ -209,7 +209,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: Fossil fuels are being ____ out. (phased / faced)", a:"phased out = eliminado gradualmente."},
   {q:"Odd one out: wind farm, solar panels, coal, renewable energy", a:"coal: es combustible fósil, no renovable."}
  ] },
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"♻️", t:"Recycling & Sustainable Living", es:"Reciclaje y vida sostenible", d:"Vocabulario para reciclar y vivir de forma más sostenible.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"♻️", slug:"recycling-and-sustainable-living", t:"Recycling & Sustainable Living", es:"Reciclaje y vida sostenible", d:"Vocabulario para reciclar y vivir de forma más sostenible.",
  boxes:[
   {e:"🗑️", h:"Bins", es:"Contenedores", i:[["recycling bin","contenedor de reciclaje"],["bin collection","recogida de basura"],["bottle bank","contenedor de vidrio"]], ex:["Bin day is on Tuesday.","El día de recogida es el martes."]},
   {e:"♻️", h:"Materials", es:"Materiales", i:[["glass / paper / plastic","vidrio / papel / plástico"],["tin can (US: can)","lata"],["cardboard","cartón"]], ex:["Please put the cardboard in the blue bin.","Pon el cartón en el contenedor azul."]},
@@ -223,7 +223,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Fill the gap: Please ____ the cardboard in the blue bin. (put / throw it)", a:"put = poner, depositar."},
   {q:"Translate: \"bolsa reutilizable\" = ?", a:"reusable bag."}
  ] },
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"🚌", t:"Public Transport in the UK", es:"Transporte público en el Reino Unido", d:"Autobús, metro y tren: vocabulario para moverte por el Reino Unido.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"🚌", slug:"public-transport-in-the-uk", t:"Public Transport in the UK", es:"Transporte público en el Reino Unido", d:"Autobús, metro y tren: vocabulario para moverte por el Reino Unido.",
  boxes:[
   {e:"🚍", h:"Buses", es:"Autobuses", i:[["bus stop","parada de autobús"],["single decker / double decker","de un piso / de dos pisos"],["night bus","autobús nocturno"]], ex:["The 27 bus comes every ten minutes.","El autobús 27 pasa cada diez minutos."]},
   {e:"🚇", h:"The Tube", es:"El metro de Londres", i:[["the Tube / Underground","el metro"],["Mind the gap","cuidado con el hueco"],["line / platform","línea / andén"]], ex:["I take the Tube to work.","Voy al trabajo en metro."]},
@@ -237,7 +237,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Fill the gap: A ____ ticket takes you there and back. (return / double)", a:"return = ida y vuelta."},
   {q:"Odd one out: bus, tram, coach, platform", a:"platform: es un lugar (andén); los demás son vehículos."}
  ] },
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"🚗", t:"Driving & Roads in the UK", es:"Conducir y carreteras en el Reino Unido", d:"Vocabulario de carreteras, tráfico y normas de conducción británicas.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"🚗", slug:"driving-and-roads-in-the-uk", t:"Driving & Roads in the UK", es:"Conducir y carreteras en el Reino Unido", d:"Vocabulario de carreteras, tráfico y normas de conducción británicas.",
  boxes:[
   {e:"🛣️", h:"Roads", es:"Carreteras", i:[["motorway (US: freeway)","autopista"],["dual carriageway","autovía (carretera de doble calzada)"],["the M25","la circunvalación de Londres"]], ex:["The M25 is always busy.","La M25 siempre está llena."]},
   {e:"🔄", h:"Junctions", es:"Cruces", i:[["roundabout","rotonda"],["junction","cruce / salida"],["traffic lights","semáforos"]], ex:["Take the second exit at the roundabout.","Toma la segunda salida en la rotonda."]},
@@ -251,7 +251,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Fill the gap: Put the shopping in the ____. (boot / trunk)", a:"boot = maletero (US: trunk)."},
   {q:"Match: \"roadworks\" = ? (obras / carreteras rurales)", a:"obras en la carretera."}
  ] },
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"🚂", t:"Train Travel & Tickets", es:"Viajar en tren y boletos", d:"Cómo comprar boletos y viajar en tren por el Reino Unido.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"🚂", slug:"train-travel-and-tickets", t:"Train Travel & Tickets", es:"Viajar en tren y boletos", d:"Cómo comprar boletos y viajar en tren por el Reino Unido.",
  boxes:[
   {e:"🎟️", h:"Ticket types", es:"Tipos de boleto", i:[["single / return","ida / ida y vuelta"],["open return","vuelta abierta"],["advance ticket","boleto anticipado"]], ex:["Two returns to York, please.","Dos boletos de ida y vuelta a York, por favor."]},
   {e:"💷", h:"Cheaper fares", es:"Tarifas baratas", i:[["off-peak","fuera de hora pico"],["peak time","hora pico"],["railcard","tarjeta de descuento"]], ex:["Off-peak tickets are much cheaper.","Los boletos fuera de hora pico son mucho más baratos."]},
@@ -265,7 +265,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: Which ____ does it leave from? (platform / track floor)", a:"platform = andén."},
   {q:"Translate: \"perder el tren\" = ?", a:"miss the train."}
  ] },
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"✈️", t:"Airports & Flights", es:"Aeropuertos y vuelos", d:"Vocabulario para facturar, embarcar y viajar en avión.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"✈️", slug:"airports-and-flights", t:"Airports & Flights", es:"Aeropuertos y vuelos", d:"Vocabulario para facturar, embarcar y viajar en avión.",
  boxes:[
   {e:"🧳", h:"Check-in", es:"Facturación", i:[["check in","facturar / registrarse"],["luggage (US: baggage)","equipaje"],["boarding pass","tarjeta de embarque"]], ex:["Where can I check in my luggage?","¿Dónde puedo facturar mi equipaje?"]},
   {e:"🛂", h:"Security & passport", es:"Controles", i:[["security check","control de seguridad"],["passport control","control de pasaportes"],["customs","aduana"]], ex:["Have your passport ready.","Tenga listo su pasaporte."]},
@@ -279,7 +279,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: The plane ____ at six. (took off / got off)", a:"took off = despegó."},
   {q:"Odd one out: customs, passport control, duty-free, security check", a:"duty-free: es una tienda; los demás son controles."}
  ] },
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"🏨", t:"Hotels, B&Bs & Accommodation", es:"Hoteles, B&B y alojamiento", d:"Vocabulario para reservar y alojarte en hoteles y B&B.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"🏨", slug:"hotels-b-and-bs-and-accommodation", t:"Hotels, B&Bs & Accommodation", es:"Hoteles, B&B y alojamiento", d:"Vocabulario para reservar y alojarte en hoteles y B&B.",
  boxes:[
   {e:"🏡", h:"Types", es:"Tipos", i:[["B&B (bed and breakfast)","alojamiento con desayuno"],["guesthouse","casa de huéspedes"],["youth hostel","albergue juvenil"]], ex:["We stayed in a lovely B&B in Devon.","Nos alojamos en un B&B precioso en Devon."]},
   {e:"📞", h:"Booking", es:"Reservar", i:[["book a room","reservar una habitación"],["single / double / twin room","individual / doble / con dos camas"],["vacancies","habitaciones libres"]], ex:["I'd like to book a double room.","Quisiera reservar una habitación doble."]},
@@ -293,7 +293,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Fill the gap: What time is ____? We leave today. (check-out / check-off)", a:"check-out = hora de dejar la habitación."},
   {q:"Match: \"twin room\" = ? (dos camas / habitación gemela de lujo)", a:"habitación con dos camas individuales."}
  ] },
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"🏖️", t:"Holidays & Tourism", es:"Vacaciones y turismo", d:"Vocabulario para planear vacaciones y hablar de turismo.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"🏖️", slug:"holidays-and-tourism", t:"Holidays & Tourism", es:"Vacaciones y turismo", d:"Vocabulario para planear vacaciones y hablar de turismo.",
  boxes:[
   {e:"🗺️", h:"Planning", es:"Planificar", i:[["go on holiday (US: vacation)","irse de vacaciones"],["travel agent","agente de viajes"],["package holiday","viaje organizado"]], ex:["We're going on holiday to Spain.","Nos vamos de vacaciones a España."]},
   {e:"🏞️", h:"Kinds of holiday", es:"Tipos", i:[["seaside holiday","vacaciones en la costa"],["city break","escapada urbana"],["camping / walking holiday","camping / vacaciones de caminatas"]], ex:["We fancy a city break in Edinburgh.","Nos provoca una escapada a Edimburgo."]},
@@ -307,7 +307,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: We fancy a city ____ in Edinburgh. (break / pause)", a:"city break = escapada urbana."},
   {q:"Odd one out: suitcase, rucksack, handbag, deckchair", a:"deckchair: es una tumbona de playa; los demás son para llevar equipaje."}
  ] },
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"🎡", t:"Sightseeing in London", es:"Turismo en Londres", d:"Expresiones y vocabulario para visitar, preguntar direcciones y moverte por Londres.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"🎡", slug:"sightseeing-in-london", t:"Sightseeing in London", es:"Turismo en Londres", d:"Expresiones y vocabulario para visitar, preguntar direcciones y moverte por Londres.",
  boxes:[
   {e:"🗺️", h:"Planning a visit", es:"Planear la visita", i:[["tourist attraction","atracción turística"],["a must-see","imprescindible"],["book tickets in advance","reservar entradas con antelación"]], ex:["The Tower of London is a must-see.","La Torre de Londres es imprescindible."]},
   {e:"🗣️", h:"Asking the way", es:"Preguntar direcciones", i:[["How do I get to...?","¿Cómo llego a...?"],["It's a ten-minute walk.","Está a diez minutos a pie."],["Turn left / go straight on","gire a la izquierda / siga recto"]], ex:["Go straight on and take the second right.","Siga recto y tome la segunda a la derecha."]},
@@ -321,7 +321,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Fill the gap: Museums in London often have free ____. (admission / entrance fee pay)", a:"admission = entrada."},
   {q:"Match: \"a must-see\" = ? (imprescindible / algo que ver una vez)", a:"imprescindible."}
  ] },
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"🗺️", t:"Geography of the UK", es:"Geografía del Reino Unido", d:"Vocabulario y colocaciones para describir lugares, paisajes y regiones.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"🗺️", slug:"geography-of-the-uk", t:"Geography of the UK", es:"Geografía del Reino Unido", d:"Vocabulario y colocaciones para describir lugares, paisajes y regiones.",
  boxes:[
   {e:"🇬🇧", h:"UK or Britain?", es:"Reino Unido o Gran Bretaña", i:[["the United Kingdom (the UK)","el Reino Unido"],["Great Britain","Gran Bretaña"],["the British Isles","las Islas Británicas"]], ex:["England, Scotland and Wales make up Great Britain.","Inglaterra, Escocia y Gales forman Gran Bretaña."]},
   {e:"🧭", h:"Where is it?", es:"Ubicación", i:[["in the north / south of","en el norte / sur de"],["be located in","estar situado en"],["border","frontera / limitar con"]], ex:["Scotland borders England to the south.","Escocia limita con Inglaterra al sur."]},
@@ -335,7 +335,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Fill the gap: She lives in a small ____ in the countryside. (village / villa)", a:"village = pueblo (villa es falso amigo)."},
   {q:"Odd one out: valley, moor, hill, suburb", a:"suburb: es zona urbana, no paisaje natural."}
  ] },
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B2", icon:"🗳️", t:"British Politics & Elections", es:"Política británica y elecciones", d:"Colocaciones y verbos clave para hablar de política, elecciones y campañas.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B2", icon:"🗳️", slug:"british-politics-and-elections", t:"British Politics & Elections", es:"Política británica y elecciones", d:"Colocaciones y verbos clave para hablar de política, elecciones y campañas.",
  boxes:[
   {e:"🏛️", h:"Institutions", es:"Instituciones", i:[["Parliament","Parlamento"],["the government / the opposition","el gobierno / la oposición"],["MP (Member of Parliament)","diputado/a"]], ex:["My MP is holding a surgery on Friday.","Mi diputado recibe a los vecinos de su circunscripción el viernes."]},
   {e:"🗳️", h:"Voting", es:"Votar", i:[["cast your vote","emitir el voto"],["call / hold an election","convocar / celebrar elecciones"],["turnout","participación"]], ex:["Turnout was low in the local elections.","La participación fue baja en las elecciones locales."]},
@@ -349,7 +349,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: The party ____ a campaign against waste. (launched / opened)", a:"launched a campaign = lanzó una campaña."},
   {q:"Match: \"turnout\" = ? (participación / giro)", a:"participación electoral."}
  ] },
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B2", icon:"⚖️", t:"Government, Law & Courts", es:"Gobierno, ley y tribunales", d:"Verbos y colocaciones para hablar de leyes, gobierno y juicios.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B2", icon:"⚖️", slug:"government-law-and-courts", t:"Government, Law & Courts", es:"Gobierno, ley y tribunales", d:"Verbos y colocaciones para hablar de leyes, gobierno y juicios.",
  boxes:[
   {e:"📜", h:"Making laws", es:"Hacer leyes", i:[["pass / introduce a law","aprobar / presentar una ley"],["a bill becomes an act","un proyecto se convierte en ley"],["come into force","entrar en vigor"]], ex:["The new law comes into force in April.","La nueva ley entra en vigor en abril."]},
   {e:"🏢", h:"Government at work", es:"El gobierno", i:[["local council","gobierno local (ayuntamiento)"],["council tax","impuesto municipal"],["cut / raise taxes","bajar / subir impuestos"]], ex:["The government plans to raise taxes.","El gobierno planea subir los impuestos."]},
@@ -363,7 +363,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: He ____ not guilty. (pleaded / answered)", a:"pleaded not guilty = se declaró inocente."},
   {q:"Fill the gap: The law comes ____ force in April. (into / in the)", a:"come into force = entrar en vigor."}
  ] },
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"🚓", t:"Crime & Police", es:"Delincuencia y policía", d:"Verbos y colocaciones para hablar de delitos, detenciones y la policía.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B1", icon:"🚓", slug:"crime-and-police", t:"Crime & Police", es:"Delincuencia y policía", d:"Verbos y colocaciones para hablar de delitos, detenciones y la policía.",
  boxes:[
   {e:"🦹", h:"Committing crimes", es:"Cometer delitos", i:[["commit a crime","cometer un delito"],["break into a house","entrar a robar en una casa"],["steal / rob","robar (objetos) / robar (a alguien)"]], ex:["Two men broke into the shop last night.","Dos hombres entraron a robar en la tienda anoche."]},
   {e:"🕵️", h:"Types of crime", es:"Tipos de delito", i:[["burglary","robo en una vivienda"],["mugging","atraco en la calle"],["vandalism","vandalismo"]], ex:["There was a burglary on our street.","Hubo un robo en nuestra calle."]},
@@ -377,7 +377,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: The main emergency number in the UK is ____. (999 / 911)", a:"999. 911 es el de EE. UU."},
   {q:"Odd one out: burglary, mugging, witness, vandalism", a:"witness: es una persona; los demás son delitos."}
  ] },
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B2", icon:"📰", t:"News & Media", es:"Noticias y medios", d:"Colocaciones y expresiones para hablar de noticias, prensa y medios.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B2", icon:"📰", slug:"news-and-media", t:"News & Media", es:"Noticias y medios", d:"Colocaciones y expresiones para hablar de noticias, prensa y medios.",
  boxes:[
   {e:"📰", h:"Press", es:"Prensa", i:[["tabloid / broadsheet","prensa sensacionalista / de calidad"],["front page / headline","portada / titular"],["hit the headlines","ser noticia destacada"]], ex:["The scandal hit the headlines this morning.","El escándalo fue noticia destacada esta mañana."]},
   {e:"📣", h:"Giving news", es:"Dar noticias", i:[["break the news","dar la noticia"],["report on / cover a story","informar sobre / cubrir una historia"],["publish / broadcast","publicar / emitir"]], ex:["I'm sorry to break the news like this.","Lamento dar la noticia así."]},
@@ -391,7 +391,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: A serious quality newspaper is a ____. (broadsheet / tabloid)", a:"broadsheet. Tabloid = prensa sensacionalista."},
   {q:"Match: \"hit the headlines\" = ? (ser noticia destacada / chocar con un titular)", a:"ser noticia destacada."}
  ] },
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B2", icon:"🔬", t:"Science & Discoveries", es:"Ciencia y descubrimientos", d:"Verbos y colocaciones para hablar de investigación, experimentos y avances.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B2", icon:"🔬", slug:"science-and-discoveries", t:"Science & Discoveries", es:"Ciencia y descubrimientos", d:"Verbos y colocaciones para hablar de investigación, experimentos y avances.",
  boxes:[
   {e:"🧪", h:"In the lab", es:"En el laboratorio", i:[["carry out an experiment","realizar un experimento"],["test a hypothesis","comprobar una hipótesis"],["conduct research","hacer investigación"]], ex:["They carried out an experiment last week.","Realizaron un experimento la semana pasada."]},
   {e:"💡", h:"Discover or invent?", es:"Descubrir o inventar", i:[["discover (what exists)","descubrir (lo que ya existe)"],["invent (something new)","inventar (algo nuevo)"],["come up with a plan","idear un plan"]], ex:["Fleming discovered penicillin by accident.","Fleming descubrió la penicilina por accidente."]},
@@ -405,7 +405,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Complete: Scientists ____ a breakthrough. (made / did)", a:"made a breakthrough = lograron un avance."},
   {q:"Match: \"findings\" = ? (conclusiones / hallazgos de tesoros)", a:"conclusiones de una investigación."}
  ] },
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B2", icon:"🤝", t:"Charity, Volunteering & Community", es:"Caridad, voluntariado y comunidad", d:"Verbos y colocaciones para hablar de ayudar a los demás y de la vida en comunidad.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"B2", icon:"🤝", slug:"charity-volunteering-and-community", t:"Charity, Volunteering & Community", es:"Caridad, voluntariado y comunidad", d:"Verbos y colocaciones para hablar de ayudar a los demás y de la vida en comunidad.",
  boxes:[
   {e:"❤️", h:"Giving money", es:"Dar dinero", i:[["donate money to","donar dinero a"],["raise money for charity","recaudar fondos"],["make a donation","hacer un donativo"]], ex:["We raised five hundred pounds for charity.","Recaudamos quinientas libras con fines benéficos."]},
   {e:"🏃", h:"Fundraising events", es:"Actos benéficos", i:[["do a sponsored run","hacer una carrera benéfica"],["hold a bake sale","organizar una venta de pasteles"],["take part in an event","participar en un acto"]], ex:["I'm doing a sponsored walk on Saturday.","Hago una caminata patrocinada el sábado."]},

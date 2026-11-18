@@ -1,5 +1,5 @@
 window.MAPS = (window.MAPS||[]).concat([
-{ cat:"Grammar: Structures", type:"Structures", lvl:"C1", icon:"🎩", t:"The Subjunctive & Formal 'Were'", es:"El subjuntivo y 'were' formal", d:"Estructuras formales para sugerir, exigir e imaginar: 'I suggest he be', 'If I were you'.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"C1", icon:"🎩", slug:"the-subjunctive-and-formal-were", t:"The Subjunctive & Formal 'Were'", es:"El subjuntivo y 'were' formal", d:"Estructuras formales para sugerir, exigir e imaginar: 'I suggest he be', 'If I were you'.",
  boxes:[
   {e:"📜", h:"Mandative subjunctive", es:"Subjuntivo mandativo", i:[["suggest/insist/demand/recommend + that + base verb: She insisted that he apologise.","Tras suggest/insist/demand + that, verbo en forma base: Insistió en que él se disculpara."],["British English often adds should: They recommended that he should resign.","El inglés británico suele añadir should: Recomendaron que dimitiera."]], ex:["The board demanded that the CEO step down.","La junta exigió que el director ejecutivo renunciara."]},
   {e:"📋", h:"Adjectives and nouns that trigger it", es:"Adjetivos y sustantivos desencadenantes", i:[["It is essential/vital/crucial that + base verb: It is vital that every member be informed.","Es esencial que cada miembro sea informado."],["the requirement/proposal/insistence that…: The proposal that the fee be waived was rejected.","La propuesta de que se eximiera la tasa fue rechazada."]], ex:["It is imperative that she attend the hearing.","Es imperativo que ella asista a la audiencia."]},
@@ -13,7 +13,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct: He acts as though he was the owner. (formal)", a:"He acts as though he were the owner."}
  ] },
 
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"C1", icon:"🧭", t:"Advanced Modals: Needn't Have, Was To, Might As Well", es:"Modales avanzados", d:"Matices precisos: obligaciones pasadas innecesarias, destinos y sugerencias resignadas.",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"C1", icon:"🧭", slug:"advanced-modals-needn-t-have-was-to-might-as-well", t:"Advanced Modals: Needn't Have, Was To, Might As Well", es:"Modales avanzados", d:"Matices precisos: obligaciones pasadas innecesarias, destinos y sugerencias resignadas.",
  boxes:[
   {e:"🙄", h:"Needn't have vs didn't need to", es:"Needn't have / didn't need to", i:[["needn't have + past participle: it happened but was unnecessary: You needn't have brought wine.","Lo hiciste pero no era necesario: No hacía falta que trajeras vino."],["didn't need to: it was not necessary (we don't know if it happened): I didn't need to wait.","No necesitaba esperar (no sabemos si lo hice)."]], ex:["We needn't have hurried; the train was late.","No hacía falta que nos apresuráramos; el tren llegó tarde."]},
   {e:"🔮", h:"Was/were to (destiny & plans)", es:"Was/were to", i:[["was to + infinitive: planned future in the past: She was to meet him at six.","Estaba previsto que se reuniera con él a las seis."],["was to + have + pp: planned but not done: They were to have married in June.","Iban a casarse en junio (no ocurrió)."],["destiny: He was never to see her again.","Nunca volvería a verla."]], ex:["The talks were to have started on Monday.","Las conversaciones iban a comenzar el lunes."]},
@@ -27,7 +27,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct: You should to have apologised.", a:"You should have apologised."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"C1", icon:"📢", t:"Emphasis with Do, Auxiliaries & Reflexives", es:"Énfasis con do, auxiliares y reflexivos", d:"Cómo dar fuerza a lo que dices sin cambiar de idea: 'I do like it', 'He himself said so'.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"C1", icon:"📢", slug:"emphasis-with-do-auxiliaries-and-reflexives", t:"Emphasis with Do, Auxiliaries & Reflexives", es:"Énfasis con do, auxiliares y reflexivos", d:"Cómo dar fuerza a lo que dices sin cambiar de idea: 'I do like it', 'He himself said so'.",
  boxes:[
   {e:"💪", h:"Emphatic do", es:"Do enfático", i:[["do/does/did + base verb: I do apologise.","Te pido sinceramente disculpas."],["Contrasts with a doubt: You didn't call. — I did call!","Contraste: ¡Sí llamé!"],["Imperatives: Do sit down.","Por favor, siéntese."]], ex:["She does look tired.","Sí que se ve cansada."]},
   {e:"🗣️", h:"Stressed auxiliaries", es:"Auxiliares acentuados", i:[["Stress the auxiliary to affirm: I HAVE finished.","Acento en el auxiliar: ¡Sí he terminado!"],["Opposite to expectation: He CAN swim, you know.","Sí sabe nadar, ¿sabes?"]], ex:["She WILL come, I promise.","Ella sí vendrá, lo prometo."]},
@@ -41,7 +41,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct: He did went to the meeting.", a:"He did go to the meeting."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"C1", icon:"✂️", t:"Fronting & Ellipsis", es:"Anteposición y elipsis", d:"Mover elementos al inicio para dar énfasis y omitir lo obvio para sonar natural.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"C1", icon:"✂️", slug:"fronting-and-ellipsis", t:"Fronting & Ellipsis", es:"Anteposición y elipsis", d:"Mover elementos al inicio para dar énfasis y omitir lo obvio para sonar natural.",
  boxes:[
   {e:"⏩", h:"Fronting objects & complements", es:"Anteposición", i:[["Object first: That film I've never seen.","Esa película nunca la he visto."],["Complement first: Strange though it may seem, …","Por extraño que parezca…"],["Participle first: Gone are the days when…","Atrás quedaron los días en que…"]], ex:["Such a mistake I will not forget.","Un error así no lo olvidaré."]},
   {e:"📍", h:"Adverbials at the start", es:"Adverbiales al inicio", i:[["Here comes the bus. / There goes my chance.","Ahí viene el autobús. / Ahí se va mi oportunidad."],["In the corner stood an old piano.","En la esquina había un viejo piano."],["On the table lay a letter.","Sobre la mesa había una carta."]], ex:["Down the road came a tractor.","Por la carretera venía un tractor."]},
@@ -55,7 +55,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct: There the answer is.", a:"There is the answer."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"C1", icon:"🔀", t:"Advanced Passive & Causative Structures", es:"Pasiva y causativa avanzada", d:"Pasivas con verbos de dos objetos, pasivas continuas, perfectas, y causativa formal.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"C1", icon:"🔀", slug:"advanced-passive-and-causative-structures", t:"Advanced Passive & Causative Structures", es:"Pasiva y causativa avanzada", d:"Pasivas con verbos de dos objetos, pasivas continuas, perfectas, y causativa formal.",
  boxes:[
   {e:"🎁", h:"Two objects", es:"Dos objetos", i:[["Active: They gave her an award. → She was given an award.","Ella recibió un premio."],["Less common: An award was given to her.","Se le otorgó un premio."]], ex:["I was offered a promotion.","Me ofrecieron un ascenso."]},
   {e:"⏳", h:"Continuous & perfect passives", es:"Pasivas continuas y perfectas", i:[["is/was being + pp: The bridge is being repaired.","El puente está siendo reparado."],["has/had been + pp: The report had been leaked.","El informe había sido filtrado."],["will have been + pp: It will have been finished by May.","Estará terminado para mayo."]], ex:["The results are being reviewed.","Los resultados están siendo revisados."]},
@@ -69,7 +69,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct: They made him to resign.", a:"They made him resign."}
  ] },
 
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"C1", icon:"⏪", t:"Future in the Past", es:"Futuro en el pasado", d:"Hablar de lo que iba a ocurrir desde una perspectiva pasada.",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"C1", icon:"⏪", slug:"future-in-the-past", t:"Future in the Past", es:"Futuro en el pasado", d:"Hablar de lo que iba a ocurrir desde una perspectiva pasada.",
  boxes:[
   {e:"🔮", h:"Was/were going to", es:"Iba a", i:[["Plan at that time: I was going to call you.","Iba a llamarte."],["Often unfulfilled: She was going to leave, but stayed.","Iba a irse pero se quedó."]], ex:["We were going to visit Bath, but it rained.","Íbamos a visitar Bath, pero llovió."]},
   {e:"💫", h:"Would (narrative)", es:"Would narrativo", i:[["Viewed from the past: He didn't know he would win.","No sabía que ganaría."],["I knew she would phone.","Sabía que llamaría."]], ex:["She never imagined she would become a judge.","Nunca imaginó que se convertiría en jueza."]},
@@ -83,7 +83,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct: She was on the point of resign.", a:"She was on the point of resigning."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"C1", icon:"🏗️", t:"Nominalisation: Turning Verbs into Nouns", es:"Nominalización", d:"El estilo formal convierte verbos y adjetivos en sustantivos para sonar más denso y académico.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"C1", icon:"🏗️", slug:"nominalisation-turning-verbs-into-nouns", t:"Nominalisation: Turning Verbs into Nouns", es:"Nominalización", d:"El estilo formal convierte verbos y adjetivos en sustantivos para sonar más denso y académico.",
  boxes:[
   {e:"🔄", h:"Verb → noun", es:"Verbo a sustantivo", i:[["decide → decision; analyse → analysis; fail → failure","decidir → decisión; analizar → análisis; fallar → fallo"],["develop → development; achieve → achievement","desarrollar → desarrollo; lograr → logro"]], ex:["The decision was announced yesterday.","La decisión fue anunciada ayer."]},
   {e:"🎨", h:"Adjective → noun", es:"Adjetivo a sustantivo", i:[["effective → effectiveness; unstable → instability","efectivo → efectividad; inestable → inestabilidad"],["aware → awareness; able → ability","consciente → conciencia; capaz → capacidad"]], ex:["The instability of the market worried investors.","La inestabilidad del mercado preocupó a los inversores."]},
@@ -97,7 +97,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct: The increasing of prices caused anger.", a:"The increase in prices caused anger."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"C1", icon:"🔃", t:"Inverted Conditionals: Should, Were, Had", es:"Condicionales invertidas", d:"Omitir 'if' e invertir el auxiliar para sonar formal.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"C1", icon:"🔃", slug:"inverted-conditionals-should-were-had", t:"Inverted Conditionals: Should, Were, Had", es:"Condicionales invertidas", d:"Omitir 'if' e invertir el auxiliar para sonar formal.",
  boxes:[
   {e:"🔔", h:"Should (first conditional)", es:"Should", i:[["Should you need help, call me. = If you need help…","Si llegaras a necesitar ayuda, llámame."],["Should anyone ask, say I'm out.","Si alguien preguntara, di que no estoy."]], ex:["Should you require assistance, please contact reception.","Si necesita ayuda, contacte con recepción."]},
   {e:"🌀", h:"Were (second conditional)", es:"Were", i:[["Were I you, I'd accept. = If I were you…","Yo que tú, aceptaría."],["Were it not for his help, we'd have failed.","De no ser por su ayuda, habríamos fallado."]], ex:["Were she to resign, who would replace her?","Si ella renunciara, ¿quién la reemplazaría?"]},
@@ -111,7 +111,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Rewrite: If he were to apply, he would get it.", a:"Were he to apply, he would get it."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"C1", icon:"🔀", t:"But For, Otherwise & Alternatives to If", es:"Alternativas a 'if'", d:"Formas elegantes de expresar condición sin 'if'.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"C1", icon:"🔀", slug:"but-for-otherwise-and-alternatives-to-if", t:"But For, Otherwise & Alternatives to If", es:"Alternativas a 'if'", d:"Formas elegantes de expresar condición sin 'if'.",
  boxes:[
   {e:"🙏", h:"But for + noun", es:"But for", i:[["But for your help, I'd have failed.","De no ser por tu ayuda, habría fallado."],["= If it hadn't been for / Were it not for","= de no ser por"]], ex:["But for the traffic, we'd be there by now.","Si no fuera por el tráfico, ya estaríamos allí."]},
   {e:"🛡️", h:"Otherwise & or else", es:"Otherwise", i:[["Take an umbrella; otherwise you'll get wet.","Lleva paraguas; de lo contrario te mojarás."],["I was ill; otherwise I'd have come.","Estaba enfermo; si no, habría venido."]], ex:["Reply today, or else we'll cancel.","Responda hoy o cancelaremos."]},
@@ -125,7 +125,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: Take cash (if / in case) the card machine breaks.", a:"in case"}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"C1", icon:"⚖️", t:"Concession: Albeit, Notwithstanding, Whilst", es:"Concesión formal", d:"Reconocer un punto contrario sin perder fuerza argumentativa.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"C1", icon:"⚖️", slug:"concession-albeit-notwithstanding-whilst", t:"Concession: Albeit, Notwithstanding, Whilst", es:"Concesión formal", d:"Reconocer un punto contrario sin perder fuerza argumentativa.",
  boxes:[
   {e:"🤝", h:"Albeit", es:"Aunque (formal)", i:[["albeit + adjective/phrase: A good, albeit expensive, hotel.","Un buen hotel, aunque caro."],["She agreed, albeit reluctantly.","Aceptó, aunque a regañadientes."]], ex:["It was a success, albeit a modest one.","Fue un éxito, aunque modesto."]},
   {e:"⚖️", h:"Notwithstanding", es:"No obstante", i:[["Notwithstanding + noun: Notwithstanding the delays, …","A pesar de los retrasos…"],["Can follow the noun: the delays notwithstanding","los retrasos no obstante"]], ex:["Notwithstanding the risks, we proceeded.","A pesar de los riesgos, continuamos."]},
@@ -139,7 +139,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct: Despite of the delays, we arrived on time.", a:"Despite the delays, we arrived on time."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"C1", icon:"➡️", t:"Advanced Linkers: Hence, Thereby, Whereby", es:"Conectores avanzados", d:"Conectores de consecuencia y método típicos del inglés académico.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"C1", icon:"➡️", slug:"advanced-linkers-hence-thereby-whereby", t:"Advanced Linkers: Hence, Thereby, Whereby", es:"Conectores avanzados", d:"Conectores de consecuencia y método típicos del inglés académico.",
  boxes:[
   {e:"➡️", h:"Hence & thus", es:"Por ende", i:[["Hence + noun: Hence the delay.","De ahí el retraso."],["Thus + clause: Thus, we conclude…","Así pues, concluimos…"]], ex:["Demand fell; hence the sharp drop in price.","La demanda cayó; de ahí la fuerte baja de precios."]},
   {e:"🔗", h:"Thereby + -ing", es:"Con lo cual", i:[["She signed, thereby accepting the terms.","Firmó, aceptando así las condiciones."],["thus + -ing is a close alternative: He resigned, thus avoiding a scandal.","Alternativa cercana: Renunció, evitando así un escándalo."]], ex:["He resigned, thereby avoiding a scandal.","Renunció y así evitó un escándalo."]},
@@ -153,7 +153,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct: Thereby to avoid delays, they hurried.", a:"Thereby avoiding delays, they hurried."}
  ] },
 
-{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"C1", icon:"🧩", t:"Advanced Verb Patterns & Complex Complementation", es:"Patrones verbales complejos", d:"Verbos con cambio de significado, 'have to', 'need' y más allá de gerundio e infinitivo.",
+{ cat:"Grammar: Tenses & Verbs", type:"Grammar", lvl:"C1", icon:"🧩", slug:"advanced-verb-patterns-and-complex-complementation", t:"Advanced Verb Patterns & Complex Complementation", es:"Patrones verbales complejos", d:"Verbos con cambio de significado, 'have to', 'need' y más allá de gerundio e infinitivo.",
  boxes:[
   {e:"🔀", h:"Stop / regret / try: change of meaning", es:"Cambio de significado", i:[["stop to do (pause in order to) vs stop doing (cease)","parar para hacer vs dejar de hacer"],["regret to say vs regret saying","lamento decirte vs me arrepiento de decir"],["try to do vs try doing (experiment)","intentar vs probar a"]], ex:["She stopped to look at the map.","Se detuvo para mirar el mapa."]},
   {e:"👤", h:"Verb + object + -ing", es:"Verbo + objeto + -ing", i:[["catch/find/leave + obj + -ing: I caught him cheating.","Lo sorprendí haciendo trampa."],["can't stand/imagine + obj + -ing: I can't imagine him doing that.","No me imagino que él haga eso."]], ex:["Don't leave her waiting.","No la dejes esperando."]},
@@ -167,7 +167,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct: I can't help to feel sorry for him.", a:"I can't help feeling sorry for him."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"C1", icon:"👥", t:"Agreement & Collective Nouns in British English", es:"Concordancia y sustantivos colectivos", d:"Singular o plural: 'The team are' vs 'The team is', 'none of', 'a number of'.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"C1", icon:"👥", slug:"agreement-and-collective-nouns-in-british-english", t:"Agreement & Collective Nouns in British English", es:"Concordancia y sustantivos colectivos", d:"Singular o plural: 'The team are' vs 'The team is', 'none of', 'a number of'.",
  boxes:[
   {e:"🏟️", h:"Collective nouns", es:"Sustantivos colectivos", i:[["British English allows plural verbs: The team are winning.","El inglés británico admite verbo plural: el equipo está ganando (como individuos)."],["Singular = unit: The committee has decided.","Singular = unidad: El comité ha decidido."]], ex:["The government are divided on the issue.","El gobierno está dividido sobre el tema."]},
   {e:"🔢", h:"A number of vs the number of", es:"A number of / the number of", i:[["A number of people were late. (plural)","Varias personas llegaron tarde."],["The number of complaints has risen. (singular)","El número de quejas ha subido."]], ex:["A large number of mistakes were made.","Se cometieron muchos errores."]},
@@ -181,7 +181,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct: Economics are taught at this school.", a:"Economics is taught at this school."}
  ] },
 
-{ cat:"Grammar: Structures", type:"Structures", lvl:"C1", icon:"🔬", t:"Advanced Relative Structures: Whereby, Of Which, The Extent To Which", es:"Relativas avanzadas", d:"Relativas con preposición, 'whose', 'of which' y pronombres formales.",
+{ cat:"Grammar: Structures", type:"Structures", lvl:"C1", icon:"🔬", slug:"advanced-relative-structures-whereby-of-which-the-extent-to-which", t:"Advanced Relative Structures: Whereby, Of Which, The Extent To Which", es:"Relativas avanzadas", d:"Relativas con preposición, 'whose', 'of which' y pronombres formales.",
  boxes:[
   {e:"🧑‍🤝‍🧑", h:"Preposition + whom/which", es:"Preposición + whom/which", i:[["The colleague with whom I work is Dutch.","El colega con quien trabajo es holandés."],["The reason for which he resigned…","La razón por la que renunció…"]], ex:["The person to whom I spoke was helpful.","La persona con quien hablé fue amable."]},
   {e:"📚", h:"Whose and of which", es:"Whose / of which", i:[["a book whose cover is torn","un libro cuya portada está rota"],["a house, the roof of which leaks","una casa cuyo techo gotea"]], ex:["The firm, whose profits fell, is closing.","La empresa, cuyas ganancias cayeron, cierra."]},
@@ -195,7 +195,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Correct: The students, many of who failed, retook the exam.", a:"The students, many of whom failed, retook the exam."}
  ] },
 
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"C1", icon:"🎓", t:"Academic Vocabulary: Analysing & Arguing", es:"Vocabulario académico: analizar y argumentar", d:"Verbos y sustantivos clave para ensayos y discusión crítica.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"C1", icon:"🎓", slug:"academic-vocabulary-analysing-and-arguing", t:"Academic Vocabulary: Analysing & Arguing", es:"Vocabulario académico: analizar y argumentar", d:"Verbos y sustantivos clave para ensayos y discusión crítica.",
  boxes:[
   {e:"🔍", h:"Analysing", es:"Analizar", i:[["to scrutinise, examine closely","escudriñar, examinar de cerca"],["to evaluate, assess critically","evaluar críticamente"],["to dissect, break down","desmenuzar"]], ex:["The study scrutinises the data.","El estudio escudriña los datos."]},
   {e:"💬", h:"Arguing a case", es:"Argumentar", i:[["to contend / maintain / assert","sostener / afirmar"],["to refute / rebut","refutar"],["to substantiate (a claim)","fundamentar (una afirmación)"]], ex:["She contends that the policy is flawed.","Sostiene que la política es defectuosa."]},
@@ -209,7 +209,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Word for 'a qualification or warning': c____", a:"caveat"}
  ] },
 
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"C1", icon:"🏛️", t:"Politics & Economics Vocabulary", es:"Vocabulario de política y economía", d:"Términos precisos para entender y debatir noticias políticas y económicas.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"C1", icon:"🏛️", slug:"politics-and-economics-vocabulary", t:"Politics & Economics Vocabulary", es:"Vocabulario de política y economía", d:"Términos precisos para entender y debatir noticias políticas y económicas.",
  boxes:[
   {e:"🗳️", h:"Governance", es:"Gobernanza", i:[["a coalition, a hung parliament","una coalición, un parlamento sin mayoría"],["to legislate, to ratify","legislar, ratificar"],["a mandate, a manifesto","un mandato, un programa electoral"]], ex:["The coalition lacks a clear mandate.","La coalición carece de un mandato claro."]},
   {e:"💷", h:"Fiscal policy", es:"Política fiscal", i:[["public spending, a deficit, a surplus","gasto público, déficit, superávit"],["austerity, taxation, a levy","austeridad, tributación, un gravamen"]], ex:["The deficit widened last year.","El déficit se amplió el año pasado."]},
@@ -223,7 +223,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"A parliament with no majority is a ____ parliament.", a:"hung"}
  ] },
 
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"C1", icon:"⚖️", t:"Law & Ethics Vocabulary", es:"Vocabulario de derecho y ética", d:"Vocabulario jurídico y de dilemas morales de nivel avanzado.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"C1", icon:"⚖️", slug:"law-and-ethics-vocabulary", t:"Law & Ethics Vocabulary", es:"Vocabulario de derecho y ética", d:"Vocabulario jurídico y de dilemas morales de nivel avanzado.",
  boxes:[
   {e:"👨‍⚖️", h:"Court process", es:"Proceso judicial", i:[["to prosecute, to plead guilty","procesar, declararse culpable"],["to adjourn, an injunction","aplazar, una medida cautelar"],["a verdict, a sentence, an appeal","veredicto, condena, apelación"]], ex:["The judge adjourned the hearing.","El juez aplazó la audiencia."]},
   {e:"📜", h:"Legal concepts", es:"Conceptos legales", i:[["liability, negligence, a breach","responsabilidad, negligencia, incumplimiento"],["jurisdiction, precedent","jurisdicción, precedente"]], ex:["The firm was found liable for negligence.","La empresa fue declarada responsable por negligencia."]},
@@ -237,7 +237,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"The jury's decision on guilt or innocence is a ____.", a:"verdict"}
  ] },
 
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"C1", icon:"📰", t:"Media & Journalism Vocabulary", es:"Vocabulario de medios y periodismo", d:"Cómo se produce, se cuestiona y se consume la información.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"C1", icon:"📰", slug:"media-and-journalism-vocabulary", t:"Media & Journalism Vocabulary", es:"Vocabulario de medios y periodismo", d:"Cómo se produce, se cuestiona y se consume la información.",
  boxes:[
   {e:"🗞️", h:"Newsroom", es:"Redacción", i:[["an editorial, an exclusive, a scoop","editorial, exclusiva, primicia"],["a correspondent, a columnist","corresponsal, columnista"]], ex:["The paper landed an exclusive interview.","El diario consiguió una entrevista exclusiva."]},
   {e:"📣", h:"Bias & framing", es:"Sesgo", i:[["bias, slant, spin","sesgo, enfoque, manipulación"],["sensationalism, clickbait","sensacionalismo, anzuelo de clics"]], ex:["Critics accuse the channel of bias.","Los críticos acusan al canal de sesgo."]},
@@ -251,7 +251,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Verb: to expose a myth or rumour as untrue (d____):", a:"debunk"}
  ] },
 
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"C1", icon:"🧠", t:"Psychology & Behaviour Vocabulary", es:"Vocabulario de psicología y conducta", d:"Términos para describir la mente, motivaciones y conductas.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"C1", icon:"🧠", slug:"psychology-and-behaviour-vocabulary", t:"Psychology & Behaviour Vocabulary", es:"Vocabulario de psicología y conducta", d:"Términos para describir la mente, motivaciones y conductas.",
  boxes:[
   {e:"🧩", h:"Mind & cognition", es:"Mente y cognición", i:[["perception, cognition, memory","percepción, cognición, memoria"],["a bias, an instinct","un sesgo, un instinto"]], ex:["Cognitive biases distort our judgement.","Los sesgos cognitivos distorsionan el juicio."]},
   {e:"💭", h:"Motivation", es:"Motivación", i:[["intrinsic vs extrinsic motivation","motivación intrínseca vs extrínseca"],["drive, incentive, deterrent","impulso, incentivo, factor disuasorio"]], ex:["Money is a weak long-term incentive.","El dinero es un incentivo débil a largo plazo."]},
@@ -265,7 +265,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Ability to recover from difficulties:", a:"resilience"}
  ] },
 
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"C1", icon:"🩺", t:"Health & Medicine: Advanced Vocabulary", es:"Salud y medicina avanzada", d:"Lenguaje médico preciso para hablar de diagnóstico, tratamiento y sistemas de salud.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"C1", icon:"🩺", slug:"health-and-medicine-advanced-vocabulary", t:"Health & Medicine: Advanced Vocabulary", es:"Salud y medicina avanzada", d:"Lenguaje médico preciso para hablar de diagnóstico, tratamiento y sistemas de salud.",
  boxes:[
   {e:"🔬", h:"Diagnosis", es:"Diagnóstico", i:[["to diagnose, a symptom, a prognosis","diagnosticar, síntoma, pronóstico"],["acute vs chronic","agudo vs crónico"],["benign vs malignant","benigno vs maligno"]], ex:["The prognosis is encouraging.","El pronóstico es alentador."]},
   {e:"💉", h:"Treatment", es:"Tratamiento", i:[["a course of antibiotics, a dosage","tratamiento de antibióticos, dosis"],["to undergo surgery, to be discharged","someterse a cirugía, recibir el alta"]], ex:["She was discharged after a week.","Le dieron el alta después de una semana."]},
@@ -279,7 +279,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"A return of illness after recovery:", a:"relapse"}
  ] },
 
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"C1", icon:"🌿", t:"Environment & Policy Vocabulary", es:"Medio ambiente y políticas públicas", d:"Vocabulario para hablar con precisión de sostenibilidad y regulación ambiental.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"C1", icon:"🌿", slug:"environment-and-policy-vocabulary", t:"Environment & Policy Vocabulary", es:"Medio ambiente y políticas públicas", d:"Vocabulario para hablar con precisión de sostenibilidad y regulación ambiental.",
  boxes:[
   {e:"🌡️", h:"Climate terms", es:"Clima", i:[["greenhouse emissions, carbon footprint","emisiones de gases, huella de carbono"],["net zero, carbon offsetting","cero neto, compensación de carbono"]], ex:["The UK aims for net zero by 2050.","El Reino Unido busca cero neto para 2050."]},
   {e:"⚡", h:"Energy policy", es:"Energía", i:[["renewables, a transition, fossil fuels","renovables, transición, combustibles fósiles"],["to phase out, a subsidy","eliminar gradualmente, subvención"]], ex:["Coal-fired power stations have been phased out in the UK.","Las centrales de carbón se han ido eliminando gradualmente en el Reino Unido."]},
@@ -293,7 +293,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Verb: to gradually stop using:", a:"phase out"}
  ] },
 
-{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"C1", icon:"🤖", t:"Technology & AI Vocabulary", es:"Vocabulario de tecnología e IA", d:"Términos sobre inteligencia artificial, datos y ética digital.",
+{ cat:"Vocabulary: Work, Study & Society", type:"Vocabulary", lvl:"C1", icon:"🤖", slug:"technology-and-ai-vocabulary", t:"Technology & AI Vocabulary", es:"Vocabulario de tecnología e IA", d:"Términos sobre inteligencia artificial, datos y ética digital.",
  boxes:[
   {e:"🧠", h:"AI concepts", es:"Conceptos de IA", i:[["machine learning, an algorithm, a neural network","aprendizaje automático, algoritmo, red neuronal"],["a prompt, a model, training data","instrucción, modelo, datos de entrenamiento"]], ex:["The algorithm learns from data.","El algoritmo aprende de los datos."]},
   {e:"⚠️", h:"Risks & ethics", es:"Riesgos y ética", i:[["algorithmic bias, a deepfake","sesgo algorítmico, deepfake"],["to hallucinate, accountability","alucinar, responsabilidad"]], ex:["Deepfakes erode public trust.","Los deepfakes erosionan la confianza pública."]},
@@ -307,7 +307,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Verb meaning 'to launch gradually across a service':", a:"roll out"}
  ] },
 
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"C1", icon:"🎭", t:"Arts & Literature Vocabulary", es:"Vocabulario de arte y literatura", d:"Palabras para describir, criticar y apreciar obras literarias y artísticas.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"C1", icon:"🎭", slug:"arts-and-literature-vocabulary", t:"Arts & Literature Vocabulary", es:"Vocabulario de arte y literatura", d:"Palabras para describir, criticar y apreciar obras literarias y artísticas.",
  boxes:[
   {e:"📖", h:"Literary elements", es:"Elementos literarios", i:[["a plot, a motif, a narrator","trama, motivo, narrador"],["an allegory, irony, symbolism","alegoría, ironía, simbolismo"]], ex:["The novel is a political allegory.","La novela es una alegoría política."]},
   {e:"✒️", h:"Style & tone", es:"Estilo y tono", i:[["lyrical, terse, ornate, understated","lírico, escueto, recargado, sobrio"],["a satire, a parody","sátira, parodia"]], ex:["Her prose is lean and understated.","Su prosa es sobria y concisa."]},
@@ -321,7 +321,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"A person who organises an exhibition:", a:"curator"}
  ] },
 
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"C1", icon:"🏙️", t:"Architecture & Society Vocabulary", es:"Arquitectura y sociedad", d:"Cómo hablamos de edificios, ciudades y desigualdad urbana.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"C1", icon:"🏙️", slug:"architecture-and-society-vocabulary", t:"Architecture & Society Vocabulary", es:"Arquitectura y sociedad", d:"Cómo hablamos de edificios, ciudades y desigualdad urbana.",
  boxes:[
   {e:"🏛️", h:"Styles & features", es:"Estilos", i:[["Georgian, Victorian, brutalist","georgiano, victoriano, brutalista"],["a façade, a spire, a terrace","fachada, aguja, hilera de casas"]], ex:["The Georgian terrace has elegant façades.","La hilera georgiana tiene fachadas elegantes."]},
   {e:"🏗️", h:"Urban planning", es:"Planeamiento", i:[["zoning, a green belt, infrastructure","zonificación, cinturón verde, infraestructura"],["a conservation area, a listed building","zona protegida, edificio protegido"]], ex:["It is a listed building, so any alterations need special consent.","Es un edificio protegido, así que cualquier reforma requiere un permiso especial."]},
@@ -335,7 +335,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Opposite of 'deprived' (wealthy):", a:"affluent"}
  ] },
 
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"C1", icon:"🎭", t:"Emotions & Personality: Nuance", es:"Emociones y personalidad con matices", d:"Palabras más precisas que 'happy', 'sad' o 'angry'.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"C1", icon:"🎭", slug:"emotions-and-personality-nuance", t:"Emotions & Personality: Nuance", es:"Emociones y personalidad con matices", d:"Palabras más precisas que 'happy', 'sad' o 'angry'.",
  boxes:[
   {e:"😊", h:"Positive nuance", es:"Positivos", i:[["elated: extremely happy; content: quietly satisfied","eufórico; satisfecho y tranquilo"],["exhilarated, serene","rebosante de emoción, sereno"]], ex:["She felt elated after winning.","Se sintió eufórica tras ganar."]},
   {e:"😔", h:"Negative nuance", es:"Negativos", i:[["despondent, forlorn, wistful","abatido, desolado, nostálgico"],["resentful, bitter","resentido, amargado"]], ex:["He was despondent after the defeat.","Estaba abatido tras la derrota."]},
@@ -349,7 +349,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Word for 'sad with longing for the past':", a:"wistful"}
  ] },
 
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"C1", icon:"👀", t:"Verbs of Movement, Looking & Speaking: Nuance", es:"Verbos de movimiento, mirada y habla con matices", d:"Verbos específicos que sustituyen 'walk', 'look' y 'say'.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"C1", icon:"👀", slug:"verbs-of-movement-looking-and-speaking-nuance", t:"Verbs of Movement, Looking & Speaking: Nuance", es:"Verbos de movimiento, mirada y habla con matices", d:"Verbos específicos que sustituyen 'walk', 'look' y 'say'.",
  boxes:[
   {e:"🚶", h:"Walking", es:"Caminar", i:[["stroll: relaxed; stride: purposefully; trudge: wearily","pasear; caminar con zancadas; arrastrarse"],["wander, stumble, limp","vagar, tropezar, cojear"]], ex:["She trudged home through the snow.","Volvió a casa arrastrando los pies por la nieve."]},
   {e:"🏃", h:"Rapid movement", es:"Moverse rápido", i:[["dash, sprint, scurry","correr, esprintar, corretear"],["lurch, stagger","dar bandazos, tambalearse"]], ex:["The mouse scurried across the floor.","El ratón correteó por el suelo."]},
@@ -363,7 +363,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"To say something very quietly and unclearly:", a:"mutter"}
  ] },
 
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"C1", icon:"🎚️", t:"Connotation & Register: Synonyms Compared", es:"Connotación y registro", d:"Sinónimos que no son intercambiables: neutral, positivo, negativo.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"C1", icon:"🎚️", slug:"connotation-and-register-synonyms-compared", t:"Connotation & Register: Synonyms Compared", es:"Connotación y registro", d:"Sinónimos que no son intercambiables: neutral, positivo, negativo.",
  boxes:[
   {e:"🙂", h:"Positive vs negative connotation", es:"Connotación", i:[["slim (positive) vs skinny (negative)","delgado vs flaco"],["thrifty vs stingy; curious vs nosy","ahorrativo vs tacaño; curioso vs entrometido"]], ex:["She's thrifty, not stingy.","Es ahorrativa, no tacaña."]},
   {e:"🎩", h:"Formal vs informal verbs", es:"Registro", i:[["purchase / buy / get","adquirir / comprar / conseguir"],["commence / start / kick off","comenzar / empezar / arrancar"]], ex:["The meeting will commence at nine.","La reunión comenzará a las nueve."]},
@@ -377,7 +377,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Careful with money in a good way: thrifty or stingy?", a:"thrifty"}
  ] },
 
-{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"C1", icon:"🙊", t:"Euphemisms & Politically Correct Language", es:"Eufemismos y lenguaje inclusivo", d:"Cómo suavizar temas delicados con elegancia y respeto.",
+{ cat:"Vocabulary: Everyday Life", type:"Vocabulary", lvl:"C1", icon:"🙊", slug:"euphemisms-and-politically-correct-language", t:"Euphemisms & Politically Correct Language", es:"Eufemismos y lenguaje inclusivo", d:"Cómo suavizar temas delicados con elegancia y respeto.",
  boxes:[
   {e:"⚰️", h:"Death", es:"Muerte", i:[["pass away, lose someone","fallecer, perder a alguien"],["put to sleep (animal)","sacrificar (animal)"]], ex:["Sadly, her grandfather passed away.","Lamentablemente, su abuelo falleció."]},
   {e:"💼", h:"Work & business", es:"Trabajo", i:[["let go / made redundant","despedir / quedarse sin puesto"],["downsizing, restructuring","reducción de personal, reestructuración"]], ex:["He was made redundant last month.","Lo despidieron por reducción de plantilla el mes pasado."]},
@@ -391,7 +391,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"British euphemism for going to the toilet: spend a ____.", a:"penny"}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"C1", icon:"🧷", t:"Advanced Phrasal Verbs: Abstract & Formal Contexts", es:"Phrasal verbs avanzados: abstractos y formales", d:"Phrasal verbs de debate, negocios y análisis, a menudo con sentido figurado.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"C1", icon:"🧷", slug:"advanced-phrasal-verbs-abstract-and-formal-contexts", t:"Advanced Phrasal Verbs: Abstract & Formal Contexts", es:"Phrasal verbs avanzados: abstractos y formales", d:"Phrasal verbs de debate, negocios y análisis, a menudo con sentido figurado.",
  boxes:[
   {e:"💡", h:"Ideas & arguments", es:"Ideas y argumentos", i:[["put forward: propose: She put forward a proposal.","presentar una propuesta"],["bring up / come up with / dwell on","mencionar / idear / insistir en"]], ex:["Let's not dwell on the past.","No insistamos en el pasado."]},
   {e:"🧩", h:"Dealing with problems", es:"Resolver", i:[["iron out: resolve small problems","resolver detalles"],["sort out / get round / deal with","arreglar / sortear / ocuparse de"]], ex:["We need to iron out a few issues.","Debemos resolver algunos detalles."]},
@@ -405,7 +405,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Confirm a theory: bear ____.", a:"out"}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"C1", icon:"🧐", t:"Idioms for Opinions & Judgement", es:"Modismos para opinar y juzgar", d:"Expresiones británicas para valorar personas, ideas y situaciones.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"C1", icon:"🧐", slug:"idioms-for-opinions-and-judgement", t:"Idioms for Opinions & Judgement", es:"Modismos para opinar y juzgar", d:"Expresiones británicas para valorar personas, ideas y situaciones.",
  boxes:[
   {e:"👍", h:"Approval", es:"Aprobación", i:[["right up my street: exactly what I like","justo lo mío"],["spot on / hit the nail on the head","exacto / dar en el clavo"]], ex:["That analysis is spot on.","Ese análisis es exacto."]},
   {e:"👎", h:"Disapproval", es:"Desaprobación", i:[["not my cup of tea","no es santo de mi devoción"],["leave a bad taste in the mouth","dejar mal sabor de boca"]], ex:["The remark left a bad taste in my mouth.","El comentario me dejó mal sabor de boca."]},
@@ -419,7 +419,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Complete: I'd take that with a pinch of ____.", a:"salt"}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"C1", icon:"🏆", t:"Idioms for Success & Failure", es:"Modismos de éxito y fracaso", d:"Cómo hablar de triunfos, tropiezos y recuperación con expresiones idiomáticas.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"C1", icon:"🏆", slug:"idioms-for-success-and-failure", t:"Idioms for Success & Failure", es:"Modismos de éxito y fracaso", d:"Cómo hablar de triunfos, tropiezos y recuperación con expresiones idiomáticas.",
  boxes:[
   {e:"🌟", h:"Success", es:"Éxito", i:[["go from strength to strength","ir de éxito en éxito"],["hit the jackpot / strike gold","ganar el premio mayor / dar con una mina de oro"]], ex:["The firm is going from strength to strength.","La empresa va de éxito en éxito."]},
   {e:"💥", h:"Failure", es:"Fracaso", i:[["go down like a lead balloon","caer fatal"],["come a cropper / fall flat","fracasar estrepitosamente"]], ex:["His joke went down like a lead balloon.","Su chiste cayó fatal."]},
@@ -433,7 +433,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"A final problem that makes things unbearable: the last ____.", a:"straw"}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"C1", icon:"💞", t:"Idioms for Relationships & Emotions", es:"Modismos de relaciones y emociones", d:"Expresiones británicas para amistad, conflicto y estados de ánimo.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"C1", icon:"💞", slug:"idioms-for-relationships-and-emotions", t:"Idioms for Relationships & Emotions", es:"Modismos de relaciones y emociones", d:"Expresiones británicas para amistad, conflicto y estados de ánimo.",
  boxes:[
   {e:"🤝", h:"Close bonds", es:"Vínculos", i:[["get on like a house on fire","llevarse de maravilla"],["see eye to eye","estar de acuerdo"]], ex:["They get on like a house on fire.","Se llevan de maravilla."]},
   {e:"⚡", h:"Conflict", es:"Conflicto", i:[["at loggerheads","enfrentados"],["bury the hatchet","enterrar el hacha de guerra"]], ex:["The two are finally burying the hatchet.","Los dos por fin entierran el hacha de guerra."]},
@@ -447,7 +447,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Waiting anxiously: on ____.", a:"tenterhooks"}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"C1", icon:"📜", t:"Proverbs & Sayings", es:"Refranes y dichos", d:"Proverbios ingleses frecuentes y cuándo usarlos.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"C1", icon:"📜", slug:"proverbs-and-sayings", t:"Proverbs & Sayings", es:"Refranes y dichos", d:"Proverbios ingleses frecuentes y cuándo usarlos.",
  boxes:[
   {e:"⏳", h:"Time & patience", es:"Tiempo y paciencia", i:[["Rome wasn't built in a day.","Roma no se construyó en un día."],["A watched pot never boils.","Quien espera, desespera."]], ex:["Don't count your chickens before they hatch.","No vendas la piel del oso antes de cazarlo."]},
   {e:"💪", h:"Effort", es:"Esfuerzo", i:[["No pain, no gain.","Sin esfuerzo no hay recompensa."],["Practice makes perfect.","La práctica hace al maestro."]], ex:["The proof of the pudding is in the eating.","Los hechos son la mejor prueba (lit. la prueba del pudín está en comerlo)."]},
@@ -461,7 +461,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Complete: Too many ____ spoil the broth.", a:"cooks"}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"C1", icon:"🔗", t:"Collocations: Adverb + Adjective", es:"Colocaciones: adverbio + adjetivo", d:"Combinaciones naturales que distinguen un inglés avanzado.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"C1", icon:"🔗", slug:"collocations-adverb-adjective", t:"Collocations: Adverb + Adjective", es:"Colocaciones: adverbio + adjetivo", d:"Combinaciones naturales que distinguen un inglés avanzado.",
  boxes:[
   {e:"💯", h:"Completeness", es:"Totalidad", i:[["utterly ridiculous, completely unaware","absolutamente ridículo, completamente inconsciente"],["thoroughly enjoyable","sumamente agradable"]], ex:["The idea is utterly ridiculous.","La idea es absolutamente ridícula."]},
   {e:"🔥", h:"Intensity", es:"Intensidad", i:[["deeply concerned, bitterly disappointed","profundamente preocupado, amargamente decepcionado"],["highly unlikely, fiercely competitive","muy improbable, ferozmente competitivo"]], ex:["The result is highly unlikely.","El resultado es muy improbable."]},
@@ -475,7 +475,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Choose: It is (highly / bitterly) unlikely that she will resign.", a:"highly"}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"C1", icon:"👯", t:"Binomials & Fixed Pairs", es:"Binomios y pares fijos", d:"Pares de palabras que siempre van juntos y en un orden fijo.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"C1", icon:"👯", slug:"binomials-and-fixed-pairs", t:"Binomials & Fixed Pairs", es:"Binomios y pares fijos", d:"Pares de palabras que siempre van juntos y en un orden fijo.",
  boxes:[
   {e:"🧺", h:"Odds and ends", es:"Cosas sueltas", i:[["odds and ends","cosas varias"],["bits and pieces","cosas sueltas"]], ex:["The drawer was full of odds and ends.","El cajón estaba lleno de cosas varias."]},
   {e:"⚖️", h:"Ups and downs", es:"Altibajos", i:[["part and parcel (of)","parte inherente (de)"],["ups and downs","altibajos"]], ex:["Every marriage has its ups and downs.","Todo matrimonio tiene altibajos."]},
@@ -489,7 +489,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Learning by testing many times: trial and ____.", a:"error"}
  ] },
 
-{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"C1", icon:"🎨", t:"Metaphors in Everyday English", es:"Metáforas cotidianas", d:"Metáforas lexicalizadas que usamos sin darnos cuenta.",
+{ cat:"Phrasal Verbs, Idioms & Collocations", type:"Expressions", lvl:"C1", icon:"🎨", slug:"metaphors-in-everyday-english", t:"Metaphors in Everyday English", es:"Metáforas cotidianas", d:"Metáforas lexicalizadas que usamos sin darnos cuenta.",
  boxes:[
   {e:"⚔️", h:"Argument is war", es:"Discusión es guerra", i:[["defend a position, attack a claim","defender una posición, atacar una afirmación"],["shoot down an idea","derribar una idea"]], ex:["He shot down my proposal.","Echó abajo mi propuesta."]},
   {e:"🧭", h:"Life is a journey", es:"Vida es viaje", i:[["at a crossroads, a dead end","en una encrucijada, callejón sin salida"],["a bumpy road ahead","un camino lleno de baches"]], ex:["The company is at a crossroads.","La empresa está en una encrucijada."]},
@@ -503,7 +503,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Metaphor: a ____ debate (intense).", a:"heated"}
  ] },
 
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"C1", icon:"🫖", t:"Reading Between the Lines: British Indirectness", es:"Leer entre líneas: la indirección británica", d:"Lo que dicen los británicos y lo que realmente quieren decir.",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"C1", icon:"🫖", slug:"reading-between-the-lines-british-indirectness", t:"Reading Between the Lines: British Indirectness", es:"Leer entre líneas: la indirección británica", d:"Lo que dicen los británicos y lo que realmente quieren decir.",
  boxes:[
   {e:"😬", h:"Softened criticism", es:"Crítica suavizada", i:[["'With respect…' = I disagree","'Con el debido respeto…' = discrepo"],["'That's a brave idea' = I think it's foolish","'Qué idea valiente' = me parece una locura"]], ex:["'Interesting' can mean 'I don't like it'.","'Interesante' puede significar 'no me gusta'."]},
   {e:"⏰", h:"Polite urgency", es:"Urgencia cortés", i:[["'I'll bear it in mind' = I won't do it","'Lo tendré en cuenta' = no lo haré"],["'Perhaps you could…' = Do it","'Quizás podrías…' = hazlo"]], ex:["'I was hoping you might…' means a request.","'Esperaba que pudieras…' es una petición."]},
@@ -517,7 +517,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Polite phrase to hint you must end a chat: 'I mustn't ____ you.'", a:"keep"}
  ] },
 
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"C1", icon:"🤝", t:"Negotiating & Persuading", es:"Negociar y persuadir", d:"Lenguaje para ceder, contraproponer y convencer con tacto.",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"C1", icon:"🤝", slug:"negotiating-and-persuading", t:"Negotiating & Persuading", es:"Negociar y persuadir", d:"Lenguaje para ceder, contraproponer y convencer con tacto.",
  boxes:[
   {e:"🎯", h:"Opening positions", es:"Posiciones iniciales", i:[["Our starting point is…","Nuestro punto de partida es…"],["We'd be looking for…","Buscaríamos…"]], ex:["We'd be looking for a ten per cent reduction.","Buscaríamos una reducción del diez por ciento."]},
   {e:"🔁", h:"Counter-proposals", es:"Contrapropuestas", i:[["How about meeting you halfway?","¿Y si nos encontramos a medio camino?"],["Would you consider…?","¿Consideraría…?"]], ex:["Would you consider a longer contract?","¿Consideraría un contrato más largo?"]},
@@ -531,7 +531,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Polite refusal: I'm afraid that's a non-____.", a:"starter"}
  ] },
 
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"C1", icon:"📄", t:"CV & Cover Letter Language", es:"Lenguaje de CV y carta de presentación", d:"Verbos de acción y fórmulas profesionales para destacar tu perfil.",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"C1", icon:"📄", slug:"cv-and-cover-letter-language", t:"CV & Cover Letter Language", es:"Lenguaje de CV y carta de presentación", d:"Verbos de acción y fórmulas profesionales para destacar tu perfil.",
  boxes:[
   {e:"🚀", h:"Action verbs", es:"Verbos de acción", i:[["spearheaded, orchestrated, streamlined","lideró, orquestó, optimizó"],["negotiated, secured, delivered","negoció, aseguró, entregó"]], ex:["I spearheaded a successful rebranding.","Lideré una exitosa renovación de marca."]},
   {e:"📊", h:"Quantifying results", es:"Resultados", i:[["resulting in a 20% increase in sales","lo que generó un aumento del 20% en ventas"],["reduced costs by £50,000","redujo costos en £50.000"]], ex:["I cut costs by £50,000 a year.","Reduje costos en £50.000 al año."]},
@@ -545,7 +545,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {q:"Phrase meaning 'proactive person': a self-____.", a:"starter"}
  ] },
 
-{ cat:"Communication & British Culture", type:"Expressions", lvl:"C1", icon:"🎤", t:"Debating & Academic Essay Structures", es:"Debatir y estructurar ensayos", d:"Marcadores para argumentar, contraargumentar y concluir en ensayos formales.",
+{ cat:"Communication & British Culture", type:"Expressions", lvl:"C1", icon:"🎤", slug:"debating-and-academic-essay-structures", t:"Debating & Academic Essay Structures", es:"Debatir y estructurar ensayos", d:"Marcadores para argumentar, contraargumentar y concluir en ensayos formales.",
  boxes:[
   {e:"📍", h:"Introducing a topic", es:"Introducir", i:[["It is often claimed that…","A menudo se afirma que…"],["This essay will examine…","Este ensayo examinará…"]], ex:["This essay will examine the causes of inflation.","Este ensayo examinará las causas de la inflación."]},
   {e:"➕", h:"Supporting", es:"Apoyar", i:[["To illustrate this, consider…","Para ilustrarlo, considere…"],["Furthermore / Moreover / What is more","Además"]], ex:["Moreover, the evidence is compelling.","Además, la evidencia es convincente."]},
