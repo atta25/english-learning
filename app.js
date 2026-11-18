@@ -118,6 +118,35 @@ function copyMapLink(btn){
   else prompt("Copia este enlace:", url);
 }
 
+// ---- Text to speech (browser voices, British English preferred) ----
+const TTS = "speechSynthesis" in window && "SpeechSynthesisUtterance" in window;
+const SAY = TTS ? `<button class="say" type="button" title="Escuchar" aria-label="Escuchar en inglés">🔊</button>` : "";
+let voice = null, playing = null;
+function pickVoice(){
+  const vs = speechSynthesis.getVoices(), lang = v => v.lang.replace("_", "-");
+  voice = vs.find(v => lang(v) === "en-GB") || vs.find(v => /^en/i.test(lang(v))) || null;
+  // hide the buttons only when the device has voices and none of them is English
+  document.documentElement.classList.toggle("no-voice", vs.length > 0 && !voice);
+}
+function stopSpeech(){
+  if (!TTS) return;
+  speechSynthesis.cancel();
+  if (playing) { playing.classList.remove("playing"); playing.textContent = "🔊"; playing = null; }
+}
+function speak(btn){
+  const same = playing === btn;
+  stopSpeech();
+  if (same) return;
+  const u = new SpeechSynthesisUtterance(btn.parentElement.firstChild.textContent);
+  u.lang = "en-GB"; u.rate = 0.9;
+  if (voice) u.voice = voice;
+  const reset = () => { if (playing === btn) stopSpeech(); };
+  u.onend = reset; u.onerror = reset;
+  playing = btn; btn.classList.add("playing"); btn.textContent = "⏹";
+  speechSynthesis.speak(u);
+}
+if (TTS) { pickVoice(); speechSynthesis.addEventListener("voiceschanged", pickVoice); }
+
 function renderTabs(){
   const t = document.getElementById("tabs");
   t.innerHTML = ["All",...cats].map(c=>`<button lang="en" class="${c===curCat?"on":""}" data-c="${esc(c)}">${c==="All"?"📚 All":esc(SHORT[c]||c)} <small>(${c==="All"?ALL.length:ALL.filter(m=>m.cat===c).length})</small></button>`).join("");
@@ -148,8 +177,8 @@ function mapHTML(m){
   const box = (b,j)=>`<div class="box${j===0?" open":""}" id="b${m.id}_${j}" style="--c:${C[j%6]}">
     <div class="hd"><div class="num">${j+1}</div><div><h3 lang="en">${esc(b.h)}</h3></div></div>
     <div class="bd">${pic((art.boxes && art.boxes[j]) || [b.e])}
-      <ul>${b.i.map(([a,c])=>`<li><b lang="en">${esc(a)}</b><i>${esc(c)}</i></li>`).join("")}</ul></div>
-    <div class="speak"><div class="bubble"><b lang="en">${esc(b.ex[0])}</b><span>${esc(b.ex[1])}</span></div><span class="stk mascot">${mascot}</span></div></div>`;
+      <ul>${b.i.map(([a,c])=>`<li><b lang="en">${esc(a)}${SAY}</b><i>${esc(c)}</i></li>`).join("")}</ul></div>
+    <div class="speak"><div class="bubble"><b lang="en">${esc(b.ex[0])}${SAY}</b><span>${esc(b.ex[1])}</span></div><span class="stk mascot">${mascot}</span></div></div>`;
   const star = (x,y,e)=>`<span class="star" style="left:${x};top:${y}">${e}</span>`;
   return `<section class="page" id="m${m.id}" data-id="${m.id}">
     <div class="rings"></div><div class="tape l"></div><div class="tape r"></div>
@@ -177,6 +206,7 @@ const STEP = 6;
 const moreLabel = () => `⬇ Cargar más (${shown}/${cur.length})`;
 // Rebuilds the whole list. Only needed when the list itself changes (filters, search).
 function paint(){
+  stopSpeech();
   document.getElementById("maps").innerHTML = cur.slice(0,shown).map(mapHTML).join("") +
     (shown < cur.length ? `<div id="moreWrap" style="text-align:center;margin:10px"><button id="more" class="tabs-btn">${moreLabel()}</button></div>` : "");
   const more = document.getElementById("more");
@@ -278,6 +308,8 @@ const upBtn = document.getElementById("up");
 window.addEventListener("scroll",()=>upBtn.classList.toggle("show", window.scrollY > 400),{passive:true});
 upBtn.addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
 document.getElementById("maps").addEventListener("click",e=>{
+  const say = e.target.closest(".say");
+  if (say) { speak(say); return; }
   const link = e.target.closest(".copylink");
   if (link) { copyMapLink(link); return; }
   const hd = e.target.closest(".box .hd");

@@ -61,6 +61,11 @@ header p { margin:0 0 12px; color:#475569; font-size:14px; }
 .box li { padding:3px 0; border-bottom:1px dashed color-mix(in srgb,var(--c) 30%,white); }
 .box li:last-child { border-bottom:none; }
 .box li b { color:#0f172a; } .box li i { color:#64748b; font-style:normal; display:block; font-size:12.5px; }
+.box li b, .bubble b { position:relative; display:block; padding-right:30px; }
+.say { position:absolute; right:0; top:0; padding:0 4px; border:1.5px solid color-mix(in srgb,var(--c) 55%,white); border-radius:999px; background:#fff; font-size:12px; line-height:18px; height:20px; min-width:24px; cursor:pointer; opacity:.85; font-family:inherit; }
+.say:hover { opacity:1; background:#fde68a; }
+.say.playing { background:var(--c); border-color:var(--c); color:#fff; opacity:1; }
+.no-voice .say { display:none; }
 .speak { display:flex; align-items:flex-end; gap:8px; padding:4px 12px 10px; }
 .bubble { position:relative; flex:1; background:color-mix(in srgb,var(--c) 9%,white); border:2px solid var(--c); border-radius:14px; padding:6px 10px; font-size:12.5px; }
 .bubble::after { content:""; position:absolute; right:-9px; bottom:12px; width:14px; height:14px; background:color-mix(in srgb,var(--c) 9%,white); border-right:2px solid var(--c); border-top:2px solid var(--c); transform:rotate(45deg); }
@@ -109,6 +114,9 @@ html[data-theme="dark"] .box .num { background:#0f172a; }
 html[data-theme="dark"] .pic { background:color-mix(in srgb,var(--c) 30%,#0f172a); }
 html[data-theme="dark"] .stk { filter:drop-shadow(2px 0 0 #fff) drop-shadow(-2px 0 0 #fff) drop-shadow(0 2px 0 #fff) drop-shadow(0 -2px 0 #fff) drop-shadow(0 4px 4px #0008); }
 html[data-theme="dark"] .box li { border-bottom-color:color-mix(in srgb,var(--c) 40%,#0f172a); }
+html[data-theme="dark"] .say { background:#0f172a; border-color:color-mix(in srgb,var(--c) 60%,#0f172a); }
+html[data-theme="dark"] .say:hover { background:#1e293b; }
+html[data-theme="dark"] .say.playing { background:var(--c); color:#fff; }
 html[data-theme="dark"] .box li b { color:#f1f5f9; }
 html[data-theme="dark"] .box li i, html[data-theme="dark"] .bubble span { color:#94a3b8; }
 html[data-theme="dark"] .bubble { background:color-mix(in srgb,var(--c) 18%,#0f172a); }
