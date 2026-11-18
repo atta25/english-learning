@@ -188,7 +188,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {e:"🔢", h:"Quantifier + of which/whom", es:"Cuantificador + of which", i:[["Several witnesses, most of whom were nervous, testified.","Varios testigos, la mayoría nerviosos, declararon."],["two cars, both of which were red","dos coches, ambos rojos"]], ex:["She has three sons, all of whom are doctors.","Tiene tres hijos, todos médicos."]},
   {e:"🗨️", h:"Sentence relatives (which)", es:"Which de oración", i:[["He passed, which surprised everyone.","Aprobó, lo cual sorprendió a todos."],["…, in which case / at which point…","…en cuyo caso / en cuyo momento…"]], ex:["She left early, at which point the argument ended.","Se fue temprano, y en ese momento terminó la discusión."]},
   {e:"📏", h:"The extent to which", es:"El grado en que", i:[["the extent to which they cooperate","el grado en que cooperan"],["the way in which; the degree to which","la manera en que; el grado en que"]], ex:["It depends on the extent to which they comply.","Depende del grado en que cumplan."]},
-  {e:"⚠️", h:"Common mistakes", es:"Errores típicos", i:[["✗ The man with who I spoke","✓ The man with whom I spoke — tras preposición, whom."],["✗ A house which its roof leaks","✓ A house whose roof leaks — no repitas el posesivo."],["✗ The reason for why he left","✓ The reason why he left / for which he left"]], ex:["The woman whose car was stolen called the police.","La mujer cuyo auto fue robado llamó a la policía."]}
+  {e:"⚠️", h:"Common mistakes", es:"Errores típicos", i:[["✗ The man with who I spoke","✓ The man with whom I spoke — tras preposición, whom."],["✗ A house which its roof leaks","✓ A house whose roof leaks — no repitas el posesivo."],["✗ The reason for why he left","✓ The reason why he left / for which he left — con 'why' no se usa 'for'"]], ex:["The woman whose car was stolen called the police.","La mujer cuyo auto fue robado llamó a la policía."]}
  ], qs:[
   {q:"Complete: The manager, ____ whom I reported, resigned.", a:"to"},
   {q:"Choose: A town (whose / which) population is falling.", a:"whose"},
@@ -482,7 +482,7 @@ window.MAPS = (window.MAPS||[]).concat([
   {e:"🛋️", h:"Peace and quiet", es:"Calma", i:[["peace and quiet","paz y tranquilidad"],["safe and sound","sano y salvo"]], ex:["We just want some peace and quiet.","Solo queremos paz y tranquilidad."]},
   {e:"🔄", h:"Give and take", es:"Reciprocidad", i:[["give and take","ceder mutuamente"],["trial and error","ensayo y error"]], ex:["Success came through trial and error.","El éxito llegó por ensayo y error."]},
   {e:"⏱️", h:"Sooner or later", es:"Tiempo", i:[["sooner or later","tarde o temprano"],["now and then / on and off","de vez en cuando / intermitente"]], ex:["Sooner or later, you'll have to decide.","Tarde o temprano tendrás que decidir."]},
-  {e:"💬", h:"Word order is fixed", es:"Orden fijo", i:[["✗ cons and pros","✓ pros and cons — el orden es fijo"],["✗ quiet and peace","✓ peace and quiet"]], ex:["Wear and tear is not covered.","El desgaste normal no está cubierto."]}
+  {e:"💬", h:"Word order is fixed", es:"Orden fijo", i:[["✗ cons and pros","✓ pros and cons — el orden es fijo"],["✗ quiet and peace","✓ peace and quiet — el orden es fijo"]], ex:["Wear and tear is not covered.","El desgaste normal no está cubierto."]}
  ], qs:[
   {q:"Complete: Safe and ____.", a:"sound"},
   {q:"Complete: Ups and ____.", a:"downs"},

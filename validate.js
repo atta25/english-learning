@@ -14,8 +14,28 @@ const seg = typeof Intl.Segmenter === "function" ? new Intl.Segmenter("en", { gr
 const graphemes = s => seg ? [...seg.segment(s)].length : [...s].length;
 // A single emoji, including keycaps (1⃣) and flags (🇬🇧).
 const isEmoji = s => typeof s === "string" && graphemes(s) === 1 && /\p{Extended_Pictographic}|\p{Regional_Indicator}|\u20E3/u.test(s);
-const en = /\b(the|you|I|he|she|we|they|is|are|was|have|has|to|and|of|in|on|at|for|my|your|it)\b/i;
-const es = /[áéíóúñ¿¡]|\b(el|la|los|las|de|que|en|un|una|con|para|por|se|es|no|y|como|si|hacer|tener|muy|más|usa|usar|verbo|pasado|presente|futuro|también|cuando|solo|algo|algún|cosas?)\b/i;
+// "Is this translation slot still in English?" Heuristic, only used for warnings.
+// English-only and Spanish-only words (words that exist in both languages, such as "no", "he", "me", are left out).
+const EN_WORDS = new Set("the you she we they is are was were am have has had will would can could should must do does did not be been being this that these those with from of and or but if when what which who how why because about into than then there here your my his her its our their him them".split(" ").filter(w => w !== "or"));
+const ES_WORDS = new Set(("de en y del el la los las al que un una unos unas con para por se es son soy eres está están estoy como si muy más pero solo sólo también porque sobre entre sin hasta desde hay tiene tienen tengo ha han hemos fue era eran será serán puede pueden yo tú él ella nosotros ellos ellas mi mis tu tus su sus lo les nos esto eso esta ese estos esos aquí allí ahora siempre nunca ya aún todavía hoy ayer mañana " +
+  "verbo nombre pasado presente futuro participio infinitivo sujeto forma uso usa usar tras antes después significa casi mucho muchos poco algo cosa cosas tan buenos bien mal habitual rutina regla reglas orden preposición adjetivo adverbio objeto frase oración pregunta negativa afirmativa acción acciones hechos hecho verdad " +
+  "lleva llevan falta hace hacen plural singular tercera persona significan cuando donde quien cual todo todos toda todas otro otra otros otras mismo misma cada algunos algunas ninguno ni ante bajo contra según durante mediante además aunque pues entonces luego así mejor peor mayor menor tiempo tiempos caso casos modo estado hábito habituales condicional posible imposible real irreal necesario obligación permiso consejo deducción probabilidad habilidad capacidad lograr logro puntual verdadero cierto falso correcto incorrecto error errores sobra sobran añade añaden quita quitan cambia cambian mantiene mantienen indica indican expresa expresan describe describen introduce introducen sigue siguen seguido seguida sustantivo sustantivos adjetivos adverbios preposiciones artículo pronombre pronombres conjunción posesivo posesivos demostrativos contable incontable cuantificador").split(" "));
+const ES_SUFFIX = /(ado|ido|ando|iendo|ción|ciones|iones|mente|idad|aba|ía)$/;
+// Texts reviewed by hand that the heuristic cannot understand (grammar notes made of English words).
+const REVIEWED_OK = new Set([
+  "✓ He is as tall as me. — as...as, no than",
+  "✓ It's the same as mine. — the same as",
+]);
+function looksUntranslated(text) {
+  if (REVIEWED_OK.has(text)) return false;
+  // "✓ English sentence — Spanish note": only the note has to be Spanish
+  const note = text.includes(" — ") ? text.split(" — ").slice(1).join(" ") : text;
+  if (/[+=→]/.test(note)) return false; // grammar formulas such as "he/she/it + is"
+  const words = note.toLowerCase().split(/[^a-záéíóúñü']+/).filter(Boolean);
+  const spanish = words.filter(w => ES_WORDS.has(w) || ES_SUFFIX.test(w)).length + (/[áéíóúñ¿¡ü]/.test(note) ? 1 : 0);
+  const english = words.filter(w => EN_WORDS.has(w)).length;
+  return spanish === 0 && english >= 1 && words.length >= 3;
+}
 
 // Every text of a map with its label and length limit.
 function* texts(m) {
@@ -54,10 +74,10 @@ function validateMaps(maps, { expected } = {}) {
       if (!Array.isArray(b.i) || b.i.length < 2 || b.i.length > 4 || !b.i.every(isPair)) errs.push(`${bw}: i must be 2-4 [en,es] pairs`);
       else b.i.forEach(([a, c]) => {
         if (a.trim() === c.trim()) errs.push(`${bw}: identical pair "${a}"`);
-        else if (en.test(c) && !es.test(c)) warns.push(`${bw}: second element may be English: "${c}"`);
+        else if (looksUntranslated(c)) warns.push(`${bw}: second element may be English: "${c}"`);
       });
       if (!isPair(b.ex)) errs.push(`${bw}: ex must be [en,es]`);
-      else if (en.test(b.ex[1]) && !es.test(b.ex[1])) warns.push(`${bw}: ex translation may be English: "${b.ex[1]}"`);
+      else if (looksUntranslated(b.ex[1])) warns.push(`${bw}: ex translation may be English: "${b.ex[1]}"`);
     });
     for (const [label, s, max] of texts(m)) {
       if (typeof s !== "string") continue;

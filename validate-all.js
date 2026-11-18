@@ -1,16 +1,16 @@
-// Usage: node validate-all.js [--warnings]
+// Usage: node validate-all.js [--warnings] [--strict]
 // Runs every check on all data files and exits with 1 if anything fails.
 //   - map rules for each data/partN.js (validate.js)
 //   - illustrations for every map (validate-art.js)
 //   - rules across files: duplicate titles, near-duplicate titles
 //   - README: total and per-level counts must match the data
-// Warnings are only counted unless --warnings is given.
+// Warnings are only counted unless --warnings is given. With --strict, warnings also make the command fail.
 const fs = require("fs");
 const path = require("path");
 const { validateMaps, loadFile, LEVELS } = require("./validate");
 const { validateArt } = require("./validate-art");
 
-const showWarnings = process.argv.includes("--warnings");
+const showWarnings = process.argv.includes("--warnings"), strict = process.argv.includes("--strict");
 // Titles that are intentionally almost equal (same topic at two levels), by slug.
 const NEAR_DUPLICATE_OK = new Set(["there-is-there-are-a1", "there-is-there-are-a2"]);
 const dataDir = path.join(__dirname, "data");
@@ -66,4 +66,5 @@ try {
 console.log(`Files: ${numbered("part").length} content, ${numbered("art").length} art | Maps: ${all.length} | ${LEVELS.map(l => `${l}:${counts[l]}`).join(" ")}`);
 if (warns.length) console.log(showWarnings ? `WARNINGS (${warns.length}):\n` + warns.join("\n") : `Warnings: ${warns.length} (run with --warnings to list them)`);
 if (errs.length) { console.log(`\nERRORS (${errs.length}):\n` + errs.join("\n")); process.exit(1); }
+if (strict && warns.length) { console.log(`\nFAILED (--strict): ${warns.length} warnings`); process.exit(1); }
 console.log("OK: all checks passed");
