@@ -102,12 +102,26 @@ function mapHTML(m){
 
 let cur = [], shown = 0;
 const STEP = 6;
+const moreLabel = () => `⬇ Cargar más (${shown}/${cur.length})`;
+// Rebuilds the whole list. Only needed when the list itself changes (filters, search).
 function paint(){
   document.getElementById("maps").innerHTML = cur.slice(0,shown).map(mapHTML).join("") +
-    (shown < cur.length ? `<div style="text-align:center;margin:10px"><button id="more" class="tabs-btn">⬇️ Cargar más (${shown}/${cur.length})</button></div>` : "");
+    (shown < cur.length ? `<div id="moreWrap" style="text-align:center;margin:10px"><button id="more" class="tabs-btn">${moreLabel()}</button></div>` : "");
   const more = document.getElementById("more");
-  if (more) more.onclick = () => { shown = Math.min(cur.length, shown+STEP); paint(); };
+  if (more) more.onclick = () => showUpTo(shown+STEP);
   requestAnimationFrame(()=>draw());
+}
+// Appends maps up to position n without touching the ones already rendered (keeps open answers and boxes).
+function showUpTo(n){
+  n = Math.min(cur.length, n);
+  if (n <= shown) return;
+  const added = cur.slice(shown, n), wrap = document.getElementById("moreWrap");
+  shown = n;
+  const html = added.map(mapHTML).join("");
+  if (wrap) wrap.insertAdjacentHTML("beforebegin", html);
+  else document.getElementById("maps").insertAdjacentHTML("beforeend", html);
+  if (wrap) { if (shown >= cur.length) wrap.remove(); else document.getElementById("more").textContent = moreLabel(); }
+  requestAnimationFrame(()=>draw(added.map(m=>document.getElementById("m"+m.id))));
 }
 function render(){
   const words = norm(query).trim().split(" ").filter(Boolean);
@@ -124,7 +138,7 @@ function render(){
   ch.innerHTML = list.map((m,k)=>`<a href="#m${m.id}" data-k="${k}" lang="en">${esc(m.icon)} ${m.id+1}. ${esc(m.t)}</a>`).join("");
   ch.querySelectorAll("a").forEach(a=>a.onclick=e=>{
     e.preventDefault(); const k=+a.dataset.k;
-    if (k >= shown) { shown = Math.min(cur.length, k+1); paint(); }
+    showUpTo(k+1);
     requestAnimationFrame(()=>document.getElementById("m"+list[k].id).scrollIntoView({behavior:"smooth"}));
   });
   cur = list; shown = Math.min(STEP, list.length); paint();
@@ -145,11 +159,11 @@ function cloudPath(w,h){
   return d+"Z";
 }
 
-// Redraws cloud outlines and arrows. Pass one .page to redraw only that map.
+// Redraws cloud outlines and arrows. Pass a .page (or an array of them) to redraw only those maps.
 function draw(only){
   const NS="http://www.w3.org/2000/svg";
   const mobile = matchMedia("(max-width:1000px)").matches; // arrows are hidden by CSS here
-  const pages = only ? [only] : [...document.querySelectorAll(".page")];
+  const pages = only ? [].concat(only) : [...document.querySelectorAll(".page")];
   // read phase: measure everything first to avoid forced layouts between writes
   const data = pages.map(page=>{
     const id=+page.dataset.id, cr=document.getElementById("c"+id).getBoundingClientRect();
@@ -198,3 +212,5 @@ document.getElementById("maps").addEventListener("click",e=>{
 });
 document.addEventListener("toggle",e=>{ const m=e.target.closest(".page"); if (m) draw(m); },true);
 render();
+// The web font changes text metrics after the first draw, so redraw once it is ready.
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(()=>draw());
