@@ -52,7 +52,9 @@ const catKey = c => slugify(SHORT[c] || c);
 const BASE_TITLE = document.title;
 const setTitle = m => { document.title = m ? `${m.t} · ${BASE_TITLE}` : BASE_TITLE; };
 const BY_SLUG = new Map(ALL.map(m => [m.slug, m]));
-const baseURL = () => location.href.split(/[?#]/)[0];
+// URLs are written with an explicit "index.html" so they read "…/index.html?lvl=B1" instead of "…/?lvl=B1".
+const PAGE = "index.html";
+const baseURL = () => { const u = location.href.split(/[?#]/)[0]; return u.endsWith("/") ? u + PAGE : u; };
 const filterQS = () => {
   const p = new URLSearchParams();
   if (curLvl) p.set("lvl", curLvl);
@@ -63,7 +65,7 @@ const filterQS = () => {
 };
 // history.* can throw on file:// pages, in which case the URL simply is not updated.
 const setURL = (url, push) => { try { history[push ? "pushState" : "replaceState"](null, "", url); } catch (e) {} };
-const syncFilters = () => { setURL(location.pathname + filterQS(), false); setTitle(null); };
+const syncFilters = () => { setURL(PAGE + filterQS(), false); setTitle(null); };
 function readFilters(){
   const p = new URLSearchParams(location.search);
   const lvl = p.get("lvl"), cat = p.get("cat");
@@ -86,7 +88,7 @@ function goToMap(m, { push = false, smooth = true } = {}){
     render();
   }
   showUpTo(cur.indexOf(m) + 1);
-  setURL(location.pathname + filterQS() + "#" + m.slug, push);
+  setURL(PAGE + filterQS() + "#" + m.slug, push);
   setTitle(m);
   const target = () => document.getElementById("m" + m.id);
   requestAnimationFrame(() => {
