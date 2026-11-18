@@ -23,6 +23,8 @@ const SHORT = {"Grammar: Tenses & Verbs":"Tenses","Grammar: Structures":"Structu
 const ESC = {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"};
 const esc = s => String(s).replace(/[&<>"']/g, c => ESC[c]);
 
+// lang="en" for exercise prompts, except translation prompts that contain Spanish text
+const enAttr = s => /[áéíóúñ¿¡]/.test(s) ? "" : ' lang="en"';
 // Search: accent-insensitive, every word must match at the start of a word, results ranked by where it matches.
 const norm = s => " " + String(s).normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]+/g," ").trim() + " ";
 const SEARCH = ALL.map(m => ({
@@ -46,7 +48,7 @@ function score(m, words){
 
 function renderTabs(){
   const t = document.getElementById("tabs");
-  t.innerHTML = ["All",...cats].map(c=>`<button class="${c===curCat?"on":""}" data-c="${esc(c)}">${c==="All"?"📚 All":esc(SHORT[c]||c)} <small>(${c==="All"?ALL.length:ALL.filter(m=>m.cat===c).length})</small></button>`).join("");
+  t.innerHTML = ["All",...cats].map(c=>`<button lang="en" class="${c===curCat?"on":""}" data-c="${esc(c)}">${c==="All"?"📚 All":esc(SHORT[c]||c)} <small>(${c==="All"?ALL.length:ALL.filter(m=>m.cat===c).length})</small></button>`).join("");
   t.querySelectorAll("button").forEach(b=>b.onclick=()=>{curCat=b.dataset.c; render();});
 }
 
@@ -72,15 +74,15 @@ function mapHTML(m){
   const mascot = art.mascot || MASCOTS[m.id % MASCOTS.length];
   const scene = art.scene || [m.icon];
   const box = (b,j)=>`<div class="box${j===0?" open":""}" id="b${m.id}_${j}" style="--c:${C[j%6]}">
-    <div class="hd"><div class="num">${j+1}</div><div><h3>${esc(b.h)}</h3></div></div>
+    <div class="hd"><div class="num">${j+1}</div><div><h3 lang="en">${esc(b.h)}</h3></div></div>
     <div class="bd">${pic((art.boxes && art.boxes[j]) || [b.e])}
-      <ul>${b.i.map(([a,c])=>`<li><b>${esc(a)}</b><i>${esc(c)}</i></li>`).join("")}</ul></div>
-    <div class="speak"><div class="bubble"><b>${esc(b.ex[0])}</b><span>${esc(b.ex[1])}</span></div><span class="stk mascot">${mascot}</span></div></div>`;
+      <ul>${b.i.map(([a,c])=>`<li><b lang="en">${esc(a)}</b><i>${esc(c)}</i></li>`).join("")}</ul></div>
+    <div class="speak"><div class="bubble"><b lang="en">${esc(b.ex[0])}</b><span>${esc(b.ex[1])}</span></div><span class="stk mascot">${mascot}</span></div></div>`;
   const star = (x,y,e)=>`<span class="star" style="left:${x};top:${y}">${e}</span>`;
   return `<section class="page" id="m${m.id}" data-id="${m.id}">
     <div class="rings"></div><div class="tape l"></div><div class="tape r"></div>
     ${star("2%","46%","✨")}${star("97%","52%","⭐")}${star("48%","98%","✨")}
-    <div class="topbar"><div class="tag">#${m.id+1} · ${esc(m.cat)} · ${esc(m.type)}</div><div class="level lv-${esc(m.lvl)}">${esc(m.lvl)}</div></div>
+    <div class="topbar"><div class="tag" lang="en">#${m.id+1} · ${esc(m.cat)} · ${esc(m.type)}</div><div class="level lv-${esc(m.lvl)}">${esc(m.lvl)}</div></div>
     <svg class="arrows"></svg>
     <div class="grid">
       <div class="col">${m.boxes.slice(0,3).map((b,j)=>box(b,j)).join("")}</div>
@@ -88,11 +90,11 @@ function mapHTML(m){
         <div class="cloudwrap" id="c${m.id}"><svg class="cl"></svg>
           <div class="cloudin">
             <div class="scene">${scene.map((e,k)=>`<span class="stk" style="font-size:${k%2?40:50}px;transform:rotate(${(k-2)*5}deg)">${e}</span>`).join("")}</div>
-            <h1>${esc(m.t)}</h1><h2>${esc(m.es)}</h2><p>${esc(m.d)}</p>
+            <h1 lang="en">${esc(m.t)}</h1><h2>${esc(m.es)}</h2><p>${esc(m.d)}</p>
           </div>
         </div>
-        <div class="exercise"><h4>✏️ Your turn</h4><span class="stk think">🤔</span>
-          ${m.qs.map((x,n)=>`<div class="q">${n+1}. ${esc(x.q)}</div><details><summary>Ver respuesta</summary><div class="ans">✅ ${esc(x.a)}</div></details>`).join("")}</div>
+        <div class="exercise"><h4 lang="en">✏️ Your turn</h4><span class="stk think">🤔</span>
+          ${m.qs.map((x,n)=>`<div class="q"${enAttr(x.q)}>${n+1}. ${esc(x.q)}</div><details><summary>Ver respuesta</summary><div class="ans">✅ ${esc(x.a)}</div></details>`).join("")}</div>
       </div>
       <div class="col">${m.boxes.slice(3).map((b,j)=>box(b,j+3)).join("")}</div>
     </div></section>`;
@@ -119,7 +121,7 @@ function render(){
   renderSeg();
   document.getElementById("count").textContent = `${list.length} mapas`;
   const ch = document.getElementById("chips");
-  ch.innerHTML = list.map((m,k)=>`<a href="#m${m.id}" data-k="${k}">${esc(m.icon)} ${m.id+1}. ${esc(m.t)}</a>`).join("");
+  ch.innerHTML = list.map((m,k)=>`<a href="#m${m.id}" data-k="${k}" lang="en">${esc(m.icon)} ${m.id+1}. ${esc(m.t)}</a>`).join("");
   ch.querySelectorAll("a").forEach(a=>a.onclick=e=>{
     e.preventDefault(); const k=+a.dataset.k;
     if (k >= shown) { shown = Math.min(cur.length, k+1); paint(); }
