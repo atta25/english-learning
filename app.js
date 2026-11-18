@@ -46,16 +46,84 @@ function score(m, words){
   return total;
 }
 
+// ---- URL state: ?lvl=B1&cat=tenses&q=get#map-slug ----
+const slugify = t => String(t).normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/&/g," and ").replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"");
+const catKey = c => slugify(SHORT[c] || c);
+const BASE_TITLE = document.title;
+const setTitle = m => { document.title = m ? `${m.t} · ${BASE_TITLE}` : BASE_TITLE; };
+const BY_SLUG = new Map(ALL.map(m => [m.slug, m]));
+const baseURL = () => location.href.split(/[?#]/)[0];
+const filterQS = () => {
+  const p = new URLSearchParams();
+  if (curLvl) p.set("lvl", curLvl);
+  if (curCat !== "All") p.set("cat", catKey(curCat));
+  if (query) p.set("q", query);
+  const qs = p.toString();
+  return qs ? "?" + qs : "";
+};
+// history.* can throw on file:// pages, in which case the URL simply is not updated.
+const setURL = (url, push) => { try { history[push ? "pushState" : "replaceState"](null, "", url); } catch (e) {} };
+const syncFilters = () => { setURL(location.pathname + filterQS(), false); setTitle(null); };
+function readFilters(){
+  const p = new URLSearchParams(location.search);
+  const lvl = p.get("lvl"), cat = p.get("cat");
+  curLvl = LVL_ORDER.includes(lvl) ? lvl : "";
+  curCat = cats.find(c => catKey(c) === cat) || "All";
+  query = (p.get("q") || "").trim().slice(0, 100);
+  document.getElementById("q").value = query;
+}
+// Resolves the URL hash to a map. Also accepts legacy "#m12" links (numeric position).
+function mapFromHash(){
+  let h = location.hash.slice(1);
+  try { h = decodeURIComponent(h); } catch (e) { return null; }
+  const legacy = h.match(/^m(\d+)$/);
+  return BY_SLUG.get(h) || (legacy && ALL[+legacy[1]]) || null;
+}
+// Shows a map and scrolls to it. If the current filters hide it, they are cleared so the link always works.
+function goToMap(m, { push = false, smooth = true } = {}){
+  if (!cur.includes(m)) {
+    curLvl = ""; curCat = "All"; query = ""; document.getElementById("q").value = "";
+    render();
+  }
+  showUpTo(cur.indexOf(m) + 1);
+  setURL(location.pathname + filterQS() + "#" + m.slug, push);
+  setTitle(m);
+  const target = () => document.getElementById("m" + m.id);
+  requestAnimationFrame(() => {
+    target().scrollIntoView({ behavior: smooth ? "smooth" : "auto" });
+    if (!smooth && document.fonts && document.fonts.ready) {
+      // the web font can shift the layout after the first scroll: re-align if the user has not moved
+      const y = scrollY;
+      document.fonts.ready.then(() => requestAnimationFrame(() => { if (Math.abs(scrollY - y) < 5) target().scrollIntoView(); }));
+    }
+  });
+}
+// Applies the URL to the page. On back/forward the list is only rebuilt when the filters actually changed.
+function applyURL(initial){
+  const before = [curLvl, curCat, query].join("|");
+  readFilters();
+  if (initial || before !== [curLvl, curCat, query].join("|")) render();
+  const m = mapFromHash();
+  if (m) goToMap(m, { smooth: false });
+  else setTitle(null);
+}
+function copyMapLink(btn){
+  const url = baseURL() + "#" + btn.dataset.slug;
+  const done = () => { btn.textContent = "✓"; btn.title = "¡Enlace copiado!"; setTimeout(() => { btn.textContent = "🔗"; btn.title = "Copiar enlace"; }, 1500); };
+  if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(done, () => prompt("Copia este enlace:", url));
+  else prompt("Copia este enlace:", url);
+}
+
 function renderTabs(){
   const t = document.getElementById("tabs");
   t.innerHTML = ["All",...cats].map(c=>`<button lang="en" class="${c===curCat?"on":""}" data-c="${esc(c)}">${c==="All"?"📚 All":esc(SHORT[c]||c)} <small>(${c==="All"?ALL.length:ALL.filter(m=>m.cat===c).length})</small></button>`).join("");
-  t.querySelectorAll("button").forEach(b=>b.onclick=()=>{curCat=b.dataset.c; render();});
+  t.querySelectorAll("button").forEach(b=>b.onclick=()=>{curCat=b.dataset.c; render(); syncFilters();});
 }
 
 function renderSeg(){
   const s = document.getElementById("seg");
   s.innerHTML = ["","A1","A2","B1","B2","C1","C2"].map(l=>`<button data-l="${l}" class="${curLvl===l?"on":""}">${l||"Todos"}</button>`).join("");
-  s.querySelectorAll("button").forEach(b=>b.onclick=()=>{curLvl=b.dataset.l; render();});
+  s.querySelectorAll("button").forEach(b=>b.onclick=()=>{curLvl=b.dataset.l; render(); syncFilters();});
 }
 
 // positions for 2 or 3 stickers inside the picture blob: [left, top, size, rotation]
@@ -82,7 +150,7 @@ function mapHTML(m){
   return `<section class="page" id="m${m.id}" data-id="${m.id}">
     <div class="rings"></div><div class="tape l"></div><div class="tape r"></div>
     ${star("2%","46%","✨")}${star("97%","52%","⭐")}${star("48%","98%","✨")}
-    <div class="topbar"><div class="tag" lang="en">#${m.id+1} · ${esc(m.cat)} · ${esc(m.type)}</div><div class="level lv-${esc(m.lvl)}">${esc(m.lvl)}</div></div>
+    <div class="topbar"><div class="tag" lang="en">#${m.id+1} · ${esc(m.cat)} · ${esc(m.type)}</div><button class="copylink" type="button" data-slug="${esc(m.slug)}" title="Copiar enlace" aria-label="Copiar enlace a este mapa">🔗</button><div class="level lv-${esc(m.lvl)}">${esc(m.lvl)}</div></div>
     <svg class="arrows"></svg>
     <div class="grid">
       <div class="col">${m.boxes.slice(0,3).map((b,j)=>box(b,j)).join("")}</div>
@@ -135,11 +203,10 @@ function render(){
   renderSeg();
   document.getElementById("count").textContent = `${list.length} mapas`;
   const ch = document.getElementById("chips");
-  ch.innerHTML = list.map((m,k)=>`<a href="#m${m.id}" data-k="${k}" lang="en">${esc(m.icon)} ${m.id+1}. ${esc(m.t)}</a>`).join("");
+  ch.innerHTML = list.map((m,k)=>`<a href="#${esc(m.slug)}" data-k="${k}" lang="en">${esc(m.icon)} ${m.id+1}. ${esc(m.t)}</a>`).join("");
   ch.querySelectorAll("a").forEach(a=>a.onclick=e=>{
-    e.preventDefault(); const k=+a.dataset.k;
-    showUpTo(k+1);
-    requestAnimationFrame(()=>document.getElementById("m"+list[k].id).scrollIntoView({behavior:"smooth"}));
+    e.preventDefault();
+    goToMap(list[+a.dataset.k], { push: true });
   });
   cur = list; shown = Math.min(STEP, list.length); paint();
 }
@@ -199,7 +266,7 @@ let searchTimer=0;
 document.getElementById("q").addEventListener("input",e=>{
   const v=e.target.value.trim();
   clearTimeout(searchTimer);
-  searchTimer=setTimeout(()=>{ query=v; render(); },150);
+  searchTimer=setTimeout(()=>{ query=v; render(); syncFilters(); },150);
 });
 let resizeRaf=0;
 window.addEventListener("resize",()=>{ cancelAnimationFrame(resizeRaf); resizeRaf=requestAnimationFrame(()=>draw()); });
@@ -207,10 +274,13 @@ const upBtn = document.getElementById("up");
 window.addEventListener("scroll",()=>upBtn.classList.toggle("show", window.scrollY > 400),{passive:true});
 upBtn.addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
 document.getElementById("maps").addEventListener("click",e=>{
+  const link = e.target.closest(".copylink");
+  if (link) { copyMapLink(link); return; }
   const hd = e.target.closest(".box .hd");
   if (hd && window.matchMedia("(max-width:1000px)").matches) hd.parentElement.classList.toggle("open");
 });
 document.addEventListener("toggle",e=>{ const m=e.target.closest(".page"); if (m) draw(m); },true);
-render();
+applyURL(true);
+window.addEventListener("popstate", () => applyURL(false));
 // The web font changes text metrics after the first draw, so redraw once it is ready.
 if (document.fonts && document.fonts.ready) document.fonts.ready.then(()=>draw());
