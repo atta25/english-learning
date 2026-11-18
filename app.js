@@ -125,8 +125,6 @@ let voice = null, playing = null;
 function pickVoice(){
   const vs = speechSynthesis.getVoices(), lang = v => v.lang.replace("_", "-");
   voice = vs.find(v => lang(v) === "en-GB") || vs.find(v => /^en/i.test(lang(v))) || null;
-  // hide the buttons only when the device has voices and none of them is English
-  document.documentElement.classList.toggle("no-voice", vs.length > 0 && !voice);
 }
 function stopSpeech(){
   if (!TTS) return;
@@ -141,7 +139,15 @@ function speak(btn){
   u.lang = "en-GB"; u.rate = 0.9;
   if (voice) u.voice = voice;
   const reset = () => { if (playing === btn) stopSpeech(); };
-  u.onend = reset; u.onerror = reset;
+  u.onend = reset;
+  u.onerror = ev => {
+    reset();
+    // "canceled"/"interrupted" are normal (another button was pressed); anything else means the device cannot speak English
+    if (ev.error && ev.error !== "canceled" && ev.error !== "interrupted") {
+      btn.textContent = "⚠"; btn.title = "Este dispositivo no tiene una voz en inglés disponible";
+      setTimeout(() => { btn.textContent = "🔊"; btn.title = "Escuchar"; }, 3000);
+    }
+  };
   playing = btn; btn.classList.add("playing"); btn.textContent = "⏹";
   speechSynthesis.speak(u);
 }

@@ -65,7 +65,6 @@ header p { margin:0 0 12px; color:#475569; font-size:14px; }
 .say { position:absolute; right:0; top:0; padding:0 4px; border:1.5px solid color-mix(in srgb,var(--c) 55%,white); border-radius:999px; background:#fff; font-size:12px; line-height:18px; height:20px; min-width:24px; cursor:pointer; opacity:.85; font-family:inherit; }
 .say:hover { opacity:1; background:#fde68a; }
 .say.playing { background:var(--c); border-color:var(--c); color:#fff; opacity:1; }
-.no-voice .say { display:none; }
 .speak { display:flex; align-items:flex-end; gap:8px; padding:4px 12px 10px; }
 .bubble { position:relative; flex:1; background:color-mix(in srgb,var(--c) 9%,white); border:2px solid var(--c); border-radius:14px; padding:6px 10px; font-size:12.5px; }
 .bubble::after { content:""; position:absolute; right:-9px; bottom:12px; width:14px; height:14px; background:color-mix(in srgb,var(--c) 9%,white); border-right:2px solid var(--c); border-top:2px solid var(--c); transform:rotate(45deg); }
