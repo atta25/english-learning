@@ -104,6 +104,8 @@ function goToMap(m, { push = false, smooth = true } = {}){
 function applyURL(initial){
   const before = [curLvl, curCat, query].join("|");
   readFilters();
+  // shared links like ".../?lvl=B1" are rewritten to ".../index.html?lvl=B1" right away
+  if (initial && (location.search || location.hash) && !location.pathname.endsWith(PAGE)) setURL(PAGE + filterQS() + location.hash, false);
   if (initial || before !== [curLvl, curCat, query].join("|")) render();
   const m = mapFromHash();
   if (m) goToMap(m, { smooth: false });
