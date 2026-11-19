@@ -67,8 +67,8 @@ try {
 try {
   const sw = fs.readFileSync(path.join(__dirname, "sw.js"), "utf8");
   const listed = new Set([...sw.match(/const ASSETS = \[([\s\S]*?)\];/)[1].matchAll(/"\.\/([^"]*)"/g)].map(m => m[1]).filter(Boolean));
-  const required = [...numbered("part"), ...numbered("art"), "index.html", "style.css", "app.js", "manifest.webmanifest"];
-  for (const dir of ["fonts", "icons"]) fs.readdirSync(path.join(__dirname, dir)).filter(f => /\.(woff2|png)$/.test(f)).forEach(f => required.push(`${dir}/${f}`));
+  const required = [...numbered("part"), ...numbered("art"), "index.html", "style.css", "manifest.webmanifest"];
+  for (const dir of ["fonts", "icons", "js"]) fs.readdirSync(path.join(__dirname, dir)).filter(f => /\.(woff2|png|js)$/.test(f)).forEach(f => required.push(`${dir}/${f}`));
   required.filter(f => !listed.has(f)).forEach(f => errs.push(`sw.js: ASSETS is missing "${f}" (it would not work offline)`));
   [...listed].filter(f => !fs.existsSync(path.join(__dirname, f))).forEach(f => errs.push(`sw.js: ASSETS lists "${f}" but the file does not exist (install would fail)`));
 } catch (e) { errs.push(`sw.js: could not check the ASSETS list (${e.message})`); }

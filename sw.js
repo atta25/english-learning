@@ -1,9 +1,10 @@
 // Service worker: network first, cache as fallback.
 // Online the page always gets the latest files (revalidated, usually a cheap 304); offline it uses the last copy it saw.
 // Every file below is stored on install so the app works offline right after the first visit.
-const CACHE = "evm-v1";
+const CACHE = "evm-v2";
 const ASSETS = [
-  "./", "./index.html", "./style.css", "./app.js", "./manifest.webmanifest",
+  "./", "./index.html", "./style.css", "./manifest.webmanifest",
+  "./js/config.js", "./js/text.js", "./js/catalog.js", "./js/search.js", "./js/geometry.js", "./js/templates.js", "./js/urlstate.js", "./js/speech.js", "./js/app.js",
   "./data/part1.js", "./data/part2.js", "./data/part3.js", "./data/part4.js", "./data/part5.js",
   "./data/part6.js", "./data/part7.js", "./data/part8.js", "./data/part9.js", "./data/part10.js",
   "./data/art1.js", "./data/art2.js", "./data/art3.js", "./data/art4.js", "./data/art5.js",

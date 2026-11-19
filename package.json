@@ -8,7 +8,8 @@
   "scripts": {
     "validate": "node validate-all.js --strict",
     "lint": "node tests/lint.js",
+    "test:unit": "node --test \"tests/unit/*.test.js\"",
     "test:smoke": "node tests/smoke.mjs",
-    "test": "npm run validate && npm run lint && npm run test:smoke"
+    "test": "npm run validate && npm run lint && npm run test:unit && npm run test:smoke"
   }
 }

@@ -3,8 +3,9 @@
 const fs = require("fs");
 
 const TYPES = ["Vocabulary", "Grammar", "Expressions", "Structures"];
-const CATS = ["Grammar: Tenses & Verbs", "Grammar: Structures", "Phrasal Verbs, Idioms & Collocations", "Vocabulary: Everyday Life", "Vocabulary: Work, Study & Society", "Communication & British Culture"];
-const LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"];
+const config = require("./js/config");
+const CATS = config.categoryNames(); // to add a category, add it to js/config.js
+const LEVELS = config.LEVELS;
 // Max characters per text, a bit above the current longest texts, so nothing overflows the layout.
 const LIMITS = { t: 80, es: 80, d: 130, h: 50, hes: 50, itemEn: 120, itemEs: 130, exEn: 100, exEs: 110, q: 180, a: 140 };
 
@@ -57,7 +58,7 @@ function validateMaps(maps, { expected } = {}) {
     ["cat", "type", "lvl", "icon", "slug", "t", "es", "d"].forEach(f => { if (!isStr(m[f])) errs.push(`${w}: missing ${f}`); });
     if (!LEVELS.includes(m.lvl)) errs.push(`${w}: lvl must be ${LEVELS.join("/")}`);
     if (!TYPES.includes(m.type)) errs.push(`${w}: type must be one of ${TYPES.join("/")}`);
-    if (isStr(m.cat) && !CATS.includes(m.cat)) errs.push(`${w}: unknown cat "${m.cat}" (add it to CATS in validate.js if it is new)`);
+    if (isStr(m.cat) && !CATS.includes(m.cat)) errs.push(`${w}: unknown cat "${m.cat}" (add it to CATEGORIES in js/config.js if it is new)`);
     if (isStr(m.icon) && !isEmoji(m.icon)) errs.push(`${w}: icon must be a single emoji, got "${m.icon}"`);
     if ("q" in m || "a" in m) errs.push(`${w}: remove old q/a, use qs`);
     if (!Array.isArray(m.qs) || m.qs.length !== 3 || !m.qs.every(x => x && isStr(x.q) && isStr(x.a))) errs.push(`${w}: qs must be exactly 3 {q,a}`);

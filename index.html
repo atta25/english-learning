@@ -24,14 +24,34 @@
 <meta name="apple-mobile-web-app-title" content="Visual Maps">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231e3a8a'/%3E%3Cpath d='M10 14h44a4 4 0 0 1 4 4v24a4 4 0 0 1-4 4H30l-12 12V46h-8a4 4 0 0 1-4-4V18a4 4 0 0 1 4-4z' fill='%23fff'/%3E%3Ctext x='32' y='40' font-size='26' font-weight='800' text-anchor='middle' fill='%23C8102E' font-family='Arial'%3EEn%3C/text%3E%3C/svg%3E">
 <script>
-(function(){var t=null;try{t=localStorage.getItem("theme")}catch(e){}
-if(!t)t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";
-document.documentElement.setAttribute("data-theme",t);
-// color of the browser bar on mobile follows the theme; app.js calls this again when the toggle is pressed
-window.setThemeColor=function(t){var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute("content",t==="dark"?"#0b1220":"#cfe3f7");};
-window.setThemeColor(t);})();
+// Theme: applied before the first paint so the page does not flash. Exposed as EVM.theme for the page code.
+(function () {
+  var BAR = { light: "#cfe3f7", dark: "#0b1220" }; // colour of the browser bar on mobile, same as the page background of each theme
+  function apply(t) {
+    document.documentElement.setAttribute("data-theme", t);
+    var meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute("content", BAR[t]);
+  }
+  var t = null;
+  try { t = localStorage.getItem("theme"); } catch (e) {}
+  if (!t) t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  apply(t);
+  window.EVM = window.EVM || {};
+  window.EVM.theme = {
+    get: function () { return document.documentElement.getAttribute("data-theme"); },
+    set: function (next) { apply(next); try { localStorage.setItem("theme", next); } catch (e) {} },
+  };
+})();
 </script>
 <link rel="stylesheet" href="style.css">
+<script src="js/config.js" defer></script>
+<script src="js/text.js" defer></script>
+<script src="js/catalog.js" defer></script>
+<script src="js/search.js" defer></script>
+<script src="js/geometry.js" defer></script>
+<script src="js/templates.js" defer></script>
+<script src="js/urlstate.js" defer></script>
+<script src="js/speech.js" defer></script>
 <script src="data/part1.js" defer></script>
 <script src="data/part2.js" defer></script>
 <script src="data/part3.js" defer></script>
@@ -52,7 +72,7 @@ window.setThemeColor(t);})();
 <script src="data/art8.js" defer></script>
 <script src="data/art9.js" defer></script>
 <script src="data/art10.js" defer></script>
-<script src="app.js" defer></script>
+<script src="js/app.js" defer></script>
 </head>
 <body>
 <button id="up" type="button" aria-label="Volver arriba" title="Volver arriba">⬆️</button>
