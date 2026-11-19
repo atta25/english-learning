@@ -4,6 +4,7 @@
 //   - illustrations for every map (validate-art.js)
 //   - rules across files: duplicate titles, near-duplicate titles
 //   - README: total and per-level counts must match the data
+//   - sw.js: its offline file list must match the files on disk
 // Warnings are only counted unless --warnings is given. With --strict, warnings also make the command fail.
 const fs = require("fs");
 const path = require("path");
@@ -61,6 +62,16 @@ try {
   if (nums.length !== LEVELS.length) errs.push("README: could not read the level table");
   else LEVELS.forEach((l, i) => { if (nums[i] !== counts[l]) errs.push(`README says ${l}: ${nums[i]}, data has ${counts[l]}`); });
 } catch (e) { errs.push(`README: ${e.message}`); }
+
+// 5) the service worker pre-caches a fixed list: it must list every data file and only files that exist
+try {
+  const sw = fs.readFileSync(path.join(__dirname, "sw.js"), "utf8");
+  const listed = new Set([...sw.match(/const ASSETS = \[([\s\S]*?)\];/)[1].matchAll(/"\.\/([^"]*)"/g)].map(m => m[1]).filter(Boolean));
+  const required = [...numbered("part"), ...numbered("art"), "index.html", "style.css", "app.js", "manifest.webmanifest"];
+  for (const dir of ["fonts", "icons"]) fs.readdirSync(path.join(__dirname, dir)).filter(f => /\.(woff2|png)$/.test(f)).forEach(f => required.push(`${dir}/${f}`));
+  required.filter(f => !listed.has(f)).forEach(f => errs.push(`sw.js: ASSETS is missing "${f}" (it would not work offline)`));
+  [...listed].filter(f => !fs.existsSync(path.join(__dirname, f))).forEach(f => errs.push(`sw.js: ASSETS lists "${f}" but the file does not exist (install would fail)`));
+} catch (e) { errs.push(`sw.js: could not check the ASSETS list (${e.message})`); }
 
 // Summary
 console.log(`Files: ${numbered("part").length} content, ${numbered("art").length} art | Maps: ${all.length} | ${LEVELS.map(l => `${l}:${counts[l]}`).join(" ")}`);

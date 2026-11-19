@@ -327,3 +327,8 @@ applyURL(true);
 window.addEventListener("popstate", () => applyURL(false));
 // The web font changes text metrics after the first draw, so redraw once it is ready.
 if (document.fonts && document.fonts.ready) document.fonts.ready.then(()=>draw());
+
+// Offline support and installability (service worker needs http(s); it is skipped on file://)
+if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
+  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+}
