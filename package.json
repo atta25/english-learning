@@ -1,0 +1,14 @@
+{
+  "name": "english-learning",
+  "private": true,
+  "description": "English Visual Maps",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "validate": "node validate-all.js --strict",
+    "lint": "node tests/lint.js",
+    "test:smoke": "node tests/smoke.mjs",
+    "test": "npm run validate && npm run lint && npm run test:smoke"
+  }
+}
