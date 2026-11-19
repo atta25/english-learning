@@ -4,6 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>🇬🇧 English Visual Maps</title>
+<meta name="description" content="303 mapas visuales ilustrados para aprender inglés británico de A1 a C2: vocabulario, gramática, expresiones y estructuras, con traducción y ejercicios.">
+<link rel="canonical" href="https://atta25.github.io/english-learning/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="English Visual Maps">
+<meta property="og:title" content="English Visual Maps: inglés británico en mapas ilustrados">
+<meta property="og:description" content="303 mapas visuales ilustrados para aprender inglés británico de A1 a C2: vocabulario, gramática, expresiones y estructuras, con traducción y ejercicios.">
+<meta property="og:url" content="https://atta25.github.io/english-learning/">
+<meta property="og:image" content="https://atta25.github.io/english-learning/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Tarjeta de English Visual Maps: una nube central con el título y seis cajas de colores con las categorías (gramática, vocabulario, phrasal verbs, estructuras, trabajo y estudio, cultura británica).">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#cfe3f7">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
@@ -11,7 +25,10 @@
 <script>
 (function(){var t=null;try{t=localStorage.getItem("theme")}catch(e){}
 if(!t)t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";
-document.documentElement.setAttribute("data-theme",t);})();
+document.documentElement.setAttribute("data-theme",t);
+// color of the browser bar on mobile follows the theme; app.js calls this again when the toggle is pressed
+window.setThemeColor=function(t){var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute("content",t==="dark"?"#0b1220":"#cfe3f7");};
+window.setThemeColor(t);})();
 </script>
 <link rel="stylesheet" href="style.css">
 <script src="data/part1.js" defer></script>

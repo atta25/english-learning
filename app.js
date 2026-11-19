@@ -4,6 +4,7 @@
   b.addEventListener("click", () => {
     const next = root.getAttribute("data-theme")==="dark" ? "light" : "dark";
     root.setAttribute("data-theme", next);
+    if (window.setThemeColor) window.setThemeColor(next);
     try { localStorage.setItem("theme", next); } catch(e) {}
     sync();
   });
