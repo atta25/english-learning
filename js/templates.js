@@ -52,10 +52,10 @@
     const mascot = art.mascot || ctx.mascots[m.id % ctx.mascots.length];
     const scene = art.scene || [m.icon];
     const boxes = (from, to) => m.boxes.slice(from, to).map((b, n) => boxHTML(m, b, from + n, ctx, art, mascot)).join("");
-    const star = (x, y, e) => `<span class="star" style="left:${x};top:${y}">${e}</span>`;
+    const star = (n, e) => `<span class="star s${n}">${e}</span>`;
     return `<section class="page" id="m${m.id}" data-id="${m.id}">
     <div class="rings"></div><div class="tape l"></div><div class="tape r"></div>
-    ${star("2%", "46%", "✨")}${star("97%", "52%", "⭐")}${star("48%", "98%", "✨")}
+    ${star(1, "✨")}${star(2, "⭐")}${star(3, "✨")}
     <div class="topbar"><div class="tag" lang="en">#${m.id + 1} · ${esc(m.cat)} · ${esc(m.type)}</div><button class="copylink" type="button" data-slug="${esc(m.slug)}" title="Copiar enlace" aria-label="Copiar enlace a este mapa">🔗</button><div class="level lv-${esc(m.lvl)}">${esc(m.lvl)}</div></div>
     <svg class="arrows"></svg>
     <div class="grid">
@@ -86,11 +86,11 @@
   }
 
   const moreLabel = (shown, total) => `⬇ Cargar más (${shown}/${total})`;
-  const moreHTML = (shown, total) => `<div id="moreWrap" style="text-align:center;margin:10px"><button id="more" class="tabs-btn">${moreLabel(shown, total)}</button></div>`;
+  const moreHTML = (shown, total) => `<div id="moreWrap" class="more-wrap"><button id="more" class="tabs-btn">${moreLabel(shown, total)}</button></div>`;
 
   // Content of the SVG that draws the cloud behind the title and the dotted ring inside it.
   function cloudSVG(w, h) {
-    return `<path d="${geometry.cloudPath(w, h)}" fill="#fff" stroke="#1e3a8a" stroke-width="3.5"/><path d="${geometry.cloudPath(w - 14, h - 14)}" transform="translate(7,7)" fill="none" stroke="#93c5fd" stroke-width="2" stroke-dasharray="2 7" stroke-linecap="round"/>`;
+    return `<path class="cloud-edge" d="${geometry.cloudPath(w, h)}" stroke-width="3.5"/><path class="cloud-dots" d="${geometry.cloudPath(w - 14, h - 14)}" transform="translate(7,7)" fill="none" stroke-width="2" stroke-dasharray="2 7" stroke-linecap="round"/>`;
   }
 
   // Arrowheads, one per colour, with ids unique to each map.
